@@ -55,14 +55,16 @@
             </div>
 <!-- Logo -->
             <div class="col-12 col-lg-4">
-                <a href="" class="logo">Moto Style</a>
+                <div class="text-center">
+                    <a href="" class="logo">Moto Style</a>
+                </div>
             </div>
 <!-- Account and shopping card -->
             <div class="col-12 col-lg-4">
-                <ul class="list-inline">
+                <ul class="ist-inline list-unstyled text-center my-0">
                     <li class="list-inline-item dropdown">
                         <a href="" id="account-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <div><i class="fas fa-user fa-lg"></i></div>
+                            <div><i class="fas fa-user-cog"></i></div>
                             Account
                         </a>
                         <div class="dropdown-menu" aria-labelledby="account-options">
@@ -78,7 +80,20 @@
                             {% endif %}
                         </div>
                     </li>
-                    <li class="list-inline-item"></li>
+                    <li class="list-inline-item">
+                        <a href="" class="navlink">
+                            <div class="text-center">
+                                <div><i class="fas fa-shopping-cart"></i></div>
+                                <p>
+                                    {% if grand_total %}
+                                        £{{ grand_total | floatformat:2 }}
+                                    {% else %}
+                                        £ 0.00
+                                    {% endif %}
+                                </p>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
