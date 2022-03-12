@@ -65,7 +65,7 @@
             <div class="col-12 col-lg-4">
                 <ul class="ist-inline list-unstyled text-center my-0">
                     <li class="list-inline-item dropdown">
-                        <a href="#" id="account-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link" href="#" id="account-options" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <div><i class="fas fa-user-cog"></i></div>
                             <p>Account</p>
                         </a>
@@ -98,6 +98,15 @@
                     </li>
                 </ul>
             </div>
+        </div>
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                {% include 'includes/mobile_top_header.html' %}
+                {% include 'includes/main_nav.html' %}
+            </nav>
         </div>
     </header>
 
