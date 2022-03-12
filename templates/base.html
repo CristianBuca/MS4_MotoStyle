@@ -26,6 +26,7 @@
 
 <!-- JavasScript dependencies -->
     {% block corejs %}
+        <script src="https://kit.fontawesome.com/ca727e1099.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
@@ -39,7 +40,33 @@
 
 <body>
     <header class="container-fluid fixed-top">
-
+<!-- Navbar on large screens and up -->
+        <div id="top-nav" class="row d-none d-lg-flex">
+<!-- Search form -->
+            <div class="col-12 col-lg-4">
+                <form action="" method="GET">
+                    <div class="input-group w-100">
+                        <input type="text" class="form-control" name="q" placeholder="Search products">
+                        <div class="input-group-append">
+                            <button class="form-control btn btn-dark" type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+<!-- Logo -->
+            <div class="col-12 col-lg-4">
+                <a href="" class="logo">Moto Style</a>
+            </div>
+<!-- Account and shopping card -->
+            <div class="col-12 col-lg-4">
+                <ul class="list-inline">
+                    <li class="list-inline-item dropdown">
+                        
+                    </li>
+                    <li class="list-inline-item"></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     {% block content %}
