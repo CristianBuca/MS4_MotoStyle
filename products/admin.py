@@ -19,5 +19,16 @@ class ProductAdmin(admin.ModelAdmin):
     ordering = ('category',)
 
 
+class CategoryAdmin(admin.ModelAdmin):
+    """
+    Class defining the category model in admin page
+    """
+    list_display = (
+        'name', 'friendly_name',
+    )
+
+    ordering = ('name',)
+
+
 admin.site.register(Product, ProductAdmin)
-admin.site.register(Category)
+admin.site.register(Category, CategoryAdmin)
