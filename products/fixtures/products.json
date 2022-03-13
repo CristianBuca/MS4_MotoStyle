@@ -1,0 +1,338 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340155",
+            "name": "RACE R PRO GP ANN HELMET KDP",
+            "description": "To commemorate Shark's 30th anniversary,s Shark has released the Race-R Pro GP 30th Anniversary helmet, which celebrates the culmination of Shark's knowledge and expertise in the field. Shark produced just 1989 helmets to coincide with the year the brand was founded, split into three for each colourway - so 663 of each colour. The Race-R Pro GP is made from an ultra-durable and lightweight carbon and aramid fibre shell with two shell sizes for optimal aerodynamics. In addition, a multi-density EPS lining provides superior impact protection along with a dual-tone Alveotec fabric lining and 3D morpho cheeks. Shark's EasyFit internal system gives superior comfort along with an anti-fog mask and a rubber breath mask and chin cover to prevent visor fogging, plus an optimal ventilation system with five air intakes and seven air outlets for superior air circulation. A rear spoiler gives superior aerodynamics and less buffering. The clear anti-scratch, anti-fog optical class 1 visor features a wide aperture for more excellent vision along with an ergonomic visor grip for improved handling. The visor mechanics and hardware feature red anodised layers with Shark Racing Division laser engraving and racing logos. A red anodised double D chin strap finishes this look and provides a secure closure. A carbon skin ends this look off for this special anniversary edition helmet. The Anniversary Race R Pro GP edition helmet is available in three colourways - this is the KDP - black, carbon and pearl",
+            "price": 869.99,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": "https://assets.jsaccessories.co.uk/products/51885/shark-race-r-pro-gp-ann-helmet-kdp-size-s-143740-02.jpg?width=568",
+            "image": "shark-race-r-pro-gp-ann-helmet-kdp-size-s-143740-02.webp"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600425",
+            "name": "X-SPIRIT 3 AERODYNE HELMET TC-1",
+            "description": "The Shoei X-Spirit 3 Aerodyne TC-1 motorcycle helmet (or X-Spirit III) is a premium quality motorcycle helmet with all the safety features and luxuries you would expect from a top of the range Shoei. It offers a 6-layer AIM+ shell construction which is not only ultra-lightweight; it is incredibly protective. A multiple density EPS liner adds to the protective qualities with four shell sizes for superior aerodynamics and comfort. The Pinlock and tear-off ready visor double lock CWR-F visor have anti-fog treatment with an emergency Quick Release System. The adjustable interior provides an optimised fit and is fully removable and washable. Multiple intakes and extract vents, and spoilers give superior airflow and aerodynamics. Available in a choice of colours and designs - this is the Aerodyne TC-1 in the red colourway.",
+            "price": 699.99,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": "https://assets.jsaccessories.co.uk/products/49877/shoei-x-spirit-3-aerodyne-helmet-tc-1-size-xs-139388-02.jpg?width=568",
+            "image": "shoei-x-spirit-3-aerodyne-helmet-tc-1-size-xs-139388-02.webp"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001730010",
+            "name": "QUANTIC FACE HELMET RED",
+            "description": "As with all Arai helmets, the Quantic is formed around protection, first and foremost. Manufactured by hand, the outer shell maintains core strength but with a substantial weight reduction. The smooth, round shape is an Arai signature and primarily designed to glance off and spread impact forces for superior aerodynamics. The full-face Quantic slips through the air neatly and efficiently, wrapping its wearer in a cocoon of luxury. It offers a fresh choice for riders that want the very best performance from a helmet in terms of protection, comfort and ease of wear, day-in-day-out with zero compromises. The Quantic features a 5mm flare around the base for ease of entry and exit, while the VAS MAX vision visor comes with a Pinlock insert ready to use. The premium brushed nylon interior is removable and features Facial Contour System (FCS) and neck roll wire pocket for superior comfort. It also features Emergency Release System (ERS). It is also certified according to the ECE R22-06 standard. Available in a choice of colours and designs - this is the Quantic Face design in the Red colourway.",
+            "price": 599.99,
+            "category": 1,
+            "rating": 4.7,
+            "image_url": "https://assets.jsaccessories.co.uk/products/52364/arai-quantic-face-helmet-red-red-144834-02.jpg?width=568",
+            "image": "arai-quantic-face-helmet-red-red-144834-02.webp"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001890157",
+            "name": "GT AIR 2 PANORAMA HELMET TC-8",
+            "description": "The Shoei GT Air 2 Panorama TC-8 motorcycle helmet is a premium full-face motorcycle helmet with an AIM shell made from a multi-composite fibre in various layers for optimum rigidity and shock absorbency. It has an EPS-Liner system with different densities and three different outer shell sizes for added aerodynamics and an integrated spoiler and complete ventilation system with exhaust vents for better air circulation and less head wobble. The GT Air 2 can be personalised for your preference or different weather. The GT Air 2 also comes with a 3D centre pad and cheek pads which are detachable and washable, along with a detachable and washable chin strap cover. The earpads reduce noise, and a removable breath guard and chin curtain to prevent the visor from fogging up and minimise road noise. The GT Air 2 comes with a clear, mist retardant CNS-1 Pinlock visor, quick and easy to change and an enlarged QSV-2 sun visor for better protection from the sun. The micro ratchet closure system is made from stainless steel for durability but is lightweight and easy to use. It is specially designed to integrate the SENA SRL2 communication system, and the inside of the helmet is prepared for any intercom system with removable pads for added comfort. It also comes with an original Shoei helmet bag and comes in varying colours. Also available in other colours and designs.",
+            "price": 569.99,
+            "category": 1,
+            "rating": 3.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/49873/shoei-gt-air-2-panorama-helmet-tc-8-size-xs-139364-02.jpg?width=568",
+            "image": "shoei-gt-air-2-panorama-helmet-tc-8-size-xs-139364-02.webp"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002111605",
+            "name": "RPHA 11 VENOM 2 RED",
+            "description": "This official Marvel Venom motorcycle helmet is on a HJC RPHA 11 shell. The HJC R-PHA 11 motorcycle helmet offers a PIM Plus construction including carbon fibre carbon and hybrid fibreglass, optimised shell design for outstanding air flow through the ventilation system, aerodynamic shell structure for extreme performance at maximum speeds, emergency kit (cheek pads) for safe and quick removal in emergency situations, wider eye port providing improved peripheral vision, RapidFire, a simple and secure visor ratchet system for ultra-quick, tool-less visor removal and installation, enhanced visor dual lock system for high speed racing conditions, multicool Interior with advanced anti-bacteria fabric for enhanced moisture wicking and quick drying, removable and washable crown and cheek pads, clear Pinlock ready HJ-26 Max-vision anti-UV and anti-scratch visor, Pinlock Max-Vision anti-fog insert included, 2D dark smoke visor ready for Pinlock tear-offs (not included) a weight of; 1300gm +/- 50gm, grooves in lining for glasses, double-D ring retaining strap, 3 shell sizes and a 5 year HJC warranty.",
+            "price": 549.99,
+            "category": 1,
+            "rating": 5.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/39340/hjc-rpha-11-venom-2-red-size-xs-120582-02.jpg?width=568",
+            "image": "hjc-rpha-11-venom-2-red-size-xs-120582-02.webp"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002260206",
+            "name": "RPHA 11 HELMET ALIEN FOX",
+            "description": "Can you dream? Yes, honey, I think you can. If you're an Aliens fan, then this is the helmet for you. The HJC RPHA 11 Alien Fox is the latest incarnation of H.J.C.'s top of the range race helmets; these are finely tuned, premium quality, full-face motorcycle helmets for sports and track-day enthusiasts. The RPHA 11 has HJC.'s Plus Integrated Matrix (P.I.M.) shell construction of carbon fibre, aramid and carbon-glass hybrid fibres to produce a solid superlight helmet. Designed in the H.J.C.'s wind tunnel, the shell shape maximises its aerodynamic potential with rear and side spoilers to ensure stability at any speed. The detachable chin curtain reduces wind noise and blocks out turbulent airflow. The RPHA 11 has an advanced channelling ventilation system incorporated into the liner, allowing cool air and pushing hot, humid air out of the rear. The chin bar and new forehead vents have a simple slider mechanism, whilst each of the top vents has a glove-friendly rubberised dial allowing you precise control of the airflow. The helmet's MultiCool anti-bacterial lining wicks moisture away and is removeable and washable for even more comfort. For spectacle wearer's the helmet even has a 'glasses groove'. The visor has an enlarged aperture for increased vision, with an enhanced central one-touch locking system which enables the visor to be locked closed for high-speed track days. The helmet is supplied with a Pinlock anti-fog lens and both clear and smoked visors. The chin strap has double D-ring retention, and the HJC RPHA 11 has a 5-year H.J.C. warranty against any possible manufacturing fault or material defect.",
+            "price": 519.99,
+            "category": 1,
+            "rating": 4.7,
+            "image_url": "https://assets.jsaccessories.co.uk/products/50927/hjc-rpha-11-helmet-alien-fox-size-s-141770-02.jpg?width=568",
+            "image": "hjc-rpha-11-helmet-alien-fox-size-s-141770-02.webp"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002440521",
+            "name": "EVO ES HELMET WHITE",
+            "description": "The Shark EVO-ES flip-front motorcycle helmet is a modular helmet made from lightweight yet highly durable thermoplastic resin. This has 2 shell sizes to ensure a more aerodynamic and comfortable ride. A multi-density EPS liner gives superior protection and this comes with an anti-scratch and anti-fog UV-resistant visor with a quick visor release system and Shark’s patented “Auto-up / Auto-down” system that automatically lifts the visor upon raising or lowering the chin guard. The EVO-ES helmet is extremely comfortable to wear thanks to the Easyfit system for glasses wearers, a removable and washable interior, magnetic and retractable soundproof breath guard and a slot reserved for the Sharktooth intercom. The air circulation is personalised thanks to 3 air inlets and 2 air extractors and this has a micro lock buckle system. This is the plain white version. Other colours and designs are available.",
+            "price": 251.99,
+            "category": 2,
+            "rating": 4.4,
+            "image_url": "https://assets.jsaccessories.co.uk/products/44255/shark-evo-es-helmet-white-l-59-60-cm-128529-01.jpg?width=568",
+            "image": "shark-evo-es-helmet-white-l-59-60-cm-128529-01.webp"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002601115",
+            "name": "DV06 FLIP FRONT HELMET MATT BLACK NEO YELLOW",
+            "description": "The Frank Thomas DV06 Flip-Front Motorcycle Helmet in Matt Black and Neo Yellow. This helmet has an injection moulded lightweight shell, full ventilation system, a removable and washable interior and a chin skirt for reduced noise and wind penetration. The helmet has a quick-release ratchet style external anti-scratch lens, and internal dark sun visor. The flip-front is a one-handed operation with a single chin-bar button and the helmet has a new style, easy to use, fully adjustable ratchet chin strap. The Frank Thomas DV06 Flip-Front Motorcycle Helmet is also available in 7 other colour ways; White; Black; Matt Black; Pink; Matt Black and Grey; White, Black and Grey; Red, White and Blue.",
+            "price": 119.99,
+            "category": 2,
+            "rating": 4.5,
+            "image_url": "https://assets.jsaccessories.co.uk/products/26202/frank-thomas-dv06-flip-front-helmet-matt-black-neo-yellow-size-xs-107554-01.jpg?width=568",
+            "image": "frank-thomas-dv06-flip-front-helmet-matt-black-neo-yellow-size-xs-107554-01.webp"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002690715",
+            "name": "ATOM SV RACELINE HELMET MATT BLACK ORANGE",
+            "description": "The MT Atom SV Raceline matt black orange flip-front motorcycle helmet is designed for comfort whilst touring and comes with a brand new four-way neck curtain system and lower liner flaps to keep noise to an absolute minimum for higher rider comfort. Made from the latest polymer technology, the Atom SV has 2 shell sizes for added aerodynamics and features a hi impact absorption inner shell and multiple density EPS liner for added impact resistance. The flip mechanism is fully lockable and has a drop-down sun visor (hence the SV) and comes complete with the excellent Pinlock Max Vision anti-fog visor (iinsert not included). The Atom SV has a full ventilation system for maximum air circulation and comes with a quick release micrometric buckle which is very easy to use yet also secure. This also comes in a choice of colours.",
+            "price": 119.99,
+            "category": 2,
+            "rating": 4.7,
+            "image_url": "https://assets.jsaccessories.co.uk/products/44949/mt-atom-sv-raceline-helmet-matt-black-orange-s-55-56-cm-130598-01.jpg?width=568",
+            "image": "mt-atom-sv-raceline-helmet-matt-black-orange-s-55-56-cm-130598-01.webp"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002701115",
+            "name": "REV19 FLIP IKON HELMET ORANGE MATT",
+            "description": "The Airoh Rev 19 Ikon flip-front motorcycle helmet combines both a full-face and jet styling with an ultra-lightweight HRT shell. This 2-in-1 thermoplastic model marries the best aspects of both helmet designs, such as an extra wide anti-UV and scratch-resistant Pinlock prepared visor for improved vision, coupled with an internal sun visor for unparalleled vision, Stop Wind chin skirt for the closed position and the possibility of connecting Bluetooth systems. The versatility of the Rev 19 Ikon is guaranteed by the patented 180° chin-guard rotation system and the double P/J certification to easily and simply switch from jet to full-face. The inner comfort lining is breathable, hypoallergenic and removable for washing and this comes with a full ventilation system that can be personalised for a comfy ride. The closure system is a micro ratchet system. Also available in other colours and designs.",
+            "price": 349.99,
+            "category": 2,
+            "rating": 4.4,
+            "image_url": "https://assets.jsaccessories.co.uk/products/43027/airoh-rev19-flip-ikon-helmet-orange-matt-size-xs-126683-01.jpg?width=568",
+            "image": "airoh-rev19-flip-ikon-helmet-orange-matt-size-xs-126683-01.webp"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002761055",
+            "name": "V271 BLINC HOLLOW HELMET MATT BLACK",
+            "description": "Stylish black-trim cook shirt from Chef Designs is just what you need for a confident, professional presence in the kitchen.  contrasting black stand collar black front buttons left chest pocket short hemmed sleeves squared bottom hem polyester/cotton washable imported of domestic fabric more sizes: regular, big",
+            "price": 179.99,
+            "category": 2,
+            "rating": 3.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/42841/vcan-v271-blinc-hollow-helmet-matt-black-size-m-108560-02.jpg?width=568",
+            "image": "vcan-v271-blinc-hollow-helmet-matt-black-size-m-108560-02.webp"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002820069",
+            "name": "DUKE II HELMET SMART BLACK ",
+            "description": "The Caberg Duke II is the evolved version of the original Duke with an upgraded visor. It is made in Italy, and this flip-front motorcycle helmet has dual EC homologation so that it can be worn as both a full-face and as an open jet helmet with the flip-up raised. This has a lightweight, high impact ABS shell with an anti-scratch clear visor and an internal drop-down sun visor with a quick release visor system. There is an anti-turbulence nape shield and internal air circulation with chin and adjustable top vents to improve aerodynamics, and this has been wind tunnel tested. A micrometric quick-release retention system gives added safety but is easy to use. The Caberg Duke II is lightweight with a weight of approx: 1550 +/- 50 gr and has European approval - ECE 22.05. Available in a choice of colours and designs.",
+            "price": 139.99,
+            "category": 2,
+            "rating": 4.6,
+            "image_url": "https://assets.jsaccessories.co.uk/products/34291/caberg-duke-ii-helmet-smart-black-size-l-112561-01.jpg?width=568",
+            "image": "caberg-duke-ii-helmet-smart-black-size-l-112561-01.webp"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002820147",
+            "name": "S-M5 HELMET WHITE",
+            "description": "The Alpinestars S-M5 white Motocross helmet is a lightweight off-road helmet with a technologically advanced impact resistant thermoplastic shell that developed in two shell sizes for added aerodynamics and comfort on the bike. The multiple density inner liner ensures the correct density in the correct area for optimum impact absorption while the soft EPS foam prevents damage to the collarbone in the event of a crash. Off-road riding can be hard work but the Alpinestars S-M5 helmet has a full ventilation system with high levels of heat transfer exchange with multi-air inlets and exhaust ports with air ports on the visor to funnel the air through. Inside the S-M5 the removable and washable Silverplus liner is anti-bacterial treated for excellent moisture wicking and removable cheek pads with 3D contoured foam and a soft textile chin strap is wider than certification requirements for optimal safety and rider comfort. Hydration tube channels are integrated into the helmet’s cheek pads for convenience and performance. The closure system is double D rings. Other designs and colours are also available.",
+            "price": 174.99,
+            "category": 3,
+            "rating": 3.2,
+            "image_url": "https://assets.jsaccessories.co.uk/products/46725/alpinestars-s-m5-helmet-white-size-s-134188-02.jpg?width=568",
+            "image": "alpinestars-s-m5-helmet-white-size-s-134188-02.webp"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002910572",
+            "name": "SYNCHRONY STEEL HELMET BLACK WHITE ORANGE",
+            "description": "The MT Synchrony Steel Black White Orange off-road motorcycle helmet has an ultra-lightweight polycarbonate construction which is super-strong thanks to a high impact absorption inner shell with multiple density EPS liner. The MT Synchrony helmet features homologated front protection with an active flux 360-degree ventilation system for optimum airflow and comfort. The peak is fully adjustable and removable with lightweight yet durable aluminium screws. The comfort lining is fully removable and washable to keep you fresh, and the closure is a quick release micrometric buckle. The aggressively designed shell provides optimum aerodynamics, and the Synchrony offers ECE.2205 approval with ACU Gold Standard. Anti-slide goggle tabs keep your goggles in place comfortably. Available in a choice of colours and designs.",
+            "price": 49.99,
+            "category": 3,
+            "rating": 4.7,
+            "image_url": "https://assets.jsaccessories.co.uk/products/47923/mt-synchrony-steel-helmet-black-white-orange-xl-61-62-cm-136475-02.jpg?width=568",
+            "image": "mt-synchrony-steel-helmet-black-white-orange-xl-61-62-cm-136475-02.webp"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5002990740",
+            "name": "CS-MX II CREED HELMET BLUE ORANGE",
+            "description": "The HJC CS-MX II Creed motocross motorcycle helmet is an off-road helmet constructed from an Advanced Polycarbonate Composite Shell, making this ultra-lightweight yet highly durable. It also features a revolutionary design with a unique adjustable peak, lightweight, superior fit and comfort using advanced CAD technology, and a large eye port for better vision and maximum range and better goggle fit. In addition, HJC’s ACS Advanced Channelling Ventilation System with entire front to back airflow flushes heat and humidity up and out for superior comfort, and the plush and highly comfortable Nylex interior is removable and washable. The HJC CS-MX II is also available in other colours and designs - this is the Creed graphic in the blue and orange colourway.",
+            "price": 99.99,
+            "category": 3,
+            "rating": 4.8,
+            "image_url": "https://assets.jsaccessories.co.uk/products/55152/hjc-cs-mx-ii-creed-helmet-blue-orange-l-59-60-cm-152207-02.jpg?width=568",
+            "image": "hjc-cs-mx-ii-creed-helmet-blue-orange-l-59-60-cm-152207-02.webp"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003050248",
+            "name": "MOTO 7.5 V22 HELMET BLACK",
+            "description": "The Leatt Moto 7.5 V22 is a premium quality off-road helmet made from injected Polymer Compound and comes with a pair of matching Leatt Velocity 4.5 goggles. Three shell sizes ensure a close and comfortable fit with superior aerodynamics with four densities of impact foam for reducing forces to the head and brain in the event of an impact. It is lightweight, weighs 1.295 +50g, features ECE 22.06 approval, and exceeds new FIM standards. Large ventilation channels to keep your head cool even at lower speeds, and the inner liner is washable, breathable and has moisture-wicking anti-odour fabric to keep you fresh. It is designed to offer excellent neck brace mobility, and the helmet peak has a breakaway function to reduce forces to the head and neck in a crash with emergency release cheek pads. It also comes equipped with a hydration side port (an optional hands-free kit sold separately) and helmet peak extension. The double D closure system is both adjustable and ultra-secure. In addition, Leatt helmets feature category-defining 360° Turbine Technology. The helmet is lined with 360-degree turbines, which are discs constructed from an energy-absorbing material that allows the head to move slightly inside the helmet during a crash, reducing rotational, direct and deflective impact energy. This technology has two key advantages: reducing rotational acceleration to the head and brain and absorbing energy upon impact at the concussion level. The reduced peak reduces brain acceleration by up to 30% at impact speeds associated with concussion and reduces peak brain rotational acceleration by up to 40%. Available in a choice of colours and designs with matching items available - this is the Black colourway.",
+            "price": 179.99,
+            "category": 3,
+            "rating": 4.4,
+            "image_url": "https://assets.jsaccessories.co.uk/products/55279/leatt-moto-7-5-v22-helmet-black-no-size-152700-02.jpg?width=568",
+            "image": "leatt-moto-7-5-v22-helmet-black-no-size-152700-02.webp"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003070787",
+            "name": "ADULT OFF ROAD PRO HELMET BLACK",
+            "description": "The Wulfsport Off-Road Pro Motocross helmet is available in various colours with an eye-catching design with Wulfsport branding. It is constructed from ultra-lightweight yet highly durable TPR and weighs 1400+-50g. It is ACU Gold approved and ECE 22.05 approved for use on the roads and the track. The lining and cheek pads are removable and washable to keep you fresh, and this comes with a Wulfsport branded helmet bag. This is the black colourway.",
+            "price": 59.99,
+            "category": 3,
+            "rating": 4.4,
+            "image_url": "https://assets.jsaccessories.co.uk/products/52236/wulfsport-adult-off-road-pro-helmet-black-black-144543-02.jpg?width=568",
+            "image": "wulfsport-adult-off-road-pro-helmet-black-black-144543-02.webp"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003090182",
+            "name": "MX670 PODIUM DVS HELMET SATIN BLACK GUN",
+            "description": "The Nitro MX670 Podium DVS motorcycle helmet is a multi-purpose and versatile adventure helmet for use off-road or on road. This comes with an adjustable Dual Visor System (hence the DVS) with injection moulded anti-scratch coated Pinlock prepared 3D visor as well as a removable peak to convert into a street helmet and is compliant with the latest ECE 22.05 approval. This is made from a lightweight MPT (Multi-Poly Tech) construction and has a fully adjustable chin bar and top ventilation with open and close positioning. Dual rear exhaust vents allow for ultimate heat dissipation and air circulation and the MX670 comes with ultra-comfortable fully removable and washable liner with anatomic luxury fitted cheek pads and a micrometric buckle closure system. Available in other colours. This is the Black and Gun version in a satin finish.",
+            "price": 129.99,
+            "category": 3,
+            "rating": 4.8,
+            "image_url": "https://assets.jsaccessories.co.uk/products/42749/nitro-mx670-podium-dvs-helmet-satin-black-gun-size-xs-125994-02.jpg?width=568",
+            "image": "nitro-mx670-podium-dvs-helmet-satin-black-gun-size-xs-125994-02.webp"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003090186",
+            "name": "EVOLUTION PRO JACKET BLACK WHITE",
+            "description": "The BKS Evolution Pro black and white leather motorcycle jacket is constructed from premium 1.2mm cowhide. Elasticated accordion leather and highly durable fabric panels give flexibility for ease of movement and feel when riding. Selected panels are perforated for a sustained air flow in all the necessary areas and Neoprene cuffs for ensure maximum comfort. Protection is provided by CE approved armour at the shoulders, elbow, and forearm. A fitted memory foam back protector is upgradeable. There are also external moulded TTP protectors at the shoulders and elbows. BKS Sports branding and a race hump for added aerodynamics complete the racing look. There are two external zipped pockets. Internally, the jacket has a removable washable, quilted, gilet liner, two internal pockets and a 'Napoleon' pocket on the left side. The jacket has a 360 zip to attach to the matching Evolution Pro leather motorcycle jeans and a short zip for attaching compatible denim jeans. The BKS Evolution Pro leather motorcycle jacket and jeans are also available in pure black.",
+            "price": 269.99,
+            "category": 4,
+            "rating": 5.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/26840/bks-evolution-pro-jacket-black-white-size-mens-uk-40-109172-01.jpg?width=568",
+            "image": "bks-evolution-pro-jacket-black-white-size-mens-uk-40-109172-01.webp"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003161326",
+            "name": "EVO RACE WP JACKET BLACK ORANGE",
+            "description": "The Frank Thomas Evo Race WP Sport textile motorcycle jacket is a sports-styled textile jacket that is 100% waterproof thanks to the breathable waterproof membrane. This is suitable for all seasons with a removable thermal liner along with resealable air vents at the shoulders, forearms and back along with cool mesh lining to keep you fresh. The Evo Race WP jacket is fully CE certified and has CE approved armour at the shoulders and elbows, a pocket for a back protector and TPU protectors at the shoulders. The 4-way stretch construction gives added movement and comfort and variable sizing at the arms and waist ensure the perfect fit. This has a dipped rear to prevent wind chill and subtle reflective detailing for added night visibility. A 360-degree connection zip attaches this to matching trousers and this also comes with a phone pocket, Napoleon pocket, internal pocket and two outer zipped pockets. Also available in other colours. This is the black and neon orange colourway - highly visible for added safety.",
+            "price": 99.99,
+            "category": 4,
+            "rating": 4.7,
+            "image_url": "https://assets.jsaccessories.co.uk/products/43264/frank-thomas-evo-race-wp-jacket-black-orange-mens-2xl-127525-01.jpg?width=568",
+            "image": "frank-thomas-evo-race-wp-jacket-black-orange-mens-2xl-127525-01.webp"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003230723",
+            "name": "BLACK JACK JACKET BLACK GREY",
+            "description": "The IXS Black Jack Leather Motorcycle Jacket is made of calf nappa leather which has been treated to make it hydrophobic and features an antiseptic polyester mesh lining, detachable thermal vest with aluminum insert, perforated leather inserts on the shoulders and shoulder blade, shoulders reinforced with ventilated plastic shells, ventilation holes on the back shoulder and forearm, water- and windproof membrane inner jacket is available for retrofitting (APOLLO, X58501-LIN) ergonomically shaped sleeves with spandex inserts, 2 outside and 5 inside pockets, shoulder and elbow protectors satisfy the test standard EN1621-1 and tecnoFoam back cushion (retrofittable back protector PROTECT T (X99556) - complies with the test standard EN1621-2, Level 2)",
+            "price": 149.99,
+            "category": 4,
+            "rating": 4.3,
+            "image_url": "https://assets.jsaccessories.co.uk/products/29979/ixs-black-jack-jacket-black-grey-size-mens-uk-48-89647-01.jpg?width=568",
+            "image": "ixs-black-jack-jacket-black-grey-size-mens-uk-48-89647-01.webp"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003270936",
+            "name": "CRUSADER JACKET BLACK",
+            "description": "The Frank Thomas Crusader leather motorcycle jacket is constructed from premium quality top grain leather and offers vented pocket for back protector, pockets for CE approved armour, retro aviator styling, brass YKK zips, stud fastening at the neck, quilted thermal liner, padding in vulnerable areas, inside breast pocket and short zip to attach to trousers.",
+            "price": 119.99,
+            "category": 4,
+            "rating": 5.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/19892/frank-thomas-crusader-jacket-black-mens-40-93101-01.jpg?width=568",
+            "image": "frank-thomas-crusader-jacket-black-mens-40-93101-01.webp"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003360384",
+            "name": "BACKFIRE JACKET BLACK GREEN",
+            "description": "The Alpinestars Monster Backfire textile motorcycle jacket is a sports jacket with pre-curved sleeves for a more relaxed posture behind the handlebars and flexible stretch panels on the shoulders and elbows for a precise fit and added comfort whilst in use. This also offers ventilation zips on the chest, detachable thermal liner with various pockets, adjustable cuffs and waistband, longer back for chill protection, long connection zip, front perforations for better ventilation, collar and cuffs made of 3D mesh material for added comfort, reflective detailing for added night visibility and race-tested hard shells on the shoulders. The Backfire also features 2 outside pockets, 4 inside pockets + 1 waterproof document pocket, removable, very lightweight Bio Air shoulder and elbow protectors, chest and back compartments with polyester foam padding and a fixed mesh lining.",
+            "price": 249.99,
+            "category": 4,
+            "rating": 4.8,
+            "image_url": "https://assets.jsaccessories.co.uk/products/25455/alpinestars-backfire-jacket-black-green-size-mens-uk-m-105942-01.jpg?width=568",
+            "image": "alpinestars-backfire-jacket-black-green-size-mens-uk-m-105942-01.webp"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003440111",
+            "name": "SUPERFAST PERF JACKET BLACK ANTHRACITE",
+            "description": "The Dainese Superfast Perforated Leather Motorcycle Jacket is constructed from Nappa leather with S1 inserts for ease of movement. These offer composite protectors certified to Standard EN 1621.1 at the shoulders and elbows, Aluminium inserts on the shoulders and the actual jacket itself is certified to CE - Cat. II - 89/686/EEC Directive. The Dainese Superfast Perforated jacket also offers inserts in elasticated fabric, waist adjustment, jacket-trousers fastening system, localised perforation,3D-Bubble lining, TF:TechFrame lining, aerodynamic spoiler, racing styling, , pocket for back protector, pocket for double chest protector, reflective inserts for improved night visibility and 2 outside pockets and 2 internal pockets.",
+            "price": 419.99,
+            "category": 4,
+            "rating": 3.8,
+            "image_url": "https://assets.jsaccessories.co.uk/products/23458/dainese-superfast-perf-jacket-black-anthracite-size-mens-uk-44-101593-01.jpg?width=568",
+            "image": "dainese-superfast-perf-jacket-black-anthracite-size-mens-uk-44-101593-01.webp"
+        }
+    }
+]
