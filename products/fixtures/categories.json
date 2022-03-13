@@ -1,0 +1,130 @@
+[
+    {
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "full_face",
+            "friendly_name": "Full Face"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "flip_front",
+            "friendly_name": "Flip Front"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "motocross_helmets",
+            "friendly_name": "Motocross Helmets"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "jackets",
+            "friendly_name": "Jackets"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "trousers",
+            "friendly_name": "Trousers"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "suits",
+            "friendly_name": "Suits"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "armour",
+            "friendly_name": "Armour"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.category",
+        "fields": {
+            "name": "urban",
+            "friendly_name": "Urban"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.category",
+        "fields": {
+            "name": "touring",
+            "friendly_name": "Touring"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.category",
+        "fields": {
+            "name": "motocross_boots",
+            "friendly_name": "Motocross Boots"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.category",
+        "fields": {
+            "name": "summer",
+            "friendly_name": "Summer"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.category",
+        "fields": {
+            "name": "winter",
+            "friendly_name": "Winter"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.category",
+        "fields": {
+            "name": "motocross_gloves",
+            "friendly_name": "Motocross Gloves"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.category",
+        "fields": {
+            "name": "luggage",
+            "friendly_name": "Luggage"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.category",
+        "fields": {
+            "name": "tools",
+            "friendly_name": "Tools"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.category",
+        "fields": {
+            "name": "sale",
+            "friendly_name": "Sale"
+        }
+    }
+]
