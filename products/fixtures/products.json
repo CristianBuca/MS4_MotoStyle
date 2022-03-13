@@ -838,5 +838,509 @@
             "image_url": "https://assets.jsaccessories.co.uk/products/12113/alpinestars-tech-10-boots-black-size-uk-11-75714-01.jpg?width=568",
             "image": "alpinestars-tech-10-boots-black-size-uk-11-75714-01.webp"
         }
+    },
+    {
+        "pk": 61,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005210241",
+            "name": "IMPETO GLOVES BLACK FLUO YELLOW",
+            "description": "The Dainese Impeto motorcycle gloves are a leather sports glove designed with safety in mind. This is CE approved to Category 2 and is made from highly durable goatskin leather with polyurethane inserts at the knuckles along with goatskin reinforcement at the palm. The cuff is adjustable for the perfect fit with elasticated inserts in key areas for freedom of movement and a great ride. The fingers are pre-curved for a better feel in the riding position and this is available in a choice of colours. This is the black and hi-viz yellow version.",
+            "price": 79.99,
+            "category": 11,
+            "rating": 4.5,
+            "image_url": "https://assets.jsaccessories.co.uk/products/45515/dainese-impeto-gloves-black-fluo-yellow-mens-l-131591-01.jpg?width=568",
+            "image": "dainese-impeto-gloves-black-fluo-yellow-mens-l-131591-01.webp"
+        }
+    },
+    {
+        "pk": 62,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005280104",
+            "name": "SPORT MAX GLOVES BLACK WHITE",
+            "description": "The Akito SportMax Leather Racing waterproof motorcycle gloves in black white are made from full grain leather with thermoplastic knuckle protection, memory foam scaphoid protection and memory foam on the extended cuff and twin stitching in crucial areas give added protection. Silicon printing at the palm gives added grip and short pile micro-fleece comfort lining makes the SportMax glove more comfortable on longer rides. An adjustable Velcro closure system gives the perfect fit and 3M Scotchlite reflective detailing gives added night visibility. Available in other colours.",
+            "price": 29.99,
+            "category": 11,
+            "rating": 5.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/38841/akito-sport-max-gloves-black-white-mens-xs-119524-01.jpg?width=568",
+            "image": "akito-sport-max-gloves-black-white-mens-xs-119524-01.webp"
+        }
+    },
+    {
+        "pk": 63,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005310360",
+            "name": "TRACTECH EVO R CE GLOVES BLACK",
+            "description": "The RST TracTech Evo R CE race glove in black is made from highly durable and abrasion resistant Kangaroo leather but also has Aramid lining, aramid reinforced palm, palm slider and carbon and bio-elastane and knuckle protectors for added protection. Conjoined little finger protection and thumb joint protection gives more durability. Double cuff and wrist closure give the perfect personalised fit and the pre-curved fingers give a comfier (and easier) ride. Out-stitched fingers are another added safety feature.",
+            "price": 89.99,
+            "category": 11,
+            "rating": 5.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/37937/rst-tractech-evo-r-ce-gloves-black-size-mens-xs-117439-03.jpg?width=568",
+            "image": "rst-tractech-evo-r-ce-gloves-black-size-mens-xs-117439-03.webp"
+        }
+    },
+    {
+        "pk": 64,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005330595",
+            "name": "TRACTECH EVO CE 2579 GLOVES BLACK",
+            "description": "RST have taken the incredible Tractech glove and given it the EVO treatment. The RST Tractech EVO leather motorcycle glove is perfect for riders that want a race/sports glove without some of the pure race features you ll find on the Pro Series. The Tractech EVO is a race/sports glove you can wear all day, the strong but lightweight construction gives superb feel and helps keep your hands cool. The glove still has aramid fibre thread, and an aramid re-enforced palm and serious sports credentials like the split carbon knuckle with a premium grade A analine cowhide construction, aramid lined palm panels, double wrist and cuff closure for secure fit Double layer leather in palm area, split Carbon fibre knuckle, Silicon Powergrip on fingers and palm for secure grip, pre-curved fingers, outstitched fingers, conjoined fourth and little fingers and finger joint protection.",
+            "price": 71.99,
+            "category": 11,
+            "rating": 4.9,
+            "image_url": "https://assets.jsaccessories.co.uk/products/17832/rst-tractech-evo-ce-2579-gloves-black-size-mens-l-87987-01.jpg?width=568",
+            "image": "rst-tractech-evo-ce-2579-gloves-black-size-mens-l-87987-01.webp"
+        }
+    },
+    {
+        "pk": 65,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005330596",
+            "name": "103 CIRCUIT GLOVES BLACK WHITE",
+            "description": "The BKS 103 Circuit motorcycle gloves in black and white are a monochrome leather motorcycle glove, ideal for warmer weather, with PU knuckle protectors, PU palm slider and padding at the fingers and thumbs for added impact resistance. Ventilation in key areas provides enhanced air circulation for a comfortable ride along with elastication at the wrist for ease of movement and hook and look fastening for a personalised fit. These have a sporty short cuff design ideally suited to the summer climate. The BKS 103 Circuit gloves are available in other colours and matching items are available.",
+            "price": 39.99,
+            "category": 11,
+            "rating": 4.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/40213/bks-103-circuit-gloves-black-white-mens-m-121851-01.jpg?width=568",
+            "image": "bks-103-circuit-gloves-black-white-mens-m-121851-01.webp"
+        }
+    },
+    {
+        "pk": 66,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005430914",
+            "name": "FT88 RIDDING GLOVES BLACK BLUE ",
+            "description": "The Frank Thomas FT88 Ridding motorcycle gloves in black and blue are a short textile summer glove. These lightweight motorbike gloves have rubber knuckle and finger protectors. The palm has a soft grip finish for better feel when riding. A Velcro wrist strap ensures the perfect fit. Ideal for summer riding or motocross, the Frank Thomas FT88 Ridding gloves are also available in black or black and red.",
+            "price": 29.99,
+            "category": 11,
+            "rating": 4.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/30491/frank-thomas-ft88-ridding-gloves-black-blue-size-mens-l-110361-01.jpg?width=568",
+            "image": "frank-thomas-ft88-ridding-gloves-black-blue-size-mens-l-110361-01.webp"
+        }
+    },
+    {
+        "pk": 67,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005430944",
+            "name": "FT-02 CAT 2 GLOVES BLACK",
+            "description": "The Frank Thomas FT02 Winter Motorcycle Gloves are a category 2 CE approved glove constructed from full grain leather and feature pre curved fingers, integrated knuckle/dual density rubber for general impact protection, stretch panels for ease of control, cuff & wrist straps for secure fit, Scaphoid reinforcement, Schoeller Keprotec for abrasion resistance, double leather reinforcements in high impact areas, Silicon layers anti-slip palm, waterproof, windproof and breathable membrane, thermal insulation and integrated rubber visor wipe.",
+            "price": 59.99,
+            "category": 12,
+            "rating": 4.5,
+            "image_url": "https://assets.jsaccessories.co.uk/products/17692/frank-thomas-ft-02-cat-2-gloves-black-mens-2xl-87618-03.jpg?width=568",
+            "image": "frank-thomas-ft-02-cat-2-gloves-black-mens-2xl-87618-03.webp"
+        }
+    },
+    {
+        "pk": 68,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005510265",
+            "name": "01-17 WP GLOVES BLACK YELLOW",
+            "description": "The Frank Thomas 01-17 WP black/yellow motorcycle gloves are a waterproof glove constructed from leather and textile mix in a gauntlet styling for maximum weather and impact protection. These have moulded hard protectors at the knuckles with double layer leather in vulnerable areas for added protection as well as double layer leather at the palms. The 01-17 WP gloves have a comfort liner, mesh inserts for ventilation, added grip at the palms. Zip and Velcro closure system and subtle Frank Thomas reflective logos for added night visibility.",
+            "price": 49.99,
+            "category": 12,
+            "rating": 4.7,
+            "image_url": "https://assets.jsaccessories.co.uk/products/33194/frank-thomas-01-17-wp-gloves-black-yellow-size-mens-m-111267-01.jpg?width=568",
+            "image": "frank-thomas-01-17-wp-gloves-black-yellow-size-mens-m-111267-01.webp"
+        }
+    },
+    {
+        "pk": 69,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005520201",
+            "name": "SHELL GLOVES CAMO",
+            "description": "The Richa Shell leather motorcycle gloves offer a short cuff design with hardwearing goatskin construction with Aramid-fibre interior reinforced panels. A waterproof Aquashell LTZ membrane keeps your hands dry, and softshell upper hand fabric provides flexibility and windproofing for superior comfort. A tri-fleece lining gives added warmth, and stretch neoprene inserts offer enhanced flexibility. Double wrist closure delivers a secure and adjustable closure.",
+            "price": 49.99,
+            "category": 12,
+            "rating": 4.3,
+            "image_url": "https://assets.jsaccessories.co.uk/products/54711/richa-shell-gloves-camo-no-size-150940-01.jpg?width=568",
+            "image": "richa-shell-gloves-camo-no-size-150940-01.webp"
+        }
+    },
+    {
+        "pk": 70,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005520205",
+            "name": "ADVENTURE GLOVES GREY SILVER BLACK",
+            "description": "The IXS Adventure motorcycle gloves are an endurance glove made of goatskin leather and textile mix with a waterproof and breathable SoltoTEX membrane and tri-fleece inner lining. These feature TPR mouldings on the fingers, rubber lip on left thumb to wipe the helmet visor, finger stretch, knuckle padding in leather, touchscreen-friendly index fingertip, back of hand with ventilation zip, palm made of leather, thumb span and palm with double layers of microfibre material, ball of the hand with double layer of leather and padding, wrist stretch adjustable with Velcro, width adjustable cuffs with Velcro fastener, cuff padding and these fulfil the requirements of the directive N° 89/686/EEC.",
+            "price": 59.99,
+            "category": 12,
+            "rating": 4.2,
+            "image_url": "https://assets.jsaccessories.co.uk/products/25682/ixs-adventure-gloves-grey-silver-black-size-mens-l-106687-01.jpg?width=568",
+            "image": "ixs-adventure-gloves-grey-silver-black-size-mens-l-106687-01.webp"
+        }
+    },
+    {
+        "pk": 71,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005630545",
+            "name": "TRACTECH EVO CE 2583 WP GLOVES BLACK",
+            "description": "The RST Tractech Evo CE 2583 motorcycle glove is constructed from premium grade A analine cowhide, has pre-curved fingers with Silicon Powergrip, conjoined fourth and little fingers, split carbon knuckles, aramid re-enforced palm panels and a double wrist and cuff closure for a secure fit.",
+            "price": 71.99,
+            "category": 12,
+            "rating": 4.3,
+            "image_url": "https://assets.jsaccessories.co.uk/products/21100/rst-tractech-evo-ce-2583-wp-gloves-black-size-mens-l-95993-01.jpg?width=568",
+            "image": "rst-tractech-evo-ce-2583-wp-gloves-black-size-mens-l-95993-01.webp"
+        }
+    },
+    {
+        "pk": 72,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005630605",
+            "name": "MONDIAL SHORT MS GLOVES TECH GREEN",
+            "description": "The Oxford Products Mondial Short MS motorcycle gloves are a short cuff men's motorcycle glove made from full leather with a Dry2DryT waterproof and breathable laminate. These are CE approved with moulded PU knuckle protectors, TPR finger protectors and SuperFabricT palm protection for added abrasion resistance. Accordion detailing gives added movement for a comfier ride and adjustability and elasticised detailing provides the perfect fit at the cuffs. Touchscreen compatibility is a handy addition along with a TPR visor wipe. Also available in other colours. This is the Tech Green colourway.",
+            "price": 89.99,
+            "category": 12,
+            "rating": 4.6,
+            "image_url": "https://assets.jsaccessories.co.uk/products/45648/oxford-products-mondial-short-ms-gloves-tech-green-size-mens-s-131798-01.jpg?width=568",
+            "image": "oxford-products-mondial-short-ms-gloves-tech-green-size-mens-s-131798-01.webp"
+        }
+    },
+    {
+        "pk": 73,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005630637",
+            "name": "NEO MOTO GLOVES BLACK",
+            "description": "The Alpinestars Neo Moto motorcycle gloves offer a Clarino synthetic leather palm construction for grip and comfort with rubberised finger tips, anatomical palm side-seam for precise fit and sensitivity, Neoprene at the back of the hand for great insulation in cold and damp conditions, elastic and Velcro wrist closure for a comfortable and secure fit and sonic protection and logos to prevent thread puncture holes.",
+            "price": 29.99,
+            "category": 13,
+            "rating": 4.7,
+            "image_url": "https://assets.jsaccessories.co.uk/products/21531/alpinestars-neo-moto-gloves-black-mens-m-98446-01.jpg?width=568",
+            "image": "alpinestars-neo-moto-gloves-black-mens-m-98446-01.webp"
+        }
+    },
+    {
+        "pk": 74,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005630638",
+            "name": "ANNEX 7 DOT MX GLOVES CHARCOAL",
+            "description": "The Seven Annex Dot MX glove offers a sublimated 4-way stretch construction that is ultra-durable and comfortable with a plush airprene cuff with adjustable Velcro closure for a secure and adjustable fit. A durable Clarino palm reduces wear and media stitches at the thumb and index fingers allow use with touch screens. Available in a choice of colours with matching items available.",
+            "price": 29.99,
+            "category": 13,
+            "rating": 4.2,
+            "image_url": "https://assets.jsaccessories.co.uk/products/54990/seven-annex-7-dot-mx-gloves-charcoal-mens-s-151716-01.jpg?width=568",
+            "image": "seven-annex-7-dot-mx-gloves-charcoal-mens-s-151716-01.webp"
+        }
+    },
+    {
+        "pk": 75,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005650677",
+            "name": "DIRTPAW GLOVES FLO RED",
+            "description": "The Fox Dirtpaw MX Gloves are the evolution of the ever-popular Dirtpaw gloves that are motocross gloves with TPR injected knuckle armour and durable nylon construction. Stretch mesh finger gussets increase airflow and freedom of movement, and a padded single layer Clarino at the palm provide added feedback plus the fingertips are touch screen compatible. Silicone at the fingers give added grip, and these are secured with compressed moulded neoprene cuffs with hook and loop closure for a variable and secure fit. Available in a choice of colours - this is the fluorescent red colourway. Be safe, be seen.",
+            "price": 32.99,
+            "category": 13,
+            "rating": 4.4,
+            "image_url": "https://assets.jsaccessories.co.uk/products/53047/fox-dirtpaw-gloves-flo-red-default-title-146029-01.jpg?width=568",
+            "image": "fox-dirtpaw-gloves-flo-red-default-title-146029-01.webp"
+        }
+    },
+    {
+        "pk": 76,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005700140",
+            "name": "WHITE LABEL BLISS GLOVES BLOOD ORANGE",
+            "description": "The Shift White Label Bliss MX gloves are ideal for off-road riding with silicone prints on the fingertips for extra grip. 4-way stretch nylon at the top of the hand provide excellent freedom of movement. A padded single layer palm offers comfort and protection, and a compression moulded cuff with a hook and loop closure system gives a secure fit. Available in a choice of colours.",
+            "price": 25.00,
+            "category": 13,
+            "rating": 5.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/50282/shift-white-label-bliss-gloves-blood-orange-size-mens-uk-s-139975-01.jpg?width=568",
+            "image": "shift-white-label-bliss-gloves-blood-orange-size-mens-uk-s-139975-01.webp"
+        }
+    },
+    {
+        "pk": 77,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005740430",
+            "name": "ADULTS CONTACT GLOVES ROCKSTAR",
+            "description": "The Shot Contact motocross gloves are off-road gloves constructed from Nylon Super-Mesh and Liteprene. These MX gloves feature Lycra finger gussets, reinforced anatomic soft palm in suede, silicon finger tips for better grip, Velcro adjustable wrist closure, sublimated spandex and TPR patches for added protection.",
+            "price": 32.99,
+            "category": 13,
+            "rating": 4.7,
+            "image_url": "https://assets.jsaccessories.co.uk/products/25206/shot-adults-contact-gloves-rockstar-size-mens-2xl-105241-01.jpg?width=568",
+            "image": "shot-adults-contact-gloves-rockstar-size-mens-2xl-105241-01.webp"
+        }
+    },
+    {
+        "pk": 78,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005740561",
+            "name": "VENTURE R V2 GLOVES BLACK WHITE",
+            "description": "The Alpinestars Venture R V2 Glove is a lightweight short-cuff off-road glove and the newest version of the ever-popular Alpinestars Venture R glove. This Venture R V2 (version 2) glove is made from stretch textile and mesh with palm perforation for optimum air circulation. A synthetic suede palm gives added durability alongside a padded side reinforcement, PU laser lamination on the backhand and 2mm padding on the fingers. gRIP laser lamination on the palm and fingers give optimal grip while ergonomic stretch inserts on the palm provide freedom of movement—a choice of colours and matching items available.",
+            "price": 31.49,
+            "category": 13,
+            "rating": 4.6,
+            "image_url": "https://assets.jsaccessories.co.uk/products/47825/alpinestars-venture-r-v2-gloves-black-white-size-mens-m-136177-01.jpg?width=568",
+            "image": "alpinestars-venture-r-v2-gloves-black-white-size-mens-m-136177-01.webp"
+        }
+    },
+    {
+        "pk": 79,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005740634",
+            "name": "T30R TAILPACK RED",
+            "description": "The Oxford Products T30R Tailpack is a motorcycle tail bag with a universal base. This is made from highly durable yet lightweight Ripstop Nylon and converts into a backpack for easy transportation off the bike. This has secure mounting points with a 5-point secure fitting system, a 30-litre capacity and a key pocket. Zipped pockets throughout give you a multitude of options for storage and this is also available in other colours.",
+            "price": 119.99,
+            "category": 14,
+            "rating": 4.5,
+            "image_url": "https://assets.jsaccessories.co.uk/products/44812/oxford-products-t30r-tailpack-red-t30r-tailpack-red-130349-01.jpg?width=568",
+            "image": "oxford-products-t30r-tailpack-red-t30r-tailpack-red-130349-01.webp"
+        }
+    },
+    {
+        "pk": 80,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005760088",
+            "name": "ALPHA EXPAND SIDE BAGS 16-25L DARK GREY",
+            "description": "The Kappa Alpha Expand Side Bags are soft expandable panniers for your motorcycle with a universal fit. These come with a rain cover for weather protection as well as different pockets for convenience. Reflective detailing gives added night visibility, and these have anti-slip and anti-scratch fabric on the rear to protect your paintwork. These hold 16-25 litres and measure 29 CMs x 15/25 CMs x 45 CMs. To mount this to your bike these come with adjustable hook and loop fastening straps and two elasticated straps for securing to the bike. These also come with a handy shoulder strap for transportation off the bike!",
+            "price": 99.99,
+            "category": 14,
+            "rating": 5.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/39945/kappa-alpha-expand-side-bags-16-25l-dark-grey-dark-grey-121385-01.jpg?width=568",
+            "image": "kappa-alpha-expand-side-bags-16-25l-dark-grey-dark-grey-121385-01.webp"
+        }
+    },
+    {
+        "pk": 81,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005810108",
+            "name": "P50R PANNIERS BLUE",
+            "description": "The Oxford P50R Panniers OL317 in blue are an extremely versatile set of motorcycle panniers providing 50 litres of storage. These feature a universal fit, full fitting instructions (and come complete with everything you need) map holder, sat nav pocket for smart phones and GPS devices with an anti-glare shield, key pocket, electrical outlet, headstock safety strap, elasticated net for extra storage, 360 degree opening zips for easy access, internal net pockets, shoulder straps, heat resistant base, rubberised side panels to protect paintwork and 7 point secure fitting system.",
+            "price": 159.99,
+            "category": 14,
+            "rating": 4.7,
+            "image_url": "https://assets.jsaccessories.co.uk/products/45120/oxford-products-p50r-panniers-blue-p50r-panniers-blue-123196-01.jpg?width=568",
+            "image": "oxford-products-p50r-panniers-blue-p50r-panniers-blue-123196-01.webp"
+        }
+    },
+    {
+        "pk": 82,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005820197",
+            "name": "AQUA T8 TAIL BAG BLACK GREY FLUO",
+            "description": "The Oxford Products Aqua T8 Tail Bag in grey, black and fluorescent yellow OL465 has an 8-litre capacity and is made from a wipe clean, waterproof construction with welded seams and has a waterproof roll top closure with compression strap. This also has an external pocket with window section and a pocket with water resistant zip for small items. The Aqua T8 has an easy grab moulded carry handle and a unique attachment system for motorcycles featuring under seat security strap as well as a taillight attachment system. This also has reflective detailing for added night visibility. The ideal motorcycle luggage",
+            "price": 49.99,
+            "category": 14,
+            "rating": 4.9,
+            "image_url": "https://assets.jsaccessories.co.uk/products/49139/oxford-products-aqua-t8-tail-bag-black-grey-fluo-black-grey-fluo-130357-01.jpg?width=568",
+            "image": "oxford-products-aqua-t8-tail-bag-black-grey-fluo-black-grey-fluo-130357-01.webp"
+        }
+    },
+    {
+        "pk": 83,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005840598",
+            "name": "FUSION BAG BLACK RED",
+            "description": "The Furygan Fusion bag is motorcycle luggage with a sleek and stylish ‘hump’ design for added aerodynamics. This has a sports racing design with lots of features for touring…hence the fusion. The Fusion has a spacious main compartment and multiple pockets including a padded laptop compartment suitable for a 15'' laptop screen. It also comes with a removable waterproof bag that fits in a specific pocket to ensure your belongings stay waterproof. For added safety in the riding position, and added peace of mind for the rider this has a removable and adjustable chest and waist strap where one size fits all and pass-straps to hang the bag easily to your bike, when not in use, or to fix a helmet to the bag with a helmet net. Reflective detailing gives added night visibility. Also available in other colours.",
+            "price": 79.99,
+            "category": 14,
+            "rating": 5.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/43010/furygan-fusion-bag-black-red-black-red-126635-01.jpg?width=568",
+            "image": "furygan-fusion-bag-black-red-black-red-126635-01.webp"
+        }
+    },
+    {
+        "pk": 84,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005840776",
+            "name": "BACKPACK - TRAIL 18 ORANGE",
+            "description": "Kriega luggage is renowned in the biking community for its premium quality and longevity. The Kriega Trail 18 Adventure Backpack is a dual-sport/adventure rucksack made from ultra-durable 420D Cordura Lite Plus and Hypalon with a Quadloc-Lite Harness that transfers weight from the shoulders to the chest and body, giving all-day comfort when riding. A semi-rigid carry handle provides ease of transportation off the bike and the shoulders. The Trail18 bag comes with an 11-litre guaranteed waterproof roll-top main body and a separate 5-litre zip-access hydration compartment, with the choice of three compatible hydration reservoir sizes available (sold separately). An air mesh back panel keeps you comfortable, along with a removable waist strap for added stability when riding. An External Hypalon net with an elastic cord adds practical extra storage, while reflective panels on the harness give added visibility. The Trail 18 is also Kriega Harness pocket compatible and available in various colours; this is the orange and black colourway. In addition, it has an impressive 10-year guarantee.",
+            "price": 179.00,
+            "category": 14,
+            "rating": 5.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/47738/kriega-backpack-trail-18-orange-orange-135955-01.jpg?width=568",
+            "image": "kriega-backpack-trail-18-orange-orange-135955-01.webp"
+        }
+    },
+    {
+        "pk": 85,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005850180",
+            "name": "DRYER SINGLE TURBINE MD1900+",
+            "description": "The Bruhl Dryer Single Turbine MD1900+ is a small and compact dryer that blows water out of hard to reach places with powerful force. This reaches places quickly and efficiently after washing so you can then start on polishing. This has variable temperature settings and makes easy work of drying. The temperature output is from cool to hot air and this means no more water marks! Not just for aesthetic benefits, this also helps prevent corrosion. The MD1900+ model has AC240V and 1400W of power.",
+            "price": 139.99,
+            "category": 15,
+            "rating": 4.2,
+            "image_url": "https://assets.jsaccessories.co.uk/products/45082/bruhl-dryer-single-turbine-md1900-dryer-single-turbine-md1900-116927-01.jpg?width=568",
+            "image": "bruhl-dryer-single-turbine-md1900-dryer-single-turbine-md1900-116927-01.webp"
+        }
+    },
+    {
+        "pk": 86,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005851218",
+            "name": "DIGI TYRE PRESSURE GAUGE CURVE ",
+            "description": "The Bike It Premium Digital Tyre Pressure Gauge TGUDIG02 is a small and compact tyre pressure gauge that is easy to use and has selectable PSI and BAR settings. Pressure range is 2-99PSI, 0.15-7.00 BAR.",
+            "price": 12.99,
+            "category": 15,
+            "rating": 4.1,
+            "image_url": "https://assets.jsaccessories.co.uk/products/39504/bike-it-digi-tyre-pressure-gauge-curve-digi-tyre-pressure-gauge-curve-74370-01.jpg?width=568",
+            "image": "bike-it-digi-tyre-pressure-gauge-curve-digi-tyre-pressure-gauge-curve-74370-01.webp"
+        }
+    },
+    {
+        "pk": 87,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005860175",
+            "name": "4 DUAL GLOBAL 1A",
+            "description": "The TecMate OptiMate 4 1A is the latest version of the high frequency motorcycle battery charger. This was the first to solve the problem of the BMW rider periodically having to turn on the key to re-activate their battery maintainer to prevent their battery running down; OptiMate 4’s keyless program communicated seamlessly with the BMW control and guaranteed 24-7 maintenance without the need of supervision. This has a keyless entry and can save a battery from as low as 0.5V. This also delivers 1 Amp of charge current and visual LED instructions on the charger itself for clear indication of charging progress. This is very easy to use and highly useful to own for your garage!",
+            "price": 69.99,
+            "category": 15,
+            "rating": 4.8,
+            "image_url": "https://assets.jsaccessories.co.uk/products/44609/optimate-4-dual-global-1a-4-dual-global-1a-108793-01.jpg?width=568",
+            "image": "optimate-4-dual-global-1a-4-dual-global-1a-108793-01.webp"
+        }
+    },
+    {
+        "pk": 88,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005860263",
+            "name": "PLATFORM LIFT JACK BLACK",
+            "description": "The Bike It Premium Lift Jack raises motorcycles with either a flat base or with a tubular frame. The scissor-lift is hand-operated for ease of use and precision and raises the top-platform from a height of 100mm to 340mm. The platform measures 450mm x 150mm, and this comes with two width and height-adjustable support struts with rubber protective inlays. These struts are removable for lifting flat-based bikes. Enormously useful.",
+            "price": 119.99,
+            "category": 15,
+            "rating": 4.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/48116/bike-it-platform-lift-jack-black-platform-lift-jack-black-101413-01.jpg?width=568",
+            "image": "bike-it-platform-lift-jack-black-platform-lift-jack-black-101413-01.webp"
+        }
+    },
+    {
+        "pk": 89,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005870183",
+            "name": "PRESSURE WASHER MOTO BUNDLE",
+            "description": "Muc Off's pressure washer was designed and built purely for cleaning bicycles and motorcycles. The Muc-Off Pressure Washer Moto Bundle includes all you need to get your motorcycle sparkling clean whilst protecting delicate surfaces and parts. The Muc-Off pressure washer comes with three lances for specific needs along with a Snow Foam Lance to transform NanoTech Motorcycle Cleaner into the ultimate dirt destroyer. It comes housed in a waterproof Dry Bag with a 1 Litre bottle of NanoTech Motorcycle Cleaner and a 1 Litre concentrate refill, Muc-Off Motorcycle Protectant and a luxury Microfibre cloth for a sparkling finish! Just plug into a power source and you're ready to give your bike a real deep clean!",
+            "price": 169.99,
+            "category": 15,
+            "rating": 5.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/55071/muc-off-pressure-washer-moto-bundle-pressure-washer-moto-bundle-151945-02.jpg?width=568",
+            "image": "muc-off-pressure-washer-moto-bundle-pressure-washer-moto-bundle-151945-02.webp"
+        }
+    },
+    {
+        "pk": 90,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005870599",
+            "name": "TOOL KIT PRO",
+            "description": "The Oxford Products Toolkit Pro is a 27 piece premium tool kit which includes: 10 piece screwdriver bit set, adjustable mini spanner, extension bar, five-piece hex key set (6mm-2mm) mini wire cutters, screwdriver handle, mini needle nose pliers, mini ratchet handle, cable ties and sockets from 8mm – 14mm. These all fit in a handy case under your seat!",
+            "price": 29.99,
+            "category": 15,
+            "rating": 4.4,
+            "image_url": "https://assets.jsaccessories.co.uk/products/49105/oxford-products-tool-kit-pro-tool-kit-pro-123419-01.jpg?width=568",
+            "image": "oxford-products-tool-kit-pro-tool-kit-pro-123419-01.webp"
+        }
+    },
+    {
+        "pk": 91,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005870638",
+            "name": "BULLITT SCHULTZ CENTURY HELMET SILVER ",
+            "description": "The Bell Bullitt Schultz Century Silver motorcycle helmet is a limited-edition colourway on the Bell Bullitt Shell. Inspired by the very first Bell Star helmet, the Bell Bullitt full face motorcycle helmet is a modern take on the original. Featuring an exceptional fit and ultra-high-quality details, the Bullitt is the perfect helmet for riders looking for a vintage look with full-face protection. This is 100% ECE approved and is made using the exact same technology as Bells more modern helmet designs. This offers ultra-low-profile fibre composite shell, multi-density EPS liner, removable, washable and anti-bacterial interior, perforated micro-suede interior fabric with leather trim, padded chin strap with stainless steel D-Ring closure with leather pull tab, 3 shell 3 EPS system, 5 Metal Mesh intake vents with 1 rear exhaust vent, 3D Cut cheek pads with speaker pockets, Magnefusion shield closure system, accessory visors available for personalised look and a weight of 1400g. This comes with a clear visor (fitted) and a flat silver iridium visor.",
+            "price": 249.99,
+            "category": 16,
+            "rating": 4.4,
+            "image_url": "https://assets.jsaccessories.co.uk/products/45426/bell-bullitt-schultz-century-helmet-silver-s-55-56-cm-131454-02.jpg?width=568",
+            "image": "bell-bullitt-schultz-century-helmet-silver-s-55-56-cm-131454-02.webp"
+        }
+    },
+    {
+        "pk": 92,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005910565",
+            "name": "SMX-6 V2 BOOTS BLACK GUN METAL BLUE",
+            "description": "The SMX-6 V2 motorcycle boot in black gun and metallic blue is a performance boot for track and street. These have been anatomically profiled and are CE certified. These feature innovative front, rear bellow and rear calf zones for superior levels of flexibility. The main upper is constructed from advanced Microfibre for added durability and abrasion resistance and offer a dual compound removable anatomic footbed which includes EVA and Lycra for performance, comfort and support. The SMX-6 V2 are ergonomically designed for a comfier but more streamlined ride giving you greater control. These also offer Alpinestars' innovative TPU lateral ankle brace protection which a biomechanical support between lateral top calf/shin and ankle for improved structural integrity, and protection against impact shocks, repeated abrasion resistance and flex support. Alpinestars' new and exclusive compound rubber sole promotes improved feel and grip, water dispersion and durability with air vents on the heel counter and shin plate to improve cooling and high modulus TPU injected shin guard, calf protector, heel counter, shift pad and toe slider for improved shock protection and durability. Double density ankle protector on medial side layered under the upper offers protective performance in key area, integrated, replaceable bi-injected TPU sliders, instep and Achilles accordion flex zone and internal insole with the shank reinforcement integrated for support to the arch area and foot protection. The SMX-6 V2 also offers medial side entry opening/closure system with elastic-mounted zip and wide Velcro closure for flexibility and secure fit. The aperture opening is large to promote easier entry/exit. The internal toe box protection is layered under the upper for durability, improved feel and performance. This is available in other colours.",
+            "price": 139.99,
+            "category": 16,
+            "rating": 4.3,
+            "image_url": "https://assets.jsaccessories.co.uk/products/39576/alpinestars-smx-6-v2-boots-black-gun-metal-blue-mens-3-eu-36-120887-01.jpg?width=568",
+            "image": "alpinestars-smx-6-v2-boots-black-gun-metal-blue-mens-3-eu-36-120887-01.webp"
+        }
+    },
+    {
+        "pk": 93,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005930313",
+            "name": "360 CREO PANTS RED",
+            "description": "The Fox 360 Creo Red MX Pants are a motocross trouser cut in a RAP (rider attack Position) for a precise sporty fit on the bike. Constructed with 900D Polyester with zonal TruMotion panels for ease of movement and a comfortable fit these also have laser-perforations and vented TPR logos in key zones. TruMotion is a mix of durable stretch woven fabric and Spandex with a rapid dry time. Fox’s double layer knee system with full grain cow leather knee panels backed with abrasion resistant material give added durability. A thin hem at cuff eliminates bulk in boot and triple needle stitching in critical areas give you great confidence and matching items are available. These are also available in Creo Orange.",
+            "price": 79.99,
+            "category": 16,
+            "rating": 4.9,
+            "image_url": "https://assets.jsaccessories.co.uk/products/34352/fox-360-creo-pants-red-mens-28-112742-01.jpg?width=568",
+            "image": "fox-360-creo-pants-red-mens-28-112742-01.webp"
+        }
+    },
+    {
+        "pk": 94,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005940242",
+            "name": "STREET DRAK HELMET MATT BLACK",
+            "description": "The Shark Street Drak motorcycle helmet is a versatile helmet with an aggressive street fighter jet styling. This comes with goggles with an ultra-thin frame making it lightweight (yet durable) with a full vision double anti-fog visor that doesn't impede your vision. Constructed from injected thermoplastic resin the Street Drak is strong and lightweight with an easy clip fastening between the goggles and helmets - easy to change. The 4-A antibacterial micro-tech interior provides superior comfort and glasses grooves make use with glasses a breeze! This also offers a micro lock buckle closure system and is available in different designs and colours. This is the plain black version in a matt colourway.",
+            "price": 179.99,
+            "category": 16,
+            "rating": 3.7,
+            "image_url": "https://assets.jsaccessories.co.uk/products/38263/shark-street-drak-helmet-matt-black-m-57-58-cm-118145-02.jpg?width=568",
+            "image": "shark-street-drak-helmet-matt-black-m-57-58-cm-118145-02.webp"
+        }
+    },
+    {
+        "pk": 95,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005940299",
+            "name": "ZUMO XT GPS",
+            "description": "The Garmin Zumo XT GPS satellite navigation is an all-terrain GPS for motorcycles - ideal for everyone! The display is ultra-bright and measures 5.5 inches and is easy to see in all conditions. It is rain-resistant and glove-friendly and withstands all kinds of weather, extreme temperatures and vibrations. Get adventurous routes with turn-by-turn directions for on-road navigation and topographic or BirdsEye Satellite Imagery for off-road guidance — no subscription needed. Rider alerts help prepare you for sharp curves and railroad crossings. Easily manage and review routes, tracks and waypoints across your navigator, smartphone and computer using Garmin Explore. Pair with a compatible inReach satellite communicator (sold separately) for interactive SOS, two-way messaging and location sharing. The build is rugged and ultra-durable. The battery lasts for up to 6 hours, with 100% brightness and longer with the shine dimmed. Maps are preloaded for instant access for all of Europe- on-road and off-road! Map updates are included. This is very easy to use and switch between viewpoints etc. so you can tailor the perfect view for your trip – plus you can choose between fastest route, best twists and turns etc. Each route can be tracked and recorded to save or share for future use – this can be shared by the Garmin Drive app. It also can show you TripAdvisor traveller ratings for local attractions! Rider alerts give you updates on local hazards/traffic problems to help you avoid any delay and you can also receive verbal directions in easier to hear areas. Music can also be streamed through your sat nav plus you can use hands-free calling and pair with other Garmin sat navs. The box contains the Zumo XT, motorcycle mount and hardware, motorcycle power cable, automotive suction cup mount, automotive power cable, charging/data cable and documentation.",
+            "price": 386.98,
+            "category": 16,
+            "rating": 5.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/47488/garmin-zumo-xt-gps-zumo-xt-gps-135597-01.jpg?width=568",
+            "image": "garmin-zumo-xt-gps-zumo-xt-gps-135597-01.webp"
+        }
+    },
+    {
+        "pk": 96,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005941612",
+            "name": "BIONIC ACTION JACKET BLACK RED",
+            "description": "The Alpinestars Bionic Action Jacket has CE certified protection mixed with an engineered ergonomic design for complete protection. This is lightweight with adjustability throughout to give the best fit. This is constructed from durable elastane mesh and can be integrated with Alpinestars Bionic Neck Supports. Each jacket is vented and channelled to improve airflow and prevent heat build-up and improve comfort. Plates lock to prevent overextension of the back and kidney belt to tighten the back protector to the body and protect your kidneys from windchill. Premium auto-lock YKK zip closure system and shoulder reinforcement for BNS attachment and position stability of protector mean this offers premium comfort and protection as well as CE level 1 shoulder and elbow protectors, level 1 back protector and level 2 divided chest protector.",
+            "price": 159.99,
+            "category": 16,
+            "rating": 5.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/37813/alpinestars-bionic-action-jacket-black-red-mens-m-111775-01.jpg?width=568",
+            "image": "alpinestars-bionic-action-jacket-black-red-mens-m-111775-01.webp"
+        }
     }
 ]
