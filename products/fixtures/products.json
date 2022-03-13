@@ -334,5 +334,509 @@
             "image_url": "https://assets.jsaccessories.co.uk/products/23458/dainese-superfast-perf-jacket-black-anthracite-size-mens-uk-44-101593-01.jpg?width=568",
             "image": "dainese-superfast-perf-jacket-black-anthracite-size-mens-uk-44-101593-01.webp"
         }
+    },
+    {
+        "pk": 25,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003540313",
+            "name": "TRACTECH EVO 4 CE JEANS BLACK",
+            "description": "The RST Tractech Evo 4 CE Leather motorcycle jeans 2358 are a racing jean with a CE certification of AAA made from cowhide leather with Samtex leather stretch panels for ease of movement and comfort. These come with Level 2 CE approved hip armour and Level 1 knee armour along with Coates Bonded Nylon triple stitching throughout for superior impact resistance. A 360-degree zip attaches to matching jackets and these feature fixed comfort mesh lining to keep you fresh along with perforated areas for air circulation. Max zips are used throughout.",
+            "price": 229.99,
+            "category": 5,
+            "rating": 3.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/44289/rst-tractech-evo-4-ce-jeans-black-size-mens-uk-28-128707-01.jpg?width=568",
+            "image": "rst-tractech-evo-4-ce-jeans-black-size-mens-uk-28-128707-01.webp"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003560513",
+            "name": "BLADE II 1846-7-8 JEANS BLACK",
+            "description": "The RST Blade II leather motorcycle jeans come in different leg lengths and are constructed from full grain 1.1mm to 1.3mm cowhide leather. These feature 4 Way stretch for a comfortable ride and ease of movement, perforated leather in relevant areas, fixed mesh lining, RST Contour Plus CE knee armour, RST knee sliders, pocket for optional RST Contour plus CE hip protectors, 360 connection zip to connect to jackets, stretch comfort panels, adjustable waistband, one outer Pocket, double layer leather at seat area, double and triple stitched seams with heavy duty bonded Nylon thread and Max Zips used throughout.",
+            "price": 209.99,
+            "category": 5,
+            "rating": 4.4,
+            "image_url": "https://assets.jsaccessories.co.uk/products/24626/rst-blade-ii-1846-7-8-jeans-black-size-mens-uk-32-103933-01.jpg?width=568",
+            "image": "rst-blade-ii-1846-7-8-jeans-black-size-mens-uk-32-103933-01.webp"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003560948",
+            "name": "INDO 2 TROUSERS BLACK ",
+            "description": "The ARMR Indo 2 trousers are lightweight motorcycle pants ideal for summer riding and warm weather. Thanks to vents, the loose fit allows for fantastic movement and flexibility and superior air circulation. Despite these being ideal for Summer, they also feature a full waterproof lining. Belt loops and a zip and button fly provide a casual look, plus the Indo 2 trousers offer a plethora of pockets.",
+            "price": 99.99,
+            "category": 5,
+            "rating": 5.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/55215/armr-indo-2-trousers-black-no-size-152330-01.jpg?width=568",
+            "image": "armr-indo-2-trousers-black-no-size-152330-01.webp"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003570628",
+            "name": "APALACHES PANTS BLACK GREY RED ",
+            "description": "The Furygan Apalaches textile motorcycle pant is a versatile and protective motorcycle pant with CE approved armour at the knees. It has a waterproof and breathable liner along with a removable thermal lining and AVS ventilation system, making this suitable for all seasons and climates. The Apalaches pants have adjustable hems and connecting zips to fit Richa textile jackets and adjustability at the waist. Stretch material between the legs and above the knees give added movement and comfort whilst on the bike. Available in a choice of colours with matching items available.",
+            "price": 199.99,
+            "category": 5,
+            "rating": 4.3,
+            "image_url": "https://assets.jsaccessories.co.uk/products/53176/furygan-apalaches-pants-black-grey-red-mens-l-146925-02.jpg?width=568",
+            "image": "furygan-apalaches-pants-black-grey-red-mens-l-146925-02.webp"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003620308",
+            "name": "ATLAS CE TEXTILE JEANS FLO YELLOW BLACK GREY",
+            "description": "The RST Atlas CE Textile Jean are the idea touring or commuter trouser. Made from highly durable MaxTex with 4 way stretch for ease of movement and comfort. The Atlas jeans have a CE certification Rating A with CE level 1 armour at the knees and pockets for hip armour. These are fully waterproof thanks to the fixed SinAqua lining and have a removable quilted lining for colder weather and vents on the legs for optional optimum airflow. Adjustability at the waist gives the perfect fit and reflective detailing provides maximum night visibility. Max zips are used throughout plus this also comes with a 360-degree zip to connect to RST jackets. This is the hi-viz flo yellow black and grey colourway. Other colours and matching items are available.",
+            "price": 129.99,
+            "category": 5,
+            "rating": 4.6,
+            "image_url": "https://assets.jsaccessories.co.uk/products/45774/rst-atlas-ce-textile-jeans-flo-yellow-black-grey-size-mens-uk-30-132293-01.jpg?width=568",
+            "image": "rst-atlas-ce-textile-jeans-flo-yellow-black-grey-size-mens-uk-30-132293-01.webp"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "products.product",
+        "fields": {
+            "sku": "PATHFINDER CE JEANS GREY RED",
+            "name": "Home Expressions Jacobean Stripe Oblong Decorative Pillow",
+            "description": "The RST Pro Series Pathfinder Laminated Jeans are a fully laminated touring jean with a CE certification rating of A with CE level 2 armour at the knees with an LX3 and ballistic construction. These also feature laminated SinAqua Pro waterproof membrane with thermal lining and fixed comfort mesh lining with intake vents and outtake vents (closable) for use in all seasons. Triple stitched seams with bonded nylon give extra impact protection and reflective detailing provides maximum night visibility. These also come with adjustability at the waist, 360-degree zip to attach to jacket and Max zips used throughout. Other colours are also available as well as matching items.",
+            "price": 199.99,
+            "category": 5,
+            "rating": 5.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/45766/rst-pathfinder-ce-jeans-grey-red-size-mens-uk-30-fit-reg-132213-01.jpg?width=568",
+            "image": "rst-pathfinder-ce-jeans-grey-red-size-mens-uk-30-fit-reg-132213-01.webp"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003690116",
+            "name": "IOM TT GRANDSTAND CE SUIT BLACK WHITE",
+            "description": "The one-piece RST IOM TT Grandstand CE leather motorcycle suit offers a CE certification A rating with CE level 1 back protector and CE Level 1 armour to the shoulders, elbows and knees with TPU shoulder cups. It is made from a highly durable cowhide with a four-way stretch for ease of movement in riding and walking positions. A fixed comfort inner mesh lining keeps you fresh, while perforation in critical areas provides optimum air circulation. Triple stitched seams with strong bonded nylon give added abrasion resistance, and Max Zips are used throughout. Neoprene race collar and cuffs are incredibly comfortable, and two handy inner pockets are welcome additions. The knee sliders are official Isle of Man TT branded. Available in a choice of colours - this is the black and white colourway.",
+            "price": 359.99,
+            "category": 6,
+            "rating": 4.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/43903/rst-iom-tt-grandstand-ce-suit-black-white-mens-42-127795-01.jpg?width=568",
+            "image": "rst-iom-tt-grandstand-ce-suit-black-white-mens-42-127795-01.webp"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003780391",
+            "name": "DYNAMIC 1PC SUIT BLACK RED",
+            "description": "Thanks to the success of the Frank Thomas Dynamic II leather motorcycle jacket and jeans', Frank Thomas has released a Dynamic II one-piece suit! Like the Dynamic II separates, the Dynamic II suit is designed for sports and touring. Made from 1.2mm-1.4mm drum dyed cowhide for maximum abrasion resistance, the fully CE approved Dynamic II suit also features CE approved armour at the shoulders, elbows and knees, as well as TPU protectors on the outside. Accordion adjustment in critical areas provides a personalised fit, and this also comes with pockets for handy storage and perforation in key areas for air circulation. The mesh lining keeps you feeling fresh, while stretch panelling on the legs and arms provides superior movement without compromising protection. A speed hump allows added aerodynamics, and it looks great too! Available in a choice of colours, this is the Black Red colourway.",
+            "price": 399.99,
+            "category": 6,
+            "rating": 4.8,
+            "image_url": "https://assets.jsaccessories.co.uk/products/54292/frank-thomas-dynamic-1pc-suit-black-red-mens-40-dynamic-red-ade-2.jpg?width=568",
+            "image": "frank-thomas-dynamic-1pc-suit-black-red-mens-40-dynamic-red-ade-2.webp.jpg"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003790542",
+            "name": "GP FORCE PHANTOM SUIT BLACK WHITE RED FLUO",
+            "description": "The Alpinestars GP Force Phantom one-piece leather motorcycle suit is CE classified AA with Alpinestars GP CE protectors at the elbows, shoulders and knees with Nucleon Bio-Flex hip protectors. Removable and replaceable knee sliders provide added impact resistance along with DFS dynamic Friction Shield Lite sliders on the shoulders. The GP Force Phantom is compatible with the Alpinestars Tech-Air 5 Airbag System for optimum protection. (sold separately) A leather multi-panel construction with strategically accordion stretch panel inserts gives an anatomical performance for sports riding and a superior fit. Inner knee suede reinforcement provides added grip, while calf expansion panels with ribbed stretch inserts allow a custom fit. The aerodynamic back hump is ventilated for maximum airflow, and perforation in critical areas provides optimum air circulation. Available in a choice of colours - this is the Black-White Red Fluo colourway.",
+            "price": 769.99,
+            "category": 6,
+            "rating": 4.5,
+            "image_url": "https://assets.jsaccessories.co.uk/products/50984/alpinestars-gp-force-phantom-suit-black-white-red-fluo-size-mens-uk-38-142007-01.jpg?width=568",
+            "image": "alpinestars-gp-force-phantom-suit-black-white-red-fluo-size-mens-uk-38-142007-01.webp"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003831225",
+            "name": "APEX 1 PC SUIT BLACK RED",
+            "description": "The BKS Apex black red 1-piece leather racing suit is the result of in-depth research and development with top professional superbike riders. These one-piece leathers are constructed from top grain premium cowhide with double or triple stitched seams for maximum strength and durability. Double layer leather panels at the shoulders, seat and knee areas give added abrasion resistance alone with CE approved armour at the shoulders, elbows, forearms and knees. A removable foam back protector is also provided which is upgradeable. The aerodynamic race hump has been specifically designed for race, track day and road use combined for added aerodynamics without any drag. Perforated leather panels in key areas give added air circulation for a more comfortable ride along with stretch material panels in essential areas for movement. Added external protection is given with plastic protectors at the shoulders and knees, plus Velcro patches for knee sliders. This is also available in other colourways.",
+            "price": 499.99,
+            "category": 6,
+            "rating": 4.5,
+            "image_url": "https://assets.jsaccessories.co.uk/products/36528/bks-apex-1-pc-suit-black-red-size-mens-uk-50-115289-01.jpg?width=568",
+            "image": "bks-apex-1-pc-suit-black-red-size-mens-uk-50-115289-01.webp"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003861402",
+            "name": "LS1-2964 GP SUIT BLACK GRAY",
+            "description": "The Berik Moto GP suit is constructed from high quality cowhide at a 1.2 mm thickness and features perforated areas for added ventilation, aramid inserts for added protection, CE armour at shoulders, elbows, knees and back, aerodynamic bump on back, knee sliders, shock absorbing protectors and foam padding, elastic in Cordura above the knee and behind for ease of movement and comfort, and elastic under the armpit also to allow more arm movement.",
+            "price": 299.99,
+            "category": 6,
+            "rating": 4.7,
+            "image_url": "https://assets.jsaccessories.co.uk/products/28549/berik-ls1-2964-gp-suit-black-gray-size-mens-uk-46-48219-02.jpg?width=568",
+            "image": "berik-ls1-2964-gp-suit-black-gray-size-mens-uk-46-48219-02.webp"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003910638",
+            "name": "SUPERMOTARD SUIT BLACK GUN ORANGE",
+            "description": "The IXS Supermotard Leather Motorcycle Suit is a 1 Piece suit constructed fully from top quality cowhide and features a removable, antiseptic M-7 nylon mesh lining, TecnoFoam hip padding and back protection (CE upgradeable) CE armour at shoulders, elbows and knees, double thickness leather on seat and knees, airguard stretch shoulder segment, large leather back stretch panel, Schoeller Keprotec stretch inserts in sleeves, crotch, thighs and backs of knees, 2 inside pockets and a back spoiler.",
+            "price": 199.99,
+            "category": 6,
+            "rating": 4.6,
+            "image_url": "https://assets.jsaccessories.co.uk/products/28024/ixs-supermotard-suit-black-gun-orange-size-mens-uk-40-13131-02.jpg?width=568",
+            "image": "ixs-supermotard-suit-black-gun-orange-size-mens-uk-40-13131-02.webp"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003950574",
+            "name": "PRO L2K EVO DYNAMIC BACK",
+            "description": "The Forcefield Pro L2K Evo Dynamic Back protector has been restyled by Forcefield to be the best and safest it can be. This is CE approved to EN1621-2 Level 2 and reinforced with aramid fibre technology whilst also being breathable and lightweight. This will give you the perfect fit with fully adjustable shoulder straps, double waist adjustment and 3D moulding. The L2K Evo dynamic back protector also features Forcefield's Repeat Performance Technology (RPT) for maximum protection and is anatomically and ergonomically designed to fit well to provide comfort whilst also giving the ultimate in protection.",
+            "price": 134.99,
+            "category": 7,
+            "rating": 4.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/35196/forcefield-pro-l2k-evo-dynamic-back-mens-m-forcefield-l2k-dynamic.jpeg?width=568",
+            "image": "forcefield-pro-l2k-evo-dynamic-back-mens-m-forcefield-l2k-dynamic.webp"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003950576",
+            "name": "6 PLATE BLACK",
+            "description": "The J&S 6 Plate is back armour that is designed to be soft, flexible and comfortable and features fully adjustable shoulder straps to hold the body snugly.",
+            "price": 29.99,
+            "category": 7,
+            "rating": 4.5,
+            "image_url": "https://assets.jsaccessories.co.uk/products/858/j-s-6-plate-black-size-2xl-8223-c-1.jpg?width=568",
+            "image": "j-s-6-plate-black-size-2xl-8223-c-1.webp.jpg"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003960062",
+            "name": "BASEFRAME PRO D30 JACKET BLACK",
+            "description": "The Fox Baseframe Pro D30 jacket is a protective armoured jacket specifically designed for motocross and off-road riding. It is made from a thin, stretchy fabric with lots of support and D30 armour for superior protection. The armour soaks up impact and conforms to your body shape. CE level 1 at the elbows, shoulders and chest and CE level 2 armour at the back give optimum impact resistance. Spacer mesh in critical areas provides superior air circulation and breathability. Remove the armour for easy washing.",
+            "price": 239.99,
+            "category": 7,
+            "rating": 3.8,
+            "image_url": "https://assets.jsaccessories.co.uk/products/53054/fox-baseframe-pro-d30-jacket-black-default-title-146058-01.jpg?width=568",
+            "image": "fox-baseframe-pro-d30-jacket-black-default-title-146058-01.webp"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003960682",
+            "name": "PRO SPEED BLACK RED ",
+            "description": "The Dainese Pro Speed Back Protector long features a pre-shaped structure with an anatomical shape for comfort and protection. It offers aerodynamic performance with ergonomic comfort pads and a honeycomb aluminium structure for maximum strength and lack of weight and can even adapt to change in temperature. Perforation throughout gives optimum breathability for optimum comfort, and this is CE Cat. II EN1621.2, Level 2 certified. The hip belt is adjustable and removable, and this measures 180 cm in length.",
+            "price": 169.95,
+            "category": 7,
+            "rating": 5.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/52100/dainese-pro-speed-m-black-red-black-red-144171-01.jpg?width=568",
+            "image": "dainese-pro-speed-m-black-red-black-red-144171-01.webp"
+        }
+    },
+    {
+        "pk": 41,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003960775",
+            "name": "TURBO KIDNEY BELT BLACK GREY",
+            "description": "The Fox Turbo Kidney Belt has a flexible and anatomical design for added comfort. This is made from rubber for maximum protection and flexibility yet gives great support. This has added breathability and adjustment with 3 Velcro panels.",
+            "price": 29.99,
+            "category": 7,
+            "rating": 3.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/41801/fox-turbo-kidney-belt-black-grey-black-grey-124360-01.jpg?width=568",
+            "image": "fox-turbo-kidney-belt-black-grey-black-grey-124360-01.webp"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003990736",
+            "name": "EXTREME HARNESS ADVENTURE L2",
+            "description": "The Extreme Harness Adventure offers complete protection for the chest, shoulders and arms (full upper body) and can be used for multiple sports including on and off road motorcycling, snowsports and extreme sports. Forcefield extreme harness adventure is Constructed using Nitrex Evo a unique high-tech shock absorbing material the Extreme Harness Adventure offers the ultimate in upper body protection. The Harness is fully breathable, flexible and moulds to the body with use for added all day comfort.",
+            "price": 199.99,
+            "category": 7,
+            "rating": 4.7,
+            "image_url": "https://assets.jsaccessories.co.uk/products/36766/forcefield-extreme-harness-adventure-l2-mens-l-58203-01.jpg?width=568",
+            "image": "forcefield-extreme-harness-adventure-l2-mens-l-58203-01.webp"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5003990746",
+            "name": "RAPTORS D-WP SHOES BLACK BLACK ANTHRACITE",
+            "description": "The Dainese Raptors D-WP motorcycle boots are a short trainer style shoe made from ultra-durable yet lightweight microfibre and feature a waterproof D-WP interior to keep your feet dry. Certified to CE – Cat II – EN 13634 standard, the Raptors boot offer rigid inserts at the ankles, TPU gear change pad, multi-grip outsole and soft inserts for added protection. Reflective detailing provides added night visibility, and these also have an asymmetric lace closure system for a personalised and secure fit.",
+            "price": 99.99,
+            "category": 8,
+            "rating": 4.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/48483/dainese-raptors-d-wp-shoes-black-black-anthracite-mens-7-eu-41-137151-01.jpg?width=568",
+            "image": "dainese-raptors-d-wp-shoes-black-black-anthracite-mens-7-eu-41-137151-01.webp"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5004111503",
+            "name": "TRACTECH EVO III SHORT BOOTS BLACK",
+            "description": "The RST Tractech EVO III CE Short motorcycle boots are a shorter sports boot that are CE certified with added TPU protection at the ankles and heels. These are made from ultra-lightweight but highly durable Microtech and leather with perforation in areas for air corculation and comfort. These also come with a zinc alloy toe slider and have gear change reinforcement and zip and Velcro fastening. Elasticated areas give added movement for a comfier ride and ease of movement.",
+            "price": 99.99,
+            "category": 8,
+            "rating": 4.9,
+            "image_url": "https://assets.jsaccessories.co.uk/products/38014/rst-tractech-evo-iii-short-boots-black-size-uk-3-117561-01.jpg?width=568",
+            "image": "rst-tractech-evo-iii-short-boots-black-size-uk-3-117561-01.webp"
+        }
+    },
+    {
+        "pk": 45,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5004230059",
+            "name": "FASTER-3 DRYSTARS SHOES BLACK GREY YELLOW FLUO ",
+            "description": "The Alpinestars Faster 3 Drystar motorcycle shoes are a waterproof short sports boot that are lightweight yet highly durable and protective. These have the Alpinestars Drystar waterproof and breathable membrane making them suitable for any conditions, and a main upper material consisting of advanced Microfibre with PU suede and seamless thermo-welded microfibre construction. Ventilation detailing and mesh openings give added air circulation for comfort and the TPR heel counter design gives added lateral support. A gear change reinforcement panel gives added durability along with enhanced TPU ankle extended in to the lower lateral area and TPR slider on lateral toe box and these are CE certified. These have a lace closure system for an easy and secure fit along with adjustable hook and loop closure system with TPR strap for increased security and tongue and collar padding giving high levels of comfort and fit around the ankle and instep. These are extremely lightweight and comfortable and ideal for on or off the bike",
+            "price": 143.99,
+            "category": 8,
+            "rating": 4.6,
+            "image_url": "https://assets.jsaccessories.co.uk/products/38854/alpinestars-faster-3-drystars-shoes-black-grey-yellow-fluo-size-uk-4-119598-04.jpg?width=568",
+            "image": "alpinestars-faster-3-drystars-shoes-black-grey-yellow-fluo-size-uk-4-119598-04.webp"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5004310089",
+            "name": "ZEPHYR D30 WP BOOTS BLACK WHITE",
+            "description": "The Furygan Zephyr D30 WP motorcycle boots in black and white are a short-styled boot with a waterproof and breathable membrane and CE approval. Optimised for comfort, the Furygan Zephyr boots have reinforcements at the heels and toes along with gear change reinforcement to keep your feet protected. Made from leather, the Zephyr boot have a versatile short sports styling and lace and Velcro closure system with a handy strap to secure your laces whilst in use on your bike. Comfortable, lightweight but still highly durable, the Zephyr boot is ideal for all weathers! Also available in other colours.",
+            "price": 129.99,
+            "category": 8,
+            "rating": 4.5,
+            "image_url": "https://assets.jsaccessories.co.uk/products/43015/furygan-zephyr-d30-wp-boots-black-white-size-uk-8-126640-01.jpg?width=568",
+            "image": "furygan-zephyr-d30-wp-boots-black-white-size-uk-8-126640-01.webp"
+        }
+    },
+    {
+        "pk": 47,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5004610254",
+            "name": "VIBE WP BOOTS BLACK",
+            "description": "The TCX Vibe WP motorcycle boots are a short style boot with a Suede leather construction with Air Tech fabric panels for breathability. The TCX Vibe WP boots have a waterproof internal lining for use in wet weather and a high performance and padding for added comfort and protection along with a bycast leather gear change reinforcement pad and malleolus inserts and MVC micro-injected ankle guards. These close with Velcro and laces for a personalised fit and have an anatomic replaceable footbed.",
+            "price": 111.99,
+            "category": 8,
+            "rating": 5.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/36415/tcx-vibe-wp-boots-black-size-uk-6-115150-01.jpg?width=568",
+            "image": "tcx-vibe-wp-boots-black-size-uk-6-115150-01.webp"
+        }
+    },
+    {
+        "pk": 48,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5004650050",
+            "name": "SPEED SHORT BOOTS BLACK WHITE GREY CAMO",
+            "description": "The Frank Thomas Speed Short boots are a trainer-style motorcycle boot with hidden protection designed for maximum comfort. CE approved to level 1, the Frank Thomas speed boots are made from gull grain leather with suedette detailing on the inner to protect paintwork and canvas on the outer for air circulation. Hidden protection at the ankles, heel and toe box provide a safer ride along with TPU built-in slider at the toes and gear change reinforcement. Subtle reflective detailing gives added night visibility and the sole is anti-slip. The comfort inner lining has been antibacterial treated to keep your feet feeling fresh and this also offers a lace closure system along with hook and loop fastening for a personalised fit. Also available in other colours.",
+            "price": 59.99,
+            "category": 8,
+            "rating": 3.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/44418/frank-thomas-speed-short-boots-black-white-grey-camo-mens-12-eu-46-129492-01.jpg?width=568",
+            "image": "frank-thomas-speed-short-boots-black-white-grey-camo-mens-12-eu-46-129492-01.webp"
+        }
+    },
+    {
+        "pk": 49,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5004821375",
+            "name": "BLACK RAIN EVO BOOTS BLACK",
+            "description": "The lightweight style Sidi Rain EVO Motorcycle Boot is one of our most popular boots - especially in the winter. This fantastic mens and womens boot is constructed from a waterproof all weather upper. It features padded ankle area, lorica construction, conventional closure with zip and velcro covering, anti-slip rubber sole and Tepor breathable membrane. A long lasting, high quality 100% waterproof boot with sports styling. This is one of our best selling boots of all time!!",
+            "price": 194.99,
+            "category": 9,
+            "rating": 4.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/2101/sidi-black-rain-evo-boots-black-size-uk-4-31862-01.jpg?width=568",
+            "image": "sidi-black-rain-evo-boots-black-size-uk-4-31862-01.webp"
+        }
+    },
+    {
+        "pk": 50,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5004900522",
+            "name": "INFINITY 3 GORETEX BOOTS BLACK ",
+            "description": "The TCX Infinity 3 Gore-Tex motorcycle boot offers CE Certification to EN13634:2017 with a GroundTrax abrasion-resistant rubber outsole for excellent stability. The sole is anti-slip and comes up high for superior protection. Reinforcements at the shins, malleolus, toe and heels give superior impact protection along with suede leather, engineered fabric and synthetic material construction. The medial with heat-shield protects your boots, which are suitable to wear under touring pants. The innovative closure system with Atop On-Fly cord closure system and a Velcro strap provides a personalised fit. A Gore-Tex waterproof membrane offers superior protection from the elements while also being breathable. An Ortholite footbed with long-term cushioning and high breathability keeps your feet comfortable at all times - for walking and riding.",
+            "price": 299.99,
+            "category": 9,
+            "rating": 4.6,
+            "image_url": "https://assets.jsaccessories.co.uk/products/54809/tcx-infinity-3-goretex-boots-black-no-size-151234-01.jpg?width=568",
+            "image": "tcx-infinity-3-goretex-boots-black-no-size-151234-01.webp"
+        }
+    },
+    {
+        "pk": 51,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5004910158",
+            "name": "SPORT MASTER GORE-TEX BOOTS BLACK ",
+            "description": "The Dainese Sport Master Gore-Tex Motorcycle Boot is approved by Cat. II - EN 13634 standard and made from highly durable and lightweight Dainese D-Stone fabric with microfibre. This boot also features a 100% waterproof and breathable GORE-TEX membrane that suits all weather conditions. Flexible inserts provide comfort while walking and riding, and the non-slip outsole keeps you sure-footed. Dainese's Axial Distorsion Control System in TPU delivers superior levels of protection along with a TPU gear change guard, high grip TPU inserts, nylon heels, TPU rear inner inserts and replaceable plastic sliders. The closure system features a zip at the rear for ease of exit and entry, and reflective detailing maximises visibility.",
+            "price": 319.95,
+            "category": 9,
+            "rating": 3.8,
+            "image_url": "https://assets.jsaccessories.co.uk/products/52082/dainese-sport-master-gore-tex-boots-black-5-144029-01.jpg?width=568",
+            "image": "dainese-sport-master-gore-tex-boots-black-5-144029-01.webp"
+        }
+    },
+    {
+        "pk": 52,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5004910477",
+            "name": "COROZAL ADVENTURE DRYSTAR BOOT BLACK",
+            "description": "The Alpinestars Corozal Adventure Drystar Motorcycle Boot is a premium, multi-material adventure touring boot. These are 100% waterproof and breathable due to Alpinestars’ Drystar membrane. These offer a multi-material upper chassis incorporating PU-coated leather, microfibre and suede leather for excellent levels of comfort, durability and abrasion resistance. These also feature extensive front and lower rear accordion flex zones constructed from lightweight and durable microfibre for comfort, freedom of movement, control and support. These also offer medial surface stamped suede panel for improved grip and protection, innovative lateral ankle protection with biomechanical blade-link between the upper boot and the lower foot structure, TPU shift pad with specially designed patterning for improved grip, lightweight, advanced polymer shin-plate and lateral ankle protections offer impact and resistance as well as structural support, internal toe box and heel counter protection is layered under the upper for durability, improved feel and performance, medial and lateral dual density ankle protector disk is subtly incorporated into boot chassis and offers strategic ankle protection, new buckle closure system (replaceable) with a micro-ratcher memory system, wide-entry aperture opening of easy in and out, plus secure upper TPR and Velcro closure system to allow for a wide-range of calf fit adjustment, integrated soft foam surrounds ankle and collar for comfort, fit and additional shock absorption, breathable textile interior lining throughout boot, internal high modulus polyamide insole with integrated steel shank reinforcement for structure and support to the arch area, midsole constructed from moulded PU foam to make the boot bottom lighter without compromise performance, highly flexible sole thread features Alpinestars’ exclusive vulcanised rubber compound for the optimal combination of comfort and grip, removable anatomic foot-bed includes EVA foam and Lycra for comfort and support and ergonomic shaping for forefoot streamlining to enable greater control of the bike’s controls and for superior fit and comfort, wide ranging foot profile.",
+            "price": 259.99,
+            "category": 9,
+            "rating": 5.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/19880/alpinestars-corozal-adventure-drystar-boot-black-size-uk-7-93041-1.jpg?width=568",
+            "image": "alpinestars-corozal-adventure-drystar-boot-black-size-uk-7-93041-1.webp"
+        }
+    },
+    {
+        "pk": 53,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5004940703",
+            "name": "DRIFTER WP BOOTS BROWN",
+            "description": "The TCX Drifter WP motorcycle boots are a leather and Microfibre adventure enduro boot with a Suede heat guard and waterproof lining for use in all weathers. Added protection throughout gives you confidence with Polyurethane shin plates, malleolus inserts and a leather gear change reinforcement pad. These have three adjustable 6060 buckles along with an ergonomic design for added comfort and an ultra-grip sole for use on all terrains. This is the vintage brown colourway.",
+            "price": 269.99,
+            "category": 9,
+            "rating": 3.7,
+            "image_url": "https://assets.jsaccessories.co.uk/products/36885/tcx-drifter-wp-boots-brown-size-uk-11-106930-01.jpg?width=568",
+            "image": "tcx-drifter-wp-boots-brown-size-uk-11-106930-01.webp"
+        }
+    },
+    {
+        "pk": 54,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5004991006",
+            "name": "RIDGE V2 WP BOOTS BLACK",
+            "description": "The Alpinestars Ridge V2 waterproof motorcycle boots are the latest incarnation of the popular Alpinestars Ridge boots. A lightweight Tech touring boot, the Ridge V2 features a waterproof and breathable membrane to keep your feet comfortable at all times. It is designed for travelling with maximum comfort and durability in mind. Thermo welded lateral side, ankle and toe box provide additional durability and reinforcement on the shin plates for weight-saving and protection against impacts. In addition, the Ridge V2 also features dual-density ankle protectors on medial and lateral sides with poly-foam padding, internal toe box and heel counters, and contoured, high modulus midsoles follow the shape of the foot and incorporate a structured shank reinforcement. The streamlined design is perfect for touring with stitchless construction and flex accordion detailing in critical areas for optimum movement. A dual closure system: adjustable hook and loop with a metal oval ring on the lateral ankle plus a hook and loop flap on the upper provide greater adjustability and a personalised fit. A grip detail on the closure flap makes it easy to use while wearing gloves, and reflective detailing maximises night visibility. Alpinestars exclusive vulcanised compound rubber sole with unique side wrapping design is ultra-durable and keeps you sure-footed.",
+            "price": 179.99,
+            "category": 9,
+            "rating": 5.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/52504/alpinestars-ridge-v2-wp-boots-black-uk-8-145065-01.jpg?width=568",
+            "image": "alpinestars-ridge-v2-wp-boots-black-uk-8-145065-01.webp"
+        }
+    },
+    {
+        "pk": 55,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5004991162",
+            "name": "COMP 19 BOOTS WHITE",
+            "description": "The Fox Comp 2019 motocross boot in white are the new and improved version of the already ever-popular Fox Comp boots. These have an internal lace system for a custom fit around the ankle along with a TPU shin plate, toe cap and calf guard for full reinforcement. The closure system is an instinct style lower buckle for a secure fit over the top of the foot and an adjustable buckle closure system on shin plate for increased retention in variable conditions.  Durable rubber burn and medial guard provide excellent grip and feel for the bike along with a highly durable high-density rubber outsole with internal steel shank for great grip and support on the foot peg. Available in other colourways.",
+            "price": 184.99,
+            "category": 10,
+            "rating": 4.5,
+            "image_url": "https://assets.jsaccessories.co.uk/products/42636/fox-comp-19-boots-white-size-uk-8-124385-01.jpg?width=568",
+            "image": "fox-comp-19-boots-white-size-uk-8-124385-01.webp"
+        }
+    },
+    {
+        "pk": 56,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005000046",
+            "name": "X10 2 MX BOOTS BLACK CAMO ",
+            "description": "Designed to be highly durable yet comfortable and flexible, the Shot X10 2.0 motocross boots are made from ultra-lightweight yet durable synthetic leather with an anatomic pre-curved chassis. Injected moulded plastic shin protection gives added protection along with a reinforced vamp, replaceable metal toe and protective ankle cushioned inserts. These have a medial specially designed to increase the abrasion resistance and provide a better control of the bike, The inner liner is breathable and comfortable and the durable rubber sole is double stitched and provides shock absorption, grip and a good feel of the pegs. 4 replaceable double lock buckles with micrometric adjustment straps give the perfect personalised fit. The Shot X10 2.0 also come in a choice of colours. This is the black camo version.",
+            "price": 129.99,
+            "category": 10,
+            "rating": 3.9,
+            "image_url": "https://assets.jsaccessories.co.uk/products/46303/shot-x10-2-mx-boots-black-camo-size-uk-8-133315-01.jpg?width=568",
+            "image": "shot-x10-2-mx-boots-black-camo-size-uk-8-133315-01.webp"
+        }
+    },
+    {
+        "pk": 57,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005070254",
+            "name": "BLACK KNIGHT BOOTS BLACK",
+            "description": "The Wulfsport Black Knight Adventure boots are dual sports trials and road boots made from full leather with suede heat shield. These versatile boots feature a micro-injection shin guard for added protection along with a highly durable but flexible rubber sole. A Polyester and Nylon lining provides comfort and adjustable plastic straps give the perfect personalised fit.",
+            "price": 99.99,
+            "category": 10,
+            "rating": 4.7,
+            "image_url": "https://assets.jsaccessories.co.uk/products/45668/wulfsport-black-knight-boots-black-size-uk-7-131829-01.jpg?width=568",
+            "image": "wulfsport-black-knight-boots-black-size-uk-7-131829-01.webp"
+        }
+    },
+    {
+        "pk": 58,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005071145",
+            "name": "MAVERIK BOOTS BLACK",
+            "description": "The Fly Maverik MX boots are CE Approved to EN13634:2015 with pre-shaped moulded plastic 3D shins, inner ankle panels, 3D moulded plastic gear change panels, an articulated rear ankle and moulded outsole made from durable rubber that is lightweight yet offers excellent grip. A long-lasting rubber heat shield won't melt and provides a good grip, and an elastic gaiter around the calf seals from debris and water ingress. It also offers an innovative one-piece plastic injected 'fish tail' midsole and adjustable quick-lock buckles that provide a solid locked-in feel. An open design keeps dirt from clogging the function for fantastic performance and aesthetics.",
+            "price": 139.99,
+            "category": 10,
+            "rating": 3.3,
+            "image_url": "https://assets.jsaccessories.co.uk/products/54956/fly-maverik-boots-black-no-size-151637-01.jpg?width=568",
+            "image": "fly-maverik-boots-black-no-size-151637-01.webp"
+        }
+    },
+    {
+        "pk": 59,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005140282",
+            "name": "RIDER BOOTS WHITE",
+            "description": "The Oneal Rider MX Off-Road Motorcycle Boots feature injection moulded plastic plates to protect against impacts, a metal shank insert reinforces the shape of the boot and adds support, easy to operate, Snap-Lock adjustable four buckle closure system, durable Goodyear welt sole is properly balanced with no unstable rocking, metal toe guard to protect the sole against delaminating, moderate grip sole is great for track, trail and ATV riders, air mesh interior, generous heel support and cushioned insole for extra comfort, synthetic leather heat shield to prevent heat damage, a rear pull tab for extra leverage, replacement straps and buckles are available.",
+            "price": 119.99,
+            "category": 10,
+            "rating": 4.0,
+            "image_url": "https://assets.jsaccessories.co.uk/products/23136/oneal-rider-boots-white-mens-10-5-eu-45-100898-01.jpg?width=568",
+            "image": "oneal-rider-boots-white-mens-10-5-eu-45-100898-01.webp"
+        }
+    },
+    {
+        "pk": 60,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5005200166",
+            "name": "TECH 10 BOOTS BLACK",
+            "description": "The Alpinestars Tech 10 motocross boots are the latest off-road boot incarnation from Alpinestars and have benefitted from the evolution of all their predecessors in the Alpinestars motocross range. The revolutionary external structure features an ultra-low-profile design to minimise the weight and maximise flexibility. The Tech 10 comes with an innovative biomechanical inner bootie for the ultimate level of support and safety. Torsion bars control ankle and leg rotation, while allowing freedom of movement. The bootie structure features PU protection and shock absorbing padding on the heel and ankles and an ultra-thin and flexible forefoot area for increased feeling. The perforated bootie is washable and replaceable to keep your feet fresh. The Tech 10 boots are made from full great leather and PU to give abrasion resistance as well as a lighter feel. PU guards the toes, foot, heel, ankle, calf and shin with extra hard compounds on the toe-box, heel and Achilles tendon for added protection. An innovative PU spine protects the heel, controls flex plus these also come with a hyperextension guard. The precision fit interior features new poly fabric lining with open cell foam and a shock absorbing shin pad. Alpinestars’ exclusive dual compound sole is seamlessly integrated to the multi-density foot base structure with built-in support and gives superior durability, grip, feel and a high level of structural rigidity. The advanced closure system features 3 techno-polymer and aluminium buckles for easy adjustability with a precise, secure and streamlined fit. The buckles feature memory, a quick release/locking system and a self-aligning design for easy and precise closure with a 3-buckle system that works in conjunction with the entire internal structure to provide excellent support and flexibility. Heat resistant panels on the inner side of the boot also offers grip. The Alpinestars Tech 10 have new form fitting PU gaskets that seals water out of the boot to keep your feet dry.",
+            "price": 419.99,
+            "category": 10,
+            "rating": 4.4,
+            "image_url": "https://assets.jsaccessories.co.uk/products/12113/alpinestars-tech-10-boots-black-size-uk-11-75714-01.jpg?width=568",
+            "image": "alpinestars-tech-10-boots-black-size-uk-11-75714-01.webp"
+        }
     }
 ]
