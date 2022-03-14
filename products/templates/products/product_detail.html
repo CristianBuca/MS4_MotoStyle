@@ -10,5 +10,32 @@
 {% endblock %}
 
 {% block content %}
-
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="image-container">
+                    {% if product.image %}
+                        <a href="{{ product.image.url }}" target="_blank">
+                            <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top">
+                        </a>
+                    {% else %}
+                        <a href="">
+                            <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                        </a>
+                    {% endif %}
+                </div>
+                <div class="product-reviews"></div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="product-details">
+                    <h3>{{ product.name }}</h3>
+                    <p>{{ product.rating }} out of 5</p>
+                    <h4>{{ product.price }}</h4>
+                </div>
+                <div class="product-description">
+                    <p>{{ product.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
