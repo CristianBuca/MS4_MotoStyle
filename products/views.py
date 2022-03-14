@@ -1,6 +1,8 @@
 # Imports
 # 3rd party:
 from django.shortcuts import render
+# Internal:
+from .models import Product
 # -----------------------------------------------------------------------------
 
 
@@ -10,4 +12,9 @@ def products(request):
         Arguments: request (object): HTTP request object
         Returns: render products page with context
     """
-    return render(request, 'products/index.html')
+    products = Product.objects.all()
+
+    context = {
+        'products': products,
+    }
+    return render(request, 'products/products.html', context)
