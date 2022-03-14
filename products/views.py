@@ -1,6 +1,6 @@
 # Imports
 # 3rd party:
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 # Internal:
 from .models import Product
 # -----------------------------------------------------------------------------
@@ -18,3 +18,20 @@ def products(request):
         'products': products,
     }
     return render(request, 'products/products.html', context)
+
+
+def product_detail(request):
+    """
+    View to render the product detail page
+        Arguments:
+            request (object): HTTP request object
+            product_id: ID of product being viewed
+        Returns: render product display page with context
+    """
+    product = get_object_or_404(Product, pk=product_id)
+
+    context = {
+        'product': product,
+        }
+
+    return render(request, 'products/product_detail.html', context)
