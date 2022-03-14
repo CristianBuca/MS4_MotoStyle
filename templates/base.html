@@ -43,10 +43,10 @@
 <body>
     <header class="container-fluid fixed-top">
 <!-- Navbar on large screens and up -->
-        <div id="top-nav" class="row d-none d-lg-flex">
+        <div id="top-nav" class="row d-none d-lg-flex bg-warning">
 <!-- Search form -->
             <div class="col-12 col-lg-4">
-                <form action="" method="GET">
+                <form action="{% url 'products' %}" method="GET">
                     <div class="input-group w-100">
                         <input type="text" class="form-control" name="q" placeholder="Search products">
                         <div class="input-group-append">
@@ -61,10 +61,10 @@
                     <a href="{% url 'home' %}" class="logo">Moto Style</a>
                 </div>
             </div>
-<!-- Account and shopping card -->
-            <div class="col-12 col-lg-4">
-                <ul class="list-inline list-unstyled text-center my-0">
-                    <li class="list-inline-item dropdown">
+<!-- Account and shopping cart -->
+            <div class="col-12 col-lg-4 text-end">
+                <ul class="list-inline list-unstyled my-0">
+                    <li class="list-inline-item text-center dropdown">
                         <a class="nav-link" href="#" id="account-options" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <div><i class="fas fa-user-cog"></i></div>
                             <p>Account</p>
@@ -100,7 +100,7 @@
             </div>
         </div>
         <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light w-100 col-6">
+            <nav class="navbar navbar-expand-lg navbar-light w-100 col-6 bg-danger">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -108,7 +108,7 @@
                 {% include 'includes/main_nav.html' %}
             </nav>
         </div>
-        <div id="msg-banner" class="row text-center">
+        <div id="msg-banner" class="row text-center bg-info">
             <div>
                 <h4>Free delivery on orders over £100!</h4>
             </div>
