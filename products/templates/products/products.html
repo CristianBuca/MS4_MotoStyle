@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
+    <div class="container top-spacer">
         <div class="row">
             <div class="col"></div>
         </div>
@@ -10,6 +10,33 @@
 {% endblock %}
 
 {% block content %}
-
+    <div class="container">
+        <div class="row">
+            {% for product in products %}
+<!-- Bootstrap Card for each product -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card h-100 text-center">
+                        <div class="image-container">
+                            {% if product.image %}
+                                <a href="">
+                                    <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top">
+                                </a>
+                            {% else %}
+                                <a href="">
+                                    <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                </a>
+                            {% endif %}
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">{{ product.name }}</h5>
+                            <p class="card-text">Price {{ product.price }}</p>
+                            <p class="rating">Rating: {{product.rating}} out of 5</p>
+                        </div>
+                    </div>
+                </div>
+<!-- Card end -->
+            {% endfor %}
+        </div>
+    </div>
 {% endblock %}
     
