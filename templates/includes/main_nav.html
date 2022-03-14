@@ -5,10 +5,10 @@
             Helmets
             </button>
             <ul class="dropdown-menu" aria-labelledby="helmets">
-                <li><a class="dropdown-item text-center" href="#">Full Face</a></li>
-                <li><a class="dropdown-item text-center" href="#">Flip Front</a></li>
-                <li><a class="dropdown-item text-center" href="#">Motocross</a></li>
-                <li><a class="dropdown-item text-center" href="#">All Helmets</a></li>
+                <li><a class="dropdown-item " href="{% url 'products' %}?category=full_face">Full Face</a></li>
+                <li><a class="dropdown-item " href="{% url 'products' %}?category=flip_front">Flip Front</a></li>
+                <li><a class="dropdown-item " href="{% url 'products' %}?category=motocross_helmets">Motocross</a></li>
+                <li><a class="dropdown-item " href="{% url 'products' %}?category=full_face,flip_front,motocross_helmets">All Helmets</a></li>
             </ul>
         </li>
 
@@ -17,11 +17,11 @@
             Clothing
             </button>
             <ul class="dropdown-menu" aria-labelledby="clothing">
-                <li><a class="dropdown-item text-center" href="#">Jackets</a></li>
-                <li><a class="dropdown-item text-center" href="#">Trousers</a></li>
-                <li><a class="dropdown-item text-center" href="#">Suits</a></li>
-                <li><a class="dropdown-item text-center" href="#">Armour</a></li>
-                <li><a class="dropdown-item text-center" href="#">All Clothing</a></li>
+                <li><a class="dropdown-item " href="{% url 'products' %}?category=jackets">Jackets</a></li>
+                <li><a class="dropdown-item " href="{% url 'products' %}?category=trousers">Trousers</a></li>
+                <li><a class="dropdown-item " href="{% url 'products' %}?category=suits">Suits</a></li>
+                <li><a class="dropdown-item " href="{% url 'products' %}?category=armour">Armour</a></li>
+                <li><a class="dropdown-item " href="{% url 'products' %}?category=jackets,trousers,suits,armour">All Clothing</a></li>
             </ul>
         </li>
 
@@ -30,10 +30,10 @@
             Boots
             </button>
             <ul class="dropdown-menu" aria-labelledby="boots">
-                <li><a class="dropdown-item text-center" href="#">Urban</a></li>
-                <li><a class="dropdown-item text-center" href="#">Touring</a></li>
-                <li><a class="dropdown-item text-center" href="#">Motocross</a></li>
-                <li><a class="dropdown-item text-center" href="#">All Boots</a></li>
+                <li><a class="dropdown-item " href="{% url 'products' %}?category=urban">Urban</a></li>
+                <li><a class="dropdown-item " href="{% url 'products' %}?category=touring">Touring</a></li>
+                <li><a class="dropdown-item " href="{% url 'products' %}?category=motocross_boots">Motocross</a></li>
+                <li><a class="dropdown-item " href="{% url 'products' %}?category=urban,touring,motocross_boots">All Boots</a></li>
             </ul>
         </li>
 
@@ -42,10 +42,10 @@
             Gloves
             </button>
             <ul class="dropdown-menu" aria-labelledby="gloves">
-                <li><a class="dropdown-item text-center" href="#">Summer</a></li>
-                <li><a class="dropdown-item text-center" href="#">Winter</a></li>
-                <li><a class="dropdown-item text-center" href="#">Motocross</a></li>
-                <li><a class="dropdown-item text-center" href="#">All Gloves</a></li>
+                <li><a class="dropdown-item " href="{% url 'products' %}?category=summer">Summer</a></li>
+                <li><a class="dropdown-item " href="{% url 'products' %}?category=winter">Winter</a></li>
+                <li><a class="dropdown-item " href="{% url 'products' %}?category=motocross_gloves">Motocross</a></li>
+                <li><a class="dropdown-item " href="{% url 'products' %}?category=summer,winter,motocross_gloves">All Gloves</a></li>
             </ul>
         </li>
 
@@ -54,9 +54,9 @@
             Accessories
             </button>
             <ul class="dropdown-menu" aria-labelledby="Accessories">
-                <li><a class="dropdown-item text-center" href="#">Luggage</a></li>
-                <li><a class="dropdown-item text-center" href="#">Tools</a></li>
-                <li><a class="dropdown-item text-center" href="#">All Accessories</a></li>
+                <li><a class="dropdown-item " href="{% url 'products' %}?category=luggage">Luggage</a></li>
+                <li><a class="dropdown-item " href="{% url 'products' %}?category=tools">Tools</a></li>
+                <li><a class="dropdown-item " href="{% url 'products' %}?category=luggage,tools">All Accessories</a></li>
             </ul>
         </li>
         <li>
@@ -65,16 +65,15 @@
             </button>
         </li>
 
-
         <li class="dropdown">
             <button class="btn btn-light dropdown-toggle w-100" type="button" id="all-products" data-bs-toggle="dropdown" aria-expanded="false">
             All Products
             </button>
             <ul class="dropdown-menu" aria-labelledby="all-">
-                <li><a class="dropdown-item text-center" href="#">By Price</a></li>
-                <li><a class="dropdown-item text-center" href="#">By Rating</a></li>
-                <li><a class="dropdown-item text-center" href="#">By Category</a></li>
-                <li><a class="dropdown-item text-center" href="#">All Products</a></li>
+                <li><a class="dropdown-item " href="#">By Price</a></li>
+                <li><a class="dropdown-item " href="#">By Rating</a></li>
+                <li><a class="dropdown-item " href="#">By Category</a></li>
+                <li><a class="dropdown-item " href="{% url 'products' %}">All Products</a></li>
             </ul>
         </li>
     </ul>
