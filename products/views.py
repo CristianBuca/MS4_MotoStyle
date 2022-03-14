@@ -20,7 +20,7 @@ def products(request):
     return render(request, 'products/products.html', context)
 
 
-def product_detail(request):
+def product_detail(request, product_id):
     """
     View to render the product detail page
         Arguments:
