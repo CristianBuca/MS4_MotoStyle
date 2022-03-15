@@ -2,5 +2,23 @@
 {% load static %}
 
 {% block content %}
-    <p>Shopping cart</p>
+    <div class="container">
+        <div class="col">
+            <h4>Shopping Cart</h4>
+        </div>
+        <div class="row">
+            {% if cart_items %}
+                <div class="col-12 col-md-8 bg-danger">
+                    {{ cart_items }}
+                </div>
+                <div class="col-12 col-md-4 bg-info">asdasd</div>
+            {% else %}
+                <div class="col-12 text-center">
+                    <h4>There are no products in you cart!</h4>
+                    <h5>Start shopping:</h5>
+                    <a href="{% url 'products' %}" class="btn btn-dark">View products</a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
 {% endblock %}
