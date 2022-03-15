@@ -1,0 +1,9 @@
+<select name="product_size" id="product_size" class="form-control">
+    {% if product.category.name in 'full_face,flip_front,motocross_helmets' %}
+        <option value="XS"></option>
+        <option value="S"></option>
+        <option value="M"></option>
+        <option value="L"></option>
+        <option value="XL"></option>
+    {% endif %}
+</select>
