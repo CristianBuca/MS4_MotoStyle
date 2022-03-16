@@ -4,56 +4,82 @@
 
 {% block content %}
     <div class="container">
-        <div class="col">
+        <div class="row text-center">
             <h4>Shopping Cart</h4>
         </div>
-        <div class="row">
-            {% if cart_items %}
-                {% for item in cart_items %}
-                    <div class="col-12 col-md-6 bg-danger">
-                        <img class="img-fluid" src="{{ item.product.image.url }}" alt="image of {{ item.product.name }}">
-                    </div>
-                    <div class="col-12 col-md-6 bg-info">
-                        <div>{{ item.product.name }}</div>
-                        <div>{{ item.quantity }}</div>
-                        <div>£ {{ item.product.price }}</div>
-                        <div>{% if item.product.has_sizes %}{{item.size}}{% else %}N/A{% endif %}</div>
-                        <div>Subtotal: £{{item.product.price | calc_subtotal:item.quantity }}</div>
-                        <div>
-                            <form action="{% url 'adjust_cart' item.item_id %}" method="POST" class="form update-form">
-                                {% csrf_token %}
-                                <div class="form-group d-inline-flex">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <button class="decrement-qty btn btn-dark" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
-                                                <i class="fas fa-minus"></i>
-                                            </button>
+        {% if cart_items %}
+            <div class="row">
+                <div class="col-sm-12 col-lg-8">
+<!-- Individual item display -->
+                    {% for item in cart_items %}
+                        <div class="row">
+                            <div class="col col-md-4 bg-danger">
+                                <img class="img-fluid" src="{{ item.product.image.url }}" alt="image of {{ item.product.name }}">
+                            </div>
+                            <div class="col-sm-8 col-md-8 bg-info">
+                                <div>{{ item.product.name }}</div>
+                                <div>{{ item.quantity }}</div>
+                                <div>£ {{ item.product.price }}</div>
+                                <div>{% if item.product.has_sizes %}{{item.size}}{% else %}N/A{% endif %}</div>
+                                <div>Subtotal: £{{item.product.price | calc_subtotal:item.quantity }}</div>
+                                <div class="col">
+                                    <form action="{% url 'adjust_cart' item.item_id %}" method="POST" class="form update-form">
+                                        {% csrf_token %}
+                                        <div class="form-group d-inline-flex">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button class="decrement-qty btn btn-dark btn-sm" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                                                        <i class="fas fa-minus"></i>
+                                                    </button>
+                                                </div>
+                                                <input class="form-control-xs qty_input " type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
+                                                <div class="input-group-append">
+                                                    <button class="increment-qty btn btn-dark btn-sm" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                                                        <i class="fas fa-plus"></i>
+                                                    </button>
+                                                </div>
+                                                {% if item.product.has_sizes %}
+                                                    <input type="hidden" name="product_size" value="{{ item.size }}">
+                                                {% endif %}
+                                            </div>
                                         </div>
-                                        <input class="form-control qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
-                                        <div class="input-group-append">
-                                            <button class="increment-qty btn btn-dark" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
-                                                <i class="fas fa-plus"></i>
-                                            </button>
-                                        </div>
-                                        {% if item.product.has_sizes %}
-                                            <input type="hidden" name="product_size" value="{{ item.size }}">
-                                        {% endif %}
-                                    </div>
+                                    </form>
+                                    <button class="update btn btn-dark btn-sm">Update</button>
+                                    <button class="remove btn btn-dark btn-sm" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}" data-token="{{ csrf_token }}">Remove</button>
                                 </div>
-                            </form>
-                            <button class="update btn btn-dark">Update</button>
-                            <button class="remove btn btn-dark" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}" data-token="{{ csrf_token }}">Remove</button>
-                        </div>
-                    </div>
-                {% endfor %}
-            {% else %}
-                <div class="col-12 text-center">
-                    <h4>There are no products in you cart!</h4>
-                    <h5>Start shopping:</h5>
-                    <a href="{% url 'products' %}" class="btn btn-dark">View products</a>
+                            </div>
+                            </div>
+                    {% endfor %}
                 </div>
-            {% endif %}
-        </div>
+
+<!-- Order summary and checkout link -->
+                
+                <div class="col-sm-12 col-lg-4">
+                    <h3>Order summary: <small>{{ product_count }} item(s)</small></h3>
+                    <div>Cart total: £{{ total | floatformat:2 }}</div>
+                    <div>Delivery: £{{ delivery | floatformat:2 }}</div>
+                    <div>Total to pay: £{{ grand_total | floatformat:2 }}</div>
+                    {% if free_delivery_delta > 0 %}
+                        Add £{{ free_delivery_delta }} worth of products to your cart to enjoy FREE DELIVERY!
+                    {% endif %}
+                    <div>
+                        <button class="btn btn-dark btn-lg"><small>Secure Checkout with</small><img src="https://cdn.brandfolder.io/KGT2DTA4/at/8vbr8k4mr5xjwk4hxq4t9vs/Stripe_wordmark_-_blurple.svg" alt="" height="30px"></button>
+                    </div>
+                    <div>
+                        <img src="{{ MEDIA_URL }}/cards/visa.svg" alt="visa card" width="40px" height="40px">
+                        <img src="{{ MEDIA_URL }}/cards/amex.svg" alt="amex card" width="40px" height="40px">
+                        <img src="{{ MEDIA_URL }}/cards/mastercard.svg" alt="mastercard card" width="40px" height="40px">
+                        <img src="{{ MEDIA_URL }}/cards/maestro.svg" alt="maestro card" width="40px" height="40px">
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            <div class="col-12 text-center">
+                <h4>There are no products in you cart!</h4>
+                <h5>Start shopping:</h5>
+                <a href="{% url 'products' %}" class="btn btn-dark">View products</a>
+            </div>
+        {% endif %}
     </div>
 {% endblock %}
 
