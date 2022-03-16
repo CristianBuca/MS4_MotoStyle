@@ -79,3 +79,27 @@ def adjust_cart(request, item_id):
 
     request.session['cart'] = cart
     return redirect(reverse('view_cart'))
+
+
+def remove_from_cart(request, item_id):
+    """
+    View remove the product from the shopping cart stored in session cookies.
+        Arguments:
+            request (object): HTTP request object
+            item_id: ID of product from the form
+        Returns:
+            redirect_url: Redirect back to product_detail view
+    """
+
+    cart = request.session.get('cart', {})
+    size = None
+    if 'product_size' in request.POST:
+        size = request.POST['product_size']
+
+    if size:
+
+        else:
+            del cart[item_id]['items_by_size'][size]
+
+    request.session['cart'] = cart
+    return redirect(reverse('view_cart'))
