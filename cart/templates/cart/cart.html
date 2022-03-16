@@ -8,10 +8,17 @@
         </div>
         <div class="row">
             {% if cart_items %}
-                <div class="col-12 col-md-8 bg-danger">
-                    {{ cart_items }}
-                </div>
-                <div class="col-12 col-md-4 bg-info">asdasd</div>
+                {% for item in cart_items %}
+                    <div class="col-12 col-md-6 bg-danger">
+                        <img class="img-fluid" src="{{ item.product.image.url }}" alt="image of {{ item.product.name }}">
+                    </div>
+                    <div class="col-12 col-md-6 bg-info">
+                        <div>{{ item.product.name }}</div>
+                        <div>£ {{ item.product.price }}</div>
+                        <div>{{ item.quantity }}</div>
+                        {% if item.product.has_sizes %}{{item.size}}{% else %}N/A{% endif %}
+                    </div>
+                {% endfor %}
             {% else %}
                 <div class="col-12 text-center">
                     <h4>There are no products in you cart!</h4>
