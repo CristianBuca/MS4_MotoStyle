@@ -1,14 +1,18 @@
 <!-- Size selector and guide image for Helmets -->
 {% if product.category.name in 'full_face,flip_front,motocross_helmets' %}
-<select name="product_size" id="product_size" class="form-select">
+<div>
+    <select name="product_size" id="product_size" class="form-select">
         <option value="XS">XS</option>
         <option value="S">S</option>
         <option value="M">M</option>
         <option value="L">L</option>
         <option value="XL">XL</option>
-</select>
+    </select>
+</div>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#size-modal">Size Guide</button>
+<div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#size-modal">Size Guide</button>
+</div>
 <!-- Modal -->
 <div class="modal fade" id="size-modal" tabindex="-1" aria-labelledby="size-modal-label" aria-hidden="true">
     <div class="modal-dialog">
@@ -29,7 +33,8 @@
 
 <!-- Size selector and guide image for Jackets -->
 {% elif product.category.name in 'jackets' %}
-<select name="product_size" id="product_size" class="form-select">
+<div>
+    <select name="product_size" id="product_size" class="form-select">
         <option value="38">38</option>
         <option value="40">40</option>
         <option value="42">42</option>
@@ -38,9 +43,12 @@
         <option value="48">48</option>
         <option value="50">50</option>
         <option value="52">52</option>
-</select>
+    </select>
+</div>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#size-modal">Size Guide</button>
+<div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#size-modal">Size Guide</button>
+</div>
 <!-- Modal -->
 <div class="modal fade" id="size-modal" tabindex="-1" aria-labelledby="size-modal-label" aria-hidden="true">
     <div class="modal-dialog">
@@ -61,16 +69,20 @@
 
 <!-- Size selector and guide image for trousers -->
 {% elif product.category.name in 'trousers' %}
-<select name="product_size" id="product_size" class="form-select">
+<div>
+    <select name="product_size" id="product_size" class="form-select">
         <option value="32">32</option>
         <option value="34">34</option>
         <option value="36">36</option>
         <option value="38">38</option>
         <option value="40">40</option>
         <option value="42">42</option>
-</select>
+    </select>
+</div>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#size-modal">Size Guide</button>
+<div>
+    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#size-modal">Size Guide</button>
+</div>
 <!-- Modal -->
 <div class="modal fade" id="size-modal" tabindex="-1" aria-labelledby="size-modal-label" aria-hidden="true">
     <div class="modal-dialog">
@@ -91,16 +103,21 @@
 
 <!-- Size selector and guide image for trousers -->
 {% elif product.category.name in 'suits' %}
-<select name="product_size" id="product_size" class="form-select">
+<div>
+    <select name="product_size" id="product_size" class="form-select">
         <option value="38">38</option>
         <option value="40">40</option>
         <option value="42">42</option>
         <option value="46">46</option>
         <option value="48">48</option>
         <option value="50">50</option>
-</select>
+    </select>
+</div>
+
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#size-modal">Size Guide</button>
+<div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#size-modal">Size Guide</button>
+</div>
 <!-- Modal -->
 <div class="modal fade" id="size-modal" tabindex="-1" aria-labelledby="size-modal-label" aria-hidden="true">
     <div class="modal-dialog">
@@ -121,24 +138,30 @@
 
 <!-- Size selector and guide image for armour -->
 {% elif product.category.name in 'armour' %}
-<select name="product_size" id="product_size" class="form-select">
+<div>
+    <select name="product_size" id="product_size" class="form-select">
         <option value="L">L</option>
         <option value="M">M</option>
         <option value="S">S</option>
-</select>
+    </select>
+</div>
 
 <!-- Size selector and guide image for trousers -->
 {% elif product.category.name in 'urban, touring, motocross_boots' %}
-<select name="product_size" id="product_size" class="form-select">
+<div>
+    <select name="product_size" id="product_size" class="form-select">
         <option value="7">7</option>
         <option value="8">8</option>
         <option value="9">9</option>
         <option value="10">10</option>
         <option value="11">11</option>
         <option value="12">12</option>
-</select>
+    </select>
+</div>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#size-modal">Size Guide</button>
+<div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#size-modal">Size Guide</button>
+</div>
 <!-- Modal -->
 <div class="modal fade" id="size-modal" tabindex="-1" aria-labelledby="size-modal-label" aria-hidden="true">
     <div class="modal-dialog">
@@ -159,15 +182,19 @@
 
 <!-- Size selector and guide image for gloves -->
 {% elif product.category.name in 'summer, winter, motocross_gloves' %}
-<select name="product_size" id="product_size" class="form-select">
-    <option value="XS">XS</option>
-    <option value="S">S</option>
-    <option value="M">M</option>
-    <option value="L">L</option>
-    <option value="XL">XL</option>
-</select>
+<div>
+    <select name="product_size" id="product_size" class="form-select">
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+    </select>
+</div>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#size-modal">Size Guide</button>
+<div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#size-modal">Size Guide</button>
+</div>
 <!-- Modal -->
 <div class="modal fade" id="size-modal" tabindex="-1" aria-labelledby="size-modal-label" aria-hidden="true">
     <div class="modal-dialog">
