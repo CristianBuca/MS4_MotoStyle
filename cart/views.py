@@ -1,6 +1,6 @@
 # Imports
 # 3rd party:
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, HttpResponse
 # -----------------------------------------------------------------------------
 
 
@@ -71,11 +71,13 @@ def adjust_cart(request, item_id):
             cart[item_id]['items_by_size'][size] = quantity
         else:
             del cart[item_id]['items_by_size'][size]
+            if not cart[item_id]['items_by_size']:
+                cart.pop(item_id)
     else:
         if quantity > 0:
             cart[item_id] = quantity
         else:
-            cart.pop[item_id]
+            cart.pop(item_id)
 
     request.session['cart'] = cart
     return redirect(reverse('view_cart'))
@@ -88,18 +90,23 @@ def remove_from_cart(request, item_id):
             request (object): HTTP request object
             item_id: ID of product from the form
         Returns:
-            redirect_url: Redirect back to product_detail view
+            HttpResponse: 200
     """
+    try:
+        cart = request.session.get('cart', {})
+        size = None
+        if 'product_size' in request.POST:
+            size = request.POST['product_size']
 
-    cart = request.session.get('cart', {})
-    size = None
-    if 'product_size' in request.POST:
-        size = request.POST['product_size']
-
-    if size:
-
-        else:
+        if size:
             del cart[item_id]['items_by_size'][size]
+            if not cart[item_id]['items_by_size']:
+                cart.pop(item_id)
+        else:
+            cart.pop(item_id)
 
-    request.session['cart'] = cart
-    return redirect(reverse('view_cart'))
+        request.session['cart'] = cart
+        return HttpResponse(status=200)
+
+    except Exception as e:
+        return HttpResponse(status=500)
