@@ -52,15 +52,14 @@ $('.update').click(function(e) {
 
 // Remove item and reload on click
 $('.remove').click(function(e) {
-    var csrfToken = "{{ csrf_token }}";
+    var csrfToken = $(this).data('token');
     var itemId = $(this).attr('id').split('remove_')[1];
-    var size = $(this).data('size');
-    var url = `/cart/remove/${itemId}`;
-    var data = {'csrfmiddlewaretoken': csrfToken, 'size': size};
+    var size = $(this).data('product_size');
+    var url = `/cart/remove/${itemId}/`;
+    var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
 
     $.post(url, data)
         .done(function() {
             location.reload();
         });
 })
-

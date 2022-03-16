@@ -40,7 +40,7 @@
                                 </div>
                             </form>
                             <button class="update btn btn-dark">Update</button>
-                            <button class="remove btn btn-dark" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}">Remove</button>
+                            <button class="remove btn btn-dark" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}" data-token="{{ csrf_token }}">Remove</button>
                         </div>
                     </div>
                 {% endfor %}
