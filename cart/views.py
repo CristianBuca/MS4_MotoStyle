@@ -1,6 +1,6 @@
 # Imports
 # 3rd party:
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 # -----------------------------------------------------------------------------
 
 
@@ -51,7 +51,8 @@ def add_to_cart(request, item_id):
 
 def adjust_cart(request, item_id):
     """
-    View to adjust the quantity of the product in the shopping cart stored in session cookies.
+    View to adjust the quantity of the product in the shopping
+    cart stored in session cookies.
         Arguments:
             request (object): HTTP request object
             item_id: ID of product from the form
@@ -66,12 +67,15 @@ def adjust_cart(request, item_id):
         size = request.POST['product_size']
 
     if size:
-        if 
-    else:
-        if item_id in list(cart.keys()):
-            cart[item_id] += quantity
+        if quantity > 0:
+            cart[item_id]['items_by_size'][size] = quantity
         else:
+            del cart[item_id]['items_by_size'][size]
+    else:
+        if quantity > 0:
             cart[item_id] = quantity
+        else:
+            cart.pop[item_id]
 
     request.session['cart'] = cart
-    return redirect()
+    return redirect(reverse('view_cart'))
