@@ -7,7 +7,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Search engine meta data -->
+<!-- Search engine meta data -->
         <meta name="description" content="Retailer of motorcycle helmets, clothing & accessories. Top brands, incredible prices.">
         <meta name="keywords" content="motorcycle, clothing, motorcycle helmets, accessories, jackets, motorcycle boots">
         <meta name="author" content="MotoStyle">
@@ -26,7 +26,7 @@
     {% block extra_css %}
     {% endblock %}
 
-<!-- JavasScript dependencies -->
+<!-- JavasScript dependencies to be loaded as soon as possible-->
     {% block corejs %}
         <script src="https://kit.fontawesome.com/ca727e1099.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -99,6 +99,8 @@
                 </ul>
             </div>
         </div>
+
+<!-- Main Navigation with Bootstrap collapsible navbar -->
         <div class="row">
             <nav class="navbar navbar-expand-lg navbar-light w-100 col-6 bg-danger">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -108,6 +110,8 @@
                 {% include 'includes/main_nav.html' %}
             </nav>
         </div>
+
+<!-- Message banner -->
         <div id="msg-banner" class="row text-center bg-info">
             <div>
                 <h4>Free delivery on orders over £{{ free_delivery_threshold }}</h4>
@@ -120,6 +124,7 @@
         </div>
     </div>
 
+<!-- Toast Messages Logic and Display-->
     {% if messages %}
         <div class="message-container">
             {% for message in messages %}
@@ -137,6 +142,8 @@
             {% endfor %}
         </div>
     {% endif %}
+<!-- Toast Messages End -->
+
 
     {% block page_header %}
     {% endblock %}
@@ -144,6 +151,7 @@
     {% block content %}
     {% endblock %}
 
+<!-- Javascript to be loaded after the DOM -->
     {% block postloadjs %}
         <script type="text/javascript">
             var toastElList = [].slice.call(document.querySelectorAll('.toast'))
