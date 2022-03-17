@@ -1,0 +1,1 @@
+web: gunicorn moto_style.wsgi:application
