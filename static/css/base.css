@@ -76,8 +76,8 @@ body {
     border-bottom-color: #343a40 !important;
 }
 
-.bag-notification-wrapper {
-    height: 100px;
+.cart-toast-overview {
+    max-height: 30vh;
     overflow-x: hidden;
     overflow-y: auto;
 }
