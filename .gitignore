@@ -4,3 +4,4 @@ virtualenv/
 .vscode
 *sqlite3
 *.pyc
+ignored/
