@@ -7,6 +7,46 @@
     </div>
     <div class="w-100 toast-capper bg-success"></div>
     <div class="toast-body">
-        {{ message }}
+        <div class="row">
+            <div class="col">
+                {{ message }}
+                <div class="w-100 toast-capper bg-success"></div>
+            </div>
+        </div>
+        {% if grand_total %}
+            <p>Your cart: {{ product.count }}</p>
+            {% for item in cart_items %}
+                <div class="row">
+                    <div class="col-3 my-1">
+                        <img class="w-100" src="{{ item.product.image.url }}">
+                    </div>
+                    <div class="col-9">
+                        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                        <p class="my-0 small">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+                        <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+            <div class="row">
+                <div class="col">
+                    <strong><p class="">
+                        Total{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}: 
+                        <span class="">${{ total|floatformat:2 }}</span>
+                    </p></strong>
+                    {% if free_delivery_delta > 0 %}
+                        <p class="text-center">
+                            Spend <strong>${{ free_delivery_delta }}</strong> more to get free next day delivery!
+                        </p>
+                    {% endif %}
+                    <div>
+                        <a href="">
+                            <button class="btn btn-dark btn-lg">
+                                <small>Secure Checkout with</small><img src="https://cdn.brandfolder.io/KGT2DTA4/at/8vbr8k4mr5xjwk4hxq4t9vs/Stripe_wordmark_-_blurple.svg" alt="" height="30px">
+                            </button>
+                        </a>    
+                    </div>
+                </div>
+            </div>
+        {% endif %}
     </div>
 </div>
