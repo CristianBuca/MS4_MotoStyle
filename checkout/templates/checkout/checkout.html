@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load cart_tools %}
 
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
@@ -40,12 +41,61 @@
 							{% endif %}
 						</div>
                     </fieldset>
+                    <fieldset class="">
+                        <legend class="fieldset-label">Payment</legend>
+<!-- Stripe card element from stripe documentation -->
+                        <div class="" id="card-element"></div>
+<!-- Stripe payment errors are displayed here -->
+                        <div class="text-danger" id="card-errors" role="alert"></div>
+<!-- Input used to pass the client secret to the view so we can get the payment intent id -->
+                        <input type="hidden" value="{{ client_secret }}" name="client_secret">
+                    </fieldset>
+                    <div class="submit-button">                    
+						<a href="{% url 'view_cart' %}" class="btn btn-dark">
+								<i class="fas fa-chevron-left"></i>
+							<span class="font-weight-bold">Adjust Cart</span>
+						</a>
+						<button id="submit-button" class="btn btn-dark">
+							<span class="font-weight-bold">Complete Order</span>
+								<i class="fas fa-lock"></i>
+						</button>
+						<p class="small text-danger my-0">
+								<i class="fas fa-exclamation-circle"></i>
+							<span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
+						</p>
+					</div>
                 </form>
             </div>
 
 <!-- Order summary -->
-            <div class="d-non d-md-block col-md-4">
-                
+            <div class="d-none d-md-block col-md-4">
+                <div class="cart-overview">
+                    {% for item in cart_items %}
+                        <div class="row">
+                            <div class="col-3 my-1">
+                                <img class="w-100" src="{{ item.product.image.url }}">
+                            </div>
+                            <div class="col-9">
+                                <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                                <p class="my-0 small">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+                                <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                    <div class="row">
+                        <div class="col">
+                            <strong><p class="">
+                                Total{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}: 
+                                <span class="">${{ total|floatformat:2 }}</span>
+                            </p></strong>
+                            {% if free_delivery_delta > 0 %}
+                                <p class="text-center">
+                                    Spend <strong>${{ free_delivery_delta }}</strong> more to get free next day delivery!
+                                </p>
+                            {% endif %}
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
