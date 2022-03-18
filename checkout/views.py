@@ -1,3 +1,9 @@
+# Imports
+# 3rd party:
 from django.shortcuts import render
+# -----------------------------------------------------------------------------
 
-# Create your views here.
+
+def checkout(request):
+    
+
