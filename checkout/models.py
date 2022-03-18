@@ -11,7 +11,7 @@ from products.models import Product
 
 class Order(models.Model):
     """
-    Class defining the fields in the Order model
+    Class defining the fields and model methods in the Order model
     """
     order_number = models.CharField(max_length=32, null=False, editable=False)
     full_name = models.CharField(max_length=50, null=False, blank=False)
@@ -76,7 +76,8 @@ class Order(models.Model):
 
 class OrderLineItem(models.Model):
     """
-    Class defining the fields in each item model for the order
+    Class defining the fields and model methods
+    in each item model for the order
     """
     order = models.ForeignKey(
         Order, null=False, blank=False, on_delete=models.CASCADE,
