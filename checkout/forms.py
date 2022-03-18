@@ -15,7 +15,7 @@ class OrderForm(forms.ModelForm):
         Defines the Meta fields on the Order Form
         """
         model = Order
-        field = (
+        fields = (
             'full_name', 'email', 'phone_number', 'address_line1',
             'address_line2', 'town_or_city', 'area', 'postcode', 'country',
         )
