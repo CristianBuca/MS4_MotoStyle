@@ -37,6 +37,8 @@ class Order(models.Model):
     def _generate_order_number(self):
         """
         Generate a random, unique order number using UUID
+            Arguments: self(object): The method object
+            Returns: random unique number
         """
         return uuid.uuid4().hex.upper()
 
@@ -44,6 +46,8 @@ class Order(models.Model):
         """
         Override the original save method to set the order number
         if it hasn't been set already
+            Arguments: self(object): The method object
+            Returns: N/A
         """
         if not self.order_number:
             self.order_number = self._generate_order_number()
@@ -53,6 +57,8 @@ class Order(models.Model):
         """
         Update grand total each time a line item is added,
         accounting for delivery costs.
+            Arguments: self(object): The method object
+            Returns: N/A
         """
         self.order_total = self.lineitems.aggregate(
             Sum('lineitem_total'))['lineitem_total__sum'] or 0
@@ -68,7 +74,7 @@ class Order(models.Model):
     def __str__(self):
         """
         String method to return the order number
-            Arguments: self(object): self
+            Arguments: self(object): The method object
             Returns: order number as a string
         """
         return self.order_number
@@ -97,6 +103,8 @@ class OrderLineItem(models.Model):
         """
         Override the original save method to set the lineitem total
         and update the order total.
+            Arguments: self(object): The method object
+            Returns: N/A
         """
         self.lineitem_total = self.product.price * self.quantity
         super().save(*args, **kwargs)
@@ -104,7 +112,7 @@ class OrderLineItem(models.Model):
     def __str__(self):
         """
         String method to return the order number and SKU number
-            Arguments: self(object): self
+            Arguments: self(object): The method object
             Returns: product SKU number and order number
         """
         return f'SKU {self.product.sku} on order {self.order.order_number}'
