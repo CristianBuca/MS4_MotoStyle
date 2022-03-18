@@ -1,17 +1,51 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
 {% block content %}
 <!-- Checkout Form -->
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-8">
-                
+                <p>Your Delivery Details:</p>
+                <form action="{% url 'checkout' %}" method="POST" id="payment-form">
+                    {% csrf_token %}
+                    <fieldset>
+                        <legend class="fieldset-label">Details</legend>
+                        {{ order_form.full_name | as_crispy_field }}
+                        {{ order_form.email | as_crispy_field }}
+                    </fieldset>
+                    <fieldset>
+                        <legend class="fieldset-label">Delivery</legend>
+                        {{ order_form.phone_number | as_crispy_field }}
+                        {{ order_form.address_line1 | as_crispy_field }}
+                        {{ order_form.address_line2 | as_crispy_field }}
+                        {{ order_form.town_or_city | as_crispy_field }}
+                        {{ order_form.area | as_crispy_field }}
+                        {{ order_form.postcode | as_crispy_field }}
+                        {{ order_form.country | as_crispy_field }}
+                        <div class="form-check">
+							{% if user.is_authenticated %}
+								<label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
+                                <input class="form-check-input" type="checkbox" id="id-save-info" name="save-info" checked>
+							{% else %}
+								<label class="form-check-label" for="id-save-info">
+                                    <p>You need to be logged in to save this information for future purchases</p>
+                                    <a class="btn btn-info" href="{% url 'account_signup' %}">Create an account</a>
+                                    <a class="btn btn-info" href="{% url 'account_login' %}">Login</a>
+                                </label>
+							{% endif %}
+						</div>
+                    </fieldset>
+                </form>
             </div>
 
 <!-- Order summary -->
             <div class="d-non d-md-block col-md-4">
-
+                
             </div>
         </div>
     </div>
