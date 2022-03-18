@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-{% load bag_tools %}
+{% load cart_tools %}
 
 {% block content %}
     <div class="container">
@@ -63,7 +63,9 @@
                         Add £{{ free_delivery_delta }} worth of products to your cart to enjoy FREE DELIVERY!
                     {% endif %}
                     <div>
-                        <button class="btn btn-dark btn-lg"><small>Secure Checkout with</small><img src="https://cdn.brandfolder.io/KGT2DTA4/at/8vbr8k4mr5xjwk4hxq4t9vs/Stripe_wordmark_-_blurple.svg" alt="" height="30px"></button>
+                        <a href="{% url 'checkout' %}">
+                            <button class="btn btn-dark btn-lg"><small>Secure Checkout with</small><img src="https://cdn.brandfolder.io/KGT2DTA4/at/8vbr8k4mr5xjwk4hxq4t9vs/Stripe_wordmark_-_blurple.svg" alt="" height="30px"></button>
+                        </a>
                     </div>
                     <div>
                         <img src="{{ MEDIA_URL }}cards/visa.svg" alt="visa card" width="40px" height="40px">
