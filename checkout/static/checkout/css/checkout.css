@@ -1,3 +1,5 @@
+/* Stripe Payment input style */
+
 .StripeElement,
 .stripe-style-input {
   box-sizing: border-box;
@@ -35,6 +37,20 @@
     color: #000;
     border: 1px solid #000;
 }
+
+/* Select elements grayed out when invalid or empty */
+
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
+}
+
+/* Payment loading overlay style */
 
 #loading-overlay {
 	display: none;
