@@ -75,10 +75,10 @@ form.addEventListener('submit', function(ev) {
                     email: $.trim(form.email.value),
                     address:{
                         line1: $.trim(form.address_line1.value),
-                        line2: $.trim(form.address_line22.value),
+                        line2: $.trim(form.address_line2.value),
                         city: $.trim(form.town_or_city.value),
                         country: $.trim(form.country.value),
-                        area: $.trim(form.area.value),
+                        state: $.trim(form.area.value),
                     }
                 }
             },
@@ -91,7 +91,7 @@ form.addEventListener('submit', function(ev) {
                     city: $.trim(form.town_or_city.value),
                     country: $.trim(form.country.value),
                     postal_code: $.trim(form.postcode.value),
-                    area: $.trim(form.area.value),
+                    state: $.trim(form.area.value),
                 }
             },
         }).then(function(result) {
