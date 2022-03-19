@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h4>Order successfull!. A confirmation email will be sent to {{ order.email }}</h4>
+            </div>
+<!-- Order summary -->
+            <div class="col-md-4">
+                <div class="cart-overview">
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <strong><p class="">
+                            Total{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}: 
+                            <span class="">${{ total|floatformat:2 }}</span>
+                        </p></strong>
+                        {% if free_delivery_delta > 0 %}
+                            <p class="text-center">
+                                Spend <strong>${{ free_delivery_delta }}</strong> more to get free next day delivery!
+                            </p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
