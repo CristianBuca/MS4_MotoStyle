@@ -72,7 +72,7 @@ class StripeWH_Handler:
                     town_or_city__iexact=shipping_details.address.city,
                     address_line1__iexact=shipping_details.address.line1,
                     address_line2__iexact=shipping_details.address.line2,
-                    county__iexact=shipping_details.address.state,
+                    area__iexact=shipping_details.address.state,
                     grand_total=grand_total,
                     original_cart=cart,
                     stripe_pid=pid,
@@ -101,7 +101,7 @@ class StripeWH_Handler:
                     town_or_city=shipping_details.address.city,
                     address_line1=shipping_details.address.line1,
                     address_line2=shipping_details.address.line2,
-                    county=shipping_details.address.state,
+                    area=shipping_details.address.state,
                     original_cart=cart,
                     stripe_pid=pid,
                 )
