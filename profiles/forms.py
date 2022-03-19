@@ -8,15 +8,14 @@ from .models import UserProfile
 
 class UserProfileForm(forms.ModelForm):
     """
-    Class defining the fields and methods used on the Order Form
+    Class defining the fields and methods used on the user profile form
     """
     class UserProfile:
         """
-        Defines the Meta fields on the Order Form
+        Defines the Meta fields on the user profile form
         """
         model = UserProfile
         exclude = ('user',)
-
 
     def __init__(self, *args, **kwargs):
         """
@@ -27,23 +26,23 @@ class UserProfileForm(forms.ModelForm):
         """
         super().__init__(*args, **kwargs)
         placeholders = {
-            'full_name': 'Full Name',
-            'email': 'Email Address',
-            'phone_number': 'Phone Number',
-            'address_line1': 'Address Line 1',
-            'address_line2': 'Address Line 2',
-            'town_or_city': 'Town or City',
-            'postcode': 'Postal Code',
-            'area': 'Area',
+            'default_full_name': 'Full Name',
+            'default_email': 'Email Address',
+            'default_phone_number': 'Phone Number',
+            'default_address_line1': 'Address Line 1',
+            'default_address_line2': 'Address Line 2',
+            'default_town_or_city': 'Town or City',
+            'default_postcode': 'Postal Code',
+            'default_area': 'Area',
         }
 
-        self.fields['full_name'].widget.attrs['autofocus'] = True
+        self.fields['default_full_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
-            if field != 'country':
+            if field != 'default_country':
                 if self.fields[field].required:
                     placeholder = f'{placeholders[field]} *'
                 else:
                     placeholder = placeholders[field]
                 self.fields[field].widget.attrs['placeholder'] = placeholder
-                self.fields[field].widget.attrs['class'] = 'stripe-style-input'
+                self.fields[field].widget.attrs['class'] = 'profile-form-input'
                 self.fields[field].label = False
