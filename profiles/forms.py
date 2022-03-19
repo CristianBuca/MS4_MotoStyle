@@ -10,7 +10,7 @@ class UserProfileForm(forms.ModelForm):
     """
     Class defining the fields and methods used on the user profile form
     """
-    class UserProfile:
+    class Meta:
         """
         Defines the Meta fields on the user profile form
         """
@@ -36,7 +36,7 @@ class UserProfileForm(forms.ModelForm):
             'default_area': 'Area',
         }
 
-        self.fields['default_full_name'].widget.attrs['autofocus'] = True
+        self.fields['default_phone_number'].widget.attrs['autofocus'] = True
         for field in self.fields:
             if field != 'default_country':
                 if self.fields[field].required:
