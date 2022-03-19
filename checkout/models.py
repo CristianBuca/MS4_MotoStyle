@@ -7,6 +7,7 @@ from django.conf import settings
 from django_countries.fields import CountryField
 # Internal
 from products.models import Product
+from profiles.models import UserProfile
 # -----------------------------------------------------------------------------
 
 
@@ -37,6 +38,10 @@ class Order(models.Model):
     original_cart = models.TextField(null=False, blank=False, default='')
     stripe_pid = models.CharField(
         max_length=254, null=False, blank=False, default=''
+    )
+    user_profile = models.ForeignKey(
+        UserProfile, on_delete=models.SET_NULL, null=True, blank=True,
+        related_name='orders'
     )
 
     def _generate_order_number(self):
