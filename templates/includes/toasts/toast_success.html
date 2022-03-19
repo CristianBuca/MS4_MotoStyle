@@ -13,7 +13,7 @@
                 <div class="w-100 toast-capper bg-success"></div>
             </div>
         </div>
-        {% if grand_total %}
+        {% if grand_total and not on_profile_page %}
             <p>Cart Overview: {{ product_count }} item(s)</p>
             <div class="cart-toast-overview">
                 {% for item in cart_items %}

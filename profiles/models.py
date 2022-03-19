@@ -32,7 +32,7 @@ class UserProfile(models.Model):
     )
     default_area = models.CharField(max_length=80, null=True, blank=True)
     default_country = CountryField(
-        blank_label='Country *', null=True, blank=True
+        blank_label='Country', null=True, blank=True
     )
 
     def __str__(self):
