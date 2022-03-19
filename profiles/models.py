@@ -1,4 +1,6 @@
 # Imports
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 # 3rd party:
 from django.db import models
 from django.contrib.auth.models import User
@@ -32,3 +34,24 @@ class UserProfile(models.Model):
     default_country = CountryField(
         blank_label='Country *', null=True, blank=True
     )
+
+    def __str__(self):
+        return self.user.username
+
+
+@receiver(post_save, sender=User)
+def create_or_update_user_profile(sender, instance, created, **kwargs):
+    """
+    Receiver for post_save event from the user model.
+    Creates user profile or updates it if already exists.
+        Arguments:
+            sender (object): The user sending the request
+            instance (object): The instance of the object
+            created (object): The flag to create a new user in DB
+            **kwargs (object): keyword arguments
+        Returns: N/A
+    """
+    if created:
+        UserProfile.objects.create(user=instance)
+    # Existing users: just save the profile
+    instance.userprofile.save()
