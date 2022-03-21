@@ -9,5 +9,17 @@
                 <h5>Add Product</h5>
             </div>
         </div>
+
+<!-- Product Form -->
+        <div class="row">
+            <div class="col">
+                <form action="{% url 'add_product' %}" method="POST" class="form" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <a href="{% url 'products' %}" class="btn btn-dark">Cancel</a>
+                    <button class="btn btn-dark" type="submit">Add Product</button>
+                </form>
+            </div>
+        </div>
     </div>
 {% endblock %}
