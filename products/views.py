@@ -6,6 +6,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 # Internal:
 from .models import Product, Category
+from .forms import ProductForm
 # -----------------------------------------------------------------------------
 
 
@@ -85,3 +86,10 @@ def add_product(request):
         Arguments: request (object): The Http request
         Returns: Render add product page
     """
+    form = ProductForm()
+    template = 'products/add_product.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
