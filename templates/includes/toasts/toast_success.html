@@ -18,8 +18,12 @@
             <div class="cart-toast-overview">
                 {% for item in cart_items %}
                     <div class="row">
-                        <div class="col-3 my-1">
-                            <img class="w-100" src="{{ item.product.image.url }}">
+                        <div class="col-3">
+                            {% if item.product.image %}
+                                <img class="w-100" src="{{ item.product.image.url }}" alt="Image of {{ item.product.name }}">
+                            {% else %}
+                                <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="No image present">
+                            {% endif %}
                         </div>
                         <div class="col-9">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
