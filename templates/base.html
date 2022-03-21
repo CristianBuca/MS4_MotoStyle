@@ -74,8 +74,8 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="account-options">
                             {% if request.user.is_authenticated %}
-                                {% if request.user.is_super %}
-                                    <a href="" class="dropdown-item">Add Product</a>
+                                {% if request.user.is_superuser %}
+                                    <a href="{% url 'add_product' %}" class="dropdown-item">Add Product</a>
                                 {% endif %}
                                 <a href="{% url 'profile' %}" class="dropdown-item">Profile</a>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
