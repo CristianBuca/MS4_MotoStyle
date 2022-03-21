@@ -12,7 +12,7 @@ from .models import Product, Category
 def products(request):
     """
     View to render the products page, handle sorting and search queries
-        Arguments: request (object): HTTP request object
+        Arguments: request (object): The Http request
         Returns: render products page with context
     """
     products = Product.objects.all()
@@ -66,7 +66,7 @@ def product_detail(request, product_id):
     """
     View to render the product detail page
         Arguments:
-            request (object): HTTP request object
+            request (object): The Http request
             product_id: ID of product being viewed
         Returns: render product display page with context
     """
@@ -77,3 +77,11 @@ def product_detail(request, product_id):
         }
 
     return render(request, 'products/product_detail.html', context)
+
+
+def add_product(request):
+    """
+    View for adding products to the database
+        Arguments: request (object): The Http request
+        Returns: Render add product page
+    """
