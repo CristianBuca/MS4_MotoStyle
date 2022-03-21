@@ -86,7 +86,19 @@ def add_product(request):
         Arguments: request (object): The Http request
         Returns: Render add product page
     """
-    form = ProductForm()
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Product added to shop')
+            return redirect(reverse('add_product'))
+        else:
+            messages.error(
+                request, 'Could not add product. Please double-check the form'
+            )
+    else:
+        form = ProductForm()
+
     template = 'products/add_product.html'
     context = {
         'form': form,
