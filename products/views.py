@@ -105,3 +105,15 @@ def add_product(request):
     }
 
     return render(request, template, context)
+
+
+def edit_product(request, product_id):
+    """
+    View for editing product details
+        Arguments: 
+            request (object): The Http request
+            product_id: ID of product being changed
+        Returns:
+            Render the edit product page
+    """
+    
