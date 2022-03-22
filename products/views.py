@@ -116,4 +116,14 @@ def edit_product(request, product_id):
         Returns:
             Render the edit product page
     """
-    
+    product = get_object_or_404(Product, pk=product_id)
+    form = ProductForm(instance=product)
+    messages.info(request, f'You selected {product.name} for editing')
+
+    template = 'products/edit_product.html'
+    context = {
+        'form': form,
+        'product': product,
+    }
+
+    return render(request, template, context)
