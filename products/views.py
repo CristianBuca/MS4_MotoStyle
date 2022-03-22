@@ -89,9 +89,9 @@ def add_product(request):
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            product = form.save()
             messages.success(request, 'Product added to shop')
-            return redirect(reverse('add_product'))
+            return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(
                 request, 'Could not add product. Please double-check the form.'
@@ -139,3 +139,18 @@ def edit_product(request, product_id):
     }
 
     return render(request, template, context)
+
+
+def delete_product(request, product_id):
+    """
+    View for deleting product details
+        Arguments:
+            request (object): The Http request
+            product_id: ID of product being removed
+        Returns:
+            Redirect to products page
+    """
+    product = get_object_or_404(Product, pk=product_id)
+    product.delete()
+    messages.success(request, 'Product removed successfully')
+    return redirect(reverse('products'))
