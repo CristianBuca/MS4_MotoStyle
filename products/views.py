@@ -94,7 +94,7 @@ def add_product(request):
             return redirect(reverse('add_product'))
         else:
             messages.error(
-                request, 'Could not add product. Please double-check the form'
+                request, 'Could not add product. Please double-check the form.'
             )
     else:
         form = ProductForm()
@@ -110,15 +110,27 @@ def add_product(request):
 def edit_product(request, product_id):
     """
     View for editing product details
-        Arguments: 
+        Arguments:
             request (object): The Http request
             product_id: ID of product being changed
         Returns:
             Render the edit product page
     """
     product = get_object_or_404(Product, pk=product_id)
-    form = ProductForm(instance=product)
-    messages.info(request, f'You selected {product.name} for editing')
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'New product details have been saved')
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(
+                request, 'Could not make the desired changes. '
+                'Please doublecheck the form.'
+            )
+    else:
+        form = ProductForm(instance=product)
+        messages.info(request, f'You selected {product.name} for editing')
 
     template = 'products/edit_product.html'
     context = {
