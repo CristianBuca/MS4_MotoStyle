@@ -12,8 +12,8 @@ class Wishlist(models.Model):
     Defines the Favorites model
     """
 
-    products = models.ManyToManyField(Product, blank=True)
-    owner = models.OneToOneField(User, on_delete=models.CASCADE)
+    owner = models.ForeignKey(User, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, default=1)
 
     def __str__(self):
         """
