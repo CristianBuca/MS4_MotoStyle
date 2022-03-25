@@ -54,10 +54,12 @@ INSTALLED_APPS = [
     'cart',
     'checkout',
     'profiles',
+    'wishlist',
 
     # Other
     'storages',
     'crispy_forms',
+    'django_extensions',
 
 ]
 
@@ -217,9 +219,15 @@ STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+DEFAULT_FROM_EMAIL = 'motostyle@example.com'
 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+GRAPH_MODELS = {
+  'all_applications': True,
+  'group_models': True,
+}
