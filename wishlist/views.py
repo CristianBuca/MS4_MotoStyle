@@ -35,12 +35,30 @@ def add_to_wishlist(request, product_id):
         Arguments:
             request (object): The request object
             product_id: The id of the product to be added
-        Return: Product detail page
+        Return: Redirect to product detail page
     """
     owner = get_object_or_404(User, id=request.user.id)
     product = get_object_or_404(Product, pk=product_id)
 
     Wishlist.objects.create(owner=owner, product=product)
     messages.success(request, f'Added {product.name} to your wishlist')
+
+    return redirect(reverse('product_detail', args=[product_id]))
+
+
+@login_required
+def remove_from_wishlist(request, product_id):
+    """
+    View to remove a product from the user's wishlist
+        Arguments:
+            request (object): The request object
+            product_id: The id of the product to be added
+        Return: Render wishlist page
+    """
+    owner = get_object_or_404(User, id=request.user.id)
+    product = get_object_or_404(Product, pk=product_id)
+
+    Wishlist.objects.filter(owner=owner, product=product).delete()
+    messages.success(request, f'Removed {product.name} from your wishlist')
 
     return redirect(reverse('product_detail', args=[product_id]))
