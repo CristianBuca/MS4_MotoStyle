@@ -12,10 +12,12 @@ class ProductAdmin(admin.ModelAdmin):
     Class defining the products model in admin page
     """
     list_display = (
-        'name', 'category', 'price', 'image',
+        'id', 'name', 'category', 'price', 'image',
     )
 
     ordering = ('category',)
+
+    search_fields = ('name',)
 
 
 class CategoryAdmin(admin.ModelAdmin):
