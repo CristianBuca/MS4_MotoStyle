@@ -40,8 +40,11 @@ def add_to_wishlist(request, product_id):
     owner = get_object_or_404(User, id=request.user.id)
     product = get_object_or_404(Product, pk=product_id)
 
-    Wishlist.objects.create(owner=owner, product=product)
-    messages.success(request, f'Added {product.name} to your wishlist')
+    if not Wishlist.objects.filter(owner=owner, product=product):
+        Wishlist.objects.create(owner=owner, product=product)
+        messages.success(request, f'Added {product.name} to your wishlist')
+    else:
+        messages.error(request, f'{product.name} already in your wishlist')
 
     return redirect(reverse('product_detail', args=[product_id]))
 
