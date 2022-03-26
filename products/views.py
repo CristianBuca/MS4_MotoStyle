@@ -8,6 +8,7 @@ from django.contrib.auth.decorators import login_required
 # Internal:
 from .models import Product, Category
 from .forms import ProductForm
+from wishlist.models import Wishlist
 # -----------------------------------------------------------------------------
 
 
@@ -73,9 +74,13 @@ def product_detail(request, product_id):
         Returns: render product display page with context
     """
     product = get_object_or_404(Product, pk=product_id)
+    in_wishlist = Wishlist.objects.filter(
+        product=product, owner=request.user.id
+    )
 
     context = {
         'product': product,
+        'in_wishlist': in_wishlist
         }
 
     return render(request, 'products/product_detail.html', context)
