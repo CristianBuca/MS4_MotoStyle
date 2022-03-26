@@ -9,7 +9,7 @@ from products.models import Product
 
 class Wishlist(models.Model):
     """
-    Defines the Favorites model
+    Defines the Wishlist model
     """
 
     owner = models.ForeignKey(User, on_delete=models.CASCADE)

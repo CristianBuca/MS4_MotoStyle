@@ -8,7 +8,7 @@ class WishlistAdmin(admin.ModelAdmin):
     Admin class for the Wishlist model.
     """
     list_display = (
-        'owner',
+        'owner', 'product',
     )
     search_fields = (
         'owner',

@@ -1,11 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
-{% load cart_tools %}
 
 {% block content %}
     <div class="container">
         <div class="row text-center">
-            <h4>{{ wishlist }}</h4>
+            <h4>Hello {{ request.user.username }}. This is your wishlist</h4>
         </div>
         {% if wishlist %}
             <div class="row">
@@ -24,7 +23,7 @@
                                 <div>{{ item.product.name }}</div>
                                 <div>£ {{ item.product.price }}</div>
                                 <div class="col">
-                                    <button class="remove btn btn-dark btn-sm" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}" data-token="{{ csrf_token }}">Remove</button>
+                                    <a href="{% url 'remove_from_wishlist' item.product.id %}" class="btn btn-dark">Remove</a>
                                 </div>
                             </div>
                             </div>
