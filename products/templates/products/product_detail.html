@@ -31,6 +31,12 @@
                     {% if request.user.is_superuser %}
                         <a href="{% url 'edit_product' product.id %}">Edit</a>
                         <a href="{% url 'delete_product' product.id %}">Delete</a>
+                        {% if in_wishlist %}
+                            <a class="btn btn-dark" href="{% url 'remove_from_wishlist' product.id %}">Remove from wishlist</a>
+                        {% else %}
+                            <a class="btn btn-dark" href="{% url 'add_to_wishlist' product.id %}">Add to wishlist</a>
+                        {% endif %}
+
                     {% endif %}
                     <h4>£ {{ product.price }}</h4>
 
