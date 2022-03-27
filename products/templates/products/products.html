@@ -61,6 +61,11 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ product.name }}</h5>
                             <p class="card-text">Price {{ product.price }}</p>
+                            {% if product.new_rating > 0 %}
+                                <p>{{ product.new_rating }}</p>
+                            {% else %}
+                                <p>{{ product.rating }} out of 5</p>
+                            {% endif %}
                             <p class="rating">Rating: {{ product.rating }} out of 5</p>
                             <a href="{% url 'products' %}?category={{ product.category.name }}">
                                 <p>{{ product.category.friendly_name }}</p>
