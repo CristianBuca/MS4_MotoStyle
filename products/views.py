@@ -79,8 +79,9 @@ def product_detail(request, product_id):
         product=product, owner=request.user.id
     )
     prod_reviews = Review.objects.filter(object_pk=product_id)
-    new_rating = update_rating(prod_reviews)
-    Product.objects.filter(pk=product_id).update(rating=new_rating)
+    rating = product.rating
+    new_rating = update_rating(prod_reviews, rating)
+    Product.objects.filter(pk=product_id).update(new_rating=new_rating)
 
     context = {
         'product': product,
@@ -89,8 +90,29 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
-def update_rating(prod_reviews):
-    
+
+# Credit to Paul Meeneghan - LoveRugby project 
+# https://github.com/pmeeny/CI-MS4-LoveRugby
+def update_rating(prod_reviews, rating):
+    """
+    Updates the rating of a product when a new review is posted
+        Arguments: prod_reviews: The reviews for the specific product
+        Returns: new rating
+    """
+    number_of_reviews = 0
+    review_ratings = 0
+    new_rating = 0
+    for review in prod_reviews:
+        number_of_reviews = number_of_reviews + 1
+        review_ratings = review_ratings + review.rating
+
+    if number_of_reviews > 0:
+        average_rating = round((review_ratings / number_of_reviews), 1)
+        new_rating = (float(rating) + float(average_rating)) / 2
+        return new_rating
+    else:
+        return new_rating
+
 
 @login_required
 def add_product(request):
