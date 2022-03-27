@@ -5,6 +5,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from django.contrib.auth.decorators import login_required
+from reviews.models import Review
 # Internal:
 from .models import Product, Category
 from .forms import ProductForm
@@ -77,6 +78,9 @@ def product_detail(request, product_id):
     in_wishlist = Wishlist.objects.filter(
         product=product, owner=request.user.id
     )
+    prod_reviews = Review.objects.filter(object_pk=product_id)
+    new_rating = update_rating(prod_reviews)
+    Product.objects.filter(pk=product_id).update(rating=new_rating)
 
     context = {
         'product': product,
@@ -85,6 +89,8 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
+def update_rating(prod_reviews):
+    
 
 @login_required
 def add_product(request):
