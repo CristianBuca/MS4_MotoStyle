@@ -91,12 +91,14 @@ def product_detail(request, product_id):
     return render(request, 'products/product_detail.html', context)
 
 
-# Credit to Paul Meeneghan - LoveRugby project 
+# Credit to Paul Meeneghan - LoveRugby project
 # https://github.com/pmeeny/CI-MS4-LoveRugby
 def update_rating(prod_reviews, rating):
     """
     Updates the rating of a product when a new review is posted
-        Arguments: prod_reviews: The reviews for the specific product
+        Arguments: 
+            prod_reviews: The reviews for the specific product
+            rating: default product rating
         Returns: new rating
     """
     number_of_reviews = 0
@@ -107,8 +109,11 @@ def update_rating(prod_reviews, rating):
         review_ratings = review_ratings + review.rating
 
     if number_of_reviews > 0:
-        average_rating = round((review_ratings / number_of_reviews), 1)
-        new_rating = (float(rating) + float(average_rating)) / 2
+        if rating:
+            average_rating = round((review_ratings / number_of_reviews), 1)
+            new_rating = (float(rating) + float(average_rating)) / 2
+        else:
+            new_rating = round((review_ratings / number_of_reviews), 1)
         return new_rating
     else:
         return new_rating
