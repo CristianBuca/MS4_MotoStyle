@@ -1,0 +1,26 @@
+{% load reviews i18n %}
+<form action="{% review_form_target %}" method="post">{% csrf_token %}
+
+    <input type="hidden" name="next" value="{% url 'product_detail' product.id%}"/>
+
+  {% for field in form %}
+    {% if field.is_hidden %}
+      {{ field }}
+    {% else %}
+      {% if field.errors %}{{ field.errors }}{% endif %}
+      <p{% if field.errors %} class="error"{% endif %}{% if field.name == "honeypot" %} style="display:none;"{% endif %}>
+        {{ field }}
+      </p>
+    {% endif %}
+  {% endfor %}
+  <p class="submit">
+    <input type="submit" name="post" class="submit-post btn btn-dark" value="{% trans 'Post Review' %}"/>
+  </p>
+</form>
+{{ form.media }}
+<style>
+.gl-star-rating[data-star-rating] { display: inline-block; }
+</style>
+<script>
+var starRatingControls = new StarRating('#id_rating', {clearable: false, showText: {{ show_rating_text|yesno:"true,false" }}, initialText: '{% trans "Select a rating" %}'});
+</script>

@@ -9,7 +9,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h4>Order successfull!. A confirmation email will be sent to {{ order.email }}</h4>
+                <h4>Order successful!. A confirmation email will be sent to {{ order.email }}</h4>
             </div>
 <!-- Order summary -->
 <div class="row">
@@ -177,5 +177,13 @@
         </div>
     </div>
 </div>
+{% if from_profile %}
+    <a href="{% url 'profile' %}" class="btn btn-dark">
+        <span class="icon mr-2">
+            <i class="fas fa-angle-left"></i>
+        </span>
+        <span class="text-uppercase">Back to Profile</span>
+    </a>
+{% endif %}
 {% endblock %}
 
