@@ -231,3 +231,6 @@ GRAPH_MODELS = {
   'all_applications': True,
   'group_models': True,
 }
+
+REVIEW_MAX_LENGTH = 300
+REVIEW_PUBLISH_UNMODERATED = True
