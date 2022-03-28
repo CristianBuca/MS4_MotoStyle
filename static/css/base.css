@@ -1,13 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 html {
     height: 100%;
 }
 
 body {
     height: calc(100vh - 164px);
+    font-family: 'Lexend', sans-serif !important;
+
 }
 
 .top-spacer {
     padding-top: 164px;
+}
+
+.header-container {
+    height: 30vh;
+    background-image: url("/media/img/pexels-djordje-petrovic-1416169.png");
+    background-position: center center;
+    background-size: cover;
+
 }
 
 .card-body {
