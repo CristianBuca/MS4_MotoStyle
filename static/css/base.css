@@ -5,10 +5,16 @@ html {
 }
 
 body {
-    height: calc(100vh - 164px);
+    height: 100vh;
     font-family: 'Lexend', sans-serif !important;
-
 }
+
+footer, footer i {
+    color: #E0E0E0;
+}
+ footer i:hover {
+     color: #C62828;
+ }
 
 /* Main color classes */
 
@@ -148,8 +154,11 @@ body {
     border-radius: 0;
 }
 
+
 /* ---------------------- Media Queries ---------------------- */
 
-@media screen and (min-width: 992px) {
-    
+@media screen and (max-width: 992px) {
+    .navbar {
+        background-color: #E0E0E0;
+    }
 }
