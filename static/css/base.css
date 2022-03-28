@@ -10,8 +10,34 @@ body {
 
 }
 
+/* Main color classes */
+
+.bgclr-dark {
+    background-color: #212121;
+}
+
+.bgclr-warning {
+    background-color: #C62828;
+}
+
+.bgclr-neutral {
+    background-color: #E0E0E0;
+}
+
+.bgclr-info {
+    background-color: #FFA726;
+}
+
+#top-nav {
+    height: 96px;
+}
+
 .top-spacer {
-    padding-top: 164px;
+    padding-top: 96px;
+}
+
+.logo {
+    max-height: 50px;
 }
 
 .header-container {
@@ -123,3 +149,7 @@ body {
 }
 
 /* ---------------------- Media Queries ---------------------- */
+
+@media screen and (min-width: 992px) {
+    
+}
