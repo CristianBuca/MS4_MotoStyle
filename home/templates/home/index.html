@@ -12,14 +12,17 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container-fluid h-50">
-        <div class="row h-100">
-            <div class="col-12 col-md-6 bg-success">
-                <p>test</p>
-            </div>
-            <div class="d-sm-none d-md-block col-md-6 bg-danger">
-                <p>test2</p>
-            </div>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="..." class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
         </div>
     </div>
+</div>
 {% endblock %}
