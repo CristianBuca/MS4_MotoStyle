@@ -158,19 +158,35 @@
     {% endblock %}
 
     <footer>
-        <div class="container-fluid footer">
-            <div class="row bgclr-dark">
-                <div class="col-6 col-lg-4">
-                    <p class="copyright">
+        <div class="container-fluid">
+            <div class="row bgclr-dark pt-3">
+                <div class="col-12 col-md-6 col-lg-4 order-2 order-lg-1">
+                    <p>
                         <i class="fa-solid fa-copyright"></i>
-                        Developed for educational purposes only
+                        Copyright MotoStyle
+                    </p>
+                    <p>
+                        <small>Developed for educational purposes only</small>
                     </p>
                 </div>
-                <div class="col">
+                <div class="col-12 col-lg-4 order-1 order-lg-2 text-center fs-1">
                     <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="Find us on Youtube (link opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
                     <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Follow us on Instagram(link opens in a new tab)"><i class="fa-brands fa-instagram-square"></i></i></a>
                     <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us in Facebook (link opens in a new tab"><i class="fa-brands fa-facebook-square"></i></a>
                     <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Follow us on Twitter (link opens in a new tab"><i class="fa-brands fa-twitter-square"></i></a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 order-3 order-lg-3 text-end">
+                    <p class="m-0">
+                        Powered by 
+                        <i class="fa-brands fa-cc-stripe fs-3"></i>
+                    </p>
+                    <p>
+                        Accepting:
+                        <img src="{{ MEDIA_URL }}cards/visa.svg" alt="visa card" width="40px" height="40px">
+                        <img src="{{ MEDIA_URL }}cards/amex.svg" alt="amex card" width="40px" height="40px">
+                        <img src="{{ MEDIA_URL }}cards/mastercard.svg" alt="mastercard card" width="40px" height="40px">
+                        <img src="{{ MEDIA_URL }}cards/maestro.svg" alt="maestro card" width="40px" height="40px">
+                    </p>
                 </div>
             </div>
         </div>
