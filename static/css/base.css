@@ -9,8 +9,12 @@ body {
     font-family: 'Lexend', sans-serif !important;
 }
 
-footer, footer i {
+footer {
     color: #E0E0E0;
+}
+
+footer i {
+    color: #FFA726;
 }
  footer i:hover {
      color: #C62828;
