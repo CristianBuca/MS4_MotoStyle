@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* ---------------------- Main project elements ---------------------- */
 html {
     height: 100%;
 }
@@ -11,35 +12,29 @@ body {
 
 footer {
     color: #E0E0E0;
+    position: sticky;
+    top: 100vh;
 }
 
 footer i {
     color: #FFA726;
 }
- footer i:hover {
-     color: #C62828;
+
+ footer i:hover, .nav-link:hover{
+     color: #C62828 !important;
  }
-
-/* Main color classes */
-
-.bgclr-dark {
-    background-color: #212121;
-}
-
-.bgclr-warning {
-    background-color: #C62828;
-}
-
-.bgclr-neutral {
-    background-color: #E0E0E0;
-}
-
-.bgclr-info {
-    background-color: #FFA726;
-}
 
 #top-nav {
     height: 96px;
+}
+
+#main-nav button:hover,
+#main-nav a:hover {
+    color: #C62828 !important;
+}
+
+.nav-link {
+    color: #212121 !important;
 }
 
 .top-spacer {
@@ -55,7 +50,6 @@ footer i {
     background-image: url("/media/img/pexels-djordje-petrovic-1416169.png");
     background-position: center center;
     background-size: cover;
-
 }
 
 .card-body {
@@ -91,7 +85,26 @@ footer i {
     right: 36px;
 }
 
+/* ---------------------- Main color classes ---------------------- */
+
+.bgclr-dark {
+    background-color: #212121;
+}
+
+.bgclr-warning {
+    background-color: #C62828;
+}
+
+.bgclr-neutral {
+    background-color: #E0E0E0;
+}
+
+.bgclr-info {
+    background-color: #FFA726;
+}
+
 /* Convenience classes - colors copied from Bootstrap */
+
 .arrow-primary {
     border-bottom-color: #007bff !important;
 }
@@ -130,7 +143,7 @@ footer i {
     overflow-y: auto;
 }
 
-/* Product Form */
+/* ---------------------- Product Form ---------------------- */
 
 .btn-file {
     position: relative;
