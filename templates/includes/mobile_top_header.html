@@ -12,9 +12,10 @@
         <div class="dropdown-menu w-100" aria-labelledby="mobile-search">
             <form class="form" action="{% url 'products' %}" method="GET">
                 <div class="input-group w-100">
-                    <input type="text" class="form-control" name="q" placeholder="Search products">
+                    <label for="search-mob" hidden>Search</label>
+                    <input type="text" class="form-control" name="q" id="search-mob" placeholder="Search products">
                     <div class="input-group-append">
-                        <button class="form-control btn btn-dark" type="submit"><i class="fas fa-search"></i></button>
+                        <button class="form-control btn btn-dark" type="submit"><i class="fas fa-search"></i>Search</button>
                     </div>
                 </div>
             </form>
