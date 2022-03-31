@@ -96,7 +96,7 @@ def product_detail(request, product_id):
 def update_rating(prod_reviews, rating):
     """
     Updates the rating of a product when a new review is posted
-        Arguments: 
+        Arguments:
             prod_reviews: The reviews for the specific product
             rating: default product rating
         Returns: new rating
@@ -206,5 +206,5 @@ def delete_product(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
-    messages.success(request, 'Product removed successfully')
+    messages.info(request, 'Product removed successfully')
     return redirect(reverse('products'))
