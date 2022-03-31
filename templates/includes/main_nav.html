@@ -53,7 +53,7 @@
             <button class="btn bgclr-neutral dropdown-toggle w-100 fs-5" type="button" id="accessories" data-bs-toggle="dropdown" aria-expanded="false">
                 Accessories
             </button>
-            <ul class="dropdown-menu" aria-labelledby="Accessories">
+            <ul class="dropdown-menu" aria-labelledby="accessories">
                 <li><a class="dropdown-item " href="{% url 'products' %}?category=luggage">Luggage</a></li>
                 <li><a class="dropdown-item " href="{% url 'products' %}?category=tools">Tools</a></li>
                 <li><a class="dropdown-item " href="{% url 'products' %}?category=luggage,tools">All Accessories</a></li>
@@ -70,7 +70,7 @@
             <button class="btn bgclr-info dropdown-toggle w-100 fs-5" type="button" id="all-products" data-bs-toggle="dropdown" aria-expanded="false">
                 All Products
             </button>
-            <ul class="dropdown-menu" aria-labelledby="all-">
+            <ul class="dropdown-menu" aria-labelledby="all-products">
                 <li><a class="dropdown-item " href="{% url 'products' %}?sort=price&direction=asc">By Price</a></li>
                 <li><a class="dropdown-item " href="{% url 'products' %}?sort=rating&direction=desc">By Rating</a></li>
                 <li><a class="dropdown-item " href="{% url 'products' %}?sort=category&direction=asc">By Category</a></li>
