@@ -51,7 +51,7 @@
             <div class="col-12 col-lg-3">
                 <div class="text-center ms-5 py-2">
                     <a href="{% url 'home' %}">
-                        <img src="{{ MEDIA_URL }}/img/logo_black.png" alt="Logo" class="img-fluid logo">
+                        <img src="{{ MEDIA_URL }}/img/logo_black.png" alt="Nav-Logo" class="img-fluid logo">
                     </a>
                 </div>
             </div>
@@ -59,9 +59,10 @@
             <div class="col pt-3">
                 <form action="{% url 'products' %}" method="GET">
                     <div class="input-group w-100">
-                        <input type="text" class="form-control" name="q" placeholder="Search products">
+                        <label for="search" hidden>Search</label>
+                        <input type="text" class="form-control" name="q" id="search" placeholder="Search products">
                         <div class="input-group-append">
-                            <button class="form-control btn btn-dark" type="submit"><i class="fas fa-search"></i></button>
+                            <button class="form-control btn btn-dark" type="submit"><i class="fas fa-search"></i> Search</button>
                         </div>
                     </div>
                 </form>
@@ -108,7 +109,7 @@
 
 <!-- Main Navigation with Bootstrap collapsible navbar -->
         <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light w-100 col-6 p-0">
+            <nav class="navbar navbar-expand-lg navbar-light w-100 p-0">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -158,7 +159,7 @@
     {% endblock %}
 
     <footer>
-        <div class="container-fluid">
+        <div class="container-fluid m-0">
             <div class="row bgclr-dark pt-3">
                 <div class="col-12 col-md-6 col-lg-4 order-2 order-lg-1">
                     <p>
@@ -170,7 +171,7 @@
                     </p>
                 </div>
                 <div class="col-12 col-lg-4 order-1 order-lg-2 text-center fs-1">
-                    <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="Find us on Youtube (link opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="Find us on Youtube (link opens in a new tab)"><i class="fa-brands fa-youtube-square"></i></a>
                     <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Follow us on Instagram(link opens in a new tab)"><i class="fa-brands fa-instagram-square"></i></i></a>
                     <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us in Facebook (link opens in a new tab"><i class="fa-brands fa-facebook-square"></i></a>
                     <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Follow us on Twitter (link opens in a new tab"><i class="fa-brands fa-twitter-square"></i></a>
