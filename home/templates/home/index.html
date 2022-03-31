@@ -12,13 +12,16 @@
 {% endblock %}
 
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col-4">
-            <div id="carouselExampleInterval" class="carousel slide carousel-dark" data-bs-ride="carousel">
-                <div class="carousel-inner">
+<!-- Slider with top rated products -->
+<!-- Credit to Paul Phillips https://codepen.io/pau1phi11ips/pen/rKyGzq -->
+    <section>
+        <div class="container-fluid">
+            <h1 class="text-center my-3">Most Popular</h1>
+            <div id="infinite_carousel" class="d-flex align-items-center my-3">
+                <div class="p-3 control"><i class="fa fa-2x text-muted fa-chevron-left"></i></div>
+                <div class="row w-100 flex-nowrap" style="overflow: hidden;">
                     {% for top_product in top_products %}
-                        <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="10000">
+                        <div class="col-12 col-md-6 col-lg-3 text-center">
                             <div class="card h-100 text-center">
                                 <div class="image-container">
                                     {% if top_product.image %}
@@ -44,74 +47,13 @@
                         </div>
                     {% endfor %}
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="p-3 control"><i class="fa fa-2x text-muted fa-chevron-right"></i></div>
             </div>
         </div>
-    </div>
-</div>
-<div class="container-fluid">
-    <h1>Bootstrap 4 infinite slider</h1>
-    <div id="infinite_carousel" class="d-flex align-items-center">
-        <div class="p-3 control"><i class="fa fa-2x text-muted fa-chevron-left"></i></div>
-        <div class="row w-100 flex-nowrap" style="overflow: hidden;">
-            {% for top_product in top_products %}
-            <div class="col-6 col-sm-4 col-md-3 col-xl-2 text-center">
-                <div class="card h-100 text-center">
-                    <div class="image-container">
-                        {% if top_product.image %}
-                            <a href="{% url 'product_detail' top_product.id %}">
-                                <img src="{{ top_product.image.url }}" alt="{{ top_product.name }}" class="card-img-top">
-                            </a>
-                        {% else %}
-                            <a href="{% url 'product_detail' top_product.id %}">
-                                <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ top_product.name }}">
-                            </a>
-                        {% endif %}
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">{{ top_product.name }}</h5>
-                        <p class="card-text">Price {{ top_product.price }}</p>
-                        {% if top_product.new_rating > 0 %}
-                            <p>{{ top_product.new_rating }}</p>
-                        {% else %}
-                            <p>{{ top_product.rating }} out of 5</p>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-        <div class="p-3 control"><i class="fa fa-2x text-muted fa-chevron-right"></i></div>
-    </div>
+    </section>
 {% endblock %}
+
 {% block postloadjs %}
-    {{block.super}}
-    <script>
-        $('.toggle-all').on('click', function() {
-  $('#infinite_carousel .row').toggleClass('flex-nowrap');
-  $('#infinite_carousel .control').toggleClass('d-none');
-  $(this).html($('#infinite_carousel .row').hasClass('flex-nowrap') ? '<i class="fa fa-th" aria-hidden="true"></i> Show All' : '<i class="fa fa-chevron-right" aria-hidden="true"></i> Show Slider');
-});
-
-$('#infinite_carousel .fa-chevron-right').on('click', () => {
-  let $infinite_carousel_row = $('#infinite_carousel .row');
-  let $col = $infinite_carousel_row.find('.col-6:first');
-  $infinite_carousel_row.append($col[0].outerHTML);
-  $col.remove();
-});
-
-$('#infinite_carousel .fa-chevron-left').on('click', () => {
-  let $infinite_carousel_row = $('#infinite_carousel .row');
-  let $col = $infinite_carousel_row.find('.col-6:last');
-  $infinite_carousel_row.prepend($col[0].outerHTML);
-  $col.remove();
-});
-    </script>
+    {{ block.super }}
+    <script src="{% static 'home/js/slider.js' %}" type="text/javascript"></script>
 {% endblock %}
