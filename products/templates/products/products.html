@@ -2,6 +2,37 @@
 {% load static %}
 
 {% block page_header %}
+    <div class="container-fluid">
+        <div class="row page-title mt-5">
+            <div class="col-12 text-center">
+                <div>
+                    {% if selected_categories|length == 1 %}
+                        {{ selected_categories.0.friendly_name }}
+                        <img src="{{ selected_categories.0.image.url }}" alt="">
+                    {% else %}
+                        <div class="row d-flex justify-content-center m-3">
+                        {% for cat in selected_categories %}
+                            <div class="col-1 m-3">
+                                <span class="cat-image">
+                                    {% if cat.image %}
+                                    <a href="{% url 'products' %}?category={{ cat.name }}">
+                                        <img src="{{ cat.image.url }}" alt="{{ cat.name }}">
+                                    </a>
+                                    {% else %}
+                                    <a href="{% url 'products' %}?category={{ cat.name }}">
+                                        <img src="{{ MEDIA_URL }}noimage.png" alt="Image missing">
+                                    </a>
+                                    {% endif %}
+                                </span>
+                                <p>{{ cat.friendly_name }}</p>
+                            </div>  
+                        {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 
 {% block content %}
@@ -18,7 +49,7 @@
             <div class="col-4">
                 <p>Viewing Categories</p>
                 {% for cat in selected_categories %}
-                    <a href="{% url 'products' %}?category={{cat.name}}">{{ cat.friendly_name }}</a>
+                    <a href="{% url 'products' %}?category={{ cat.name }}">{{ cat.friendly_name }}</a>
                 {% endfor %}
             </div>
             <div class="col-4">
@@ -47,6 +78,7 @@
 <!-- Bootstrap Card for each product -->
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card h-100 text-center">
+                        <p class="card-title fs-5 mt-3">{{ product.name }}</p>
                         <div class="image-container">
                             {% if product.image %}
                                 <a href="{% url 'product_detail' product.id %}">
@@ -54,19 +86,18 @@
                                 </a>
                             {% else %}
                                 <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                    <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="Image missing">
                                 </a>
                             {% endif %}
+                            <hr>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">{{ product.name }}</h5>
-                            <p class="card-text">Price {{ product.price }}</p>
+                            <p class="card-text">Price £{{ product.price }}</p>
                             {% if product.new_rating > 0 %}
-                                <p>{{ product.new_rating }}</p>
+                                <p><i class="fa-solid fa-star"></i> {{ product.new_rating }}</p>
                             {% else %}
-                                <p>{{ product.rating }} out of 5</p>
+                                <p><i class="fa-solid fa-star"></i> {{ product.rating }}</p>
                             {% endif %}
-                            <p class="rating">Rating: {{ product.rating }} out of 5</p>
                             <a href="{% url 'products' %}?category={{ product.category.name }}">
                                 <p>{{ product.category.friendly_name }}</p>
                             </a>
