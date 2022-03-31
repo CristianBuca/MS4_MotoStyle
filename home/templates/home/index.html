@@ -5,7 +5,7 @@
     <div class="container-fluid header-container">
         <div class="row">
             <div class="col-8 col-md-6 col-lg-3 offset-lg-3 my-5 py-5">
-                <img class="img-fluid" src="{{ MEDIA_URL }}/img/logo_white.png" alt="Logo">
+                <img class="img-fluid" src="{{ MEDIA_URL }}/img/logo_white.png" alt="Main-Logo">
             </div>
         </div>
     </div>
@@ -16,7 +16,7 @@
 <!-- Credit to Paul Phillips https://codepen.io/pau1phi11ips/pen/rKyGzq -->
     <section>
         <div class="container-fluid">
-            <div id="infinite-carousel" class="text-center my-3">
+            <div id="infinite-carousel" class="text-center my-3 disable-user-select">
                 <span class="p-1 p-md-3 control-left mx-0 mx-md-5"><i class="fa-solid fa-2x fa-circle-chevron-left"></i></span>
                 <span class="fs-3"><strong>Hottest</strong> by rating</span>
                 <span class="p-1 p-md-3 control-right mx-0 mx-md-5"><i class="fa-solid fa-2x fa-circle-chevron-right"></i></span>
@@ -24,6 +24,7 @@
                     {% for top_product in top_products %}
                         <div class="col-12 col-md-6 col-lg-4 col-xxl-3 text-center">
                             <div class="card h-100">
+                                <span class="card-title my-3 fs-5">{{ top_product.name }}</span>
                                 <div class="image-container">
                                     {% if top_product.image %}
                                         <a href="{% url 'product_detail' top_product.id %}">
@@ -35,20 +36,16 @@
                                         </a>
                                     {% endif %}
                                 </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">{{ top_product.name }}</h5>
-                                    <p class="card-text">Price {{ top_product.price }}</p>
-                                    {% if top_product.new_rating > 0 %}
-                                        <p>{{ top_product.new_rating }}</p>
-                                    {% else %}
-                                        <p>{{ top_product.rating }} out of 5</p>
-                                    {% endif %}
+                                <div class="m-card-body">
+                                    <div class="m-card-text position-absolute bottom-0 end-0 pe-3">
+                                        <p class="m-1">Price</p>
+                                        <p>£ {{ top_product.price }}</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     {% endfor %}
                 </div>
-                
             </div>
         </div>
     </section>
