@@ -20,8 +20,12 @@ footer i {
     color: #FFA726;
 }
 
- footer i:hover, .nav-link:hover{
+ footer i:hover, 
+ .nav-link:hover,
+ .control-left:hover,
+ .control-right:hover {
      color: #C62828 !important;
+     cursor: pointer;
  }
 
 #top-nav {
@@ -43,6 +47,10 @@ footer i {
 
 .logo {
     max-height: 50px;
+}
+
+strong {
+    color: #C62828;
 }
 
 .header-container {
