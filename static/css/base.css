@@ -60,10 +60,28 @@ strong {
     background-size: cover;
 }
 
-.card-body {
-    background-color: aqua;
+.disable-user-select{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
+/* Card styles */
+
+.m-card-body {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 40%;
+    width: 50%;
+    background: linear-gradient(135deg, transparent 0%, transparent 50%, #212121 70%, #212121 100%);
+}
+
+.m-card-text {
+    color: #FFA726;
+    
+}
 /* ---------------------- Bootstrap 5.1 toasts ---------------------- */
 
 .message-container {
