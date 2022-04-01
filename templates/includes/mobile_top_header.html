@@ -1,12 +1,13 @@
-<div class="d-block d-lg-none">
-    <div class="text-center">
-        <a href="{% url 'home' %}" class="logo">Moto Style</a>
-    </div>
+<div class="d-block d-lg-none p-0">
+    <a href="{% url 'home' %}">
+        <img src="{{ MEDIA_URL }}/img/logo_v2_black.png" alt="Nav-Logo" class="img-fluid logo d-block d-md-none">
+        <img src="{{ MEDIA_URL }}/img/logo_black.png" alt="Nav-Logo" class="img-fluid logo d-none d-md-block">
+    </a>
 </div>
-<ul class="d-block d-lg-none">
+<ul class="d-block d-lg-none p-0 m-0">
     <li class="list-inline-item">
         <a class="nav-link" href="#" id="mobile-search" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <div><i class="fas fa-search"></i></div>
+            <div><i class="fa-solid fa-2x fa-magnifying-glass"></i></div>
             <p>Search</p>
         </a>
         <div class="dropdown-menu w-100" aria-labelledby="mobile-search">
@@ -15,7 +16,7 @@
                     <label for="search-mob" hidden>Search</label>
                     <input type="text" class="form-control" name="q" id="search-mob" placeholder="Search products">
                     <div class="input-group-append">
-                        <button class="form-control btn btn-dark" type="submit"><i class="fas fa-search"></i>Search</button>
+                        <button class="form-control btn btn-dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
                     </div>
                 </div>
             </form>
@@ -23,7 +24,7 @@
     </li>
     <li class="list-inline-item dropdown">
         <a class="nav-link" href="#" id="account-options" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <div><i class="fas fa-user-cog"></i></div>
+            <div class="custom-user mx-auto"></div>
             <p>Account</p>
         </a>
         <div class="dropdown-menu" aria-labelledby="account-options">
@@ -41,9 +42,9 @@
         </div>
     </li>
     <li class="list-inline-item">
-        <a href="{% url 'view_cart' %}" class="navlink">
+        <a href="{% url 'view_cart' %}" class="nav-link">
             <div class="text-center">
-                <div><i class="fas fa-shopping-cart"></i></div>
+                <div class="custom-cart mx-auto"></div>
                 <p>
                     {% if grand_total %}
                         £{{ grand_total | floatformat:2 }}
