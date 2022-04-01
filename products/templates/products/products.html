@@ -32,7 +32,7 @@
 {% block content %}
     <section class="container sorting-util">
         <div class="row">
-            <div class="col-4">
+            <div class="col-4 mx-auto">
                 <p class="text-muted mt-3 text-center text-md-left">
                     {% if search_term or selected_categories or current_sorting != 'None_None' %}
                         <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
@@ -40,13 +40,7 @@
                     {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                 </p>
             </div>
-            <div class="col-4">
-                <p>Viewing Categories</p>
-                {% for cat in selected_categories %}
-                    <a href="{% url 'products' %}?category={{ cat.name }}">{{ cat.friendly_name }}</a>
-                {% endfor %}
-            </div>
-            <div class="col-4">
+            <div class="col-4 d-flex align-items-center mx-auto">
                 <div class="sort-select-wrapper">
                     <select id="sort-selector">
                         <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
