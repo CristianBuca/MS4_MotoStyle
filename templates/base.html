@@ -72,8 +72,8 @@
                 <ul class="list-inline list-unstyled my-0">
                     <li class="list-inline-item text-center dropdown">
                         <a class="nav-link fs-5" href="#" id="account-options" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <div><i class="fas fa-user-cog"></i></div>
-                            <p>Account</p>
+                            <div class="custom-user mx-auto"></div>
+                            <p class="m-0">Account</p>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="account-options">
                             {% if request.user.is_authenticated %}
@@ -92,7 +92,7 @@
                     <li class="list-inline-item">
                         <a href="{% url 'view_cart' %}" class="nav-link fs-5">
                             <div class="text-center">
-                                <div><i class="fas fa-shopping-cart"></i></div>
+                                <div class="custom-cart mx-auto"></div>
                                 <p>
                                     {% if grand_total %}
                                         £{{ grand_total | floatformat:2 }}
