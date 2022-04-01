@@ -41,12 +41,36 @@ footer i {
     color: #212121 !important;
 }
 
+.custom-user {
+    height: 50px;
+    width: 50px;
+    background-image: url("/media/img/user.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+.custom-user:hover {
+    background-image: url("/media/img/user_hover.png");
+}
+
+.custom-cart {
+    height: 50px;
+    width: 50px;
+    background-image: url("/media/img/cart.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+.custom-cart:hover {
+    background-image: url("/media/img/cart_hover.png");
+}
+
 .top-spacer {
     padding-top: 96px;
 }
 
 .logo {
-    max-height: 50px;
+    max-height: 70px;
 }
 
 strong {
@@ -230,8 +254,16 @@ strong {
 
 /* ---------------------- Media Queries ---------------------- */
 
+
 @media screen and (max-width: 992px) {
     .navbar {
         background-color: #E0E0E0;
+    }
+}
+
+/* On very small screens to avoid the links from wrapping */
+@media screen and (max-width: 450px) {
+    .nav-link {
+        padding: .25rem;
     }
 }
