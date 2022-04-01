@@ -60,6 +60,10 @@ strong {
     background-size: cover;
 }
 
+.prod-header {
+    background: linear-gradient(45deg, transparent 0%, transparent 50%, #212121 100%);
+}
+
 .disable-user-select{
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -91,7 +95,6 @@ strong {
 
 .m-card-text {
     color: #FFA726;
-    
 }
 
 /* ---------------------- Bootstrap 5.1 toasts ---------------------- */
