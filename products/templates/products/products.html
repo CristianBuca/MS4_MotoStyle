@@ -2,36 +2,30 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container-fluid">
-        <div class="row page-title mt-5">
-            <div class="col-12 text-center">
-                <div>
-                    {% if selected_categories|length == 1 %}
-                        {{ selected_categories.0.friendly_name }}
-                        <img src="{{ selected_categories.0.image.url }}" alt="">
-                    {% else %}
-                        <div class="row d-flex justify-content-center m-3">
-                        {% for cat in selected_categories %}
-                            <div class="col-1 m-3">
-                                <span class="cat-image">
-                                    {% if cat.image %}
-                                    <a href="{% url 'products' %}?category={{ cat.name }}">
-                                        <img src="{{ cat.image.url }}" alt="{{ cat.name }}">
-                                    </a>
-                                    {% else %}
-                                    <a href="{% url 'products' %}?category={{ cat.name }}">
-                                        <img src="{{ MEDIA_URL }}noimage.png" alt="Image missing">
-                                    </a>
-                                    {% endif %}
-                                </span>
-                                <p>{{ cat.friendly_name }}</p>
-                            </div>  
-                        {% endfor %}
-                        </div>
-                    {% endif %}
+    <div class="container-fluid mt-5">
+        {% if selected_categories|length == 1 %}
+            {{ selected_categories.0.friendly_name }}
+            <img src="{{ selected_categories.0.image.url }}" alt="">
+        {% else %}
+            <div class="row pt-5 justify-content-center">
+            {% for cat in selected_categories %}
+                {% if cat.image %}
+                <div class="col-4 col-md-3 col-lg-2 text-center">
+                    <div class="cat-image d-block mx-auto">
+                        <a href="{% url 'products' %}?category={{ cat.name }}">
+                            <img src="{{ cat.image.url }}" alt="{{ cat.name }}" >
+                        </a>
+                    </div>  
+                    <p>{{ cat.friendly_name }} Gloves</p>
                 </div>
+                {% else %}
+                <a href="{% url 'products' %}?category={{ cat.name }}">
+                    <img src="{{ MEDIA_URL }}noimage.png" alt="Image missing">
+                </a>
+                {% endif %}
+            {% endfor %}
             </div>
-        </div>
+        {% endif %}
     </div>
 {% endblock %}
 
