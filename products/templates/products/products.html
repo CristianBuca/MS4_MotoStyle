@@ -3,11 +3,11 @@
 {% load reviews %}
 
 {% block page_header %}
-    <div class="container mt-5">
+    <div class="container">
         {% if selected_categories|length == 1 %}
-            <div class="row prod-header mt-5 px-3">
+            <div class="row prod-header mt-lg-5 px-3">
                 <div class="col-12">
-                    <h1 class="text-capitalize mt-lg-5">{{ selected_categories.0.friendly_name }}</h1>
+                    <h1 class="text-capitalize pt-5">{{ selected_categories.0.friendly_name }}</h1>
                 </div>
                 <div class="col-12 col-md-8 col-lg-6">
                     <p>{{ selected_categories.0.description}}</p>
@@ -39,7 +39,7 @@
 {% block content %}
     <section class="container sorting-util">
         <div class="row">
-            <div class="col-4 mx-auto">
+            <div class="col-6 col-md-4 mx-auto">
                 <p class="text-muted mt-3 text-center text-md-left">
                     {% if search_term or selected_categories or current_sorting != 'None_None' %}
                         <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
@@ -47,7 +47,7 @@
                     {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                 </p>
             </div>
-            <div class="col-4 d-flex align-items-center mx-auto">
+            <div class="col-6 col-md-4 d-flex align-items-center mx-auto">
                 <div class="sort-select-wrapper">
                     <select id="sort-selector" class="form-select" aria-label="Sort products">
                         <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
