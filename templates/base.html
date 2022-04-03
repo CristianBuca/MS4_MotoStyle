@@ -73,7 +73,7 @@
                     <li class="list-inline-item text-center dropdown">
                         <a class="nav-link fs-5" href="#" id="account-options" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <div class="custom-user mx-auto"></div>
-                            <p class="m-0">Account</p>
+                            <p class="m-0 fs-6">Account</p>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="account-options">
                             {% if request.user.is_authenticated %}
@@ -93,7 +93,7 @@
                         <a href="{% url 'view_cart' %}" class="nav-link fs-5">
                             <div class="text-center">
                                 <div class="custom-cart mx-auto"></div>
-                                <p>
+                                <p class="fs-6">
                                     {% if grand_total %}
                                         £{{ grand_total | floatformat:2 }}
                                     {% else %}
@@ -163,7 +163,7 @@
             <div class="row bgclr-dark pt-3">
                 <div class="col-12 col-md-6 col-lg-4 order-2 order-lg-1">
                     <p>
-                        <i class="fa-solid fa-copyright"></i>
+                        <i class="fa-solid fa-2x fa-copyright"></i>
                         Copyright MotoStyle
                     </p>
                     <p>
@@ -178,7 +178,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 order-3 order-lg-3 text-end">
                     <p class="m-0">
-                        Powered by 
+                        Powered by: 
                         <i class="fa-brands fa-cc-stripe fs-3"></i>
                     </p>
                     <p>
