@@ -134,7 +134,7 @@ def add_product(request):
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             product = form.save()
-            messages.success(request, 'Product added to shop')
+            messages.info(request, 'Product added to shop')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(
