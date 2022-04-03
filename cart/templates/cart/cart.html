@@ -3,30 +3,32 @@
 {% load cart_tools %}
 
 {% block content %}
-    <div class="container">
-        <div class="row text-center">
-            <h4>Shopping Cart</h4>
+    <div class="container mt-5">
+        <div class="row text-center pt-lg-5">
+            <h1>Your Shopping Cart</h1>
         </div>
         {% if cart_items %}
-            <div class="row">
-                <div class="col-sm-12 col-lg-8">
+            <div class="row mt-5">
+                <div class="col-12 col-lg-8">
 <!-- Individual item display -->
                     {% for item in cart_items %}
-                        <div class="row">
-                            <div class="col col-md-4 bg-danger">
-                                {% if item.product.image %}
-                                    <img class="img-fluid" src="{{ item.product.image.url }}" alt="Image of {{ item.product.name }}">
-                                {% else %}
-                                    <img class="img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="No image present">
-                                {% endif %}
+                        <div class="row my-3 px-3">
+                            <div class="col-12 card col-md-4">
+                                <a href="{% url 'product_detail' item.item_id %}">
+                                    {% if item.product.image %}
+                                        <img class="img-fluid" src="{{ item.product.image.url }}" alt="Image of {{ item.product.name }}">
+                                    {% else %}
+                                        <img class="img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="No image present">
+                                    {% endif %}
+                                </a>
                             </div>
-                            <div class="col-sm-8 col-md-8 bg-info">
-                                <div>{{ item.product.name }}</div>
-                                <div>{{ item.quantity }}</div>
-                                <div>£ {{ item.product.price }}</div>
-                                <div>{% if item.product.has_sizes %}{{item.size}}{% else %}N/A{% endif %}</div>
-                                <div>Subtotal: £{{item.product.price | calc_subtotal:item.quantity }}</div>
-                                <div class="col">
+                            <div class="col-12 card col-md-7 mx-auto">
+                                <div class="fs-4">{{ item.product.name }}</div>
+                                <div class="mt-2">Selected Size: {% if item.product.has_sizes %}{{item.size}}{% else %}N/A{% endif %}</div>
+                                <div class="mt-2">Price: <strong>£ {{ item.product.price }}</strong></div>
+                                <div class="mt-2">Quantity: {{ item.quantity }}</div>
+                                <div class="mt-2">Subtotal: <strong>£ {{item.product.price | calc_subtotal:item.quantity }}</strong></div>
+                                <div class="mt-2">
                                     <form action="{% url 'adjust_cart' item.item_id %}" method="POST" class="form update-form">
                                         {% csrf_token %}
                                         <div class="form-group d-inline-flex">
@@ -47,9 +49,9 @@
                                                 {% endif %}
                                             </div>
                                         </div>
+                                        <button class="update btn btn-dark btn-sm">Update Quantity</button>
                                     </form>
-                                    <button class="update btn btn-dark btn-sm">Update</button>
-                                    <button class="remove btn btn-dark btn-sm" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}" data-token="{{ csrf_token }}">Remove</button>
+                                    <button class="remove btn btn-dark btn-sm w-100 mt-2" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}" data-token="{{ csrf_token }}">Remove</button>
                                 </div>
                             </div>
                             </div>
@@ -58,20 +60,25 @@
 
 <!-- Order summary and checkout link -->
                 
-                <div class="col-sm-12 col-lg-4">
-                    <h3>Order summary: <small>{{ product_count }} item(s)</small></h3>
-                    <div>Cart total: £{{ total | floatformat:2 }}</div>
-                    <div>Delivery: £{{ delivery | floatformat:2 }}</div>
-                    <div>Total to pay: £{{ grand_total | floatformat:2 }}</div>
+                <div class="col-sm-12 col-lg-4 card my-auto">
+                    <h2 class="fs-4 pt-3">Order summary: <small>{{ product_count }} item(s)</small></h2>
+                    <hr>
+                    <div class="pt-3">Cart total: £{{ total | floatformat:2 }}</div>
+                    <div class="pt-3">Delivery: £{{ delivery | floatformat:2 }}</div>
+                    <div class="pt-3">Total to pay: <strong>£{{ grand_total | floatformat:2 }}</strong></div>
+                    <div class="bgclr-info mt-3">
                     {% if free_delivery_delta > 0 %}
                         Add £{{ free_delivery_delta }} worth of products to your cart to enjoy FREE DELIVERY!
+                    {% else %}
+                        You qualify for FREE DELIVERY!
                     {% endif %}
-                    <div>
+                    </div>
+                    <div class="pt-3">
                         <a href="{% url 'checkout' %}">
-                            <button class="btn btn-dark btn-lg"><small>Secure Checkout with</small><img src="https://cdn.brandfolder.io/KGT2DTA4/at/8vbr8k4mr5xjwk4hxq4t9vs/Stripe_wordmark_-_blurple.svg" alt="" height="30px"></button>
+                            <button class="btn btn-dark btn-lg w-100"><small>Secure Checkout with</small><img src="https://cdn.brandfolder.io/KGT2DTA4/at/8vbr8k4mr5xjwk4hxq4t9vs/Stripe_wordmark_-_blurple.svg" alt="" height="30px"></button>
                         </a>
                     </div>
-                    <div>
+                    <div class="text-center">
                         <img src="{{ MEDIA_URL }}cards/visa.svg" alt="visa card" width="40px" height="40px">
                         <img src="{{ MEDIA_URL }}cards/amex.svg" alt="amex card" width="40px" height="40px">
                         <img src="{{ MEDIA_URL }}cards/mastercard.svg" alt="mastercard card" width="40px" height="40px">
