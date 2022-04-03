@@ -63,9 +63,9 @@
                     {% endif %}
                     <div class="d-inline-block">
                         {% if in_wishlist %}
-                            <a class="btn btn-dark m-3" href="{% url 'remove_from_wishlist' product.id %}"><i class="fa-solid fa-2x fa-heart-circle-minus"></i>Wishlist</a>
+                            <a class="nav-link m-3" href="{% url 'remove_from_wishlist' product.id %}"><i class="fa-solid fa-2x fa-heart-circle-minus"></i>Wishlist</a>
                         {% else %}
-                            <a class="nav-link" href="{% url 'add_to_wishlist' product.id %}"><i class="fa-solid fa-2x fa-heart-circle-plus"></i> Wishlist</a>
+                            <a class="nav-link m-3" href="{% url 'add_to_wishlist' product.id %}"><i class="fa-solid fa-2x fa-heart-circle-plus"></i> Wishlist</a>
                         {% endif %}
                     </div>
                     {% if request.user.is_authenticated %}
