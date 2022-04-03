@@ -9,7 +9,7 @@
     <div class="container mt-5">
         <div class="row pt-lg-5">
             <div class="col-12 col-md-6">
-                <div class="image-container order-md-2">
+                <div class="image-container">
                     {% if product.image %}
                         <a href="{{ product.image.url }}" target="_blank">
                             <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top">
@@ -22,16 +22,16 @@
                 </div>
                 <div class="product-reviews"></div>
             </div>
-            <div class="col-12 col-md-6 order-first order-md-1 text-center">
+            <div class="col-12 col-md-6">
                 <div class="product-details">
-                    <h3>{{ product.name }}</h3>
+                    <h3 class="p-3">{{ product.name }}</h3>
                     <a href="{% url 'products' %}?category={{ product.category.name }}">
                         <p>{{ product.category.friendly_name }}</p>
                     </a>
                     {% if product.new_rating > 0 %}
-                        <p>{{ product.new_rating }}</p>
+                    <span class="card-text fs-5"><i class="fa-solid fa-star m-card-text"></i> {{ product.new_rating }}</span>
                     {% else %}
-                        <p>{{ product.rating }} out of 5</p>
+                    <span class="card-text fs-5"><i class="fa-solid fa-star m-card-text"></i> {{ product.rating }} out of 5</span>
                     {% endif %}
                     
                     {% if request.user.is_superuser %}
@@ -62,21 +62,15 @@
                             </div>
                         </div>
 <!-- Confirmation modal end -->
-                        {% if in_wishlist %}
-                            <a class="btn btn-dark" href="{% url 'remove_from_wishlist' product.id %}">Remove from wishlist</a>
-                        {% else %}
-                            <a class="btn btn-dark" href="{% url 'add_to_wishlist' product.id %}">Add to wishlist</a>
-                        {% endif %}
-
                     {% endif %}
                     <h4>£ {{ product.price }}</h4>
                 </div>
                 <div class="checkout-form">
-                    <form action="{% url 'add_to_cart' product.id %}" class="form" method="POST">
+                    <form class="form row" action="{% url 'add_to_cart' product.id %}" method="POST">
                         {% csrf_token %}
-                        <div class="d-inline-flex">
-                            <div class="form-group">
+                            <div class="form-group col-12 py-2">
                                 <div class="input-group">
+                                    <span class="fs-4 pe-2">Quantity: </span>
                                     <div class="input-group-prepend">
                                         <button class="decrement-qty btn btn-dark" data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
                                             <i class="fas fa-minus"></i>
@@ -91,19 +85,26 @@
                                 </div>
                             </div>
                             {% if product.has_sizes %}
-                                <div class="form-group d-inline-flex">
+                                <div class="form-group col-12 py-2">
+                                    <span class="fs-4 pe-2">Size: </span>
                                     {% include 'products/includes/sizes.html' %}
                                 </div>
                             {% endif %}
-                        </div>
-                        <div class="col-12">
+                        <div class="col-6">
                             <input type="submit" class="btn btn-dark text-uppercase m-3" value="Add to Cart">
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        <div class="col-6">
+                            {% if in_wishlist %}
+                                <a class="btn btn-dark m-3" href="{% url 'remove_from_wishlist' product.id %}">Remove from wishlist</a>
+                            {% else %}
+                                <a class="btn btn-dark m-3" href="{% url 'add_to_wishlist' product.id %}">Add to wishlist</a>
+                            {% endif %}
+                        </div>
                     </form>
                 </div>
             </div>
-            <div class="col-12 col-md-6 order-sm-5 order-md-4">
+            <div class="col-12 col-md-6">
                 <div class="reviews">
                     <h4>Reviews from customers:</h4>
                     {% render_review_list for product %}
@@ -135,7 +136,7 @@
 
                 </div>
             </div>
-            <div class="col-12 col-md-6 order-sm-4 order-md-5">
+            <div class="col-12 col-md-6">
                 <div class="product-description">
                     <h4>Product Description</h4>
                     <p>{{ product.description }}</p>

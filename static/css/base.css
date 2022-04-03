@@ -251,6 +251,9 @@ strong {
     border-radius: 0;
 }
 
+.qty_input {
+    max-width: 50px;
+}
 
 /* ---------------------- Media Queries ---------------------- */
 
