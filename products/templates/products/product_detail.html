@@ -24,23 +24,17 @@
             </div>
             <div class="col-12 col-md-6">
                 <div class="product-details">
-                    <h3 class="p-3">{{ product.name }}</h3>
-                    <a href="{% url 'products' %}?category={{ product.category.name }}">
-                        <p>{{ product.category.friendly_name }}</p>
+                    <h3 class="p-3 me-5 fs-1">{{ product.name }}</h3>
+                    <a href="{% url 'products' %}?category={{ product.category.name }}" class="nav-link fs-5 d-inline-block">
+                        {{ product.category.friendly_name }}
                     </a>
-                    {% if product.new_rating > 0 %}
-                    <span class="card-text fs-5"><i class="fa-solid fa-star m-card-text"></i> {{ product.new_rating }}</span>
-                    {% else %}
-                    <span class="card-text fs-5"><i class="fa-solid fa-star m-card-text"></i> {{ product.rating }} out of 5</span>
-                    {% endif %}
-                    
                     {% if request.user.is_superuser %}
 <!-- Update current item in the Database -->
-                        <a href="{% url 'edit_product' product.id %}" class="nav-link">
+                        <a href="{% url 'edit_product' product.id %}" class="nav-link d-inline-block">
                             <i class="fa-solid fa-2x fa-square-pen"></i>
                         </a>
 <!-- Remove current item from the Database -->
-                        <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#remove-{{ product.id }}">
+                        <a type="button" class="nav-link d-inline-block" data-bs-toggle="modal" data-bs-target="#remove-{{ product.id }}">
                             <i class="fa-solid fa-2x fa-trash"></i>
                         </a>
 <!-- Confirmation modal for removing item -->
@@ -63,58 +57,25 @@
                         </div>
 <!-- Confirmation modal end -->
                     {% endif %}
-                    <h4>£ {{ product.price }}</h4>
-                </div>
-                <div class="checkout-form">
-                    <form class="form row" action="{% url 'add_to_cart' product.id %}" method="POST">
-                        {% csrf_token %}
-                            <div class="form-group col-12 py-2">
-                                <div class="input-group">
-                                    <span class="fs-4 pe-2">Quantity: </span>
-                                    <div class="input-group-prepend">
-                                        <button class="decrement-qty btn btn-dark" data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
-                                            <i class="fas fa-minus"></i>
-                                        </button>
-                                    </div>
-                                    <input class="form-control qty_input" type="number" name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
-                                    <div class="input-group-append">
-                                        <button class="increment-qty btn btn-dark" data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
-                                            <i class="fas fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            {% if product.has_sizes %}
-                                <div class="form-group col-12 py-2">
-                                    <span class="fs-4 pe-2">Size: </span>
-                                    {% include 'products/includes/sizes.html' %}
-                                </div>
-                            {% endif %}
-                        <div class="col-6">
-                            <input type="submit" class="btn btn-dark text-uppercase m-3" value="Add to Cart">
-                        </div>
-                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                        <div class="col-6">
-                            {% if in_wishlist %}
-                                <a class="btn btn-dark m-3" href="{% url 'remove_from_wishlist' product.id %}">Remove from wishlist</a>
-                            {% else %}
-                                <a class="btn btn-dark m-3" href="{% url 'add_to_wishlist' product.id %}">Add to wishlist</a>
-                            {% endif %}
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="reviews">
-                    <h4>Reviews from customers:</h4>
-                    {% render_review_list for product %}
-                    <hr>
+                    {% if product.new_rating > 0 %}
+                    <div class="fs-5 px-3 pt-3">Rating: <i class="fa-solid fa-star m-card-text"></i> {{ product.new_rating }}</div>
+                    {% else %}
+                    <div class="fs-5 px-3 pt-3">Rating: <i class="fa-solid fa-star m-card-text"></i> {{ product.rating }}</div>
+                    {% endif %}
+                    <div class="d-inline-block">
+                        {% if in_wishlist %}
+                            <a class="btn btn-dark m-3" href="{% url 'remove_from_wishlist' product.id %}">Remove from wishlist</a>
+                        {% else %}
+                            <a class="btn btn-dark m-3" href="{% url 'add_to_wishlist' product.id %}">Add to wishlist</a>
+                        {% endif %}
+                    </div>
                     {% if request.user.is_authenticated %}
 <!-- Button trigger Review Modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reviewModal">
-                            Review this product
+                        <div class="d-inline-block">
+                        <button type="button" class="btn bgclr-neutral my-3 fs-6" data-bs-toggle="modal" data-bs-target="#reviewModal">
+                            Leave a review
                         </button>
-
+                        </div>
 <!-- Review Modal -->
                         <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
                             <div class="modal-dialog text-center">
@@ -133,7 +94,45 @@
                             </div>
                         </div>
                     {% endif %}
-
+                    <div class="card-text fs-2 px-3 pt-3"><strong>Price: £{{ product.price }}</strong></div>
+                </div>
+                <div class="checkout-form p-3">
+                    <form class="form row" action="{% url 'add_to_cart' product.id %}" method="POST">
+                        {% csrf_token %}
+                        <div class="form-group col-12 py-2">
+                            <div class="input-group">
+                                <span class="fs-4 pe-2">Quantity: </span>
+                                <div class="input-group-prepend">
+                                    <button class="decrement-qty btn btn-dark" data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                </div>
+                                <input class="form-control qty_input" type="number" name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                                <div class="input-group-append">
+                                    <button class="increment-qty btn btn-dark" data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        {% if product.has_sizes %}
+                            <div class="form-group col-12 py-2">
+                                <span class="fs-4 pe-2">Size: </span>
+                                {% include 'products/includes/sizes.html' %}
+                            </div>
+                        {% endif %}
+                        <div class="col-12 my-3">
+                            <input type="submit" class="btn btn-dark text-uppercase w-100" value="Add to Cart">
+                        </div>
+                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                    </form>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="reviews">
+                    <h4>Reviews from customers:</h4>
+                    {% render_review_list for product %}
+                    <hr>
                 </div>
             </div>
             <div class="col-12 col-md-6">
