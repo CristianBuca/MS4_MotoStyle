@@ -6,8 +6,8 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
-        <div class="row">
+    <div class="container mt-5">
+        <div class="row pt-lg-5">
             <div class="col-12 col-md-6">
                 <div class="image-container order-md-2">
                     {% if product.image %}
@@ -35,8 +35,33 @@
                     {% endif %}
                     
                     {% if request.user.is_superuser %}
-                        <a href="{% url 'edit_product' product.id %}">Edit</a>
-                        <a href="{% url 'delete_product' product.id %}">Delete</a>
+<!-- Update current item in the Database -->
+                        <a href="{% url 'edit_product' product.id %}" class="nav-link">
+                            <i class="fa-solid fa-2x fa-square-pen"></i>
+                        </a>
+<!-- Remove current item from the Database -->
+                        <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#remove-{{ product.id }}">
+                            <i class="fa-solid fa-2x fa-trash"></i>
+                        </a>
+<!-- Confirmation modal for removing item -->
+                        <div class="modal fade" id="remove-{{ product.id }}" tabindex="-1" aria-labelledby="confirmation-modal" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="confirmation-modal">{{ product.name }}</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-center">Are you sure you want to <strong>permanently</strong> remove this product?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</a>
+                                    <a type="button" class="btn btn-danger" href="{% url 'delete_product' product.id %}">Remove</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+<!-- Confirmation modal end -->
                         {% if in_wishlist %}
                             <a class="btn btn-dark" href="{% url 'remove_from_wishlist' product.id %}">Remove from wishlist</a>
                         {% else %}
@@ -45,7 +70,6 @@
 
                     {% endif %}
                     <h4>£ {{ product.price }}</h4>
-
                 </div>
                 <div class="checkout-form">
                     <form action="{% url 'add_to_cart' product.id %}" class="form" method="POST">
@@ -73,7 +97,7 @@
                             {% endif %}
                         </div>
                         <div class="col-12">
-                            <input type="submit" class="btn btn-dark text-uppercase w-100 m-3" value="Add to Cart">
+                            <input type="submit" class="btn btn-dark text-uppercase m-3" value="Add to Cart">
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </form>
@@ -81,21 +105,21 @@
             </div>
             <div class="col-12 col-md-6 order-sm-5 order-md-4">
                 <div class="reviews">
-                    <h4>Reviews from other users:</h4>
+                    <h4>Reviews from customers:</h4>
                     {% render_review_list for product %}
-                    <br>
+                    <hr>
                     {% if request.user.is_authenticated %}
-                    <!-- Button trigger modal -->
+<!-- Button trigger Review Modal -->
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reviewModal">
                             Review this product
                         </button>
 
-                        <!-- Modal -->
+<!-- Review Modal -->
                         <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
                             <div class="modal-dialog text-center">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">{{ product.name }}</h5>
+                                        <h5 class="modal-title" id="reviewModalLabel">{{ product.name }}</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
