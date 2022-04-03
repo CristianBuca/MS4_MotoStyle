@@ -2,28 +2,28 @@
 {% load static %}
 
 {% block content %}
-    <div class="container">
-        <div class="row">
+    <div class="container mt-5">
+        <div class="row pt-lg-5">
             <div class="col">
-                <h2>Profile Page</h2>
+                <h1 class="text-capitalize">Profile Page for {{ profile.user }}</h1>
             </div>
             <hr>
         </div>
 
         <div class="row">
 <!-- Delivery Information Form -->
-            <div class="col-12 col-md-6">
-                <p>Default delivery information</p>
-                <form action="{% url 'profile' %}" id="profile-update-form" method="POST">
+            <div class="col-12 col-lg-6">
+                <h2 class=" fs-4 ">Default delivery information</h2>
+                <form class="form card p-3" action="{% url 'profile' %}" id="profile-update-form" method="POST">
                     {% csrf_token %}
                     {{ form | crispy}}
-                    <button class="btn btn-dark">Update information</button>
+                    <button class="btn btn-dark mt-3">Update information</button>
                 </form>
             </div>
 
 <!-- Order history -->
-            <div class="col-12 col-md-6">
-                <p>Order history:</p>
+            <div class="col-12 col-lg-6">
+                <h3 class=" fs-4">Order history:</h3>
                 <div class="order-history">
                     <table class="table">
                         <thead>
@@ -38,8 +38,8 @@
                             {% for order in orders %}
                                 <tr>
                                     <td>
-                                        <a href="{% url 'order_history' order.order_number %}"
-                                            title="{{ order.order_number }}">{{ order.order_number|truncatechars:6 }}
+                                        <a href="{% url 'order_history' order.order_number %}" title="{{ order.order_number }}" class="nav-link"> 
+                                            {{ order.order_number|truncatechars:6 }}
                                         </a>
                                     </td>
                                     <td>{{ order.date }}</td>
