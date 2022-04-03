@@ -9,7 +9,7 @@
     <div class="container mt-5">
         <div class="row pt-lg-5">
             <div class="col-12 col-md-6">
-                <div class="image-container">
+                <div class="image-container pb-5">
                     {% if product.image %}
                         <a href="{{ product.image.url }}" target="_blank">
                             <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top">
@@ -64,16 +64,16 @@
                     {% endif %}
                     <div class="d-inline-block">
                         {% if in_wishlist %}
-                            <a class="btn btn-dark m-3" href="{% url 'remove_from_wishlist' product.id %}">Remove from wishlist</a>
+                            <a class="btn btn-dark m-3" href="{% url 'remove_from_wishlist' product.id %}"><i class="fa-solid fa-2x fa-heart-circle-minus"></i>Wishlist</a>
                         {% else %}
-                            <a class="btn btn-dark m-3" href="{% url 'add_to_wishlist' product.id %}">Add to wishlist</a>
+                            <a class="nav-link" href="{% url 'add_to_wishlist' product.id %}"><i class="fa-solid fa-2x fa-heart-circle-plus"></i> Wishlist</a>
                         {% endif %}
                     </div>
                     {% if request.user.is_authenticated %}
 <!-- Button trigger Review Modal -->
                         <div class="d-inline-block">
-                        <button type="button" class="btn bgclr-neutral my-3 fs-6" data-bs-toggle="modal" data-bs-target="#reviewModal">
-                            Leave a review
+                        <button type="button" class="btn nav-link fs-6" data-bs-toggle="modal" data-bs-target="#reviewModal">
+                            <i class="fa-solid fa-2x fa-comment-dots"></i> Leave a review
                         </button>
                         </div>
 <!-- Review Modal -->
