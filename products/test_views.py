@@ -1,8 +1,9 @@
 # Imports
-# Internal
-from products.models import Product
 # 3rd party:
 from django.test import TestCase
+from django.contrib.auth.models import User
+# Internal
+from products.models import Product
 # -----------------------------------------------------------------------------
 
 
@@ -33,11 +34,15 @@ class TestProductsViews(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'products/product_detail.html')
 
-    def test_get_add_product(self):
+    def test_user_get_add_product(self):
         """
-        Tests if add_product page is accessible with status code of 200
-        Tests if add_product view renders add_product.html
+        Tests if regular user is redirected to landing page when trying to
+        access add_product page with status code of 302
         """
-        response = self.client.get(f'/products/add/')
-        self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'products/add_product.html')
+        user = User.objects.create_user(
+            username='unit_test_user', password='unit_test_pass'
+        )
+        self.client.login(username='unit_test_user', password='unit_test_pass')
+        response = self.client.get('/products/add/')
+        self.assertEqual(response.status_code, 302)
+        self.assertRedirects(response, '/')
