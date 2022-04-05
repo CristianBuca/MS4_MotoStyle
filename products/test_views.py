@@ -32,3 +32,12 @@ class TestProductsViews(TestCase):
         response = self.client.get(f'/products/{product.id}/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'products/product_detail.html')
+
+    def test_get_add_product(self):
+        """
+        Tests if add_product page is accessible with status code of 200
+        Tests if add_product view renders add_product.html
+        """
+        response = self.client.get(f'/products/add/')
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'products/add_product.html')
