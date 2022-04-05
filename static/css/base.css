@@ -269,4 +269,24 @@ strong {
     .nav-link {
         padding: .25rem;
     }
+
+    #mobile-search i {
+        font-size: 1.5em !important;
+    }
+
+    .custom-cart,
+    .custom-user {
+        height: 30px;
+        width: 30px;
+    }
+
+    .logo {
+        height: 40px;
+        width: 40px;
+    }
+
+    .control-right i,
+    .control-left i {
+        font-size: 1.5em;
+    }
 }
