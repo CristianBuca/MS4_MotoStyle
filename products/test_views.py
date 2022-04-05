@@ -67,3 +67,26 @@ class TestProductsViews(TestCase):
         response = self.client.get('/products/add/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'products/add_product.html')
+
+    def test_superuser_post_add_product(self):
+        """
+        Tests if superuser can add product
+        Tests if superuser is redirected to the product page
+        Tests if toast displays correct message
+        """
+        user = User.objects.create_superuser(
+            username='unit_test_superuser', password='unit_test_pass'
+        )
+        self.client.login(
+            username='unit_test_superuser', password='unit_test_pass'
+        )
+        response = self.client.post('/products/add/', {
+            'name': 'Test Add Product',
+            'price': '123.45',
+            'description': 'Test Add Product Description',
+        })
+        messages = list(get_messages(response.wsgi_request))
+        self.assertEqual(str(
+            messages[0]), 'Product added to shop'
+        )
+        self.assertRedirects(response, '/products/1/')
