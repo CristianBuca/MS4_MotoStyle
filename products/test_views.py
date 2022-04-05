@@ -2,6 +2,7 @@
 # 3rd party:
 from django.test import TestCase
 from django.contrib.auth.models import User
+from django.contrib.messages import get_messages
 # Internal
 from products.models import Product
 # -----------------------------------------------------------------------------
@@ -44,5 +45,9 @@ class TestProductsViews(TestCase):
         )
         self.client.login(username='unit_test_user', password='unit_test_pass')
         response = self.client.get('/products/add/')
+        messages = list(get_messages(response.wsgi_request))
         self.assertEqual(response.status_code, 302)
         self.assertRedirects(response, '/')
+        self.assertEqual(str(
+            messages[0]), 'Sorry this feature is for store owners only.'
+        )
