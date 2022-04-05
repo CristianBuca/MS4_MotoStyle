@@ -125,7 +125,7 @@ strong {
 
 .message-container {
     position: fixed;
-    top: 70px;
+    top: 100px;
     right: 20px;
     z-index: 999999;
 }
@@ -148,6 +148,12 @@ strong {
     position: absolute;
     top: -10px;
     right: 36px;
+}
+
+.cart-toast-overview {
+    max-height: 30vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /* ---------------------- Main color classes ---------------------- */
@@ -200,12 +206,6 @@ strong {
 
 .arrow-dark {
     border-bottom-color: #343a40 !important;
-}
-
-.cart-toast-overview {
-    max-height: 30vh;
-    overflow-x: hidden;
-    overflow-y: auto;
 }
 
 .cat-image img {
