@@ -39,6 +39,7 @@ class TestProductsViews(TestCase):
         """
         Tests if regular user is redirected to landing page when trying to
         access add_product page with status code of 302
+        Tests the error message returned in the toast
         """
         user = User.objects.create_user(
             username='unit_test_user', password='unit_test_pass'
@@ -51,3 +52,18 @@ class TestProductsViews(TestCase):
         self.assertEqual(str(
             messages[0]), 'Sorry this feature is for store owners only.'
         )
+
+    def test_superuser_get_add_product(self):
+        """
+        Tests if superuser can access add_products page with status code of 200
+        Tests if add_product view renders add_product template
+        """
+        user = User.objects.create_superuser(
+            username='unit_test_superuser', password='unit_test_pass'
+        )
+        self.client.login(
+            username='unit_test_superuser', password='unit_test_pass'
+        )
+        response = self.client.get('/products/add/')
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'products/add_product.html')
