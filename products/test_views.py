@@ -138,3 +138,31 @@ class TestProductsViews(TestCase):
         self.assertEqual(str(
             messages[0]), f'You selected {product.name} for editing'
         )
+
+    def test_superuser_post_edit_product(self):
+        """
+        Tests if superuser can edit a product
+        Tests if superuser is redirected to the product page
+        Tests if toast displays correct message
+        """
+        user = User.objects.create_superuser(
+            username='unit_test_superuser', password='unit_test_pass'
+        )
+        product = Product.objects.create(
+            name='Test Product',
+            price='123.45',
+            description='Test Product Description',
+        )
+        self.client.login(
+            username='unit_test_superuser', password='unit_test_pass'
+        )
+        response = self.client.post(f'/products/edit/{product.id}/', {
+            'name': 'Test Edit Product',
+            'price': '453.21',
+            'description': 'Test Edit Product Description',
+        })
+        messages = list(get_messages(response.wsgi_request))
+        self.assertEqual(str(
+            messages[0]), 'New product details have been saved'
+        )
+        self.assertRedirects(response, '/products/1/')
