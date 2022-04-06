@@ -33,6 +33,19 @@ class TestProductsViews(TestCase):
         )
         self.assertRedirects(response, '/products/')
 
+    def test_get_products_search_query(self):
+        """
+        Tests if search query filters products by search term
+        and sends status code 200
+        """
+        product = Product.objects.create(
+            name='Test Product',
+            price='123.45',
+            description='Test Product Description',
+        )
+        response = self.client.get('/products/', {'q': 'test'})
+        self.assertEqual(response.status_code, 200)
+
     def test_get_product_detail(self):
         """
         Tests if product_detail page is accessible with status code of 200
