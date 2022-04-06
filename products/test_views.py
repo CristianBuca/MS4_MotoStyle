@@ -46,6 +46,19 @@ class TestProductsViews(TestCase):
         response = self.client.get('/products/', {'q': 'test'})
         self.assertEqual(response.status_code, 200)
 
+    def test_get_products_sort(self):
+        """
+        Tests if sorting returns status 200 and uses products.html template
+        """
+        response = self.client.get('/products/', {'sort': 'price'})
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'products/products.html')
+        response = self.client.get(
+            '/products/', {'sort': 'rating', 'direction': 'desc'}
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'products/products.html')
+
     def test_get_product_detail(self):
         """
         Tests if product_detail page is accessible with status code of 200
