@@ -21,6 +21,18 @@ class TestProductsViews(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'products/products.html')
 
+    def test_get_products_empty_search(self):
+        """
+        Tests if toasts displays error message when no search param in query
+        Tests if user is redirected to products page
+        """
+        response = self.client.get('/products/', {'q': ''})
+        messages = list(get_messages(response.wsgi_request))
+        self.assertEqual(str(
+            messages[0]), 'Please input search parameters'
+        )
+        self.assertRedirects(response, '/products/')
+
     def test_get_product_detail(self):
         """
         Tests if product_detail page is accessible with status code of 200
