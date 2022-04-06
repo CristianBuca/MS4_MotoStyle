@@ -55,8 +55,8 @@ class TestProductsViews(TestCase):
 
     def test_superuser_get_add_product(self):
         """
-        Tests if superuser can access add_products page with status code of 200
-        Tests if add_product view renders add_product template
+        Tests if superuser can access add_product page with status code of 200
+        Tests if add_product view renders add_product,html template
         """
         user = User.objects.create_superuser(
             username='unit_test_superuser', password='unit_test_pass'
@@ -112,4 +112,29 @@ class TestProductsViews(TestCase):
         self.assertRedirects(response, '/')
         self.assertEqual(str(
             messages[0]), 'Sorry this feature is for store owners only.'
+        )
+
+    def test_superuser_get_edit_product(self):
+        """
+        Tests if superuser can access edit_product page with status code of 200
+        Tests if toast displays correct info message
+        Tests if edit_product view renders edit_product.html template
+        """
+        user = User.objects.create_superuser(
+            username='unit_test_superuser', password='unit_test_pass'
+        )
+        product = Product.objects.create(
+            name='Test Product',
+            price='123.45',
+            description='Test Product Description',
+        )
+        self.client.login(
+            username='unit_test_superuser', password='unit_test_pass'
+        )
+        response = self.client.get('/products/edit/1/')
+        messages = list(get_messages(response.wsgi_request))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'products/edit_product.html')
+        self.assertEqual(str(
+            messages[0]), f'You selected {product.name} for editing'
         )
