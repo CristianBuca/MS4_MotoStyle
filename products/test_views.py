@@ -166,3 +166,26 @@ class TestProductsViews(TestCase):
             messages[0]), 'New product details have been saved'
         )
         self.assertRedirects(response, '/products/1/')
+
+    def test_user_delete_product(self):
+        """
+        Tests if regular user is redirected to landing page when trying to
+        access delete_product page with status code of 302
+        Tests the error message returned in the toast
+        """
+        user = User.objects.create_user(
+            username='unit_test_user', password='unit_test_pass'
+        )
+        product = Product.objects.create(
+            name='Test Product',
+            price='123.45',
+            description='Test Product Description',
+        )
+        self.client.login(username='unit_test_user', password='unit_test_pass')
+        response = self.client.get('/products/delete/1/')
+        messages = list(get_messages(response.wsgi_request))
+        self.assertEqual(response.status_code, 302)
+        self.assertRedirects(response, '/')
+        self.assertEqual(str(
+            messages[0]), 'Sorry this feature is for store owners only.'
+        )
