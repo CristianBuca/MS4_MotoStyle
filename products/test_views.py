@@ -4,7 +4,7 @@ from django.test import TestCase
 from django.contrib.auth.models import User
 from django.contrib.messages import get_messages
 # Internal
-from products.models import Product
+from products.models import Product, Category
 # -----------------------------------------------------------------------------
 
 
@@ -58,6 +58,14 @@ class TestProductsViews(TestCase):
         )
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'products/products.html')
+
+    def test_get_products_category(self):
+        """
+        Tests if filtering by category returns status 200
+        """
+        Category.objects.create(name='test_category')
+        response = self.client.get('/products/', {'category': 'test_category'})
+        self.assertEqual(response.status_code, 200)
 
     def test_get_product_detail(self):
         """
