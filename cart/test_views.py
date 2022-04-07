@@ -13,4 +13,6 @@ class TestCartViews(TestCase):
         Tests if cart page is accessible with status code of 200
         Tests if cart view renders cart.html
         """
-        
+        response = self.client.get('/cart/')
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed('cart/cart.html')
