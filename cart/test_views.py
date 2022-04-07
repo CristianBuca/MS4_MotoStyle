@@ -62,7 +62,7 @@ class TestCartViews(TestCase):
 
     def test_add_to_cart_no_size_exists(self):
         """
-        Tests if user is able to add a product with no size to the cart
+        Tests if user can add same product with no size to the cart twice
         Tests if toast displays correct message
         """
         product = Product.objects.create(
@@ -85,4 +85,31 @@ class TestCartViews(TestCase):
         self.assertEqual(
             str(messages[1]),
             f'Updated {product.name} quantity to {cart[str(product.id)]}'
+        )
+
+    def test_add_to_cart_has_size_exists(self):
+        """
+        Tests if user can add same product with no size to the cart twice
+        Tests if toast displays correct message
+        """
+        product = Product.objects.create(
+            name='Test Product',
+            price='123.45',
+            description='Test Product Description',
+        )
+        self.client.post(
+            f'/cart/add/{product.id}/',
+            {'quantity': 1, 'redirect_url': 'view_cart', 'product_size': 'XS'}
+        )
+        response = self.client.post(
+            f'/cart/add/{product.id}/',
+            {'quantity': 1, 'redirect_url': 'view_cart', 'product_size': 'XS'}
+        )
+        cart = self.client.session['cart']
+
+        self.assertEqual(cart[str(product.id)], {'items_by_size': {'XS': 2}})
+        messages = list(get_messages(response.wsgi_request))
+        self.assertEqual(
+            str(messages[1]),
+            f'Updated size XS {product.name} quantity to 2'
         )
