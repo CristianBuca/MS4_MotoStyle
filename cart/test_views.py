@@ -184,7 +184,7 @@ class TestCartViews(TestCase):
 
     def test_remove_from_cart_no_size(self):
         """
-        Tests if user can remove item without size in cart quantity
+        Tests if user can remove item without size from cart
         Tests if toast displays correct message
         """
         product = Product.objects.create(
@@ -205,7 +205,7 @@ class TestCartViews(TestCase):
 
     def test_remove_from_cart_has_size(self):
         """
-        Tests if user can remove item without size in cart quantity
+        Tests if user can remove item with size from cart
         Tests if toast displays correct message
         """
         product = Product.objects.create(
@@ -227,3 +227,19 @@ class TestCartViews(TestCase):
             str(messages[1]),
             f'Removed size XS {product.name} from your cart'
         )
+
+    def test_remove_from_cart_exception(self):
+        """
+        Tests the HttpResponse for trying to remove
+        invalid item from cart is 500
+        Tests if toasts displays correct error message.
+        """
+        product = Product.objects.create(
+            name='Test Product',
+            price='123.45',
+            description='Test Product Description',
+        )
+        response = self.client.post(f'/cart/remove/{product.id}/')
+        messages = list(get_messages(response.wsgi_request))
+        self.assertEqual(response.status_code, 500)
+        self.assertEqual(str(messages[0]), 'Error removing item: (e)')
