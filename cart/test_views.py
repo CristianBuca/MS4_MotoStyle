@@ -181,3 +181,24 @@ class TestCartViews(TestCase):
             f'Removed {product.name} from your cart'
         )
         self.assertRedirects(response, '/cart/')
+
+    def test_remove_from_cart_no_size(self):
+        """
+        Tests if user can remove item without size in cart quantity
+        Tests if toast displays correct message
+        """
+        product = Product.objects.create(
+            name='Test Product',
+            price='123.45',
+            description='Test Product Description',
+        )
+        self.client.post(
+            f'/cart/add/{product.id}/',
+            {'quantity': 1, 'redirect_url': 'view_cart'}
+        )
+        response = self.client.post(f'/cart/remove/{product.id}/')
+        messages = list(get_messages(response.wsgi_request))
+        self.assertEqual(
+            str(messages[1]),
+            f'Removed {product.name} from your cart'
+        )
