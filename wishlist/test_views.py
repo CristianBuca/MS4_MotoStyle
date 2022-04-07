@@ -36,8 +36,9 @@ class TestWishlistViews(TestCase):
 
     def test_add_to_wishlist(self):
         """
-        Tests success message when user adds to product to wishlist
-        Tests error message when user adds product to wishlist twice
+        Tests if user can add product to wishlist
+        Tests success message when user adds product to wishlist
+        Tests error message when user adds same product to wishlist twice
         Tests if user is redirected to the product_detail page
         """
         user = User.objects.create_user(
@@ -69,4 +70,29 @@ class TestWishlistViews(TestCase):
         )
         self.assertRedirects(
             response_success, f'/products/{product_2.id}/'
+        )
+
+    def test_remove_from_wishlist(self):
+        """
+        Tests if user can remove product product from wishlist
+        Tests toast info message is correct
+        Tests if user is redirected to the product_detail page
+        """
+        user = User.objects.create_user(
+                username='unit_test_user', password='unit_test_pass'
+            )
+        product = Product.objects.create(
+                name='Test Product',
+                price='123.45',
+                description='Test Product Description',
+            )
+        Wishlist.objects.create(owner=user, product=product)
+        self.client.login(username='unit_test_user', password='unit_test_pass')
+        response = self.client.get(f'/wishlist/remove/{product.id}/')
+        messages = list(get_messages(response.wsgi_request))
+        self.assertEqual(str(
+            messages[0]), f'Removed {product.name} from your wishlist'
+        )
+        self.assertRedirects(
+            response, f'/products/{product.id}/'
         )
