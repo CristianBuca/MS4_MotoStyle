@@ -56,3 +56,21 @@ class TestsCheckoutForms(TestCase):
         self.assertEqual(
             form.errors['phone_number'][0], 'This field is required.'
         )
+
+    def test_order_form_no_address(self):
+        """
+        Tests if correct error is displayed to the user when
+        trying to submit form with empty address line field
+        Tests if form fails validation
+        """
+        form = OrderForm({
+            'full_name': 'test user',
+            'email': 'test@unittest.com',
+            'phone_number': '1234567890',
+            'address_line1': '',
+        })
+        self.assertFalse(form.is_valid())
+        self.assertIn('address_line1', form.errors.keys())
+        self.assertEqual(
+            form.errors['address_line1'][0], 'This field is required.'
+        )
