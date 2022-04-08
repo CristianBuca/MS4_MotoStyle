@@ -27,7 +27,7 @@ class TestsCheckoutForms(TestCase):
     def test_order_form_no_email(self):
         """
         Tests if correct error is displayed to the user when
-        trying to submit form with empty name field
+        trying to submit form with empty email field
         Tests if form fails validation
         """
         form = OrderForm({
@@ -38,4 +38,21 @@ class TestsCheckoutForms(TestCase):
         self.assertIn('email', form.errors.keys())
         self.assertEqual(
             form.errors['email'][0], 'This field is required.'
+        )
+
+    def test_order_form_no_phone(self):
+        """
+        Tests if correct error is displayed to the user when
+        trying to submit form with empty phone number field
+        Tests if form fails validation
+        """
+        form = OrderForm({
+            'full_name': 'test user',
+            'email': 'test@unittest.com',
+            'phone_number': '',
+        })
+        self.assertFalse(form.is_valid())
+        self.assertIn('phone_number', form.errors.keys())
+        self.assertEqual(
+            form.errors['phone_number'][0], 'This field is required.'
         )
