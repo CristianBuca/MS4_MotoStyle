@@ -22,3 +22,17 @@ class TestProductsModels(TestCase):
         )
         category = Category.objects.get(name='unit_test_category')
         self.assertEqual((category.__str__()), category.name)
+
+    def test_category_friendly(self):
+        """
+        Tests if Category model get_friendly_name returns correct string
+        """
+        Category.objects.create(
+            name='unit_test_category',
+            friendly_name='Unit Test Category',
+            description='unit test description',
+        )
+        category = Category.objects.get(name='unit_test_category')
+        self.assertEqual((
+            category.get_friendly_name()), category.friendly_name
+        )
