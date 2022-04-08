@@ -24,7 +24,6 @@ def cache_checkout_data(request):
     User data is cached on checkout
         Arguments: request (object): The checkout request
         Returns: HttpResponse 200
-
     """
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
@@ -110,7 +109,7 @@ def checkout(request):
     else:
         cart = request.session.get('cart', {})
         if not cart:
-            messages.error(request, "Your shopping cart is empty")
+            messages.error(request, 'Your shopping cart is empty')
             return redirect(reverse('products'))
 
         current_cart = cart_contents(request)

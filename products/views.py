@@ -47,7 +47,7 @@ def products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "Please input search parameters")
+                messages.error(request, 'Please input search parameters')
                 return redirect(reverse('products'))
 
             queries = (
