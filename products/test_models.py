@@ -15,24 +15,33 @@ class TestProductsModels(TestCase):
         """
         Tests if Category model str method returns correct string
         """
-        Category.objects.create(
+        category = Category.objects.create(
             name='unit_test_category',
             friendly_name='Unit Test Category',
             description='unit test description',
         )
-        category = Category.objects.get(name='unit_test_category')
-        self.assertEqual((category.__str__()), category.name)
+        self.assertEqual(category.__str__(), category.name)
 
     def test_category_friendly(self):
         """
         Tests if Category model get_friendly_name returns correct string
         """
-        Category.objects.create(
+        category = Category.objects.create(
             name='unit_test_category',
             friendly_name='Unit Test Category',
             description='unit test description',
         )
-        category = Category.objects.get(name='unit_test_category')
-        self.assertEqual((
-            category.get_friendly_name()), category.friendly_name
+        self.assertEqual(
+            category.get_friendly_name(), category.friendly_name
         )
+
+    def test_product_str(self):
+        """
+        Tests if Product model str method returns correct string
+        """
+        product = Product.objects.create(
+            name='Test Product',
+            price='123.45',
+            description='Test Product Description',
+        )
+        self.assertEqual(product.__str__(), product.name)
