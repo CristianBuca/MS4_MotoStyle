@@ -56,3 +56,14 @@ class TestProductsForms(TestCase):
         self.assertEqual(
             form.errors['description'][0], 'This field is required.'
         )
+
+    def test_product_form_is_valid(self):
+        """
+        Test if form validates correctly when all fields are filled in
+        """
+        form = ProductForm({
+            'name': 'Unit Test Product',
+            'price': '123.45',
+            'description': 'Unit test product description'
+        })
+        self.assertTrue(form.is_valid())
