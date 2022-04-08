@@ -113,3 +113,17 @@ class TestsCheckoutForms(TestCase):
         self.assertEqual(
             form.errors['country'][0], 'This field is required.'
         )
+
+    def test_order_form_valid(self):
+        """
+        Test if form validates correctly when all fields are filled in
+        """
+        form = OrderForm({
+            'full_name': 'test user',
+            'email': 'test@unittest.com',
+            'phone_number': '1234567890',
+            'address_line1': 'test address line',
+            'town_or_city': 'test city',
+            'country': 'US',
+        })
+        self.assertTrue(form.is_valid())
