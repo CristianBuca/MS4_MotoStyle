@@ -26,5 +26,50 @@ $('.add-stock-form').validate({
             required: true,
             number: true,
         },
-    }
+        rating: {
+            range: [0, 5]
+        }
+    },
+    // Custom messages for custom validator method
+    messages: {
+        name: {
+            notEmptyString: "No empty strings please.",
+        }, 
+        description: {
+            notEmptyString: "No empty strings please.",
+        },      
+    },
+});
+
+$('.edit-product-form').validate({
+    // Validation Rules
+    rules: {
+        name: {
+            minlength: 5,
+            maxlength: 254,
+            required: true,
+            notEmptyString: true,
+        },
+        description: {
+            minlength: 10,
+            required: true,
+            notEmptyString: true,
+        },
+        price: {
+            required: true,
+            number: true,
+        },
+        rating: {
+            range: [0, 5]
+        }
+    },
+    // Custom messages for custom validator method
+    messages: {
+        name: {
+            notEmptyString: "No empty strings please.",
+        }, 
+        description: {
+            notEmptyString: "No empty strings please.",
+        },      
+    },
 });
