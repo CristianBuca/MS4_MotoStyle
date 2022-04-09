@@ -4,10 +4,10 @@
 
 // Uses regex to exclude empty strings
 $.validator.methods.notEmptyString = function( value, element ) {
-    return this.optional( element) || /^(?!\s*$).+/.test( value );
+    return this.optional( element ) || /^(?!\s*$).+/.test( value );
 };
 
-// Calls the validate method on the add stock Form
+// Calls the validate method on the add stock form
 $('.add-stock-form').validate({
     // Validation Rules
     rules: {
@@ -33,14 +33,15 @@ $('.add-stock-form').validate({
     // Custom messages for custom validator method
     messages: {
         name: {
-            notEmptyString: "No empty strings please.",
+            notEmptyString: 'No empty strings please.',
         }, 
         description: {
-            notEmptyString: "No empty strings please.",
+            notEmptyString: 'No empty strings please.',
         },      
     },
 });
 
+// Calls the validate method on the edit stock form
 $('.edit-product-form').validate({
     // Validation Rules
     rules: {
@@ -61,15 +62,30 @@ $('.edit-product-form').validate({
         },
         rating: {
             range: [0, 5]
-        }
+        },
     },
     // Custom messages for custom validator method
     messages: {
         name: {
-            notEmptyString: "No empty strings please.",
+            notEmptyString: 'No empty strings please.',
         }, 
         description: {
-            notEmptyString: "No empty strings please.",
+            notEmptyString: 'No empty strings please.',
         },      
     },
 });
+
+// Calls the validate method on the review form
+$('#reviewModal').find('form').validate({
+    // Validation Rules
+    rules: {
+        comment: {
+            notEmptyString: true,
+        }
+    },
+    messages: {
+        comment: {
+            notEmptyString: 'No empty strings please.',
+        },
+    },
+})
