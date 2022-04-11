@@ -140,21 +140,7 @@
             {% endfor %}
         </div>
     </section>
-<!-- Floating action button. Credit: https://freefrontend.com/css-floating-action-buttons/ -->
-    <div class="floating-container">
-        <div class="floating-button">+</div>
-        <div class="element-container">
-    
-        <a href="google.com"> 
-            <span class="float-element">
-            </span>
-        </a>
-            <span class="float-element">
-            </span>
-            <span class="float-element">
-            </span>
-        </div>
-    </div>
+    {% include 'products/includes/fab.html' %}
 {% endblock %}
 
 {% block postloadjs %}
