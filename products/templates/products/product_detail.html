@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
 {% load reviews %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock %}
 
 {% block page_header %}
 {% endblock %}
@@ -146,6 +149,7 @@
 
         </div>
     </div>
+    {% include 'products/includes/fab.html' %}
 {% endblock %}
 
 {% block postloadjs %}
