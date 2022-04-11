@@ -46,4 +46,10 @@
 {% endblock %}
 
 {% block postloadjs %}
+{{block.super}}
+<script>
+    $('.btn-top').click(function(e) {
+        window.scrollTo(0,0)
+    })
+</script>
 {% endblock %}

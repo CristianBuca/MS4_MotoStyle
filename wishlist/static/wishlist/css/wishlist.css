@@ -55,12 +55,11 @@
 }
 
 .floating-container {
-    position: sticky;
+    position: fixed;
     width: 100px;
     height: 100px;
-    bottom: 5%;
-    left: 90%;
-    margin: 35px 25px;
+    bottom: 12%;
+    right: 0;
 }
 
 .floating-container:hover {
@@ -172,4 +171,26 @@
     background: #C62828;
     cursor: pointer;
     color: #E0E0E0;
+}
+
+/* ---------------------- Media Queries ---------------------- */
+
+@media screen and (max-width: 992px) {
+    .floating-container {
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        bottom: 20%;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .floating-container {
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        bottom: 30%;
+        right: 0;
+    }
 }
