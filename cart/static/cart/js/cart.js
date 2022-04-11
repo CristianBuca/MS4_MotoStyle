@@ -63,3 +63,8 @@ $('.remove').click(function(e) {
             location.reload();
         });
 })
+
+// Back to top button
+$('.btn-top').click(function(e) {
+    window.scrollTo(0,0)
+})

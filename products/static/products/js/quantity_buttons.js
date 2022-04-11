@@ -41,3 +41,9 @@ $('.decrement-qty').click(function(e) {
     var itemId = $(this).data('item_id');
     handleEnableDisable(itemId);
 });
+
+// Back to top of page button
+
+$('.btn-top').click(function(e) {
+    window.scrollTo(0,0)
+})
