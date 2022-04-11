@@ -116,6 +116,26 @@
     background-size: cover;
 }
 
+.floating-button-btt {
+    position: sticky;
+    bottom: 5%;
+    left: 90%;
+    height: 2.5rem;
+    width: 2.5rem;
+    background: #C62828;
+    cursor: pointer;
+    margin: auto;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 2rem;
+    z-index: 100;
+    border-radius: 0.25rem;
+}
+
+.floating-button-btt a{
+    color: #E0E0E0;
+}
+
 .floating-container .float-element {
     position: relative;
     display: block;
