@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'wishlist/css/wishlist.css' %}">
+{% endblock %}
 
 {% block content %}
     <div class="container mt-5">
@@ -39,6 +42,7 @@
             </div>
         {% endif %}
     </div>
+    {% include 'wishlist/includes/fab.html' %}
 {% endblock %}
 
 {% block postloadjs %}
