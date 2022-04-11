@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* ---------------------- Main project elements ---------------------- */
+
 html {
     height: 100%;
 }
@@ -266,6 +267,7 @@ strong,
 }
 
 /* On very small screens to avoid the links from wrapping */
+
 @media screen and (max-width: 450px) {
     .nav-link {
         padding: .25rem;

@@ -2,19 +2,24 @@
 <div class="floating-container">
     {% if request.user.is_superuser %}
     <div class="floating-button">
+        <a href=""></a>
     </div>
     <div class="element-container">
-        <a class="btn-top" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"> 
+        <a class="btn-top" data-bs-toggle="tooltip" data-bs-placement="top" title="Back to top" aria-label="Back to top "> 
             <span class="float-element">
                 <i class="fa-solid fa-square-caret-up"></i>
             </span>
         </a>
+        <a href="{% url 'add_product' %}" class="btn-add-prod" data-bs-toggle="tooltip" data-bs-placement="top" title="Add product" aria-label="Add product to shop">
             <span class="float-element">
                 <i class="fa-solid fa-square-plus"></i>
             </span>
+        </a>
+        <a href="/admin/" class="btn-admin" data-bs-toggle="tooltip" data-bs-placement="top" title="Admin dashboard" target="_blank" rel="noopener" aria-label="Admin dashboard (link opens in a new tab)">
             <span class="float-element">
                 <i class="fa-solid fa-screwdriver-wrench"></i>
             </span>
+        </a>
     </div>
     {% endif %}
 </div>
