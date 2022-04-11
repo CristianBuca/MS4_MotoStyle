@@ -18,9 +18,13 @@
                             <div class="card m-3 p-3">
                                 <div class="card-image">
                                     {% if item.product.image %}
-                                        <img class="img-fluid" src="{{ item.product.image.url }}" alt="Image of {{ item.product.name }}">
+                                        <a href="{% url 'product_detail' item.product.id %}">
+                                            <img class="img-fluid" src="{{ item.product.image.url }}" alt="Image of {{ item.product.name }}">
+                                        </a>
                                     {% else %}
-                                        <img class="img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="No image present">
+                                        <a href="{% url 'product_detail' item.product.id %}">
+                                            <img class="img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="No image present">
+                                        </a>
                                     {% endif %}
                                 </div>
                                 <hr>
