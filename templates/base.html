@@ -77,9 +77,6 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="account-options">
                             {% if request.user.is_authenticated %}
-                                {% if request.user.is_superuser %}
-                                    <a href="{% url 'add_product' %}" class="dropdown-item">Add Product</a>
-                                {% endif %}
                                 <a href="{% url 'view_wishlist' %}" class="dropdown-item">Wishlist</a>
                                 <a href="{% url 'profile' %}" class="dropdown-item">Profile</a>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -173,8 +170,8 @@
                 <div class="col-12 col-lg-4 order-1 order-lg-2 text-center fs-1">
                     <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="Find us on Youtube (link opens in a new tab)"><i class="fa-brands fa-youtube-square"></i></a>
                     <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Follow us on Instagram(link opens in a new tab)"><i class="fa-brands fa-instagram-square"></i></i></a>
-                    <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us in Facebook (link opens in a new tab"><i class="fa-brands fa-facebook-square"></i></a>
-                    <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Follow us on Twitter (link opens in a new tab"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us in Facebook (link opens in a new tab)"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Follow us on Twitter (link opens in a new tab)"><i class="fa-brands fa-twitter-square"></i></a>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 order-3 order-lg-3 text-end">
                     <p class="m-0">
