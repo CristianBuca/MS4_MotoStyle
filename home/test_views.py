@@ -8,7 +8,7 @@ class TestHomeViews(TestCase):
     """
     Class defining the views tests for the home app
     """
-    def test_home_page(self):
+    def test_get_home_page(self):
         """
         Test if the home page is accessible with a status code of 200
         Test if the the template rendered is 'index.html'
