@@ -59,8 +59,9 @@
                         </div>
 <!-- Confirmation modal end -->
                     {% endif %}
-                    {% if product.new_rating > 0 %}
-                    <div class="fs-5 px-3 pt-3">Rating: <i class="fa-solid fa-star m-card-text"></i> {{ product.new_rating }}</div>
+                    {% get_rating for product as avg_rating %}
+                    {% if avg_rating %}
+                    <div class="fs-5 px-3 pt-3">Rating: <i class="fa-solid fa-star m-card-text"></i> {{ avg_rating }}</div>
                     {% else %}
                     <div class="fs-5 px-3 pt-3">Rating: <i class="fa-solid fa-star m-card-text"></i> {{ product.rating }}</div>
                     {% endif %}
@@ -80,13 +81,13 @@
                         </div>
 <!-- Review Modal -->
                         <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
-                            <div class="modal-dialog text-center">
+                            <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="reviewModalLabel">{{ product.name }}</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="modal-body">
+                                    <div class="modal-body mx-auto">
                                         {% render_review_form for product %}
                                     </div>
                                     <div class="modal-footer">
