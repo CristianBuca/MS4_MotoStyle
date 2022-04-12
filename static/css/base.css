@@ -97,6 +97,10 @@ strong,
     user-select: none;
 }
 
+.btn-dark:hover {
+    background-color: #C62828 !important;
+}
+
 /* ---------------------- Card styles ---------------------- */
 
 .card {
