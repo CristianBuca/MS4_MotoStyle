@@ -94,8 +94,9 @@
                         <hr>
                         <div class="card-body">
                             <div class="card-text p-1 fs-4"><strong>Price: £{{ product.price }}</strong></div>
-                            {% if product.new_rating > 0 %}
-                                <span class="card-text fs-5"><i class="fa-solid fa-star m-card-text"></i> {{ product.new_rating }}</span>
+                            {% get_rating for product as avg_rating %}
+                            {% if avg_rating %}
+                                <span class="card-text fs-5"><i class="fa-solid fa-star m-card-text"></i> {{ avg_rating }}</span>
                             {% else %}
                                 <span class="card-text fs-5"><i class="fa-solid fa-star m-card-text"></i> {{ product.rating }}</span>
                             {% endif %}
