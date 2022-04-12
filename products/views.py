@@ -78,10 +78,6 @@ def product_detail(request, product_id):
     in_wishlist = Wishlist.objects.filter(
         product=product, owner=request.user.id
     )
-    prod_reviews = Review.objects.filter(object_pk=product_id)
-    rating = product.rating
-    new_rating = update_rating(prod_reviews, rating)
-    Product.objects.filter(pk=product_id).update(new_rating=new_rating)
 
     context = {
         'product': product,
@@ -89,34 +85,6 @@ def product_detail(request, product_id):
         }
 
     return render(request, 'products/product_detail.html', context)
-
-
-# Credit to Paul Meeneghan - LoveRugby project
-# https://github.com/pmeeny/CI-MS4-LoveRugby
-def update_rating(prod_reviews, rating):
-    """
-    Updates the rating of a product when a new review is posted
-        Arguments:
-            prod_reviews: The reviews for the specific product
-            rating: default product rating
-        Returns: new rating
-    """
-    number_of_reviews = 0
-    review_ratings = 0
-    new_rating = 0
-    for review in prod_reviews:
-        number_of_reviews = number_of_reviews + 1
-        review_ratings = review_ratings + review.rating
-
-    if number_of_reviews > 0:
-        if rating:
-            average_rating = round((review_ratings / number_of_reviews), 1)
-            new_rating = (float(rating) + float(average_rating)) / 2
-        else:
-            new_rating = round((review_ratings / number_of_reviews), 1)
-        return new_rating
-    else:
-        return new_rating
 
 
 @login_required
