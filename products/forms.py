@@ -13,7 +13,10 @@ class ProductForm(forms.ModelForm):
     """
     class Meta:
         model = Product
-        exclude = ['new_rating']
+        fields = (
+            'category', 'sku', 'name', 'description', 'price',
+            'rating', 'image_url', 'image', 'has_sizes'
+        )
 
     image = forms.ImageField(
         label='Image', required=False, widget=CustomClearableFileInput
