@@ -54,8 +54,8 @@ class Product(models.Model):
 
     def __str__(self):
         """
-        Returns the category name string
+        Returns the product name string
             Arguments: self (object): self
-            Returns: Category name as string
+            Returns: Product name as string
         """
         return str(self.name)
