@@ -1,8 +1,11 @@
 # Imports
 # 3rd party:
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect, reverse
+from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 # Internal:
 from .models import BlogPost
+from .forms import BlogPostForm
 # -----------------------------------------------------------------------------
 
 
@@ -36,3 +39,31 @@ def blog_post(request, blog_post_id):
     }
 
     return render(request, 'blog/blog_post.html', context)
+
+
+@login_required
+def add_blog_post(request):
+    """
+    View for adding a blog post to the database
+        Arguments: request (object): The Http request
+        Returns: render the add blog post page
+    """
+    if request.method == 'POST':
+        form = BlogPostForm(request.POST, request.FILES)
+        if form.is_valid():
+            blog_post = form.save()
+            messages.info(request, 'Your article has been posted!')
+            return redirect(reverse('blog_post', args=[blog_post.id]))
+        else:
+            messages.error(
+                request, 'Could not post your article. Please check the form.'
+            )
+    else:
+        form = BlogPostForm
+
+    template = 'blog/add_blog_post.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
