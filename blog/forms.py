@@ -13,6 +13,12 @@ class BlogPostForm(forms.ModelForm):
     """
     class Meta:
         model = BlogPost
+        fields = (
+            'owner', 'title', 'content', 'image_url', 'image',
+            'second_image_url', 'second_image', 'third_image_url',
+            'third_image', 'fourth_image_url', 'fourth_image',
+            'fifth_image_url', 'fifth_image',
+        )
 
     image = forms.ImageField(
         label='Image', required=False, widget=CustomClearableFileInput
