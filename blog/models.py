@@ -26,8 +26,8 @@ class BlogPost(models.Model):
 
     def __str__(self):
         """
-        Returns the blogpost programatic title string
+        Returns the blogpost title string
             Arguments: self (object): self
-            Returns: BlogPost programatic title as string
+            Returns: BlogPost title as string
         """
         return str(self.title)
