@@ -5,7 +5,6 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from django.contrib.auth.decorators import login_required
-from reviews.models import Review
 # Internal:
 from .models import Product, Category
 from .forms import ProductForm
