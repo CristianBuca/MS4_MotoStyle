@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content%}
+    <div class="container mt-5">
+        <div class="row pt-lg-5">
+            <div class="col-12 col-lg-8 col-xl-6 mx-auto">
+                <h1>{{ blog_post.title}}</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            {{ blog_post.content }}
+        </div>
+    </div>
+{% endblock %}

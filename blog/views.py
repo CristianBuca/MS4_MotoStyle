@@ -49,17 +49,19 @@ def add_blog_post(request):
         Returns: render the add blog post page
     """
     if request.method == 'POST':
-        form = BlogPostForm(request.POST, request.FILES)
-        if form.is_valid():
-            blog_post = form.save()
-            messages.info(request, 'Your article has been posted!')
-            return redirect(reverse('blog_post', args=[blog_post.id]))
+        blog_form = BlogPostForm(request.POST, request.FILES)
+        if blog_form.is_valid():
+            form_data = blog_form.save(commit=False)
+            form_data.owner = request.user
+            form_data.save()
+            messages.info(request, 'Your article has been posted.')
+            return redirect(reverse('home'))
         else:
             messages.error(
                 request, 'Could not post your article. Please check the form.'
             )
     else:
-        form = BlogPostForm
+        form = BlogPostForm()
 
     template = 'blog/add_blog_post.html'
     context = {
