@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
 
 {% block page_header %}
     <div class="container-fluid header-container">
@@ -12,9 +16,41 @@
 {% endblock %}
 
 {% block content %}
-
-    <section>
-
+    <section class="container">
+        <h1 class="my-3">
+            Blog & Latest News
+            <a href="{% url 'add_blog_post' %}" class="btn btn-dark float-end">Post Article</a>
+        </h1>
+        <div class="accordion" id="blog-accordion">
+            {% for blog_post in blog %}
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading{{ blog_post.id }}">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse{{ blog_post.id }}" aria-expanded="false" aria-controls="flush-collapse{{ blog_post.id }}">
+                            {{ blog_post.title}}
+                        </button>
+                    </h2>
+                    <div id="flush-collapse{{ blog_post.id }}" class="accordion-collapse collapse" aria-labelledby="flush-heading{{ blog_post.id }}"
+                        data-bs-parent="#blog-accordion">
+                        <div class="accordion-body row">
+                            {% if blog_post.image %}
+                                <div class="d-none d-md-block col-md-3">
+                                    <img class="img-fluid" src="{{ blog_post.image.url }}" alt="Image for {{ blog_post.title }}">
+                                </div>
+                            {% endif %}
+                            <div class="col-6 d-flex align-items-center">
+                                {{ blog_post.content | linebreaks | truncatewords:40 }}
+                            </div>
+                            <div class="col align-items-center">
+                                <button class="btn btn-dark w-100 my-3">Read more</button>
+                                <div>Posted by: {{ blog_post.owner }}</div>
+                                <div>on: {{ blog_post.created_at }} </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
     </section>
 {% endblock %}
 
