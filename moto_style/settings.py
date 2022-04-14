@@ -61,7 +61,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'django_extensions',
     'reviews',
-
+    'django_cleanup.apps.CleanupConfig',
 ]
 
 MIDDLEWARE = [
