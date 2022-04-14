@@ -19,7 +19,7 @@ class BlogPostForm(forms.ModelForm):
             'third_image', 'fourth_image_url', 'fourth_image',
             'fifth_image_url', 'fifth_image',
         )
-        exclude = ['owner']
+        exclude = ['owner', 'created_at']
 
     image = forms.ImageField(
         label='Image', required=False, widget=CustomClearableFileInput
