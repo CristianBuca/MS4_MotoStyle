@@ -1,0 +1,19 @@
+/* ---------------------- Accordion styles ---------------------- */
+.accordion-button {
+    background-color: #E0E0E0 !important;
+}
+
+.accordion-button:focus {
+    border-color: #C62828 !important;
+    box-shadow: 0 0 0 0.25rem #C62828 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #212121 !important;
+    background-color: #fff !important;
+}
+
+.accordion-body {
+    max-height: 250px;
+    overflow: hidden;
+}
