@@ -55,7 +55,7 @@ def add_blog_post(request):
             form_data.owner = request.user
             form_data.save()
             messages.info(request, 'Your article has been posted.')
-            return redirect(reverse('home'))
+            return redirect(reverse('blog'))
         else:
             messages.error(
                 request, 'Could not post your article. Please check the form.'
