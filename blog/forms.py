@@ -3,7 +3,7 @@
 from django import forms
 # Internal
 from .models import BlogPost
-from products.widgets import CustomClearableFileInput
+from .widgets import CustomClearableFileInput
 # -----------------------------------------------------------------------------
 
 
@@ -25,14 +25,14 @@ class BlogPostForm(forms.ModelForm):
         label='Image', required=False, widget=CustomClearableFileInput
     )
     second_image = forms.ImageField(
-        label='Image', required=False, widget=CustomClearableFileInput
+        label='Second image', required=False, widget=CustomClearableFileInput
     )
     third_image = forms.ImageField(
-        label='Image', required=False, widget=CustomClearableFileInput
+        label='Third image', required=False, widget=CustomClearableFileInput
     )
     fourth_image = forms.ImageField(
-        label='Image', required=False, widget=CustomClearableFileInput
+        label='Fourth image', required=False, widget=CustomClearableFileInput
     )
     fifth_image = forms.ImageField(
-        label='Image', required=False, widget=CustomClearableFileInput
+        label='Fifth image', required=False, widget=CustomClearableFileInput
     )
