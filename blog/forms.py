@@ -43,7 +43,20 @@ class CommentForm(forms.ModelForm):
     Class defining the form for blog post comments
     """
     class Meta:
-        model: Comment
+        model = Comment
         fields = (
             'comment_body',
         )
+
+    def __init__(self, *args, **kwargs):
+        """
+        Initialize method for the form
+            Arguments:
+                self (object): The object initialized
+                *args: other arguments
+                **kwargs: keyword arguments
+            Returns:
+                N/A
+        """
+        super().__init__(*args, **kwargs)
+        self.fields['comment_body'].label = 'Post your comment:'
