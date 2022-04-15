@@ -72,25 +72,71 @@
                     </button>
                 </section>
 <!-------------------------- Carousel End -------------------------->
-                <p class="my-2">Article posted by: {{ blog_post.owner }} on: {{ blog_post.created_at }}</p>
+                <p class="my-2">Article posted by: {{ blog_post.owner }} on: {{ blog_post.created_at | date:"D d M Y" }}</p>
 
 <!-------------------------- Comment section start for medium displays and up -------------------------->
                 <section class="d-none d-md-block comments">
-                    <button class="btn btn-dark w-100 my-3">Post a comment</button>
+                    <button type="button" class="btn btn-dark w-100 my-3" data-bs-toggle="modal" data-bs-target="#commentModal">Post a comment</button>
                     <hr>
+                    <h2 class="fs-4">User Opinions:</h2>
+                    {% for comment in comments %}
+                    <div class="text-muted">
+                        <small>by: {{ comment.posted_by }} on {{ comment.posted_at | date:"D d M Y" }}</small>
+                        <a class="float-end" href=""><strong>Remove post</strong></a>
+                    </div>
+                    <p>{{ comment.comment_body }}</p>
+                    <hr>
+                    {% endfor %}
                 </section>
 <!-------------------------- Comment section end -------------------------->
             </div>
 
-            <section class="col-12 col-md-7 blog-content py-3">
+            <section class="col-12 col-md-7 blog-content my-3 py-3">
                 {{ blog_post.content | linebreaks }}
             </section>
 
 <!-------------------------- Comment section start for small displays -------------------------->
             <section class="d-block d-md-none comments">
-
+                <button type="button" class="btn btn-dark w-100 my-3" data-bs-toggle="modal" data-bs-target="#commentModal">Post a comment</button>
+                    <hr>
+                    <h2 class="fs-4">User's Opinions:</h2>
+                    {% for comment in comments %}
+                    <div class="text-muted">
+                        <small>by: {{ comment.posted_by }} on {{ comment.posted_at | date:"D d M Y" }}</small>
+                    
+                    </div>
+                    <p>{{ comment.comment_body }}</p>
+                    <hr>
+                    {% endfor %}
                     
             </section>
+            <!-- Button trigger modal -->
+  
+  <!-------------------------- Comment Modal -------------------------->
+<div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="commentModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center" id="commentModalLabel">{{ blog_post.title }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="{% url 'blog_post' blog_post.id %}" method="POST" class="form pt-3 add-stock-form" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% for field in comment_form %}
+                        <div class="pt-2 px-5">
+                            {{ field | as_crispy_field }}
+                        </div>
+                    {% endfor %}
+                    <div class="col-12 text-end p-3">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-dark" type="submit">Post comment</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <!-------------------------- Comment section end -------------------------->
         </div>
     </div>
