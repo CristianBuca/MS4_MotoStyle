@@ -4,8 +4,8 @@ from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 # Internal:
-from .models import BlogPost
-from .forms import BlogPostForm
+from .models import BlogPost, Comment
+from .forms import BlogPostForm, CommentForm
 # -----------------------------------------------------------------------------
 
 
@@ -32,10 +32,27 @@ def blog_post(request, blog_post_id):
             blog_post_id: ID of the blog post being viewed
         Returns: render blog post display page with context
     """
+
     blog_post = get_object_or_404(BlogPost, pk=blog_post_id)
+
+    if request.method == 'POST':
+        comment_form = CommentForm(data=request.POST)
+        if comment_form.is_valid():
+            comment = comment_form.save(commit=False)
+            comment.blog_article = blog_post
+            comment.posted_by = request.user
+            comment.save()
+            messages.info(request, 'Your comment has been posted')
+            return redirect(reverse('blog_post', args=[blog_post.id]))
+        else:
+            messages.error(request, 'Unable to post comment at this time!')
+            return redirect(reverse('blog_post', args=[blog_post.id]))
+    else:
+        comment_form = CommentForm()
 
     context = {
         'blog_post': blog_post,
+        'comment_form': comment_form,
     }
 
     return render(request, 'blog/blog_post.html', context)
