@@ -90,6 +90,17 @@ def add_blog_post(request):
 
     return render(request, template, context)
 
+@login_required
+def edit_blog_post(request, blog_post_id):
+    """
+    View for editing blog post
+        Arguments:
+            request (object): The Http request
+            product_id: ID of the blog post being changed
+        Returns:
+            Render the edit blog post page
+    """
+
 
 @login_required
 def delete_blog_post(request, blog_post_id):
