@@ -2,7 +2,7 @@
 # 3rd party:
 from django import forms
 # Internal
-from .models import BlogPost
+from .models import BlogPost, Comment
 from .widgets import CustomClearableFileInput
 # -----------------------------------------------------------------------------
 
@@ -36,3 +36,14 @@ class BlogPostForm(forms.ModelForm):
     fifth_image = forms.ImageField(
         label='Fifth image', required=False, widget=CustomClearableFileInput
     )
+
+
+class CommentForm(forms.ModelForm):
+    """
+    Class defining the form for blog post comments
+    """
+    class Meta:
+        model: Comment
+        fields = (
+            'comment_body',
+        )
