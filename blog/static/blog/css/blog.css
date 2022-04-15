@@ -17,3 +17,19 @@
     max-height: 250px;
     overflow: hidden;
 }
+
+.blog-content {
+    max-height: 80vh;
+    overflow-y: scroll;
+    border-style: solid;
+    border-color:#E0E0E0;
+    border-width: 2px;
+}
+
+/* ---------------------- Media Queries ---------------------- */
+
+@media screen and (max-width: 769px) {
+    .blog-content {
+        max-height: 50vh;
+    }
+}
