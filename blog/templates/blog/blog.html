@@ -19,7 +19,7 @@
     <section class="container">
         <h1 class="my-3">
             Blog & Latest News
-            <a href="{% url 'add_blog_post' %}" class="btn btn-dark float-end">Post Article</a>
+            <a href="{% url 'add_blog_post' %}" class="btn btn-dark float-end my-3">Post Article</a>
         </h1>
         <div class="accordion" id="blog-accordion">
             {% for blog_post in blog %}
@@ -27,7 +27,7 @@
                     <h2 class="accordion-header" id="heading{{ blog_post.id }}">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapse{{ blog_post.id }}" aria-expanded="false" aria-controls="collapse{{ blog_post.id }}">
-                            {{ blog_post.title}}
+                            <span>{{ blog_post.title}}</span>
                         </button>
                     </h2>
                     <div id="collapse{{ blog_post.id }}" class="accordion-collapse collapse" aria-labelledby="heading{{ blog_post.id }}"
@@ -41,10 +41,41 @@
                             <div class="col-6 d-flex align-items-center">
                                 {{ blog_post.content | linebreaks | truncatewords:40 }}
                             </div>
-                            <div class="col align-items-center">
-                                <a class="btn btn-dark w-100 my-3" href="{% url 'blog_post' blog_post.id %}">Read More</a>
+                            <div class="col align-items-center text-center">
+                                <a class="btn btn-dark w-100 my-1" href="{% url 'blog_post' blog_post.id %}">Read More <i class="fa-solid fa-newspaper"></i></a>
                                 <div>Posted by: {{ blog_post.owner }}</div>
                                 <div>on: {{ blog_post.created_at |date:"D d M Y" }} </div>
+                                {% if request.user.is_superuser or request.user == blog_post.owner %}
+<!-------------------------- Remove current article from the Database -------------------------->
+                                    <a type="button" class=" btn btn-dark mx-auto my-1 float-start" data-bs-toggle="modal" data-bs-target="#remove-{{ blog_post.id }}">
+                                        <span class="d-none d-m-block">Remove </span>
+                                        <i class="fa-solid fa-trash"></i>
+                                    </a>
+<!-------------------------- Edit current article -------------------------->
+                                    <a type="button" class=" btn btn-dark mx-auto my-1 float-end" data-bs-toggle="modal" data-bs-target="#remove-{{ blog_post.id }}">
+                                        <span class="d-none d-m-block">Edit </span>
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                    </a>
+<!-------------------------- Confirmation modal for removing item -------------------------->
+                                    <div class="modal fade" id="remove-{{ blog_post.id }}" tabindex="-1" aria-labelledby="confirmation-modal" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="confirmation-modal">{{ blog_post.name }}</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text-center">Are you sure you want to <strong>permanently</strong> remove this article?</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</a>
+                                                <a type="button" class="btn btn-danger" href="{% url 'delete_blog_post' blog_post.id %}">Remove</a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+<!-------------------------- Confirmation modal end -------------------------->
+                                {% endif %}
                             </div>
                         </div>
                     </div>
