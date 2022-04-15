@@ -44,7 +44,7 @@
                             <div class="col align-items-center">
                                 <a class="btn btn-dark w-100 my-3" href="{% url 'blog_post' blog_post.id %}">Read More</a>
                                 <div>Posted by: {{ blog_post.owner }}</div>
-                                <div>on: {{ blog_post.created_at }} </div>
+                                <div>on: {{ blog_post.created_at |date:"D d M Y" }} </div>
                             </div>
                         </div>
                     </div>
