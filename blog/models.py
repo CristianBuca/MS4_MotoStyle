@@ -32,3 +32,10 @@ class BlogPost(models.Model):
             Returns: BlogPost title as string
         """
         return str(self.title)
+
+
+class Comment(models.Model):
+    """
+    Class defining the fields in Comment model
+    """
+
