@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content%}
+    <div class="container mt-5">
+        <div class="row pt-lg-5">
+            <div class="col-12 col-lg-8 col-xl-6 mx-auto">
+                <h1>Post a blog article</h1>
+            </div>
+        </div>
+
+<!-- Product Form -->
+        <div class="row my-3">
+            <div class="col-12 col-lg-8 col-xl-6 mx-auto">
+                <form action="{% url 'add_blog_post' %}" method="POST" class="form card pt-3 add-stock-form" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% for field in form %}
+                        <div class="py-2 px-5">
+                            {% if field.name != 'image' %}
+                                {{ field | as_crispy_field }}
+                            {% else %}
+                                {{ field }}
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                    <div class="col-12 text-end p-3">
+                        <a href="{% url 'blog' %}" class="btn btn-dark">Cancel</a>
+                        <button class="btn btn-dark" type="submit">Post Article</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script src="{% static 'blog/js/image_notification.js' %}" type="text/javascript"></script>
+{% endblock %}
