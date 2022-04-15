@@ -89,3 +89,23 @@ def add_blog_post(request):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def delete_blog_post(request, blog_post_id):
+    """
+    View for deleting a blog post
+        Arguments:
+            request (object): The Http request
+            product_id: ID of blog post being removed
+        Returns:
+            Redirect to blog page
+    """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry this feature is for store owners only.')
+        return redirect(reverse('blog'))
+
+    blog_post = get_object_or_404(BlogPost, pk=blog_post_id)
+    blog_post.delete()
+    messages.info(request, 'Article removed successfully')
+    return redirect(reverse('blog'))
