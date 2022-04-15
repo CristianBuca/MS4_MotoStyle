@@ -34,6 +34,8 @@ def blog_post(request, blog_post_id):
     """
 
     blog_post = get_object_or_404(BlogPost, pk=blog_post_id)
+    comments = Comment.objects.all().filter(
+        blog_article=blog_post).order_by('-posted_at')
 
     if request.method == 'POST':
         comment_form = CommentForm(data=request.POST)
@@ -53,6 +55,7 @@ def blog_post(request, blog_post_id):
     context = {
         'blog_post': blog_post,
         'comment_form': comment_form,
+        'comments': comments,
     }
 
     return render(request, 'blog/blog_post.html', context)
