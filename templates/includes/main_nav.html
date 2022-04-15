@@ -4,7 +4,7 @@
             <button class="btn bgclr-neutral dropdown-toggle w-100 fs-5" type="button" id="helmets" data-bs-toggle="dropdown" aria-expanded="false">
                 Helmets
             </button>
-            <ul class="dropdown-menu" aria-labelledby="helmets">
+            <ul class="dropdown-menu text-center" aria-labelledby="helmets">
                 <li><a class="dropdown-item " href="{% url 'products' %}?category=full_face">Full Face</a></li>
                 <li><a class="dropdown-item " href="{% url 'products' %}?category=flip_front">Flip Front</a></li>
                 <li><a class="dropdown-item " href="{% url 'products' %}?category=motocross_helmets">Motocross</a></li>
@@ -16,7 +16,7 @@
             <button class="btn bgclr-neutral dropdown-toggle w-100 fs-5" type="button" id="clothing" data-bs-toggle="dropdown" aria-expanded="false">
                 Clothing
             </button>
-            <ul class="dropdown-menu" aria-labelledby="clothing">
+            <ul class="dropdown-menu text-center" aria-labelledby="clothing">
                 <li><a class="dropdown-item " href="{% url 'products' %}?category=jackets">Jackets</a></li>
                 <li><a class="dropdown-item " href="{% url 'products' %}?category=trousers">Trousers</a></li>
                 <li><a class="dropdown-item " href="{% url 'products' %}?category=suits">Suits</a></li>
@@ -29,7 +29,7 @@
             <button class="btn bgclr-neutral dropdown-toggle w-100 fs-5" type="button" id="boots" data-bs-toggle="dropdown" aria-expanded="false">
                 Boots
             </button>
-            <ul class="dropdown-menu" aria-labelledby="boots">
+            <ul class="dropdown-menu text-center" aria-labelledby="boots">
                 <li><a class="dropdown-item " href="{% url 'products' %}?category=urban">Urban</a></li>
                 <li><a class="dropdown-item " href="{% url 'products' %}?category=touring">Touring</a></li>
                 <li><a class="dropdown-item " href="{% url 'products' %}?category=motocross_boots">Motocross</a></li>
@@ -41,7 +41,7 @@
             <button class="btn bgclr-neutral dropdown-toggle w-100 fs-5" type="button" id="gloves" data-bs-toggle="dropdown" aria-expanded="false">
                 Gloves
             </button>
-            <ul class="dropdown-menu" aria-labelledby="gloves">
+            <ul class="dropdown-menu text-center" aria-labelledby="gloves">
                 <li><a class="dropdown-item " href="{% url 'products' %}?category=summer">Summer</a></li>
                 <li><a class="dropdown-item " href="{% url 'products' %}?category=winter">Winter</a></li>
                 <li><a class="dropdown-item " href="{% url 'products' %}?category=motocross_gloves">Motocross</a></li>
@@ -53,7 +53,7 @@
             <button class="btn bgclr-neutral dropdown-toggle w-100 fs-5" type="button" id="accessories" data-bs-toggle="dropdown" aria-expanded="false">
                 Accessories
             </button>
-            <ul class="dropdown-menu" aria-labelledby="accessories">
+            <ul class="dropdown-menu text-center" aria-labelledby="accessories">
                 <li><a class="dropdown-item " href="{% url 'products' %}?category=luggage">Luggage</a></li>
                 <li><a class="dropdown-item " href="{% url 'products' %}?category=tools">Tools</a></li>
                 <li><a class="dropdown-item " href="{% url 'products' %}?category=luggage,tools">All Accessories</a></li>
@@ -61,8 +61,8 @@
         </li>
 
         <li class="">
-            <a class="btn bgclr-info w-100 fs-5" type="button" id="sale" href="{% url 'products' %}?category=sale" >
-                Sale
+            <a class="btn bgclr-info w-100 fs-5" type="button" id="blog" href="{% url 'blog' %}" >
+                Blog
             </a>
         </li>
 
@@ -70,7 +70,7 @@
             <button class="btn bgclr-info dropdown-toggle w-100 fs-5" type="button" id="all-products" data-bs-toggle="dropdown" aria-expanded="false">
                 All Products
             </button>
-            <ul class="dropdown-menu" aria-labelledby="all-products">
+            <ul class="dropdown-menu text-center" aria-labelledby="all-products">
                 <li><a class="dropdown-item " href="{% url 'products' %}?sort=price&direction=asc">By Price</a></li>
                 <li><a class="dropdown-item " href="{% url 'products' %}?sort=rating&direction=desc">By Rating</a></li>
                 <li><a class="dropdown-item " href="{% url 'products' %}?sort=category&direction=asc">By Category</a></li>
