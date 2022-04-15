@@ -101,14 +101,15 @@ def delete_blog_post(request, blog_post_id):
         Returns:
             Redirect to blog page
     """
-    if not request.user.is_superuser:
+    blog_post = get_object_or_404(BlogPost, pk=blog_post_id)
+
+    if request.user.is_superuser or request.user == blog_post.owner:
+        blog_post.delete()
+        messages.info(request, 'Article removed successfully')
+        return redirect(reverse('blog'))
+    else:
         messages.error(request, 'Sorry this feature is for store owners only.')
         return redirect(reverse('blog'))
-
-    blog_post = get_object_or_404(BlogPost, pk=blog_post_id)
-    blog_post.delete()
-    messages.info(request, 'Article removed successfully')
-    return redirect(reverse('blog'))
 
 
 @login_required
