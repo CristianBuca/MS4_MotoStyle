@@ -39,3 +39,15 @@ class Comment(models.Model):
     Class defining the fields in Comment model
     """
 
+    posted_by = models.ForeignKey(User, on_delete=models.CASCADE)
+    blog_article = models.ForeignKey(BlogPost, on_delete=models.CASCADE)
+    comment_body = models.TextField(max_length=200)
+    posted_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        """
+        Returns the comment string
+            Arguments: self (object): self
+            Returns: Comment body as string
+        """
+        return str(self.comment_body)
