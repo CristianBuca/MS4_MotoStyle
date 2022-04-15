@@ -126,7 +126,7 @@ def edit_blog_post(request, blog_post_id):
         messages.error(request, 'Sorry not possible at this time.')
         return redirect(reverse('blog'))
 
-    template = 'products/edit_product.html'
+    template = 'blog/edit_blog_post.html'
     context = {
         'form': form,
         'blog_post': blog_post,

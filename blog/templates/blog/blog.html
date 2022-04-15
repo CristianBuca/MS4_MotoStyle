@@ -52,7 +52,7 @@
                                         <i class="fa-solid fa-trash"></i>
                                     </a>
 <!-------------------------- Edit current article -------------------------->
-                                    <a type="button" class=" btn btn-dark mx-auto my-1 float-end" data-bs-toggle="modal" data-bs-target="#remove-{{ blog_post.id }}">
+                                    <a class=" btn btn-dark mx-auto my-1 float-end" href="{% url 'edit_blog_post' blog_post.id %}">
                                         <span class="d-none d-m-block">Edit </span>
                                         <i class="fa-solid fa-pen-to-square"></i>
                                     </a>
