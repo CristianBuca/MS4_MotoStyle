@@ -1,7 +1,7 @@
 {% load reviews i18n %}
 <form action="{% review_form_target %}" method="post">{% csrf_token %}
 
-    <input type="hidden" name="next" value="{% url 'product_detail' product.id%}"/>
+    <input type="hidden" name="next" value="{% url 'product_detail' product.id %}"/>
 
   {% for field in form %}
     {% if field.is_hidden %}

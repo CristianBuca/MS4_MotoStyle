@@ -25,7 +25,7 @@
                 <div class="col-4 col-md-3 col-lg-2 text-center">
                     <div class="cat-image d-block mx-auto">
                         <a href="{% url 'products' %}?category={{ cat.name }}">
-                            <img src="{{ cat.image.url }}" alt="{{ cat.name }}" >
+                            <img src="{{ cat.image.url }}" alt="Image of {{ cat.name }}" >
                         </a>
                     </div>  
                     <p>{{ cat.friendly_name }}</p>
