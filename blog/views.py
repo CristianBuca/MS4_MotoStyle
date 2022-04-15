@@ -39,7 +39,7 @@ def blog_post(request, blog_post_id):
 
     if request.method == 'POST':
         comment_form = CommentForm(data=request.POST)
-        if comment_form.is_valid():
+        if comment_form.is_valid() and request.user.is_authenticated:
             comment = comment_form.save(commit=False)
             comment.blog_article = blog_post
             comment.posted_by = request.user
@@ -109,3 +109,24 @@ def delete_blog_post(request, blog_post_id):
     blog_post.delete()
     messages.info(request, 'Article removed successfully')
     return redirect(reverse('blog'))
+
+
+@login_required
+def delete_comment(request, comment_id):
+    """
+    View for deleting a blog post comment
+        Arguments:
+            request (object): The Http request
+            product_id: ID of comment being removed
+        Returns:
+            Redirect to blog article page
+    """
+    comment = get_object_or_404(Comment, pk=comment_id)
+
+    if request.user.is_superuser or request.user == comment.posted_by:
+        comment.delete()
+        messages.info(request, 'Comment removed successfully')
+        return redirect(reverse('blog_post', args=[comment.blog_article_id]))
+    else:
+        messages.error(request, 'You are not allowed to perform that action')
+        return redirect(reverse('blog_post', args=[comment.blog_article_id]))
