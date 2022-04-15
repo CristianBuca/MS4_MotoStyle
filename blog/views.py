@@ -90,6 +90,7 @@ def add_blog_post(request):
 
     return render(request, template, context)
 
+
 @login_required
 def edit_blog_post(request, blog_post_id):
     """
@@ -100,6 +101,37 @@ def edit_blog_post(request, blog_post_id):
         Returns:
             Render the edit blog post page
     """
+    blog_post = get_object_or_404(BlogPost, pk=blog_post_id)
+
+    if request.user.is_superuser or request.user == blog_post.owner:
+        if request.method == 'POST':
+            form = BlogPostForm(
+                request.POST, request.FILES, instance=blog_post
+            )
+            if form.is_valid():
+                form.save()
+                messages.success(request, 'Changes have been saved')
+                return redirect(reverse('blog_post', args=[blog_post.id]))
+            else:
+                messages.error(
+                    request, 'Could not make the desired changes. '
+                    'Please doublecheck the form.'
+                )
+        else:
+            form = BlogPostForm(instance=blog_post)
+            messages.info(
+                request, f'You selected {blog_post.title} for editing'
+            )
+    else:
+        messages.error(request, 'Sorry not possible at this time.')
+        return redirect(reverse('blog'))
+
+    template = 'products/edit_product.html'
+    context = {
+        'form': form,
+        'blog_post': blog_post,
+    }
+    return render(request, template, context)
 
 
 @login_required
