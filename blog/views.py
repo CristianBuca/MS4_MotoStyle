@@ -16,7 +16,7 @@ def blog(request):
         Returns: render blog page with context
     """
 
-    blog = BlogPost.objects.all()
+    blog = BlogPost.objects.all().order_by('-id')
     context = {
         'blog': blog,
     }
