@@ -61,7 +61,9 @@ The store owner has access to full CRUD functionality over the database and user
 
 # **User Experience**
 
-
+This feature-rich e-commerce portal gives users access everything they need to make their shopping experience as complete as possible. Users are able to browse the products using a variety of sorting methods and search options. Once a product catches their eye, users have the options to add it to their wishlist or to their cart and purchase them using a safe payment processor - stripe. 
+The reviews system allows them to post a review and a rating for each product as well as read other user's reviews. Once their shopping is complete, users have the option visit the blog section where they can post or read articles related to the motorcycle industry and community, as well as interact with each other in the comment sections.
+ 
 # **Strategy**
 
 ##  **Project Goals**
