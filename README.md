@@ -87,8 +87,23 @@ The reviews system allows them to post a review and a rating for each product as
 
 **New Users:** 
 
-1
-
+1. As a new user, I want to be able to create and register an account.
+2. As a new user, I want to be able to login and access my account.
+3. As a new user, I want to be able to logout.
+4. As a new user, I want to browse the store's merchandise.
+5. As a new user, I want to be able to search for specific products.
+6. As a new user, I want to be able to browse by categories.
+7. As a new user, I want to be able to order product lists by price, rating, category or name.
+8. As a new user, I want to view individual product details.
+10. As a new user, I want to select the different quantities and sizes for a product.
+11. As a new user, I want to be able to add products to my shopping cart.
+12. As a new user, I want to be able to add products to a list of interests(wishlist).
+13. As a new user, I want to be able to view the total cost of my shopping cart while I browse.
+14. As a new user, I want to access and view my shopping cart.
+15. As a new user, I want to adjust and manage the products in my shopping cart.
+16. As a new user, I want to be able to purchase the selected products by entering my payment information in a secure way.
+17. As a new user, I want to view an order confirmation.
+18. As a new user, I want to receive the order confirmation via e-mail also.
 
 **Regular Users:**
 
