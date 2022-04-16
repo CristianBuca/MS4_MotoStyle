@@ -63,16 +63,23 @@ The store owner has access to full CRUD functionality over the database and user
 
 This feature-rich e-commerce portal gives users access everything they need to make their shopping experience as complete as possible. Users are able to browse the products using a variety of sorting methods and search options. Once a product catches their eye, users have the options to add it to their wishlist or to their cart and purchase them using a safe payment processor - stripe. 
 The reviews system allows them to post a review and a rating for each product as well as read other user's reviews. Once their shopping is complete, users have the option visit the blog section where they can post or read articles related to the motorcycle industry and community, as well as interact with each other in the comment sections.
- 
+
 # **Strategy**
 
 ##  **Project Goals**
 
-
+* Use PostgreSQL to store data,
+* Use Python and Django Framework to manipulate and present the data to the end-user,
+* Offer full CRUD functionality over the database to the store owners,
+* Offer a responsive and mobile-friendly experience to users,
 
 ## **User Goals**
 
-
+* Create an account on the site,
+* Add products to the shopping cart,
+* Purchase the items stored in the shopping cart,
+* View reviews and articles related to the store's products,
+* Interact with other users via the comments section,
 
 # **Scope**
 
@@ -80,6 +87,7 @@ The reviews system allows them to post a review and a rating for each product as
 
 **New Users:** 
 
+1
 
 
 **Regular Users:**
