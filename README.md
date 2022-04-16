@@ -51,6 +51,9 @@
 
 # **Project Overview**
 
+MotoStyle is a Full Stack e-commerce project developed as the final Milestone for Code Institute. It was created with Django Framework, using python as back-end and PostgreSQL as it's database.
+Purpose of the site is to enable a store to build a database of goods, showcase them and sell them online using stripe as the payment processor. 
+The store owner has access to full CRUD functionality over the database and users of the site have access to CRUD functionality in the blog app over the content they add to the site.
 
 
 **Registration on the website is open so feel free to take advantage of it. Regardless, for testing purposes I have set up the following account:**
