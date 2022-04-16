@@ -110,7 +110,7 @@ def edit_blog_post(request, blog_post_id):
             )
             if form.is_valid():
                 form.save()
-                messages.success(request, 'Changes have been saved')
+                messages.info(request, 'Changes have been saved')
                 return redirect(reverse('blog_post', args=[blog_post.id]))
             else:
                 messages.error(

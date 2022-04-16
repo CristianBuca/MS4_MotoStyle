@@ -1,9 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 {% load reviews %}
-{% block extra_css %}
-<link rel="stylesheet" href="{% static 'products/css/products.css' %}">
-{% endblock %}
 
 {% block page_header %}
 <!-- Showing category description when only one category of products is selected -->
@@ -141,7 +138,6 @@
             {% endfor %}
         </div>
     </section>
-    {% include 'products/includes/fab.html' %}
 {% endblock %}
 
 {% block postloadjs %}

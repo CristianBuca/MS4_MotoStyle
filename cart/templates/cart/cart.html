@@ -1,9 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 {% load cart_tools %}
-{% block extra_css %}
-<link rel="stylesheet" href="{% static 'cart/css/cart.css' %}">
-{% endblock %}
 
 {% block content %}
     <div class="container mt-5">
@@ -97,7 +94,6 @@
             </div>
         {% endif %}
     </div>
-    {% include 'cart/includes/fab.html' %}
 {% endblock %}
 
 {% block postloadjs %}

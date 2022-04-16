@@ -1,8 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-{% block extra_css %}
-<link rel="stylesheet" href="{% static 'profiles/css/profiles.css' %}">
-{% endblock %}
 
 {% block content %}
     <div class="container mt-5">
@@ -66,14 +63,4 @@
             </div>
         </div>
     </div>
-    {% include 'products/includes/fab.html' %}
-{% endblock %}
-
-{% block postloadjs %}
-{{block.super}}
-<script>
-    $('.btn-top').click(function(e) {
-        window.scrollTo(0,0)
-    })
-</script>
 {% endblock %}

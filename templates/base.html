@@ -155,6 +155,7 @@
     {% block content %}
     {% endblock %}
 
+    {% include 'includes/fab.html' %}
     <footer>
         <div class="container-fluid m-0">
             <div class="row bgclr-dark pt-3">
@@ -196,6 +197,12 @@
             var toastElList = [].slice.call(document.querySelectorAll('.toast'))
             var toastList = toastElList.map(function (toastEl) {
                 new bootstrap.Toast(toastEl).show()
+            })
+
+            //  Back to top of page button
+
+            $('.btn-top').click(function(e) {
+                window.scrollTo(0,0)
             })
         </script>
     {% endblock %}

@@ -265,12 +265,203 @@ strong,
     max-width: 50px;
 }
 
-/* ---------------------- Media Queries ---------------------- */
+/* ---------------------- Floating Action Button ---------------------- */
+/* Credit https://freefrontend.com/css-floating-action-buttons/ */
 
+@-webkit-keyframes come-in {
+    0% {
+        -webkit-transform: translatey(100px);
+        transform: translatey(100px);
+        opacity: 0;
+    }
+
+    30% {
+        -webkit-transform: translateX(-50px) scale(0.4);
+        transform: translateX(-50px) scale(0.4);
+    }
+
+    70% {
+        -webkit-transform: translateX(0px) scale(1.2);
+        transform: translateX(0px) scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: translatey(0px) scale(1);
+        transform: translatey(0px) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes come-in {
+    0% {
+        -webkit-transform: translatey(100px);
+        transform: translatey(100px);
+        opacity: 0;
+    }
+
+    30% {
+        -webkit-transform: translateX(-50px) scale(0.4);
+        transform: translateX(-50px) scale(0.4);
+    }
+
+    70% {
+        -webkit-transform: translateX(0px) scale(1.2);
+        transform: translateX(0px) scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: translatey(0px) scale(1);
+        transform: translatey(0px) scale(1);
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.floating-container {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    bottom: 12%;
+    right: 0;
+}
+
+.floating-container:hover {
+    height: 15rem;
+}
+
+.floating-container:hover .floating-button {
+    -webkit-transform: translatey(5px);
+    transform: translatey(5px);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    background: #C62828;
+    background-image: url("/media/img/logo_v2_white.png");
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.floating-container:hover .element-container .float-element:nth-child(1) {
+    -webkit-animation: come-in 0.4s forwards 0.2s;
+    animation: come-in 0.4s forwards 0.2s;
+}
+
+.floating-container:hover .element-container .float-element:nth-child(2) {
+    -webkit-animation: come-in 0.4s forwards 0.4s;
+    animation: come-in 0.4s forwards 0.4s;
+}
+
+.floating-container:hover .element-container .float-element:nth-child(3) {
+    -webkit-animation: come-in 0.4s forwards 0.6s;
+    animation: come-in 0.4s forwards 0.6s;
+}
+
+.floating-container .floating-button {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    background: #FFA726;
+    bottom: 0;
+    border-radius: 0.25rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 2rem;
+    z-index: 100;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    background-image: url("/media/img/logo_v2_black.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+.floating-button-btt {
+    position: sticky;
+    bottom: 5%;
+    left: 90%;
+    height: 2.5rem;
+    width: 2.5rem;
+    background: #C62828;
+    cursor: pointer;
+    margin: auto;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 2rem;
+    z-index: 100;
+    border-radius: 0.25rem;
+}
+
+.floating-button-btt a{
+    color: #E0E0E0;
+}
+
+.floating-container .float-element {
+    position: relative;
+    display: block;
+    border-radius: 0.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 15px auto;
+    color: #212121;
+    font-weight: 500;
+    text-align: center;
+    line-height: 2.5rem;
+    z-index: 0;
+    opacity: 0;
+}
+
+.floating-container .float-element {
+    vertical-align: middle;
+    font-size: 2rem;
+}
+
+.floating-container .float-element:nth-child(1) {
+    background: #C62828;
+    cursor: pointer;
+    color: #E0E0E0;
+}
+
+.floating-container .float-element:nth-child(2) {
+    background: #C62828;
+    cursor: pointer;
+    color: #E0E0E0;
+}
+
+.floating-container .float-element:nth-child(3) {
+    background: #C62828;
+    cursor: pointer;
+    color: #E0E0E0;
+}
+
+/* ---------------------- Media Queries ---------------------- */
 
 @media screen and (max-width: 992px) {
     .navbar {
         background-color: #E0E0E0;
+    }
+    .floating-container {
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        bottom: 20%;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .floating-container {
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        bottom: 30%;
+        right: 0;
     }
 }
 

@@ -21,9 +21,3 @@ $('#sort-selector').on('change', function() {
         window.location.replace(currentUrl);
     }
 })
-
-// Back to top of page button
-
-$('.btn-top').click(function(e) {
-    window.scrollTo(0,0)
-})
