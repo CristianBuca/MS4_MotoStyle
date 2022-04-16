@@ -107,7 +107,14 @@ The reviews system allows them to post a review and a rating for each product as
 
 **Regular Users:**
 
-
+19. As a regular user, I want to store my delivery information on my profile page.
+20. As a regular user, I want to view a record of my past orders.
+21. As a regular user, I want to view and manage my wishlist.
+22. As a regular user, I want to review, rate and read other user's reviews for the products on the site.
+23. As a regular user, I want the ability to recover my password.
+24. As a regular user, I want to view articles related to the store products and the community it caters to.
+25. As a regular user I want to be able to post, edit or remove articles from the blog section.
+26. As a regular user, I want to be able to comment on articles.
 
 **Super Users:**
 
