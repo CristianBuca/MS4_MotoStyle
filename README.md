@@ -51,7 +51,7 @@
 
 # **Project Overview**
 
-MotoStyle is a Full Stack e-commerce project developed as the final Milestone for Code Institute. It was created with Django Framework, using python as back-end and PostgreSQL as it's database.
+MotoStyle is a Full Stack e-commerce project developed as the final Milestone for Code Institute. It was created with Django Framework, using python as back-end and PostgreSQL as it's database while media is stored using AWS S3 services.
 Purpose of the site is to enable a store to build a database of goods, showcase them and sell them online using stripe as the payment processor. 
 The store owner has access to full CRUD functionality over the database and users of the site have access to CRUD functionality in the blog app over the content they add to the site.
 
@@ -70,6 +70,7 @@ The reviews system allows them to post a review and a rating for each product as
 
 * Use PostgreSQL to store data,
 * Use Python and Django Framework to manipulate and present the data to the end-user,
+* Use AWS to host and deliver media.
 * Offer full CRUD functionality over the database to the store owners,
 * Offer a responsive and mobile-friendly experience to users,
 
@@ -118,11 +119,18 @@ The reviews system allows them to post a review and a rating for each product as
 
 **Super Users:**
 
-
+27. As a super user, I want to add products to the store.
+28. As a super user, I want to edit existing products.
+29. As a super user, I want to delete existing products.
+30. As a super user, I want to access the administration portal.
 
 **Site Owner:**
 
-
+31. As a site owner, I want the site to be responsive.
+32. As a site owner, I want to showcase my social media.
+33. As a site owner, I want to provide feedback to the user based on their interactions with the site.
+34. As a site owner, I want forms to be validated on the front-end for better user experience.
+35. As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
 
 
 [Back to Top](#top-shelf)
