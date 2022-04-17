@@ -148,7 +148,7 @@ Project is structured in separate apps, each app hosting the required files to r
     - urls.py - The `urlpatterns` list routes URLs to views. Connects all app routes to main project.
     - wsgi.py - It exposes the WSGI callable as a module-level variable named ``application``
 
-* home:
+* home app:
     - static/home folder:
         - js folder hosts the script for the image slider on the landing page
     - templates/home folder:
@@ -158,7 +158,7 @@ Project is structured in separate apps, each app hosting the required files to r
     - views.py - Defines all the views in the home app
     - test_views.py - unit tests for the views in the home app
 
-* products:
+* products app:
     - fixtures folder - contains json format fixtures for the products that need to be loaded in the database
     - static/products folder:
         - js folder - hosts the scripts for form validation, image notification, select element and quantity buttons used by the templates in the products app
@@ -180,7 +180,7 @@ Project is structured in separate apps, each app hosting the required files to r
     - test_models.py - unit tests for the models in the products app
     - test_views.py - unit tests for the views in the products app
 
-* profiles:
+* profiles app:
     - templates/profiles folder:
         - profile.html - Page for displaying user profile page with delivery information and order history
     - apps.py - Default Django generated app config file
@@ -191,6 +191,20 @@ Project is structured in separate apps, each app hosting the required files to r
     - test_forms.py - unit tests for the forms in the profiles app
     - test_models.py - unit tests for the models in the profiles app
     - test_views.py - unit tests for the views in the profiles app 
+
+* cart app:
+    - static/cart folder:
+        - js folder - hosts the script for the quantity buttons
+    - templates/cart folder:
+        - cart.html - Page for displaying the users shopping cart
+    - templatetags folder:
+        - cart_tools.py - defines custom template tags used by the cart app
+    - apps.py - Default Django generated app config file
+    - contexts.py - Defines cart context to be accessible outside the cart app
+    - urls.py - Routes used by the views in the cart app
+    - views.py - Defines all the views in the cart app
+    - test_views.py - unit tests for the views in the cart app 
+    
 
 ## **Database Structure**
 
