@@ -140,14 +140,51 @@ The reviews system allows them to post a review and a rating for each product as
 
 ## **Code Structure**
 
+Project is structured in separate apps, each app hosting the required files to run:
 
+* moto_style :
+    - asgi.py - It exposes the ASGI callable as a module-level variable named ``application``.
+    - settings.py - Global settings for the project
+    - urls.py - The `urlpatterns` list routes URLs to views. Connects all app routes to main project.
+    - wsgi.py - It exposes the WSGI callable as a module-level variable named ``application``
+
+* home:
+    - static/home folder:
+        - js folder hosts the script for the image slider on the landing page
+    - templates/home folder:
+        - index.html - Template for the landing page. Extends base template
+    - apps.py - Default Django generated app config file
+    - urls.py - Routes used by the views for the home app
+    - views.py - Defines all the views in the home app
+    - test_views.py - unit tests for the views in the home app
+
+* products:
+    - fixtures folder - contains json format fixtures for the products that need to be loaded in the database
+    - static/products folder:
+        - js folder - hosts the scripts for form validation, image notification, select element and quantity buttons used by the templates in the products app
+    - templates/products folder:
+        - custom widget template
+        - includes for the product sizes
+        - add_product.html - Page for adding a product to the store
+        - edit_product.html - Page for editing a product from the store
+        - product_detail.html - Page for displaying individual products
+        - products.html - Page for displaying multiple products based on query params
+    - admin.py - Defines the models from the products app in the admin panel
+    - apps.py - Default Django generated app config file
+    - forms.py - Defines the forms used by the products app
+    - models.py - Defines the models used by the products app
+    - urls.py - Routes used by the views in the products app
+    - views.py - Defines all the views in the products app
+    - widgets.py - Modifies the default Django CustomClearableFileInput widget
+    - test_forms.py - unit tests for the forms in the home app
+    - test_models.py - unit tests for the models in the home app
+    - test_views.py - unit tests for the views in the home app
 
 ## **Database Structure**
 
 
 
 ### **Conceptual Database Model**
-
 
 
 <details>
