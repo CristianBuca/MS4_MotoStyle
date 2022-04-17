@@ -156,7 +156,7 @@ Project is structured in separate apps, each app hosting the required files to r
     - apps.py - Default Django generated app config file
     - urls.py - Routes used by the views for the home app
     - views.py - Defines all the views in the home app
-    - test_views.py - unit tests for the views in the home app
+    - test_views.py - Unit tests for the views in the home app
 
 * products app:
     - fixtures folder - contains json format fixtures for the products that need to be loaded in the database
@@ -176,9 +176,9 @@ Project is structured in separate apps, each app hosting the required files to r
     - urls.py - Routes used by the views in the products app
     - views.py - Defines all the views in the products app
     - widgets.py - Modifies the default Django CustomClearableFileInput widget
-    - test_forms.py - unit tests for the forms in the products app
-    - test_models.py - unit tests for the models in the products app
-    - test_views.py - unit tests for the views in the products app
+    - test_forms.py - Unit tests for the forms in the products app
+    - test_models.py - Unit tests for the models in the products app
+    - test_views.py - Unit tests for the views in the products app
 
 * profiles app:
     - templates/profiles folder:
@@ -188,9 +188,9 @@ Project is structured in separate apps, each app hosting the required files to r
     - models.py - Defines the models used by the profiles app
     - urls.py - Routes used by the views in the profiles app
     - views.py - Defines all the views in the profiles app
-    - test_forms.py - unit tests for the forms in the profiles app
-    - test_models.py - unit tests for the models in the profiles app
-    - test_views.py - unit tests for the views in the profiles app 
+    - test_forms.py - Unit tests for the forms in the profiles app
+    - test_models.py - Unit tests for the models in the profiles app
+    - test_views.py - Unit tests for the views in the profiles app 
 
 * cart app:
     - static/cart folder:
@@ -203,7 +203,7 @@ Project is structured in separate apps, each app hosting the required files to r
     - contexts.py - Defines cart context to be accessible outside the cart app
     - urls.py - Routes used by the views in the cart app
     - views.py - Defines all the views in the cart app
-    - test_views.py - unit tests for the views in the cart app 
+    - test_views.py - Unit tests for the views in the cart app 
     
 * checkout app:
     - static/checkout folder:
@@ -222,9 +222,9 @@ Project is structured in separate apps, each app hosting the required files to r
     - views.py - Defines all the views in the checkout app
     - webhooks.py - Defines the stripe webhook
     - webhook_handler.py - Defines how different stripe webhooks are handled by the app
-    - test_forms.py - unit tests for the forms in the checkout app
-    - test_models.py - unit tests for the models in the checkout app
-    - test_views.py - unit tests for the views in the checkout app
+    - test_forms.py - Unit tests for the forms in the checkout app
+    - test_models.py - Unit tests for the models in the checkout app
+    - test_views.py - Unit tests for the views in the checkout app
 
 * blog app:
     - static/blog folder:
@@ -243,9 +243,19 @@ Project is structured in separate apps, each app hosting the required files to r
     - urls.py - Routes used by the views in the blog app
     - views.py - Defines all the views in the blog app
     - widgets.py - Modifies the default Django CustomClearableFileInput widget
-    - test_forms.py - unit tests for the forms in the blog app
-    - test_models.py - unit tests for the models in the blog app
-    - test_views.py - unit tests for the views in the blog app
+    - test_forms.py - Unit tests for the forms in the blog app
+    - test_models.py - Unit tests for the models in the blog app
+    - test_views.py - Unit tests for the views in the blog app
+
+* wishlist app:
+    - templates/wishlist folder:
+        - wishlist.html - Page for displaying the products on the user's wishlist
+    - admin.py - Defines the models from the wishlist app in the admin panel
+    - apps.py - Default Django generated app config file
+    - models.py - Defines the models used by the wishlist app
+    - urls.py - Routes used by the views in the wishlist app
+    - views.py - Defines all the views in the wishlist app
+    - test_views.py - Unit tests for the views in the wishlist app
 
 ## **Database Structure**
 
