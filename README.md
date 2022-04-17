@@ -205,6 +205,26 @@ Project is structured in separate apps, each app hosting the required files to r
     - views.py - Defines all the views in the cart app
     - test_views.py - unit tests for the views in the cart app 
     
+* checkout app:
+    - static/checkout folder:
+        - css folder - hosts all the css specific to the checkout app
+        - js folder - hosts the script used by the stripe API
+    - templates/checkout folder:
+        - emails folder - hosts the templates for the automated emails
+        - checkout.html - Page for displaying the checkout form
+        - checkout_success.html - Page for displaying the checkout confirmation and order summary
+    - admin.py - Defines the models from the checkout app in the admin panel
+    - apps.py - Default Django generated app config file
+    - forms.py - Defines the forms used by the checkout app
+    - models.py - Defines the models used by the checkout app
+    - signals.py - Handles signals on item change to update the order
+    - urls.py - Routes used by the views in the checkout app
+    - views.py - Defines all the views in the checkout app
+    - webhooks.py - Defines the stripe webhook
+    - webhook_handler.py - Defines how different stripe webhooks are handled by the app
+    - test_forms.py - unit tests for the forms in the checkout app
+    - test_models.py - unit tests for the models in the checkout app
+    - test_views.py - unit tests for the views in the checkout app
 
 ## **Database Structure**
 
