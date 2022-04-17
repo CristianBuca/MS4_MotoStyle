@@ -226,6 +226,27 @@ Project is structured in separate apps, each app hosting the required files to r
     - test_models.py - unit tests for the models in the checkout app
     - test_views.py - unit tests for the views in the checkout app
 
+* blog app:
+    - static/blog folder:
+        - css folder - hosts all the css specific to the blog app
+        - js folder - hosts the scripts for the image notification
+    - templates/blog folder:
+        - custom widget template
+        - add_blog_post Page for adding a a post to the blog
+        - edit_blog_post Page for editing a post from the blog
+        - blog_post.html - Page for displaying individual posts
+        - blog.html - Page for displaying all blog posts
+    - admin.py - Defines the models from the blog app in the admin panel
+    - apps.py - Default Django generated app config file
+    - forms.py - Defines the forms used by the blog app
+    - models.py - Defines the models used by the blog app
+    - urls.py - Routes used by the views in the blog app
+    - views.py - Defines all the views in the blog app
+    - widgets.py - Modifies the default Django CustomClearableFileInput widget
+    - test_forms.py - unit tests for the forms in the blog app
+    - test_models.py - unit tests for the models in the blog app
+    - test_views.py - unit tests for the views in the blog app
+
 ## **Database Structure**
 
 
