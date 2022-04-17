@@ -176,9 +176,21 @@ Project is structured in separate apps, each app hosting the required files to r
     - urls.py - Routes used by the views in the products app
     - views.py - Defines all the views in the products app
     - widgets.py - Modifies the default Django CustomClearableFileInput widget
-    - test_forms.py - unit tests for the forms in the home app
-    - test_models.py - unit tests for the models in the home app
-    - test_views.py - unit tests for the views in the home app
+    - test_forms.py - unit tests for the forms in the products app
+    - test_models.py - unit tests for the models in the products app
+    - test_views.py - unit tests for the views in the products app
+
+* profiles:
+    - templates/profiles folder:
+        - profile.html - Page for displaying user profile page with delivery information and order history
+    - apps.py - Default Django generated app config file
+    - forms.py - Defines the forms used by the profiles app
+    - models.py - Defines the models used by the profiles app
+    - urls.py - Routes used by the views in the profiles app
+    - views.py - Defines all the views in the profiles app
+    - test_forms.py - unit tests for the forms in the profiles app
+    - test_models.py - unit tests for the models in the profiles app
+    - test_views.py - unit tests for the views in the profiles app 
 
 ## **Database Structure**
 
