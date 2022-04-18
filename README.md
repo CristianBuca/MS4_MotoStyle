@@ -339,7 +339,7 @@ Database schema was generated with the Django extension [Graph Models](https://d
 <details>
   <summary> (Expand) Registration Page Wireframes.</summary>
 
-![Registration Page Wireframes](docs/wireframes/registration_page.png)
+![Registration Page Wireframes](docs/wireframes/registration_view.png)
 </details>
 
 <details>
