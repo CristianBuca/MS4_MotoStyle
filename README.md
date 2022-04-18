@@ -300,8 +300,29 @@ Database schema was generated with the Django extension [Graph Models](https://d
 
 ## **Feature requirements**
 
-
-
+* Responsive app for all device sizes.
+* Collapsible Navigation bar on small devices.
+* Footer with social media links.
+* Landing Page showcasing (Read) items from the database.
+* Registration Page with form validation.
+* Login Page with form validation.
+* Logout functionality with confirmation dialog.
+* Search feature for products in the store.
+* Sorting feature for products in the store by category, name, rating, price.
+* Page where superusers can add products (Create entries) in the database.
+* Administration Page where superusers can edit product details (Update entries) from the database.
+* Superuser access to Delete feature with confirmation dialog for products in the database.
+* Profile Page where users can Update personal details and view order history.
+* Shopping cart where users can add products and is adjustable before checkout.
+* Checkout feature secured by a safe payment provider [Stripe](https://stripe.com/gb).
+* User access to wishlist feature where they can save favorite products for later purchase.
+* User access to post reviews (Create entries) for products in the store.
+* User access to post blog articles (Create entries) in the database.
+* User access to edit blog articles (Update entries) in the database.
+* User access to Delete feature with confirmation dialog for blog articles.
+* User access to post comments (Create entries) in the database for blog articles.
+* Notification system (message toast) to provide users with feedback to their interactions with the site.
+* Administration panel for store owner with full CRUD control over the database.
 
 [Back to Top](#top-shelf)
 
