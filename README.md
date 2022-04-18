@@ -381,7 +381,7 @@ Database schema was generated with the Django extension [Graph Models](https://d
 <details>
   <summary> (Expand) Wishlist Page Wireframes.</summary>
 
-![Wishlist Page Wireframes](docs/wireframes/add_item_page.png)
+![Wishlist Page Wireframes](docs/wireframes/wishlist_view.png)
 </details>
 
 <details>
