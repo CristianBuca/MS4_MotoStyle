@@ -409,9 +409,9 @@ Database schema was generated with the Django extension [Graph Models](https://d
 </details>
 
 <details>
-  <summary> (Expand) Add Blog Page Wireframes.</summary>
+  <summary> (Expand) Blog Post Page Wireframes.</summary>
 
-![Blog Post Page Wireframes](docs/wireframes/add_item_page.png)
+![Blog Post Page Wireframes](docs/wireframes/blog_post_view.png)
 </details>
 
 <details>
