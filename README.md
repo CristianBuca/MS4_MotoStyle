@@ -387,7 +387,7 @@ Database schema was generated with the Django extension [Graph Models](https://d
 <details>
   <summary> (Expand) Shopping Cart Page Wireframes.</summary>
 
-![Shopping Cart Page Wireframes](docs/wireframes/add_item_page.png)
+![Shopping Cart Page Wireframes](docs/wireframes/shopping_cart_view.png)
 </details>
 
 <details>
