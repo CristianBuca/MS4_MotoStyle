@@ -363,13 +363,13 @@ Database schema was generated with the Django extension [Graph Models](https://d
 <details>
   <summary> (Expand) Add product to Database Page Wireframes.</summary>
 
-![Add item to Database Page Wireframes](docs/wireframes/add_product_view.png)
+![Add product to Database Page Wireframes](docs/wireframes/add_product_view.png)
 </details>
 
 <details>
   <summary> (Expand) Update product from the Database Page Wireframes.</summary>
 
-![Update item from Database Page Wireframes](docs/wireframes/add_item_page.png)
+![Update product from Database Page Wireframes](docs/wireframes/edit_product_view.png)
 </details>
 
 <details>
