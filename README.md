@@ -405,7 +405,7 @@ Database schema was generated with the Django extension [Graph Models](https://d
 <details>
   <summary> (Expand) Blog Page Wireframes.</summary>
 
-![Blog Page Wireframes](docs/wireframes/add_item_page.png)
+![Blog Page Wireframes](docs/wireframes/blog_view.png)
 </details>
 
 <details>
