@@ -430,6 +430,39 @@ Database schema was generated with the Django extension [Graph Models](https://d
 
 **Landing Page**
 
+* Accessible from the Navbar Logo.
+* Django path: `/`, view name: `home`
+
+**Registration Page**
+
+* Accessible when logged out from the Account dropdown -> Register link in the top header navigation.
+* Django path: `/accounts/signup/`, view name: `account_signup`
+
+**Login Page**
+* Accessible when logged out from the Account dropdown, -> Login link in the top header navigation.
+* Django path: `/accounts/login/`, view name: `account_login`
+
+**Products Page**
+* Accessible from any of the category selections, filter or search queries.
+* Django path: `/products/`, view name: `products`
+
+**Product Detail Page**
+* Accessible by clicking on the product card displayed in `products`
+* Django path: `/products/<int:product_id>/`, view name: `products_detail`
+
+**Add Product Page**
+* Accessible only by superusers by expanding the Floating Action Button (FAB) in the bottom right corner and selecting the second button with the "+" icon.
+* Django path: `/products/add/`, view name: `add_product`
+
+**Update Product Page**
+* Accessible only by superusers by clicking the button with a pencil icon on any of the product presentation cards or the product detail page.
+* Django path: `/products/edit/<int:product_id>/`, view name: `edit_product`
+
+**Profile Page**
+* Accessible when logged in from the Account dropdown -> Profile link in the top header navigation.
+* Django path: `/profile/`, view name: `profile`
+
+
 
 
 [Back to Top](#top-shelf)
