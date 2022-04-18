@@ -290,22 +290,12 @@ Database concept was created using [QuickDBD](https://www.quickdatabasediagrams.
 
 ### **Physical Database Model**
 
-<details>
-  <summary> (Expand) items Collection.</summary>
-
-![items Collection](/docs/database/items_collection.png)
-</details>
+Database schema was generated with the Django extension [Graph Models](https://django-extensions.readthedocs.io/en/latest/graph_models.html#selecting-a-library)
 
 <details>
-  <summary> (Expand) regions Collection.</summary>
+  <summary> (Expand) Physical Database Structure.</summary>
 
-![regions Collection](/docs/database/regions_collection.png)
-</details>
-
-<details>
-  <summary> (Expand) users Collection.</summary>
-
-![users Collection](/docs/database/users_collection.png)
+![items Collection](/docs/database/physical_database_schema.png)
 </details>
 
 ## **Feature requirements**
