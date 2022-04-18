@@ -393,7 +393,7 @@ Database schema was generated with the Django extension [Graph Models](https://d
 <details>
   <summary> (Expand) Checkout Page Wireframes.</summary>
 
-![Checkout Page Wireframes](docs/wireframes/add_item_page.png)
+![Checkout Page Wireframes](docs/wireframes/checkout_view.png)
 </details>
 
 <details>
