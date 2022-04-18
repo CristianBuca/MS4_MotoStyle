@@ -257,17 +257,35 @@ Project is structured in separate apps, each app hosting the required files to r
     - views.py - Defines all the views in the wishlist app
     - test_views.py - Unit tests for the views in the wishlist app
 
+* static folder:
+    - css folder: holds the project's global css
+    - js folder: holds the scrips used globally
+
+* templates folder:
+    - allauth folder: hosts the 3rd party allauth app's templates that have been customized for this project
+    - includes folder: hosts the includes used globally for the toasts, floating action button, main nav and mobile top header
+    - reviews folder: hosts the 3rd party rated_reviews app's templates that have been customized for this project
+    - 400.html, 403.html, 404.html, 500.html - custom error page
+    - base.html - The base template for the project to be extended by each app's templates
+
+* custom_storages.py - Defines the Media and Static storage locations for S3Boto3
+
+* manage.py - Default Django generated command-line utility for administrative tasks.
+
+* requirements.txt - contains information on python dependencies used for this app.
+
 ## **Database Structure**
 
-
+MotoStyle makes use of relational PostgreSQL for production environment and SQLite for development environment.
 
 ### **Conceptual Database Model**
 
+Database concept was created using [QuickDBD](https://www.quickdatabasediagrams.com).
 
 <details>
-  <summary> (Expand) Conceptual Structure.</summary>
+  <summary> (Expand) Conceptual Database Structure.</summary>
 
-![Conceptual Database](/docs/database/conceptual_database_model.png)
+![Conceptual Database](/docs/database/conceptual_database.png)
 </details>
 
 ### **Physical Database Model**
