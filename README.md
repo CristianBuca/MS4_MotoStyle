@@ -326,7 +326,6 @@ Database schema was generated with the Django extension [Graph Models](https://d
 
 [Back to Top](#top-shelf)
 
-
 # **Skeleton**
 
 ## **Wireframes**
@@ -350,9 +349,27 @@ Database schema was generated with the Django extension [Graph Models](https://d
 </details>
 
 <details>
-  <summary> (Expand) User Collection Page Wireframes.</summary>
+  <summary> (Expand) Products Page Wireframes.</summary>
 
-![User Collection Page Wireframes](docs/wireframes/user_collection_page.png)
+![Products Page Wireframes](docs/wireframes/user_collection_page.png)
+</details>
+
+<details>
+  <summary> (Expand) Product Details Page Wireframes.</summary>
+
+![Product Details Page Wireframes](docs/wireframes/user_collection_page.png)
+</details>
+
+<details>
+  <summary> (Expand) Add item to Database Page Wireframes.</summary>
+
+![Add item to Database Page Wireframes](docs/wireframes/add_item_page.png)
+</details>
+
+<details>
+  <summary> (Expand) Update item from the Database Page Wireframes.</summary>
+
+![Update item from Database Page Wireframes](docs/wireframes/add_item_page.png)
 </details>
 
 <details>
@@ -362,11 +379,46 @@ Database schema was generated with the Django extension [Graph Models](https://d
 </details>
 
 <details>
-  <summary> (Expand) Add item to Database Page Wireframes.</summary>
+  <summary> (Expand) Wishlist Page Wireframes.</summary>
 
-![Add item to Database Page Wireframes](docs/wireframes/add_item_page.png)
+![Wishlist Page Wireframes](docs/wireframes/add_item_page.png)
 </details>
 
+<details>
+  <summary> (Expand) Shopping Cart Page Wireframes.</summary>
+
+![Shopping Cart Page Wireframes](docs/wireframes/add_item_page.png)
+</details>
+
+<details>
+  <summary> (Expand) Checkout Page Wireframes.</summary>
+
+![Checkout Page Wireframes](docs/wireframes/add_item_page.png)
+</details>
+
+<details>
+  <summary> (Expand) Blog Page Wireframes.</summary>
+
+![Blog Page Wireframes](docs/wireframes/add_item_page.png)
+</details>
+
+<details>
+  <summary> (Expand) Add Blog Page Wireframes.</summary>
+
+![Blog Post Page Wireframes](docs/wireframes/add_item_page.png)
+</details>
+
+<details>
+  <summary> (Expand) Add Blog Post Page Wireframes.</summary>
+
+![Add Blog Page Wireframes](docs/wireframes/add_item_page.png)
+</details>
+
+<details>
+  <summary> (Expand) Update Blog Page Wireframes.</summary>
+
+![Update Blog Page Wireframes](docs/wireframes/add_item_page.png)
+</details>
 
 ## **App Routes**
 
