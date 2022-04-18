@@ -375,7 +375,7 @@ Database schema was generated with the Django extension [Graph Models](https://d
 <details>
   <summary> (Expand) Profile Page Wireframes.</summary>
 
-![Profile Page Wireframes](docs/wireframes/profile_page.png)
+![Profile Page Wireframes](docs/wireframes/profile_view.png)
 </details>
 
 <details>
