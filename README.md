@@ -345,7 +345,7 @@ Database schema was generated with the Django extension [Graph Models](https://d
 <details>
   <summary> (Expand) Login Page Wireframes.</summary>
 
-![Login Page Wireframes](docs/wireframes/login_page.png)
+![Login Page Wireframes](docs/wireframes/login_view.png)
 </details>
 
 <details>
