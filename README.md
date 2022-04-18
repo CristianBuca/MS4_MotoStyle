@@ -423,7 +423,7 @@ Database schema was generated with the Django extension [Graph Models](https://d
 <details>
   <summary> (Expand) Update Blog Page Wireframes.</summary>
 
-![Update Blog Page Wireframes](docs/wireframes/add_item_page.png)
+![Update Blog Page Wireframes](docs/wireframes/edit_blog_post_view.png)
 </details>
 
 ## **App Routes**
