@@ -351,7 +351,7 @@ Database schema was generated with the Django extension [Graph Models](https://d
 <details>
   <summary> (Expand) Products Page Wireframes.</summary>
 
-![Products Page Wireframes](docs/wireframes/user_collection_page.png)
+![Products Page Wireframes](docs/wireframes/products_view.png)
 </details>
 
 <details>
