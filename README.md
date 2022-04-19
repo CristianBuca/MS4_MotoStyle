@@ -745,14 +745,46 @@ As the app is using Bootstrap library it inherits a lot of it's fonts as fallbac
 
 # **Features**
 
+This projects features are accessible to the user based on their account permissions.
+| Nav Link                  | Not logged in     | Logged in as user | Logged in as admin |
+| ---                       | ---               | ---               | ---       |
+| Home                      |&#9989;            |&#9989;            |&#9989;    |
+| Register                  |&#9989;            |&#10060;           |&#10060;   |
+| Log in                    |&#9989;            |&#10060;           |&#10060;   |
+| Log out                   |&#10060;           |&#9989;            |&#9989;    |    
+| Profile                   |&#10060;           |&#9989;            |&#9989;    |    
+| Order History             |&#10060;           |&#9989;            |&#9989;    |    
+| Wishlist                  |&#10060;           |&#9989;            |&#9989;    |    
+| Add to wishlist           |&#10060;           |&#9989;            |&#9989;    |    
+| Remove from wishlist      |&#10060;           |&#9989;            |&#9989;    |    
+| Products                  |&#9989;            |&#9989;            |&#9989;    |    
+| Product Detail            |&#9989;            |&#9989;            |&#9989;    |    
+| Product Detail (Review)   |&#10060;           |&#9989;            |&#9989;    |    
+| Product Add               |&#10060;           |&#10060;           |&#9989;    |    
+| Product Update            |&#10060;           |&#10060;           |&#9989;    |    
+| Product Delete            |&#10060;           |&#10060;           |&#9989;    |    
+| Blog                      |&#9989;            |&#9989;            |&#9989;    |    
+| Blog Post                 |&#9989;            |&#9989;            |&#9989;    |    
+| Blog Post (Comment)       |&#10060;           |&#9989;            |&#9989;    |
+| Blog Post (Comment Delete)|&#10060;           |&#10060; (except owner)          |&#9989;    |      
+| Blog Post Add             |&#10060;           |&#9989;            |&#9989;    |    
+| Blog Post Update          |&#10060;           |&#10060; (except owner)          |&#9989;    |    
+| Blog Post Delete          |&#10060;           |&#10060; (except owner)          |&#9989;    |    
+| Cart                      |&#9989;            |&#9989;            |&#9989;    |    
+| Checkout                  |&#9989;            |&#9989;            |&#9989;    |    
+| Checkout success          |&#9989;            |&#9989;            |&#9989;    |
+| Administration Panel      |&#10060;           |&#10060;           |&#9989;    | 
+
+
 ### **Landing Page**
 
-The Landing Page features the hero image and the search feature at the top of the page which users are able to take advantage of and search the database for a specific product. Main content of the page is comprised of a slider featuring the highest rated products in the store.
+The Landing Page features the hero image and the search feature at the top of the page which users are able to take advantage of and search the database for a specific product. Main content of the page is comprised of a slider featuring the highest rated products in the store. The slider's width is responsive to the user's device size.
 
 *User stories solved by this feature:*
 
 * 4 - As a new user, I want to browse the store's merchandise.
 * 5 - As a new user, I want to be able to search for specific products.
+* 31 - As a site owner, I want the site to be responsive.
 
 <details>
   <summary> (Expand) Landing Page on mobile, tablet and desktop view.</summary>
@@ -765,26 +797,9 @@ The Landing Page features the hero image and the search feature at the top of th
 </details>
 
 
-### **Registration Page**
+### **Registration Feature**
 
 
-
-
-*User stories solved by this feature:*
-
-* 
-
-<details>
-  <summary> (Expand) Registration Page on mobile, tablet, 1080p and 1440p.</summary>
-
-![Registration Page on mobile](/docs/features/register_mobile.jpg)
-
-![Registration Page on tablet](/docs/features/register_tablet.jpg)
-
-![Registration Page on 1080p](/docs/features/register_1080.jpg)
-
-![Registration Page on 1440p](/docs/features/register_1440.jpg)
-</details>
 
 
 ### **Login Page**
@@ -796,7 +811,7 @@ The Landing Page features the hero image and the search feature at the top of th
 * 
 
 <details>
-  <summary> (Expand) Login Page on mobile, tablet, 1080p and 1440p.</summary>
+  <summary> (Expand) Login Page on mobile, tablet and desktop view.</summary>
 
 ![Login Page mobile](/docs/features/login_mobile.jpg)
 
@@ -816,7 +831,7 @@ The Landing Page features the hero image and the search feature at the top of th
 * 
 
 <details>
-  <summary> (Expand) Profile Page on mobile, tablet, 1080p and 1440p.</summary>
+  <summary> (Expand) Profile Page on mobile, tablet and desktop view.</summary>
 
 ![Profile Page mobile](/docs/features/profile_mobile.jpg)
 
