@@ -799,7 +799,7 @@ The Landing Page features the hero image and the search feature at the top of th
 
 ### **Registration Feature**
 
-Registration page is comprised of the registration form which is used to CREATE a user entry in the database User model for the Allauth app. The form is validated on the front-end by a custom JQuery script as well as on the back-end, providing feedback to the user when validation errors occur.
+Registration page is comprised of the registration form which is used to CREATE an user entry in the database User model for the Allauth app. The form is validated on the front-end by a custom JQuery script as well as on the back-end, providing feedback to the user when validation errors occur.
 
 *User stories solved by this feature:*
 
@@ -811,21 +811,26 @@ Registration page is comprised of the registration form which is used to CREATE 
 <details>
   <summary> (Expand) Registration Page on mobile, tablet and desktop view.</summary>
 
-![Registration Page on mobile](/docs/features/register_mobile.jpg)
+![Registration Page on mobile](/docs/features/registration_mobile.jpg)
 
-![Registration Page on tablet](/docs/features/register_tablet.jpg)
+![Registration Page on tablet](/docs/features/registration_tablet.jpg)
 
-![Registration Page on 1080p](/docs/features/register_1080.jpg)
+![Registration Page on 1080p](/docs/features/registration_desktop.jpg)
 </details>
 
 
-### **Login Page**
+### **Login Feature**
 
+Login page is comprised of the login form which is used to READ an user entry from the database User model for the Allauth app. The form is validated on the back-end, providing feedback to the user input does not match the database entry. The login form hosts a "Forgot Password?" link that will allow the user to reset their password.
 
 
 *User stories solved by this feature:*
 
-* 
+* 2 - As a new user, I want to be able to login and access my account.
+* 23 - As a regular user, I want the ability to recover my password.
+* 33 - As a site owner, I want to provide feedback to the user based on their interactions with the site.
+* 35 - As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
+
 
 <details>
   <summary> (Expand) Login Page on mobile, tablet and desktop view.</summary>
@@ -834,9 +839,7 @@ Registration page is comprised of the registration form which is used to CREATE 
 
 ![Login Page tablet](/docs/features/login_tablet.jpg)
 
-![Login Page 1080p](/docs/features/login_1080.jpg)
-
-![Login Page 1440p](/docs/features/login_1440.jpg)
+![Login Page 1080p](/docs/features/login_desktop.jpg)
 </details>
 
 
