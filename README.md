@@ -793,7 +793,7 @@ The Landing Page features the hero image and the search feature at the top of th
 
 ![Landing Page on tablet](/docs/features/landing_tablet.jpg)
 
-![Landing Page on 1080p](/docs/features/landing_desktop.jpg)
+![Landing Page on desktop](/docs/features/landing_desktop.jpg)
 </details>
 
 
@@ -815,7 +815,7 @@ Registration page is comprised of the registration form which is used to CREATE 
 
 ![Registration Page on tablet](/docs/features/registration_tablet.jpg)
 
-![Registration Page on 1080p](/docs/features/registration_desktop.jpg)
+![Registration Page on desktop](/docs/features/registration_desktop.jpg)
 </details>
 
 
@@ -839,7 +839,7 @@ Login page is comprised of the login form which is used to READ an user entry fr
 
 ![Login Page tablet](/docs/features/login_tablet.jpg)
 
-![Login Page 1080p](/docs/features/login_desktop.jpg)
+![Login Page desktop](/docs/features/login_desktop.jpg)
 </details>
 
 
@@ -859,7 +859,7 @@ The Profile Page enables users to store and update their delivery information fo
 
 ![Profile Page tablet](/docs/features/profile_tablet.jpg)
 
-![Profile Page 1080p](/docs/features/profile_desktop.jpg)
+![Profile Page desktop](/docs/features/profile_desktop.jpg)
 </details>
 
 
@@ -885,10 +885,32 @@ This feature provides the user with the ability to view all products, narrow dow
 
 ![Products Page tablet](/docs/features/products_tablet.jpg)
 
-![Products Page 1080p](/docs/features/products_desktop.jpg)
+![Products Page desktop](/docs/features/products_desktop.jpg)
 </details>
 
 [Back to Top](#top-shelf)
+
+
+### **Product Management Feature**
+
+Product management is accessible only to superusers. Adding a product from the Floating Action Button will bring up the Add Product Form and will CREATE a product entry in the database. Clicking on edit button on product cards or product details page will bring up the UPDATE Product Form. Clicking on the DELETE button on the product cards or product details page will trigger a confirmation modal for deletion.
+
+*User stories solved by this feature:*
+
+* 27 - As a super user, I want to add products to the store.
+* 28 - As a super user, I want to edit existing products.
+* 29 - As a super user, I want to delete existing products.
+
+<details>
+  <summary> (Expand) Products Page on mobile, tablet and desktop view.</summary>
+
+![Product Delete mobile](/docs/features/products_mobile.jpg)
+
+![Product Update tablet](/docs/features/products_tablet.jpg)
+
+![Product Add desktop](/docs/features/products_desktop.jpg)
+</details>
+
 
 ### **Navbar**
 
