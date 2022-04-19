@@ -799,7 +799,24 @@ The Landing Page features the hero image and the search feature at the top of th
 
 ### **Registration Feature**
 
+Registration page is comprised of the registration form which is used to CREATE a user entry in the database User model for the Allauth app. The form is validated on the front-end by a custom JQuery script as well as on the back-end, providing feedback to the user when validation errors occur.
 
+*User stories solved by this feature:*
+
+* 1 - As a new user, I want to be able to create and register an account.
+* 33 - As a site owner, I want to provide feedback to the user based on their interactions with the site.
+* 34 - As a site owner, I want forms to be validated on the front-end for better user experience.
+* 35 - As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
+
+<details>
+  <summary> (Expand) Registration Page on mobile, tablet and desktop view.</summary>
+
+![Registration Page on mobile](/docs/features/register_mobile.jpg)
+
+![Registration Page on tablet](/docs/features/register_tablet.jpg)
+
+![Registration Page on 1080p](/docs/features/register_1080.jpg)
+</details>
 
 
 ### **Login Page**
