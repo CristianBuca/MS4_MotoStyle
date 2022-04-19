@@ -108,7 +108,7 @@ The reviews system allows them to post a review and a rating for each product as
 
 **Regular Users:**
 
-19. As a regular user, I want to store my delivery information on my profile page.
+19. As a regular user, I want to store my delivery information for easy future checkouts.
 20. As a regular user, I want to view a record of my past orders.
 21. As a regular user, I want to view and manage my wishlist.
 22. As a regular user, I want to review, rate and read other user's reviews for the products on the site.
@@ -843,12 +843,14 @@ Login page is comprised of the login form which is used to READ an user entry fr
 </details>
 
 
-### **Profile Page**
+### **User Profile Feature**
 
+The Profile Page enables users to store and update their delivery information for future checkouts and provides a order history list. Clicking on the order numbers in this list will provide the user a detailed order record.
 
 *User stories solved by this feature:*
 
-* 
+* 19 - As a regular user, I want to store my delivery information for easy future checkouts.
+* 20 - As a regular user, I want to view a record of my past orders.
 
 <details>
   <summary> (Expand) Profile Page on mobile, tablet and desktop view.</summary>
@@ -857,9 +859,7 @@ Login page is comprised of the login form which is used to READ an user entry fr
 
 ![Profile Page tablet](/docs/features/profile_tablet.jpg)
 
-![Profile Page 1080p](/docs/features/profile_1080.jpg)
-
-![Profile Page 1440p](/docs/features/profile_1440.jpg)
+![Profile Page 1080p](/docs/features/profile_desktop.jpg)
 </details>
 
 
