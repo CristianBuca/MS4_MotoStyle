@@ -747,7 +747,12 @@ As the app is using Bootstrap library it inherits a lot of it's fonts as fallbac
 
 ### **Landing Page**
 
+The Landing Page features the hero image and the search feature at the top of the page which users are able to take advantage of and search the database for a specific product. Main content of the page is comprised of a slider featuring the highest rated products in the store.
 
+*User stories solved by this feature:*
+
+* 4 - As a new user, I want to browse the store's merchandise.
+* 5 - As a new user, I want to be able to search for specific products.
 
 <details>
   <summary> (Expand) Landing Page on mobile, tablet and desktop view.</summary>
