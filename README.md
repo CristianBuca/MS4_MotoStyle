@@ -863,6 +863,30 @@ The Profile Page enables users to store and update their delivery information fo
 </details>
 
 
+### **Products Display Feature**
+
+This feature provides the user with the ability to view all products, narrow down results by category/categories and sort them by their attributes. Clicking on a specific item will bring the user to the product's detail page where they are able to view detailed information, add the product their wishlist, read other user's reviews or rate and review the product themselves. After selecting their desired size and quantity the user is able to add the product to their shopping cart for later purchase.
+
+*User stories solved by this feature:*
+
+* 4 - As a new user, I want to browse the store's merchandise.
+* 6 - As a new user, I want to be able to browse by categories.
+* 7 - As a new user, I want to be able to order product lists by price, rating, category or name.
+* 8 - As a new user, I want to view individual product details.
+* 9 - As a new user, I want to select the different quantities and sizes for a product.
+* 10 - As a new user, I want to be able to add products to my shopping cart.
+* 11 - As a new user, I want to be able to add products to a list of interests(wishlist).
+* 22 - As a regular user, I want to review, rate and read other user's reviews for the products on the site.
+
+<details>
+  <summary> (Expand) Products Page on mobile, tablet and desktop view.</summary>
+
+![Products Page mobile](/docs/features/products_mobile.jpg)
+
+![Products Page tablet](/docs/features/products_tablet.jpg)
+
+![Products Page 1080p](/docs/features/products_desktop.jpg)
+</details>
 
 [Back to Top](#top-shelf)
 
