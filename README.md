@@ -82,6 +82,9 @@ The reviews system allows them to post a review and a rating for each product as
 * View reviews and articles related to the store's products,
 * Interact with other users via the comments section,
 
+[Back to Top](#top-shelf)
+
+
 # **Scope**
 
 ## **User Stories**
@@ -274,6 +277,9 @@ Project is structured in separate apps, each app hosting the required files to r
 
 * requirements.txt - contains information on python dependencies used for this app.
 
+[Back to Top](#top-shelf)
+
+
 ## **Database Structure**
 
 MotoStyle makes use of relational PostgreSQL for production environment and SQLite for development environment.
@@ -438,6 +444,8 @@ Defined in the blog app.
     - comment_body TextField(200)
     - posted_at DateTimeField
 
+[Back to Top](#top-shelf)
+
 
 ## **Feature requirements**
 
@@ -566,6 +574,9 @@ Defined in the blog app.
 
 ![Update Blog Page Wireframes](docs/wireframes/edit_blog_post_view.png)
 </details>
+
+[Back to Top](#top-shelf)
+
 
 ## **Project Routes**
 
@@ -775,6 +786,8 @@ This projects features are accessible to the user based on their account permiss
 | Checkout success          |&#9989;            |&#9989;            |&#9989;    |
 | Administration Panel      |&#10060;           |&#10060;           |&#9989;    | 
 
+[Back to Top](#top-shelf)
+
 
 ### **Landing Page**
 
@@ -862,6 +875,8 @@ The Profile Page enables users to store and update their delivery information fo
 ![Profile Page desktop](/docs/features/profile_desktop.jpg)
 </details>
 
+[Back to Top](#top-shelf)
+
 
 ### **Products Display Feature**
 
@@ -888,8 +903,6 @@ This feature provides the user with the ability to view all products, narrow dow
 ![Products Page desktop](/docs/features/products_desktop.jpg)
 </details>
 
-[Back to Top](#top-shelf)
-
 
 ### **Product Management Feature**
 
@@ -904,14 +917,17 @@ Product management is accessible only to superusers. Adding a product from the F
 * 35 - As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
 
 <details>
-  <summary> (Expand) Products Page on mobile, tablet and desktop view.</summary>
+  <summary> (Expand) Product Management on mobile, tablet and desktop view.</summary>
 
-![Product Delete mobile](/docs/features/products_mobile.jpg)
+![Product Delete mobile](/docs/features/product_management_mobile.jpg)
 
-![Product Update tablet](/docs/features/products_tablet.jpg)
+![Product Update tablet](/docs/features/product_management_tablet.jpg)
 
-![Product Add desktop](/docs/features/products_desktop.jpg)
+![Product Add desktop](/docs/features/product_management_desktop.jpg)
 </details>
+
+[Back to Top](#top-shelf)
+
 
 ### **Shopping Cart Feature**
 
@@ -922,12 +938,39 @@ The shopping cart is stored in the browser's session cookies and is constantly u
 * 13 - As a new user, I want to access and view my shopping cart.
 * 14 - As a new user, I want to adjust and manage the products in my shopping cart.
 
+<details>
+  <summary> (Expand) Shopping Cart on mobile, tablet and desktop view.</summary>
+
 ![Shopping Cart mobile](/docs/features/cart_mobile.jpg)
 
 ![Shopping Cart tablet](/docs/features/cart_tablet.jpg)
 
 ![Shopping Cart desktop](/docs/features/cart_desktop.jpg)
 </details>
+
+
+### **Checkout Feature**
+
+Checkout is accessed from the shopping cart page or from the cart preview in the messages toast by clicking the secure checkout button. The user is prompted with a delivery form. The form uses the delivery information stored on the profile page if it exists. The card payment element is provided and secured by stripe along with the backend validation for the card. The user is also able to see a list of the items being purchased along with the total cost. Once the delivery and payment information have been validated, the user is able to complete the order with the form button at the bottom of the page. Upon completion an order confirmation screen is displayed with the order details and a confirmation e-mail is sent to the user's e-mail address.
+
+*User stories solved by this feature:*
+
+* 15 - As a new user, I want to be able to purchase the selected products by entering my payment information in a secure way.
+* 16 - As a new user, I want to view an order confirmation.
+* 17 - As a new user, I want to receive the order confirmation via e-mail also.
+* 35 - As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
+
+<details>
+  <summary> (Expand) Checkout on mobile, tablet and desktop view.</summary>
+
+![Shopping Checkout mobile](/docs/features/checkout_mobile.jpg)
+
+![Shopping Checkout tablet](/docs/features/checkout_tablet.jpg)
+
+![Shopping Checkout desktop](/docs/features/checkout_desktop.jpg)
+</details
+
+[Back to Top](#top-shelf)
 
 
 ### **Navbar**
@@ -1019,13 +1062,12 @@ The errors that have specific routes on backend are:
 * **[Python 3.9.6](https://www.python.org)**
 * **[JQuery 3.6.0](https://jquery.com)** Was used for dom manipulation.
 * **[Flask](https://flask.palletsprojects.com/en/2.0.x/)** Was used as the framework for the app.
-* **[Jinja](https://jinja.palletsprojects.com/en/3.0.x/)** As the template engine for Flask.
 * **[MaterializeCSS](https://materializecss.com)** The app's main front-end framework.
 * **[Github](https://github.com)** For storing my repository.
 * **[Github Desktop](https://desktop.github.com)** For managing synchronizations between local and cloud-stored repositories.
 * **[Git](https://git-scm.com)** For version control.
 * **[VSCode](https://code.visualstudio.com)** IDE for writing code.
-* **[Balsamiq](https://balsamiq.com) For designing the wireframes.
+* **[Balsamiq](https://balsamiq.com)** For designing the wireframes.
 * **[Font Awesome](https://fontawesome.com)** Provided the icons for social media links.
 * **[Google Fonts](https://fonts.google.com)** Ubuntu, Oxygen and Fira Sans font families were used as default fonts for the web application.
 * **[Optimizilla](https://imagecompressor.com)** To optimize images for web applications.
@@ -1139,7 +1181,6 @@ There are inevitable similarities between this project and the project from thes
 
 [Paul Meeneghan](https://github.com/pmeeny/CI-MS3-FootballMemories).
 
-[Irina Pozdeeva](https://github.com/irinatu17/MyCookBook).
 
 
 ## **Acknowledgements**
