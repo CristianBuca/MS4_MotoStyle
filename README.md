@@ -298,6 +298,147 @@ Database schema was generated with the Django extension [Graph Models](https://d
 ![items Collection](/docs/database/physical_database_schema.png)
 </details>
 
+### **Database Models**
+
+Models used by this project are defined for each individual app in the `models.py` modules.
+
+* **User model fields:**
+Is imported from Allauth library.
+
+* id int pk
+* date_joined DateTimeField
+* email EmailField
+* username CharField
+* first_name CharField
+* last_name CharField
+* is_active BooleanField
+* is_staff BooleanField
+* is_superuser BooleanField
+* last_login DateTimeField
+* password CharField
+
+* **User Profile model fields:**
+Defined in the profiles app.
+
+* id int pk
+* user OneToOneField FK >- User.id
+* default_full_name  CharField(50)
+* default_email EmailField(254)
+* default_phone_number CharField(20)
+* default_address_line1 CharField(80)
+* default_address_line2 Charfield(80)
+* default_postcode Charfield(20)
+* default_town_or_city Charfield(40)
+* default_area Charfield(80)
+* default_country CountryField(2)
+
+* **Category model fields:**
+Defined in the products app.
+
+* id int pk
+* name CharField(254)
+* friendly_name CharField(254)
+* description TextField
+* image ImageField
+* image_url URLField(1024)
+
+* **Product model fields:**
+Defined in the products app.
+
+* id int pk
+* category ForeignKey FK >- Category.id
+* sku CharField(254)
+* name CharField(254)
+* description TestField
+* price DecimalField
+* rating DecimalField
+* image_url URLField(1024)
+* image ImageField
+* has_sizes BooleanField
+
+* **Wishlist model fields:**
+Defined in the wishlist app.
+
+* id int pk
+* owner ForeignKey FK >- User.id
+* product ForeignKey FK >- Product.id
+
+* **Review model fields:**
+Imported from Rated Reviews library.
+
+* id int pk
+* content_type ForeignKey FK >- ContentType.id
+* site ForeignKey FK >- Site.id
+* user ForeignKey FK >- User.id
+* comment TextField
+* ip_address GenericIPAddressField
+* is_public BooleanField
+* object_pk TextField
+* rating PositiveSmallIntegerField
+* submit_date DateTimeField
+* weight PositiveSmallIntegerField
+
+* **OrderLineItem model fields:**
+Defined in the checkout app.
+
+* id int pk
+* order int FK >- Order.id
+* product int FK >- Product.id
+* product_size CharField(2)
+* quantity int
+* lineitem_total DecimalField
+
+* **Oder model fields:**
+Defined in the checkout app.
+
+* id int pk
+* user_profile ForeignKey FK >- UserProfile.id
+* order_number CharField(32)
+* full_name CharField(254)
+* email EmailField(254)
+* phone_number CharField(20)
+* address_line1 CharField(80)
+* address_line2 (CharField(80)
+* postcode CharField(20)
+* town_or_city CharField(40)
+* area CharField(80)
+* country CountryField(2)
+* date DateTimeField
+* delivery_cost DecimalField
+* order_total DecimalField
+* grand_total DecimalField
+* original_cart TestField
+* stripe_pid CharField(254)
+
+* **BlogPost model fields:**
+Defined in the blog app.
+
+* id int pk
+* owner ForeignKey FK >- User.id
+* title CharField(254)
+* content TextField
+* image ImageField
+* image_url URLField(1024)
+* second_image ImageField
+* second_image_url URLField(1024)
+* third_image ImageField
+* third_image_url URLField(1024)
+* fourth_image ImageField
+* fourth_image_url URLField(1024)
+* fifth_image ImageField
+* fifth_image_url URLField(1024)
+* created_at DateTimeField
+
+* **Comment model fields:**
+Defined in the blog app.
+
+* id int pk
+* blog_article ForeignKey FK >- BlogPost.id
+* poste_by ForeignKey FK >- User.id
+* comment_body TextField(200)
+* posted_at DateTimeField
+
+
 ## **Feature requirements**
 
 * Responsive app for all device sizes.
@@ -558,13 +699,13 @@ Database schema was generated with the Django extension [Graph Models](https://d
 
 Routes used by third party apps like [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) and [Rated Reviews](https://django-rated-reviews.readthedocs.io/en/stable/) can be found in their respective documentation on [Read the Docs](https://readthedocs.org)
 
-
 [Back to Top](#top-shelf)
 
 # **Surface**
 
 ## **Design**
 
+Mobile-first design concept that is fully responsive on all device sizes. 
 
 
 ![Design](/docs/design/layout.png)
