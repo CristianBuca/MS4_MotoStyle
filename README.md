@@ -893,13 +893,15 @@ This feature provides the user with the ability to view all products, narrow dow
 
 ### **Product Management Feature**
 
-Product management is accessible only to superusers. Adding a product from the Floating Action Button will bring up the Add Product Form and will CREATE a product entry in the database. Clicking on edit button on product cards or product details page will bring up the UPDATE Product Form. Clicking on the DELETE button on the product cards or product details page will trigger a confirmation modal for deletion.
+Product management is accessible only to superusers. Adding a product from the Floating Action Button will bring up the Add Product Form and will CREATE a product entry in the database. Clicking on edit button on product cards or product details page will bring up the UPDATE Product Form. Clicking on the DELETE button on the product cards or product details page will trigger a confirmation modal for deletion. All forms are validated both on front-end and back-end to reduce risk of user error and maintain integrity of the store.
 
 *User stories solved by this feature:*
 
 * 27 - As a super user, I want to add products to the store.
 * 28 - As a super user, I want to edit existing products.
 * 29 - As a super user, I want to delete existing products.
+* 34 - As a site owner, I want forms to be validated on the front-end for better user experience.
+* 35 - As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
 
 <details>
   <summary> (Expand) Products Page on mobile, tablet and desktop view.</summary>
@@ -909,6 +911,22 @@ Product management is accessible only to superusers. Adding a product from the F
 ![Product Update tablet](/docs/features/products_tablet.jpg)
 
 ![Product Add desktop](/docs/features/products_desktop.jpg)
+</details>
+
+### **Shopping Cart Feature**
+
+The shopping cart is stored in the browser's session cookies and is constantly updated when the user adds different products to it. The user is able to access their shopping cart from the top navigation and be presented with all the items selected, and the order summary displaying cost breakdowns. From each product card the user is also able to adjust the quantity or remove the product from the cart altogether.
+
+*User stories solved by this feature:*
+
+* 13 - As a new user, I want to access and view my shopping cart.
+* 14 - As a new user, I want to adjust and manage the products in my shopping cart.
+
+![Shopping Cart mobile](/docs/features/cart_mobile.jpg)
+
+![Shopping Cart tablet](/docs/features/cart_tablet.jpg)
+
+![Shopping Cart desktop](/docs/features/cart_desktop.jpg)
 </details>
 
 
