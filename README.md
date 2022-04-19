@@ -326,10 +326,10 @@ Defined in the profiles app.
     - default_email EmailField(254)
     - default_phone_number CharField(20)
     - default_address_line1 CharField(80)
-    - default_address_line2 Charfield(80)
-    - default_postcode Charfield(20)
-    - default_town_or_city Charfield(40)
-    - default_area Charfield(80)
+    - default_address_line2 CharField(80)
+    - default_postcode CharField(20)
+    - default_town_or_city CharField(40)
+    - default_area CharField(80)
     - default_country CountryField(2)
 
 * **Category model fields:**
@@ -705,27 +705,43 @@ Routes used by third party apps like [Allauth](https://django-allauth.readthedoc
 
 ## **Design**
 
-Mobile-first design concept that is fully responsive on all device sizes. 
+The MotoStyle project was designed with a mobile-first concept focusing on delivering to the user a feature-rich e-commerce experience that is responsive and functional on any device size. 
 
+![Design desktop](/docs/design/desktop_view.png)
 
-![Design](/docs/design/layout.png)
+<details>
+  <summary> (Expand) Design tablet.</summary>
+
+![Design tablet](/docs/design/tablet_view.png)
+</details>
+
+<details>
+  <summary> (Expand) Design mobile.</summary>
+
+![Design mobile](/docs/design/mobile_view.png)
+</details>
+
 
 **UI**
 
+MotoStyle makes use of the [Bootstrap 5.1](https://getbootstrap.com) CSS Framework which is directed at responsive, mobile-first front-end web development.
+
+Two identities were created to highlight responsiveness:
+
+![Identity](/docs/design/identity.JPG)
 
 
 **Typography**
 
-
-
+As the app is using Bootstrap library it inherits a lot of it's fonts as fallback. For the main components I have opted to overwrite those fonts with Lexend font family which was created with the intent to reduce visual stress and so improve reading performance.
 
 **Color Palette**
 
-![Color Pallette](/docs/design/colors.png)
+![Color Pallette](/docs/design/color_palette.JPG)
 
-Colors for this app were inspired by the colors a user would find when looking at a bottle of Scotch.
 
 [Back to Top](#top-shelf)
+
 
 # **Features**
 
@@ -733,20 +749,14 @@ Colors for this app were inspired by the colors a user would find when looking a
 
 
 
-*User stories solved by this feature:*
-
-*
-
 <details>
-  <summary> (Expand) Landing Page on mobile, tablet, 1080p and 1440p.</summary>
+  <summary> (Expand) Landing Page on mobile, tablet and desktop view.</summary>
 
 ![Landing Page on mobile](/docs/features/landing_mobile.jpg)
 
 ![Landing Page on tablet](/docs/features/landing_tablet.jpg)
 
-![Landing Page on 1080p](/docs/features/landing_1080.jpg)
-
-![Landing Page on 1440p](/docs/features/landing_1440.jpg)
+![Landing Page on 1080p](/docs/features/landing_desktop.jpg)
 </details>
 
 
