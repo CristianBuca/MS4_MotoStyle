@@ -426,43 +426,137 @@ Database schema was generated with the Django extension [Graph Models](https://d
 ![Update Blog Page Wireframes](docs/wireframes/edit_blog_post_view.png)
 </details>
 
-## **App Routes**
+## **Project Routes**
 
-**Landing Page**
-
+**Home Route**
 * Accessible from the Navbar Logo.
-* Django path: `/`, view name: `home`
+* Django path: `/`, view name: `home`.
 
-**Registration Page**
-
+**Registration Route**
 * Accessible when logged out from the Account dropdown -> Register link in the top header navigation.
-* Django path: `/accounts/signup/`, view name: `account_signup`
+* Redirects to home page if already logged in.
+* Django path: `/accounts/signup/`, view name: `account_signup`.
 
-**Login Page**
+**Login Route**
 * Accessible when logged out from the Account dropdown, -> Login link in the top header navigation.
-* Django path: `/accounts/login/`, view name: `account_login`
+* Redirects to home page if already logged in.
+* Django path: `/accounts/login/`, view name: `account_login`.
 
-**Products Page**
+**Products Route**
 * Accessible from any of the category selections, filter or search queries.
-* Django path: `/products/`, view name: `products`
+* Django path: `/products/`, view name: `products`.
 
-**Product Detail Page**
-* Accessible by clicking on the product card displayed in `products`
-* Django path: `/products/<int:product_id>/`, view name: `products_detail`
+**Product Detail Route**
+* Accessible by clicking on the product card displayed in `products`.
+* Django path: `/products/<int:product_id>/`, view name: `products_detail`.
 
-**Add Product Page**
+**Add Product Route**
 * Accessible only by superusers by expanding the Floating Action Button (FAB) in the bottom right corner and selecting the second button with the "+" icon.
-* Django path: `/products/add/`, view name: `add_product`
+* Redirects to home page and displays and error message if not superuser.
+* Redirects to login page if not logged in.
+* Django path: `/products/add/`, view name: `add_product`.
 
-**Update Product Page**
+**Update Product Route**
 * Accessible only by superusers by clicking the button with a pencil icon on any of the product presentation cards or the product detail page.
-* Django path: `/products/edit/<int:product_id>/`, view name: `edit_product`
+* Redirects to home page and displays and error message if not superuser.
+* Redirects to login page if not logged in.
+* Django path: `/products/edit/<int:product_id>/`, view name: `edit_product`.
 
-**Profile Page**
+**Delete Product Route**
+* Accessible only by superusers by clicking the button with a rubbish bin icon on any of the product presentation cards or the product detail page.
+* Redirects to home page and displays and error message if not superuser.
+* Redirects to login page if not logged in.
+* Django path: `/products/delete/<int:product_id>/`, view name: `delete_product`.
+
+**Profile Route**
 * Accessible when logged in from the Account dropdown -> Profile link in the top header navigation.
-* Django path: `/profile/`, view name: `profile`
+* Redirects to login page if not logged in.
+* Django path: `/profile/`, view name: `profile`.
 
+**Order History Route**
+* Accessible when logged in from the Profile page by clicking on the order number.
+* Redirects to login page if not logged in.
+* Django path: `/profile/order_history/<order_number>`, view name: `order history`.
 
+**Wishlist Route**
+* Accessible when logged in from the Account dropdown -> Wishlist link in the top header navigation.
+* Redirects to login page if not logged in.
+* Django path: `/wishlist/`, view name: `view_wishlist`.
+
+**Wishlist Add Route**
+* Accessible when logged in by clicking the Add to wishlist link on the product detail page.
+* Redirects to login page if not logged in.
+* Django path: `/wishlist/add/<product_id>/`, view name: `add_to_wishlist`.
+
+**Wishlist Remove Route**
+* Accessible when logged in by clicking the Remove from wishlist link on the product detail page.
+* Redirects to login page if not logged in.
+* Django path: `/wishlist/remove/<product_id>/`, view name: `remove_from_wishlist`.
+
+**Cart Route**
+* Accessible by clicking on the cart link with a shopping cart icon in the top header navigation.
+* Django path: `/cart/`, view name: `view_cart`.
+
+**Add to Cart Route**
+* Accessible by clicking the add to cart button on the product detail page.
+* Django path: `/cart/add/<item_id>/`, view name: `add_to_cart`.
+
+**Update Cart Route**
+* Accessible by clicking Update Quantity button for each product on the shopping cart page.
+* Django path: `/cart/adjust/<item_id>/`, view name: `adjust_cart`.
+
+**Remove from Cart Route**
+* Accessible by clicking the Remove button for each product on the shopping cart page.
+* Django path: `/cart/remove/<item_id>/`, view name `remove_from_cart`.
+
+**Checkout Route**
+* Accessible by clicking the Secure Checkout button on the shopping cart page or the toast success message.
+* Django path: `/checkout/`, view name: `checkout`.
+
+**Checkout Success**
+* Presented to the user after clicking Complete Checkout button on the checkout page and checkout form is validated.
+* Django path: `/checkout/checkout_success/<order_number>`, view name: `checkout_success`.
+
+**Cache Checkout Data Route**
+* Used internally by the checkout app and not accessible by users.
+* Django path: `/checkout/cache_checkout_data/`, view name: `cache_checkout_data`.
+
+**Webhook Route**
+* Used by the stripe API and not accessible by users.
+* Django path: `/checkout/wh/`, view name: `webhook`.
+
+**Blog Route**
+* Accessible by clicking on the blog link in the main navigation menu.
+* Django path: `/blog/`, view name: `blog`.
+
+**Blog Post Route**
+* Accessible by clicking the Read More button from the blog post previews in the accordion on the blog page.
+* Django path: `/blog/<int:blog_post_id>/`, view name: `blog_post`.
+
+**Add Blog Post Route**
+* Accessible when logged in by clicking the Post Article button on the blog page.
+* Redirects to login page if not logged in.
+* Django path: `/blog/add/`, view name: `add_blog_post`.
+
+**Update Blog Post Route**
+* Accessible only by superusers or user that created the post.
+* Redirect to blog page and displays an error if accessed without permission.
+* Redirects to login page if not logged in.
+* Django path: `/blog/edit/<int:blog_post_id>/`, view name: `edit_blog_post`.
+
+**Delete Blog Post Route**
+* Accessible only by superusers or user that created the post.
+* Redirect to blog page and displays an error if accessed without permission.
+* Redirects to login page if not logged in.
+* Django path: `/blog/delete/<int:blog_post_id>/`, view name: `delete_blog_post`.
+
+**Delete Comment Route**
+* Accessible only by superusers or user that created the post.
+* Redirect to blog page and displays an error if accessed without permission.
+* Redirects to login page if not logged in.
+* Django path: `/delete_comment/<int:comment_id>/`, view name: `delete_comment`.
+
+Routes used by third party apps like [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) and [Rated Reviews](https://django-rated-reviews.readthedocs.io/en/stable/) can be found in their respective documentation on [Read the Docs](https://readthedocs.org)
 
 
 [Back to Top](#top-shelf)
