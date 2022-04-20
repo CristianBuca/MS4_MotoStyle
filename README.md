@@ -963,12 +963,12 @@ Checkout is accessed from the shopping cart page or from the cart preview in the
 <details>
   <summary> (Expand) Checkout on mobile, tablet and desktop view.</summary>
 
-![Shopping Checkout mobile](/docs/features/checkout_mobile.jpg)
+![Checkout mobile](/docs/features/checkout_mobile.jpg)
 
-![Shopping Checkout tablet](/docs/features/checkout_tablet.jpg)
+![Checkout tablet](/docs/features/checkout_tablet.jpg)
 
-![Shopping Checkout desktop](/docs/features/checkout_desktop.jpg)
-</details
+![Checkout desktop](/docs/features/checkout_desktop.jpg)
+</details>
 
 [Back to Top](#top-shelf)
 
@@ -986,12 +986,12 @@ The read more button will take the user to the article page where they can view 
 <details>
   <summary> (Expand) Blog on mobile, tablet and desktop view.</summary>
 
-![Shopping Checkout mobile](/docs/features/blog_mobile.jpg)
+![Blog mobile](/docs/features/blog_mobile.jpg)
 
-![Shopping Checkout tablet](/docs/features/blog_tablet.jpg)
+![Blog tablet](/docs/features/blog_tablet.jpg)
 
-![Shopping Checkout desktop](/docs/features/blog_desktop.jpg)
-</details
+![Blog desktop](/docs/features/blog_desktop.jpg)
+</details>
 
 ### **Blog Management Feature**
 
@@ -1008,25 +1008,45 @@ CREATING a post is currently open to all registered users and can be achieved by
 <details>
   <summary> (Expand) Blog on mobile, tablet and desktop view.</summary>
 
-![Shopping Checkout mobile](/docs/features/blog_management_mobile.jpg)
+![Blog Management mobile](/docs/features/blog_management_mobile.jpg)
 
-![Shopping Checkout tablet](/docs/features/blog_management_tablet.jpg)
+![Blog Management tablet](/docs/features/blog_management_tablet.jpg)
 
-![Shopping Checkout desktop](/docs/features/blog_management_desktop.jpg)
-</details
+![Blog Management desktop](/docs/features/blog_management_desktop.jpg)
+</details>
+
+[Back to Top](#top-shelf)
 
 
 ### **Navbar**
 
-The navigation bar houses the app's Logo and the main navigation links.
-The links accessible will change based on wether the user is logged in or logged out.
-It is collapsible on small devices and the side navigation is accessible from the burger menu on the right hand side.
-Messages being flashed to the user as feedback for their interactions with the app are displayed in the section right under the navbar.
+The navigation bar is sectioned in 2 main components: the top header navigation and the main navigation.
+- The top header navigation houses the site's logo who's identity changes based on device width and links to the home page, the search bar and links to Account functionality and shopping cart.
+The Account dropdown will change it's link options based on the user's login status while the shopping cart will reflect the total cost of the products in it.
+- The main navigation is structured based on products categories and subcategories which will restructure the products page results based on the categories filtered. In addition the main nav offers a link to the blog section as well as options to order all products by price, rating or category.
+The main navigation collapses on medium devices and smaller and the main navigation is accessible from the burger menu on the left hand side.
 
 *User stories solved by this feature:*
 
-* 15 - As a site owner, I want the app to be responsive.
-* 18 - As a site owner, I want to provide feedback to the user when errors occur.
+* 4 - As a new user, I want to browse the store's merchandise.
+* 5 - As a new user, I want to be able to search for specific products.
+* 6 - As a new user, I want to be able to browse by categories.
+* 7 - As a new user, I want to be able to order product lists by price, rating, category or name.
+* 12 - As a new user, I want to be able to view the total cost of my shopping cart while I browse.
+* 31 - As a site owner, I want the site to be responsive.
+
+<details>
+  <summary> (Expand) Blog on mobile, tablet and desktop view.</summary>
+
+![Navbar mobile](/docs/features/navbar_mobile.jpg)
+
+![Navbar tablet](/docs/features/navbar_tablet.jpg)
+
+![Navbar desktop](/docs/features/navbar_desktop.jpg)
+</details>
+
+
+
 
 <details>
   <summary> (Expand) Navbar </summary>
