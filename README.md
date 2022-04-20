@@ -1111,7 +1111,6 @@ The toast alerts provide the user a lightweight notification system and was buil
 ![Toast Info](/docs/features/toast_info.jpg)
 
 ![Toast warning](/docs/features/toast_warning.jpg)
-
 </details>
 
 ### **Footer**
@@ -1130,29 +1129,64 @@ In the footer, the user can find links to the owner's social media.
 ![Footer tablet](/docs/features/footer_tablet.jpg)
 
 ![Footer desktop](/docs/features/footer_desktop.jpg)
-
 </details>
+
+[Back to Top](#top-shelf)
 
 ### **Custom Error Pages**
 
-The Error Pages are displayed in case an error occurs on client, server or database side. It provides the user with the ability to go back to one of the webapp pages and maintains user engagement.
+The Error Pages are displayed in case an error occurs on client, server or database side. It provides the user with the ability to easily go back to their area of interest maintaining user engagement.
 Each error page displays it's specific error in the title. The user can still use the app's navbar to navigate or click the big button in the middle of the page to return to the Landing Page.
 The errors that have specific routes on backend are:
 
 * 400 Bad Request,
-* 401 Unauthorized (RFC 7235),
+* 403 Forbidden Request,
 * 404 Not Found,
-* 405 Method Not Allowed,
 * 500 Internal Server Error
 
 *User stories solved by this feature:*
 
-*
+* 33 - As a site owner, I want to provide feedback to the user based on their interactions with the site.
 
 <details>
   <summary> (expand) Error Page</summary>
 
 ![Error Page](/docs/features/error.jpg)
+</details>
+
+## **Administration portal**
+
+Django offers a great administration portal out of the box that offers superusers full CRUD functionality over the database. Superusers can access it by clicking on the admin portal link with a wrench and screwdriver icon in the floating action button.
+Configuring each app in this portal is achieved by defining the admin classes in each of the app's admin.py module and registering them:
+
+```python
+class WishlistAdmin(admin.ModelAdmin):
+    """
+    Admin class for the Wishlist model.
+    """
+    list_display = (
+        'owner', 'product',
+    )
+    search_fields = (
+        'owner',
+    )
+    list_filter = (
+        'owner',
+    )
+    list_per_page = 20
+
+
+admin.site.register(Wishlist, WishlistAdmin)
+```
+
+*User stories solved by this feature:*
+
+* 30 - As a super user, I want to access the administration portal.
+
+<details>
+  <summary> (expand) Administration Portal</summary>
+
+![Admin Portal](/docs/features/admin_portal.jpg)
 </details>
 
 [Back to Top](#top-shelf)
