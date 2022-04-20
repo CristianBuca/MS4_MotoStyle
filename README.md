@@ -894,7 +894,7 @@ This feature provides the user with the ability to view all products, narrow dow
 * 22 - As a regular user, I want to review, rate and read other user's reviews for the products on the site.
 
 <details>
-  <summary> (Expand) Products Page on mobile, tablet and desktop view.</summary>
+  <summary> (Expand) Products Feature on mobile, tablet and desktop view.</summary>
 
 ![Products Page mobile](/docs/features/products_mobile.jpg)
 
@@ -971,6 +971,27 @@ Checkout is accessed from the shopping cart page or from the cart preview in the
 </details
 
 [Back to Top](#top-shelf)
+
+
+### **Blog Feature**
+
+The blog is accessed through the blog link in the main navigation and presents the user an accordion with all the articles posted on the site ordered by the most recent first. Upon expanding each accordion link the user is able to view a presentation of the article with the main image associated, a snippet of the article truncated to the first 40 words, information on who posted it and the date it was posted on.
+The read more button will take the user to the article page where they can view a a image slide for the article (up to 5 images can be uploaded for each article), read the content and interact with other users in the comment section.
+
+*User stories solved by this feature:*
+
+* 24 - As a regular user, I want to view articles related to the store products and the community it caters to.
+* 26 - As a regular user, I want to be able to comment on articles.
+
+<details>
+  <summary> (Expand) Blog on mobile, tablet and desktop view.</summary>
+
+![Shopping Checkout mobile](/docs/features/blog_mobile.jpg)
+
+![Shopping Checkout tablet](/docs/features/blog_tablet.jpg)
+
+![Shopping Checkout desktop](/docs/features/blog_desktop.jpg)
+</details
 
 
 ### **Navbar**
