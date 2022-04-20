@@ -122,9 +122,9 @@ The reviews system allows them to post a review and a rating for each product as
 
 **Super Users:**
 
-27. As a super user, I want to add products to the store.
-28. As a super user, I want to edit existing products.
-29. As a super user, I want to delete existing products.
+27. As a super user, I want to add content to the store.
+28. As a super user, I want to edit existing content.
+29. As a super user, I want to delete existing content.
 30. As a super user, I want to access the administration portal.
 
 **Site Owner:**
@@ -906,13 +906,13 @@ This feature provides the user with the ability to view all products, narrow dow
 
 ### **Product Management Feature**
 
-Product management is accessible only to superusers. Adding a product from the Floating Action Button will bring up the Add Product Form and will CREATE a product entry in the database. Clicking on edit button on product cards or product details page will bring up the UPDATE Product Form. Clicking on the DELETE button on the product cards or product details page will trigger a confirmation modal for deletion. All forms are validated both on front-end and back-end to reduce risk of user error and maintain integrity of the store.
+Product management is accessible only to superusers. Adding a product from the Floating Action Button will bring up the Add Product Form and will CREATE a product entry in the database. Clicking the edit button on product cards or product details page will bring up the UPDATE Product Form. Clicking on the DELETE button on the product cards or product details page will trigger a confirmation modal for deletion. All forms are validated both on front-end and back-end to reduce risk of user error and maintain integrity of the store.
 
 *User stories solved by this feature:*
 
-* 27 - As a super user, I want to add products to the store.
-* 28 - As a super user, I want to edit existing products.
-* 29 - As a super user, I want to delete existing products.
+* 27 - As a super user, I want to add content to the store.
+* 28 - As a super user, I want to edit existing content.
+* 29 - As a super user, I want to delete existing content.
 * 34 - As a site owner, I want forms to be validated on the front-end for better user experience.
 * 35 - As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
 
@@ -991,6 +991,28 @@ The read more button will take the user to the article page where they can view 
 ![Shopping Checkout tablet](/docs/features/blog_tablet.jpg)
 
 ![Shopping Checkout desktop](/docs/features/blog_desktop.jpg)
+</details
+
+### **Blog Management Feature**
+
+CREATING a post is currently open to all registered users and can be achieved by clicking the post article button at the top of the blog accordion. Users that are not logged in are redirected to the login page. UPDATING and DELETING a post is only available to the user that CREATED the post or superusers and is achieved through the buttons on each blog post in the accordion.
+
+*User stories solved by this feature:*
+
+* 25 - As a regular user I want to be able to post, edit or remove articles from the blog section.
+* 27 - As a super user, I want to add content to the store.
+* 28 - As a super user, I want to edit existing content.
+* 29 - As a super user, I want to delete existing content.
+* 35 - As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
+
+<details>
+  <summary> (Expand) Blog on mobile, tablet and desktop view.</summary>
+
+![Shopping Checkout mobile](/docs/features/blog_management_mobile.jpg)
+
+![Shopping Checkout tablet](/docs/features/blog_management_tablet.jpg)
+
+![Shopping Checkout desktop](/docs/features/blog_management_desktop.jpg)
 </details
 
 
