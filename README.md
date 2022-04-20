@@ -1197,20 +1197,26 @@ admin.site.register(Wishlist, WishlistAdmin)
 * **[CSS 3](https://www.w3.org/Style/CSS/Overview.en.html)**
 * **[JavaScript](https://www.javascript.com)**
 * **[Python 3.9.6](https://www.python.org)**
+* **[SQLite](https://www.sqlite.org/index.html)** Was used as relational database for development.
+* **[PostgreSQL](https://www.postgresql.org)** Was used as relational database for production.
+* **[AWS S3](https://aws.amazon.com)** Was used to store static and media files in production.
+* **[Stripe](https://stripe.com/gb)** As payment processor for store purchases.
 * **[JQuery 3.6.0](https://jquery.com)** Was used for dom manipulation.
-* **[Flask](https://flask.palletsprojects.com/en/2.0.x/)** Was used as the framework for the app.
-* **[MaterializeCSS](https://materializecss.com)** The app's main front-end framework.
-* **[Github](https://github.com)** For storing my repository.
+* **[Django 3.2](https://www.djangoproject.com)** Was used as the main framework for the project.
+* **[Bootstrap 5.1](https://getbootstrap.com)** The project's front-end framework.
+* **[Github](https://github.com/)** For storing my repository and documentation.
+* **[Heroku](https://www.heroku.com/home)** For storing my repository and deploying the project. 
 * **[Github Desktop](https://desktop.github.com)** For managing synchronizations between local and cloud-stored repositories.
 * **[Git](https://git-scm.com)** For version control.
 * **[VSCode](https://code.visualstudio.com)** IDE for writing code.
 * **[Balsamiq](https://balsamiq.com)** For designing the wireframes.
 * **[Font Awesome](https://fontawesome.com)** Provided the icons for social media links.
-* **[Google Fonts](https://fonts.google.com)** Ubuntu, Oxygen and Fira Sans font families were used as default fonts for the web application.
+* **[Google Fonts](https://fonts.google.com)** Lexend font family was used as default font for the web application.
 * **[Optimizilla](https://imagecompressor.com)** To optimize images for web applications.
 * **[Favicon.io](https://favicon.io)** For creating the favicon.
 * **[AmIResponsive](http://ami.responsivedesign.is)** For the multi-device mockup.
 * **[Markdown ToC](https://ecotrust-canada.github.io/markdown-toc/)** Used to generate the table of contents for Readme.md
+
 
 ## **Testing**
 
@@ -1222,7 +1228,7 @@ Documentation on all bugs and solutions is available in [TESTING.md](/TESTING.md
 
 ## **Deployment**
 
-The website is hosted [Github](https://github.com), deployed on [Heroku](https://id.heroku.com/login) and uses [MongoDB](https://www.mongodb.com) as it's database. To be able to deploy accounts need to be created on all 3 sites.
+The website is hosted [Github](https://github.com), deployed on [Heroku](https://www.heroku.com/home).It uses [PostgreSQL](https://www.postgresql.org) as it's database, [AWS S3](https://aws.amazon.com) to store the static and media files and Stripe . To be able to deploy, accounts need to be created on all 3 sites.
 
 **Hosting Repository on Github:** 
 
