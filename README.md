@@ -1228,41 +1228,14 @@ Documentation on all bugs and solutions is available in [TESTING.md](/TESTING.md
 
 ## **Deployment**
 
-The website is hosted [Github](https://github.com), deployed on [Heroku](https://www.heroku.com/home).It uses [PostgreSQL](https://www.postgresql.org) as it's database, [AWS S3](https://aws.amazon.com) to store the static and media files and Stripe . To be able to deploy, accounts need to be created on all 3 sites.
+The website is hosted [Github](https://github.com), deployed on [Heroku](https://www.heroku.com/home).It uses [PostgreSQL](https://www.postgresql.org) as it's database, [AWS S3](https://aws.amazon.com) to store the static and media files and [Stripe](https://stripe.com/gb) for payment processing. 
+To be able to deploy this project accounts need to be created on all sites except PostgreSQL.
 
 **Hosting Repository on Github:** 
 
 1. Login into Github account,
 2. Select the button marked "New" and create a new repository,
 3. Open repository with favorite IDE.
-
-**Creating MongoDB Database:**
-
-1. Login into MongoDB,
-2. Create a new project,
-3. Under "Security" click "Database Access" and set up a user with read/write permissions,
-4. Create a database cluster,
-5. Click on the "Collections" tab and create the necessary collections,
-6. Under "Security" click "Network Access" and add the specific IP of the application you are connecting to the database or use 0.0.0.0/0 to allow global access.
-7. Under "Deployment" select "Databases" and click "Connect",
-8. Click "Connect your application" and select Python v3.6 or later,
-9. Copy the connection string generated (MONGO_URI) and replace <password> with the password for the root user. Replace myFirstDatabase with the name of the database that connections will use by default,
-
-![Connect app to MongoDB](/docs/deployment/mongo.png)
-
-**Connecting app to the database:**
-
-1. Create a env.py file in the root directory,
-2. Set the environment variables:
-```python
-import os
-
-os.environ.setdefault("IP", Enter IP here)
-os.environ.setdefault("PORT", Enter PORT here)
-os.environ.setdefault("SECRET_KEY", Enter your SECRET KEY)
-os.environ.setdefault("MONGO_URI", Enter MONGO_URI received at step 9 when creating MongoDB)
-os.environ.setdefault("MONGO_DBNAME", Enter name of the collection in the database)
-```
 
 **Deployment to Heroku:**
 
@@ -1279,6 +1252,20 @@ os.environ.setdefault("MONGO_DBNAME", Enter name of the collection in the databa
 
 ![Deploy with Heroku](/docs/deployment/heroku.png)
 
+**Connecting app to the database:**
+
+1. Create a env.py file in the root directory,
+2. Set the environment variables:
+```python
+import os
+
+os.environ.setdefault("IP", Enter IP here)
+os.environ.setdefault("PORT", Enter PORT here)
+os.environ.setdefault("SECRET_KEY", Enter your SECRET KEY)
+os.environ.setdefault("MONGO_URI", Enter MONGO_URI received at step 9 when creating MongoDB)
+os.environ.setdefault("MONGO_DBNAME", Enter name of the collection in the database)
+```
+
 **Steps to follow to clone this repository:**
 
 1. Log into your [Github](https://github.com) account,
@@ -1294,42 +1281,48 @@ os.environ.setdefault("MONGO_DBNAME", Enter name of the collection in the databa
 
 ## **Credits**
 
-This Project was created based on the Code Institute - Flask Task Manager Project Lessons by Tim Nelson and Python Flask Tutorial - by [Corey Schafer](https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g). 
-There are inevitable similarities between this project and the project from these 2 tutorials, more specifically:
+This Project was created based on the Code Institute - Hello Django and Boutique Ado Project Lessons by [Chris Z](https://github.com/ckz8780).
+There are inevitable similarities between this project and the ones in these lessons; more specifically:
 
-**From Tim Nelson's lessons I used:**
+**From Boutique Ado lessons I used:**
 
-* The app initialization method,
-* Overall approach on building the app using Flask and Jinja,
-* Structure of the routes.
+* Overall approach on building the project using Django,
+* Structure of the apps and database,
+* Stripe integration and webhook handling,
+* JQuery script for quantity buttons,
+* JQuery script for sorting element
 
-**From Corey Schafer's tutorial I used:**
+**From Hello Django lessons I used:**
 
-* The approach of form validation using [wtForms](https://wtforms.readthedocs.io/en/3.0.x/) in python.
+* Automated testing methods for forms, models and views.
 
-**JQuery component initialization** is from [MaterializeCSS](https://materializecss.com).
+### **Third party plugins and extensions:**
 
 **JQuery form validation** was done using the [Jquery Validation Plugin](https://jqueryvalidation.org/documentation/).
 
-**Ajax method to replace broken links** solution is from [Sitepoint](https://www.sitepoint.com/jquery-replace-broken-images/).
+**Django 3rd party libraries and extensions can be found in requirements.txt but the most notable are:**
+
+* [Django-Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) - for user authentication.
+* [Django-Rated Reviews](https://django-rated-reviews.readthedocs.io/en/latest/) - for the review and rating features.
 
 **Media**
 
-* Hero Image, Error page background image, default avatar and default item images from [Pexels](https://www.pexels.com/search/cryptocurrency/).
-* Individual bottle images and information sourced from [Whisky Shop](https://www.whiskyshop.com) and [Whisky Hunter](https://whiskyhunter.net)
+* Hero Image from [Pexels](https://www.pexels.com/photo/person-riding-motorcycle-during-golden-hour-1416169/).
+* All product images, and content from [J&S Accessories](https://jsaccessories.co.uk).
+* Blog posts and images from [MCN](https://www.motorcyclenews.com). 
 
 ### **Code Institute colleagues who's work I followed for guidance:**
 
-[Carla Buongiorno](https://github.com/CarlaBuongiorno/The-Collector).
+[Carla Buongiorno](https://github.com/CarlaBuongiorno/la_fraschetta).
 
-[Paul Meeneghan](https://github.com/pmeeny/CI-MS3-FootballMemories).
+[Paul Meeneghan](https://github.com/pmeeny/CI-MS4-LoveRugby).
 
 
 
 ## **Acknowledgements**
 
 * Special thanks to my mentor Mo Shami for his suggestions and guidance.
-* Special thanks to my brother for his feedback and suggestions.
+* Special thanks to my brother for his feedback and suggestions and always having my back.
 * My family for their encouragement and support.
 * The Code Institute tutors that helped me when I was hitting walls.
 * The Code Institute team for all the effort and energy they put into creating and curating the content for this programme.
