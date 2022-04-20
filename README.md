@@ -1091,19 +1091,45 @@ The floating action button at the bottom right hand side corner of the page chan
 
 [Back to Top](#top-shelf)
 
+### **Toast alert message system**
 
-### **Footer**
-
-In the footer, the user can find links the owner's social media.
+The toast alerts provide the user a lightweight notification system and was built with Bootstrap's Toasts component. Located under the shopping cart link in the top header navigation, pops up when the user performs certain actions on the site and is styled based on Django's message categorization system: success, warning, info and error. The most notable is the success notification which is displayed when the user adds a product to their cart. The toast will include the success and a small preview of their shopping cart with a link to checkout. All the errors from unauthorized actions are also displayed here with tailored details on the why the errors ocurred.
 
 *User stories solved by this feature:*
 
-* 17 - As a site owner, I want to showcase my social media.
+* 12 - As a new user, I want to be able to view the total cost of my shopping cart while I browse.
+* 13 - As a new user, I want to access and view my shopping cart.
+* 33 - As a site owner, I want to provide feedback to the user based on their interactions with the site.
 
 <details>
-  <summary> (Expand) Footer </summary>
+  <summary> (Expand) Toast Notifications </summary>
 
-![Footer](/docs/features/footer.jpg)
+![Toast Success](/docs/features/toast_success.jpg)
+
+![Toast Error](/docs/features/toast_error.jpg)
+
+![Toast Info](/docs/features/toast_info.jpg)
+
+![Toast warning](/docs/features/toast_warning.jpg)
+
+</details>
+
+### **Footer**
+
+In the footer, the user can find links to the owner's social media.
+
+*User stories solved by this feature:*
+
+* 32 - As a site owner, I want to showcase my social media.
+
+<details>
+  <summary> (Expand) Footer on mobile, tablet and desktop view. </summary>
+
+![Footer mobile](/docs/features/footer_mobile.jpg)
+
+![Footer tablet](/docs/features/footer_tablet.jpg)
+
+![Footer desktop](/docs/features/footer_desktop.jpg)
 
 </details>
 
