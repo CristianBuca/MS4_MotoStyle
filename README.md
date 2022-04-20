@@ -831,6 +831,8 @@ Registration page is comprised of the registration form which is used to CREATE 
 ![Registration Page on desktop](/docs/features/registration_desktop.jpg)
 </details>
 
+[Back to Top](#top-shelf)
+
 
 ### **Login Feature**
 
@@ -840,6 +842,7 @@ Login page is comprised of the login form which is used to READ an user entry fr
 *User stories solved by this feature:*
 
 * 2 - As a new user, I want to be able to login and access my account.
+* 3 - As a new user, I want to be able to logout.
 * 23 - As a regular user, I want the ability to recover my password.
 * 33 - As a site owner, I want to provide feedback to the user based on their interactions with the site.
 * 35 - As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
@@ -1006,7 +1009,7 @@ CREATING a post is currently open to all registered users and can be achieved by
 * 35 - As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
 
 <details>
-  <summary> (Expand) Blog on mobile, tablet and desktop view.</summary>
+  <summary> (Expand) Blog Management on mobile, tablet and desktop view.</summary>
 
 ![Blog Management mobile](/docs/features/blog_management_mobile.jpg)
 
@@ -1028,7 +1031,7 @@ The wishlist feature allows the user to selected products of interest and save t
 * 21 - As a regular user, I want to view and manage my wishlist.
 
 <details>
-  <summary> (Expand) Blog on mobile, tablet and desktop view.</summary>
+  <summary> (Expand) Wishlist on mobile, tablet and desktop view.</summary>
 
 ![Wishlist mobile](/docs/features/wishlist_mobile.jpg)
 
@@ -1055,7 +1058,7 @@ The main navigation collapses on medium devices and smaller and the main navigat
 * 31 - As a site owner, I want the site to be responsive.
 
 <details>
-  <summary> (Expand) Blog on mobile, tablet and desktop view.</summary>
+  <summary> (Expand) Navbar on mobile, tablet and desktop view.</summary>
 
 ![Navbar mobile](/docs/features/navbar_mobile.jpg)
 
@@ -1064,16 +1067,29 @@ The main navigation collapses on medium devices and smaller and the main navigat
 ![Navbar desktop](/docs/features/navbar_desktop.jpg)
 </details>
 
+[Back to Top](#top-shelf)
+
+
+### **Floating Action Button**
+
+The floating action button at the bottom right hand side corner of the page changes based on the user's permissions. 
+- For regular users and anonymous guests the FAB improves their user interaction with the site by providing a easy way to go back to the top of the page which can be invaluable on mobile devices to prevent long scrolling.
+- For superusers the FAB changes to an expandable menu which provides links to the form for adding products to the store, link the administration portal created by Django as well as a back to top functionality.
+
+*User stories solved by this feature:*
+
+* 27 - As a super user, I want to add products to the store.
+* 30 - As a super user, I want to access the administration portal.
 
 <details>
-  <summary> (Expand) Navbar </summary>
+  <summary> (Expand) Floating Action Button </summary>
 
-![Collapsed Navbar on mobile devices](/docs/features/navbar_collapse.jpg)
+![Floating Action Button](/docs/features/fab.jpg)
 
-![Collapsed Navbar on mobile devices with sidenav](/docs/features/navbar_collapse_sidenav.jpg)
-
-![Expanded Navbar](/docs/features/navbar_expand.jpg)
+![Floating Action Button Superuser](/docs/features/fab_superuser.jpg)
 </details>
+
+[Back to Top](#top-shelf)
 
 
 ### **Footer**
@@ -1088,25 +1104,6 @@ In the footer, the user can find links the owner's social media.
   <summary> (Expand) Footer </summary>
 
 ![Footer](/docs/features/footer.jpg)
-
-</details>
-
-### **Floating Action Button**
-
-The floating action button at the bottom right hand side corner of the page extends to provide extra functionality to the user. It can be used to go back to the top of the page or to logout.
-
-While on their profile page, Superusers will find the regular floating action button replaced with a different one that links to the Superuser Administration Page.
-
-*User stories solved by this feature:*
-
-* 3 - As a new user, I want to be able to logout.
-
-<details>
-  <summary> (Expand) Floating Action Button </summary>
-
-![Floating Action Button](/docs/features/fab.jpg)
-
-![Floating Action Button Superuser](/docs/features/fab_superuser.jpg)
 
 </details>
 
