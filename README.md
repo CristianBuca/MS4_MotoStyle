@@ -1018,6 +1018,25 @@ CREATING a post is currently open to all registered users and can be achieved by
 [Back to Top](#top-shelf)
 
 
+### **Wishlist Feature**
+
+The wishlist feature allows the user to selected products of interest and save them in one place between sessions; being specific to the each user it requires for the user to be logged in. It is accessed from the Account -> Wishlist link in the top header navigation and features cards with product images, names, prices that link to the specific product detail page. The user is able to add products to this list by clicking the Add to Wishlist links on each of the product's details page. This link will change icon and become a Remove from Wishlist link based on the product's status in the user's wishlist. Removal from the wishlist is also possible in the wishlist itself.
+
+*User stories solved by this feature:*
+
+* 11 - As a new user, I want to be able to add products to a list of interests(wishlist).
+* 21 - As a regular user, I want to view and manage my wishlist.
+
+<details>
+  <summary> (Expand) Blog on mobile, tablet and desktop view.</summary>
+
+![Wishlist mobile](/docs/features/wishlist_mobile.jpg)
+
+![Wishlist tablet](/docs/features/wishlist_tablet.jpg)
+
+![Wishlist desktop](/docs/features/wishlist_desktop.jpg)
+</details>
+
 ### **Navbar**
 
 The navigation bar is sectioned in 2 main components: the top header navigation and the main navigation.
@@ -1044,8 +1063,6 @@ The main navigation collapses on medium devices and smaller and the main navigat
 
 ![Navbar desktop](/docs/features/navbar_desktop.jpg)
 </details>
-
-
 
 
 <details>
