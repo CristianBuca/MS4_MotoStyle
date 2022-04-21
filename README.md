@@ -1259,12 +1259,12 @@ To be able to deploy this project accounts need to be created on all sites excep
 ```python
 import os
 
-os.environ.setdefault('DEVELOPMENT', 'TRUE')
-os.environ.setdefault('USE_AWS', 'TRUE')
-os.environ.setdefault('SECRET_KEY', '<your django secret key>')
+os.environ.setdefault('DEVELOPMENT', 'TRUE') - activates debug mode. Remove when in production.
+os.environ.setdefault('USE_AWS', 'TRUE') - remove to use local files.
+os.environ.setdefault('SECRET_KEY', '<your django secret key>') - [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/) 
 os.environ.setdefault('AWS_ACCESS_KEY_ID', '<your AWS access key>')
 os.environ.setdefault('AWS_SECRET_ACCESS_KEY', '<your AWS secret access key')
-os.environ.setdefault('DATABASE_URL', '<your database url>')
+os.environ.setdefault('DATABASE_URL', '<your database url>') - remove to use local Django database
 os.environ.setdefault('STRIPE_PUBLIC_KEY', '<your stripe public key>')
 os.environ.setdefault('STRIPE_SECRET_KEY', '<your stripe secret key>')
 os.environ.setdefault('STRIPE_WH_SECRET', '<your stripe webhook key>')
@@ -1345,11 +1345,27 @@ os.environ.setdefault('EMAIL_HOST_PASS', '<your email host password>')
 14. Click "Next:Permissions" and add user to the group you created at step 4.
 15. Click Next to the end and Create user.
 16. !At the Success screen download the .csv file with the user's access key and save it. This will contain this users access key and secret access key which are used to authenticate from Django. Once passed through this process you can't download them again.
+17. Copy those keys into our environment variables.
+
+
+**Setting up Stripe:**
+
+1. Login into your Stripe account.
+2. Click on "Developers" and select "API keys".
+3. Copy the public and secret keys into your environment variables.
+4. Select "webhooks" and click "Add endpoint".
+5. In "Endpoint URL" field enter your heroku deployment address followed "/checkout/wh/".
+6. Under "Select events" select payment_intent.payment_failed and payment_intent.succeeded then click "Add endpoint".
+7. Select the endpoint you added and click "Reveal" under Signing Secret.
+8. Copy the signing secret in your environment "STRIPE_WH_SECRET" key.
+
+[Back to Top](#top-shelf)
+
 
 ## **Credits**
 
 This Project was created based on the Code Institute - Hello Django and Boutique Ado Project Lessons by [Chris Z](https://github.com/ckz8780).
-There are inevitable similarities between this project and the ones in these lessons; more specifically:
+There are inevitable similarities between this project and the ones in these lessons, more specifically:
 
 **From Boutique Ado lessons I used:**
 
@@ -1372,18 +1388,19 @@ There are inevitable similarities between this project and the ones in these les
 * [Django-Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) - for user authentication.
 * [Django-Rated Reviews](https://django-rated-reviews.readthedocs.io/en/latest/) - for the review and rating features.
 
+
 **Media**
 
 * Hero Image from [Pexels](https://www.pexels.com/photo/person-riding-motorcycle-during-golden-hour-1416169/).
 * All product images, and content from [J&S Accessories](https://jsaccessories.co.uk).
 * Blog posts and images from [MCN](https://www.motorcyclenews.com). 
 
+
 ### **Code Institute colleagues who's work I followed for guidance:**
 
 [Carla Buongiorno](https://github.com/CarlaBuongiorno/la_fraschetta).
 
 [Paul Meeneghan](https://github.com/pmeeny/CI-MS4-LoveRugby).
-
 
 
 ## **Acknowledgements**
