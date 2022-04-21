@@ -758,7 +758,7 @@ As the app is using Bootstrap library it inherits a lot of it's fonts as fallbac
 
 This projects features are accessible to the user based on their account permissions.
 | Nav Link                  | Not logged in     | Logged in as user | Logged in as admin |
-| ---                       | ---               | ---               | ---       |
+| ---                       | :---:             | :---:             | :---:     |
 | Home                      |&#9989;            |&#9989;            |&#9989;    |
 | Register                  |&#9989;            |&#10060;           |&#10060;   |
 | Log in                    |&#9989;            |&#10060;           |&#10060;   |
@@ -777,10 +777,10 @@ This projects features are accessible to the user based on their account permiss
 | Blog                      |&#9989;            |&#9989;            |&#9989;    |    
 | Blog Post                 |&#9989;            |&#9989;            |&#9989;    |    
 | Blog Post (Comment)       |&#10060;           |&#9989;            |&#9989;    |
-| Blog Post (Comment Delete)|&#10060;           |&#10060; (except owner)          |&#9989;    |      
+| Blog Post (Comment Delete)|&#10060;           |&#10060; (except created by)          |&#9989;    |      
 | Blog Post Add             |&#10060;           |&#9989;            |&#9989;    |    
-| Blog Post Update          |&#10060;           |&#10060; (except owner)          |&#9989;    |    
-| Blog Post Delete          |&#10060;           |&#10060; (except owner)          |&#9989;    |    
+| Blog Post Update          |&#10060;           |&#10060; (except created by)          |&#9989;    |    
+| Blog Post Delete          |&#10060;           |&#10060; (except created by)          |&#9989;    |    
 | Cart                      |&#9989;            |&#9989;            |&#9989;    |    
 | Checkout                  |&#9989;            |&#9989;            |&#9989;    |    
 | Checkout success          |&#9989;            |&#9989;            |&#9989;    |
@@ -1228,43 +1228,17 @@ Documentation on all bugs and solutions is available in [TESTING.md](/TESTING.md
 
 ## **Deployment**
 
-The website is hosted [Github](https://github.com), deployed on [Heroku](https://www.heroku.com/home).It uses [PostgreSQL](https://www.postgresql.org) as it's database, [AWS S3](https://aws.amazon.com) to store the static and media files and [Stripe](https://stripe.com/gb) for payment processing. 
+The website is hosted [Github](https://github.com) and deployed on [Heroku](https://www.heroku.com/home).It uses [PostgreSQL](https://www.postgresql.org) as it's database, [AWS S3](https://aws.amazon.com) as cloud storage for static and media files, and [Stripe](https://stripe.com/gb) for payment processing. 
 To be able to deploy this project accounts need to be created on all sites except PostgreSQL.
+
+[Back to Top](#top-shelf)
+
 
 **Hosting Repository on Github:** 
 
 1. Login into Github account,
 2. Select the button marked "New" and create a new repository,
 3. Open repository with favorite IDE.
-
-**Deployment to Heroku:**
-
-1. Create a Procfile in the root directory with contents `web:python app.py`,
-2. Run `pip freeze > requirements.txt` in terminal,
-3. Login into Heroku,
-4. Click "Create new app",
-5. As Deployment method select GitHub,
-6. Select the relevant repository with the help of the search field and click Connect,
-7. Click "Settings" and select "Reveal Config Vars",
-8. Add the config vars used in env.py,
-9. Select "Deploy Brach",
-10. After deployment is successful enable automatic deploys. 
-
-![Deploy with Heroku](/docs/deployment/heroku.png)
-
-**Connecting app to the database:**
-
-1. Create a env.py file in the root directory,
-2. Set the environment variables:
-```python
-import os
-
-os.environ.setdefault("IP", Enter IP here)
-os.environ.setdefault("PORT", Enter PORT here)
-os.environ.setdefault("SECRET_KEY", Enter your SECRET KEY)
-os.environ.setdefault("MONGO_URI", Enter MONGO_URI received at step 9 when creating MongoDB)
-os.environ.setdefault("MONGO_DBNAME", Enter name of the collection in the database)
-```
 
 **Steps to follow to clone this repository:**
 
@@ -1276,6 +1250,44 @@ os.environ.setdefault("MONGO_DBNAME", Enter name of the collection in the databa
 6. Install all python dependencies by running this command in the terminal: `pip install -r requirements.txt`
 
 *Alternatively you can download the repository as ZIP or use [Github Desktop](https://desktop.github.com) to get the repository on you local machine*
+
+**Setting up environment variables required for the project to run in development**
+
+1. Create a env.py file in the projects root directory.
+2. Add your personal variables from the accounts you created in the env.py file following this syntax:
+
+```python
+import os
+
+os.environ.setdefault('DEVELOPMENT', 'TRUE')
+os.environ.setdefault('USE_AWS', 'TRUE')
+os.environ.setdefault('SECRET_KEY', '<your django secret key>')
+os.environ.setdefault('AWS_ACCESS_KEY_ID', '<your AWS access key>')
+os.environ.setdefault('AWS_SECRET_ACCESS_KEY', '<your AWS secret access key')
+os.environ.setdefault('DATABASE_URL', '<your database url>')
+os.environ.setdefault('STRIPE_PUBLIC_KEY', '<your stripe public key>')
+os.environ.setdefault('STRIPE_SECRET_KEY', '<your stripe secret key>')
+os.environ.setdefault('STRIPE_WH_SECRET', '<your stripe webhook key>')
+os.environ.setdefault('EMAIL_HOST_USER', '<your email host username>')
+os.environ.setdefault('EMAIL_HOST_PASS', '<your email host password>')
+```
+
+**Deployment to Heroku:**
+
+1. Create a Procfile in the root directory with contents `web:python app.py`,
+2. Run `pip freeze > requirements.txt` in terminal,
+3. Login into Heroku,
+4. Click "Create new app",
+5. Click "Resources" tab, search for postgres in the addons field and provision a PostgreSQL database for your project.
+6. Click "Settings" and select "Reveal Config Vars",
+7. The database address will be shown here under "DATABASE_URL".
+8. Add the rest of the config vars used in env.py,
+9. Click the "Deploy" tab  and as deployment method select GitHub,
+10. Select the relevant repository with the help of the search field and click Connect,
+11. Select "Deploy Brach",
+12. After deployment is successful enable automatic deploys. 
+
+![Deploy with Heroku](/docs/deployment/heroku.png)
 
 [Back to Top](#top-shelf)
 
