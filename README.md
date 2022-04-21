@@ -1327,6 +1327,25 @@ os.environ.setdefault('EMAIL_HOST_PASS', '<your email host password>')
 15. Select "Edit" under Access control list (ACL) and enable list access for Everyone(public access).
 
 
+**Setting up AWS IAM:**
+
+1. Login into your AWS account.
+2. Find IAM in services and select it.
+3. Select "User groups" under Access management and click "Create group".
+4. Enter the name of your group and create it.
+5. Select "Policies" under Access management and click "Create policy".
+6. Go to the "JSON" tab and click Import managed policy.
+7. Search for "S3" and select "AmazonS3FullAccess" policy then click Import.
+8. Get the bucket ARN from S3 (refer to Setting up AWS S3 step 10) and under the Resource key add a list with the ARN and the ARN followed by "/*".
+9. Click Next, then Next:Review, enter a policy name and description and click "Create Policy".
+10. Go back to Groups and select the group you created at step 4, go to "Permissions" tab and click "Add permissions".
+11. Select "Attack policies", select the policy you just created and click "Attach policy".
+12. Select "Users" under Access management and click "Add user".
+13. Enter a user name and under "Select AWS credential type" select "Access key - Programmatic access".
+14. Click "Next:Permissions" and add user to the group you created at step 4.
+15. Click Next to the end and Create user.
+16. !At the Success screen download the .csv file with the user's access key and save it. This will contain this users access key and secret access key which are used to authenticate from Django. Once passed through this process you can't download them again.
+
 ## **Credits**
 
 This Project was created based on the Code Institute - Hello Django and Boutique Ado Project Lessons by [Chris Z](https://github.com/ckz8780).
