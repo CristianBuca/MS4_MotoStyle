@@ -1291,6 +1291,42 @@ os.environ.setdefault('EMAIL_HOST_PASS', '<your email host password>')
 
 [Back to Top](#top-shelf)
 
+**Setting up AWS S3:**
+
+1. Login into your AWS account.
+2. Find S3 in services and select it.
+3. Click the "Create bucket" button.
+4. Give the bucket a name and select the region closest to you.
+5. Under Object Ownership select "ACLs enabled" and "Bucket owner preferred.
+6. Uncheck "Block all public access"  and acknowledge the change.
+7. Create the bucket.
+8. Select the bucket and under the "Properties" tab go to "Static website hosting" and enable it.
+9. Select the "Permissions" tab and under Cross-origin resource sharing (CORS) add the following code:
+
+```
+[
+{
+"AllowedHeaders": [
+"Authorization"
+],
+"AllowedMethods": [
+"GET"
+],
+"AllowedOrigins": [
+"*"
+],
+"ExposeHeaders": []
+}
+]
+```
+10. Select the "Bucket Policy" tab, copy the Bucket ARN to clipboard and click "Policy Generator".
+11. Select type of policy: S3 Bucket policy, in Principal field add "*" and under Actions select "GetObject".
+12. In the "Amazon Resource Name" field paste your ARN from step 10.
+13. Click "Add Statement", then "Generate Policy" and copy the policy.
+14. Go back to Bucket Policy, paste the new policy generated and at the end of the Resource key add "/*" then click Save.
+15. Select "Edit" under Access control list (ACL) and enable list access for Everyone(public access).
+
+
 ## **Credits**
 
 This Project was created based on the Code Institute - Hello Django and Boutique Ado Project Lessons by [Chris Z](https://github.com/ckz8780).
