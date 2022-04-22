@@ -8,46 +8,55 @@
 
 # Table of Contents
 
-- **[Project Overview](#project-overview)**
-- **[User Experience](#user-experience)**
-- **[Strategy](#strategy)**
-  * **[Project Goals](#project-goals)**
-  * **[User Goals](#user-goals)**
-- **[Scope](#scope)**
-  * **[User Stories](#user-stories)**
-- **[Structure](#structure)**
-  * **[Code Structure](#code-structure)**
-  * **[Database Structure](#database-structure)**
-    + **[Conceptual Database Model](#conceptual-database-model)**
-    + **[Physical Database Model](#physical-database-model)**
-  * **[Feature requirements](#feature-requirements)**
-- **[Skeleton](#skeleton)**
-  * **[Wireframes](#wireframes)**
-  * **[App Routes](#app-routes)**
-- **[Surface](#surface)**
-  * **[Design](#design)**
-- * **[Features](#features)**
-    + **[Landing Page](#landing-page)**
-    + **[Registration Page](#registration-page)**
-    + **[Login Page](#login-page)**
-    + **[My Shelf - User Collection Page](#my-shelf---user-collection-page)**
-    + **[Add to Shelf Page](#add-to-shelf-page)**
-    + **[Change Stock Page](#change-stock-page)**
-    + **[Profile Page](#profile-page)**
-    + **[Superuser Management Page Page](#superuser-management-page-page)**
-    + **[Navbar](#navbar)**
-    + **[Footer](#footer)**
-    + **[Floating Action Button](#floating-action-button)**
-    + **[Custom Error Pages](#custom-error-pages)**
-  * **[Technologies Used](#technologies-used)**
-  * **[Testing](#testing)**
-  * **[Bugs](#bugs)**
-  * **[Deployment](#deployment)**
-  * **[Credits](#credits)**
-  * **[Acknowledgements](#acknowledgements)**
-  * **[Disclaimer](#disclaimer)**
+- [**Project Overview**](#project-overview)
+- [**User Experience**](#user-experience)
+- [**Strategy**](#strategy)
+  * [**Project Goals**](#project-goals)
+  * [**User Goals**](#user-goals)
+- [**Scope**](#scope)
+  * [**User Stories**](#user-stories)
+- [**Structure**](#structure)
+  * [**Code Structure**](#code-structure)
+  * [**Database Structure**](#database-structure)
+    + [**Conceptual Database Model**](#conceptual-database-model)
+    + [**Physical Database Model**](#physical-database-model)
+    + [**Database Models**](#database-models)
+  * [**Feature requirements**](#feature-requirements)
+- [**Skeleton**](#skeleton)
+  * [**Wireframes**](#wireframes)
+  * [**Project Routes**](#project-routes)
+- [**Surface**](#surface)
+  * [**Design**](#design)
+- [**Features**](#features)
+    + [**Landing Page**](#landing-page)
+    + [**Registration Feature**](#registration-feature)
+    + [**Login Feature**](#login-feature)
+    + [**User Profile Feature**](#user-profile-feature)
+    + [**Products Display Feature**](#products-display-feature)
+    + [**Product Management Feature**](#product-management-feature)
+    + [**Shopping Cart Feature**](#shopping-cart-feature)
+    + [**Checkout Feature**](#checkout-feature)
+    + [**Blog Feature**](#blog-feature)
+    + [**Blog Management Feature**](#blog-management-feature)
+    + [**Wishlist Feature**](#wishlist-feature)
+    + [**Navbar**](#navbar)
+    + [**Floating Action Button**](#floating-action-button)
+    + [**Toast alert message system**](#toast-alert-message-system)
+    + [**Footer**](#footer)
+    + [**Custom Error Pages**](#custom-error-pages)
+    + [**Administration portal**](#administration-portal)
+  * [**Technologies Used**](#technologies-used)
+  * [**Testing**](#testing)
+  * [**Bugs**](#bugs)
+  * [**Deployment**](#deployment)
+  * [**Credits**](#credits)
+    + [**Third party plugins and extensions:**](#third-party-plugins-and-extensions)
+    + [**Code Institute colleagues who's work I followed for guidance:**](#code-institute-colleagues-who-s-work-i-followed-for-guidance)
+  * [**Acknowledgements**](#acknowledgements)
+  * [Disclaimer](#disclaimer)
 
-## **You can find the deployed website** [**HERE**]()
+
+## **You can find the deployed website** [**HERE**](https://ms4-motostyle.herokuapp.com)
 
 # **Project Overview**
 
@@ -82,7 +91,7 @@ The reviews system allows them to post a review and a rating for each product as
 * View reviews and articles related to the store's products,
 * Interact with other users via the comments section,
 
-[Back to Top](#top-shelf)
+[Back to Top](#moto-style)
 
 
 # **Scope**
@@ -136,7 +145,7 @@ The reviews system allows them to post a review and a rating for each product as
 35. As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
 
 
-[Back to Top](#top-shelf)
+[Back to Top](#moto-style)
 
 
 # **Structure**
@@ -277,7 +286,7 @@ Project is structured in separate apps, each app hosting the required files to r
 
 * requirements.txt - contains information on python dependencies used for this app.
 
-[Back to Top](#top-shelf)
+[Back to Top](#moto-style)
 
 
 ## **Database Structure**
@@ -444,7 +453,7 @@ Defined in the blog app.
     - comment_body TextField(200)
     - posted_at DateTimeField
 
-[Back to Top](#top-shelf)
+[Back to Top](#moto-style)
 
 
 ## **Feature requirements**
@@ -473,7 +482,7 @@ Defined in the blog app.
 * Notification system (message toast) to provide users with feedback to their interactions with the site.
 * Administration panel for store owner with full CRUD control over the database.
 
-[Back to Top](#top-shelf)
+[Back to Top](#moto-style)
 
 # **Skeleton**
 
@@ -575,7 +584,7 @@ Defined in the blog app.
 ![Update Blog Page Wireframes](docs/wireframes/edit_blog_post_view.png)
 </details>
 
-[Back to Top](#top-shelf)
+[Back to Top](#moto-style)
 
 
 ## **Project Routes**
@@ -710,7 +719,7 @@ Defined in the blog app.
 
 Routes used by third party apps like [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) and [Rated Reviews](https://django-rated-reviews.readthedocs.io/en/stable/) can be found in their respective documentation on [Read the Docs](https://readthedocs.org)
 
-[Back to Top](#top-shelf)
+[Back to Top](#moto-style)
 
 # **Surface**
 
@@ -751,7 +760,7 @@ As the app is using Bootstrap library it inherits a lot of it's fonts as fallbac
 ![Color Pallette](/docs/design/color_palette.JPG)
 
 
-[Back to Top](#top-shelf)
+[Back to Top](#moto-style)
 
 
 # **Features**
@@ -786,7 +795,7 @@ This projects features are accessible to the user based on their account permiss
 | Checkout success          |&#9989;            |&#9989;            |&#9989;    |
 | Administration Panel      |&#10060;           |&#10060;           |&#9989;    | 
 
-[Back to Top](#top-shelf)
+[Back to Top](#moto-style)
 
 
 ### **Landing Page**
@@ -831,7 +840,7 @@ Registration page is comprised of the registration form which is used to CREATE 
 ![Registration Page on desktop](/docs/features/registration_desktop.jpg)
 </details>
 
-[Back to Top](#top-shelf)
+[Back to Top](#moto-style)
 
 
 ### **Login Feature**
@@ -878,7 +887,7 @@ The Profile Page enables users to store and update their delivery information fo
 ![Profile Page desktop](/docs/features/profile_desktop.jpg)
 </details>
 
-[Back to Top](#top-shelf)
+[Back to Top](#moto-style)
 
 
 ### **Products Display Feature**
@@ -929,7 +938,7 @@ Product management is accessible only to superusers. Adding a product from the F
 ![Product Add desktop](/docs/features/product_management_desktop.jpg)
 </details>
 
-[Back to Top](#top-shelf)
+[Back to Top](#moto-style)
 
 
 ### **Shopping Cart Feature**
@@ -973,7 +982,7 @@ Checkout is accessed from the shopping cart page or from the cart preview in the
 ![Checkout desktop](/docs/features/checkout_desktop.jpg)
 </details>
 
-[Back to Top](#top-shelf)
+[Back to Top](#moto-style)
 
 
 ### **Blog Feature**
@@ -1018,7 +1027,7 @@ CREATING a post is currently open to all registered users and can be achieved by
 ![Blog Management desktop](/docs/features/blog_management_desktop.jpg)
 </details>
 
-[Back to Top](#top-shelf)
+[Back to Top](#moto-style)
 
 
 ### **Wishlist Feature**
@@ -1067,7 +1076,7 @@ The main navigation collapses on medium devices and smaller and the main navigat
 ![Navbar desktop](/docs/features/navbar_desktop.jpg)
 </details>
 
-[Back to Top](#top-shelf)
+[Back to Top](#moto-style)
 
 
 ### **Floating Action Button**
@@ -1089,7 +1098,7 @@ The floating action button at the bottom right hand side corner of the page chan
 ![Floating Action Button Superuser](/docs/features/fab_superuser.jpg)
 </details>
 
-[Back to Top](#top-shelf)
+[Back to Top](#moto-style)
 
 ### **Toast alert message system**
 
@@ -1131,7 +1140,7 @@ In the footer, the user can find links to the owner's social media.
 ![Footer desktop](/docs/features/footer_desktop.jpg)
 </details>
 
-[Back to Top](#top-shelf)
+[Back to Top](#moto-style)
 
 ### **Custom Error Pages**
 
@@ -1154,7 +1163,7 @@ The errors that have specific routes on backend are:
 ![Error Page](/docs/features/error.jpg)
 </details>
 
-## **Administration portal**
+### **Administration portal**
 
 Django offers a great administration portal out of the box that offers superusers full CRUD functionality over the database. Superusers can access it by clicking on the admin portal link with a wrench and screwdriver icon in the floating action button.
 Configuring each app in this portal is achieved by defining the admin classes in each of the app's admin.py module and registering them:
@@ -1189,7 +1198,7 @@ admin.site.register(Wishlist, WishlistAdmin)
 ![Admin Portal](/docs/features/admin_portal.jpg)
 </details>
 
-[Back to Top](#top-shelf)
+[Back to Top](#moto-style)
 
 ## **Technologies Used**
 
@@ -1231,7 +1240,7 @@ Documentation on all bugs and solutions is available in [TESTING.md](/TESTING.md
 The website is hosted [Github](https://github.com) and deployed on [Heroku](https://www.heroku.com/home).It uses [PostgreSQL](https://www.postgresql.org) as it's database, [AWS S3](https://aws.amazon.com) as cloud storage for static and media files, and [Stripe](https://stripe.com/gb) for payment processing. 
 To be able to deploy this project accounts need to be created on all sites except PostgreSQL.
 
-[Back to Top](#top-shelf)
+[Back to Top](#moto-style)
 
 
 **Hosting Repository on Github:** 
@@ -1259,17 +1268,17 @@ To be able to deploy this project accounts need to be created on all sites excep
 ```python
 import os
 
-os.environ.setdefault('DEVELOPMENT', 'TRUE') - activates debug mode. Remove when in production.
-os.environ.setdefault('USE_AWS', 'TRUE') - remove to use local files.
-os.environ.setdefault('SECRET_KEY', '<your django secret key>') - [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/) 
-os.environ.setdefault('AWS_ACCESS_KEY_ID', '<your AWS access key>')
-os.environ.setdefault('AWS_SECRET_ACCESS_KEY', '<your AWS secret access key')
-os.environ.setdefault('DATABASE_URL', '<your database url>') - remove to use local Django database
-os.environ.setdefault('STRIPE_PUBLIC_KEY', '<your stripe public key>')
-os.environ.setdefault('STRIPE_SECRET_KEY', '<your stripe secret key>')
-os.environ.setdefault('STRIPE_WH_SECRET', '<your stripe webhook key>')
-os.environ.setdefault('EMAIL_HOST_USER', '<your email host username>')
-os.environ.setdefault('EMAIL_HOST_PASS', '<your email host password>')
+os.environ.setdefault('DEVELOPMENT', 'TRUE') # Activates debug mode. Remove when in production.
+os.environ.setdefault('USE_AWS', 'TRUE') # Remove to use local files.
+os.environ.setdefault('SECRET_KEY', '<your django secret key>') # [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/) 
+os.environ.setdefault('AWS_ACCESS_KEY_ID', '<AWS access key>') # Refer to AWS S3 and IAM setup for this key
+os.environ.setdefault('AWS_SECRET_ACCESS_KEY', '<AWS secret access key') # Refer to AWS S3 and IAM setup for this key
+os.environ.setdefault('DATABASE_URL', '<database url>') # remove to use local Django database
+os.environ.setdefault('STRIPE_PUBLIC_KEY', '<stripe public key>') # Refer to Stripe setup for this key
+os.environ.setdefault('STRIPE_SECRET_KEY', '<stripe secret key>') # Refer to Stripe setup for this key
+os.environ.setdefault('STRIPE_WH_SECRET', '<stripe webhook key>') # Refer to Stripe setup for this key
+os.environ.setdefault('EMAIL_HOST_USER', '<email host username>') # SMTP user
+os.environ.setdefault('EMAIL_HOST_PASS', '<email host password>') # SMTP password
 ```
 
 **Deployment to Heroku:**
@@ -1285,11 +1294,9 @@ os.environ.setdefault('EMAIL_HOST_PASS', '<your email host password>')
 9. Click the "Deploy" tab  and as deployment method select GitHub,
 10. Select the relevant repository with the help of the search field and click Connect,
 11. Select "Deploy Brach",
-12. After deployment is successful enable automatic deploys. 
+12. After deployment is successful enable automatic deploy. 
 
-![Deploy with Heroku](/docs/deployment/heroku.png)
-
-[Back to Top](#top-shelf)
+[Back to Top](#moto-style)
 
 **Setting up AWS S3:**
 
@@ -1359,7 +1366,7 @@ os.environ.setdefault('EMAIL_HOST_PASS', '<your email host password>')
 7. Select the endpoint you added and click "Reveal" under Signing Secret.
 8. Copy the signing secret in your environment "STRIPE_WH_SECRET" key.
 
-[Back to Top](#top-shelf)
+[Back to Top](#moto-style)
 
 
 ## **Credits**
@@ -1413,9 +1420,8 @@ There are inevitable similarities between this project and the ones in these les
 
 ## Disclaimer
 
-_This project is for educational use only and was created as a Milestone Project for the Code Institute Module of Interactive Frontend Development_
+_This project is for educational use only and was created as a Milestone Project for the Code Institute Module of Full Stack Software Development with Django._
 
 Developed by Cristian Buca
 
-[Back to Top](#top-shelf)
-
+[Back to Top](#moto-style)
