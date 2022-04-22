@@ -34,7 +34,7 @@ class StripeWH_Handler:
             Arguments: self (object): The object itself
             Return: N/A
         """
-        cust_email = order.mail
+        cust_email = order.email
         subject = render_to_string(
             'checkout/emails/order_email_subject.txt', {'order': order}
         )
