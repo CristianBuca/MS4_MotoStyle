@@ -16,16 +16,24 @@
                     {% csrf_token %}
                     <fieldset>
                         <legend class="fieldset-label">Account Details</legend>
+                        <label for="id_full_name" hidden>Full Name</label>
                         <div class="mt-2">{{ order_form.full_name | as_crispy_field }}</div>
+                        <label for="id_email" hidden>Email</label>
                         <div class="mt-2">{{ order_form.email | as_crispy_field }}</div>
                     </fieldset>
                     <fieldset>
                         <legend class="fieldset-label mt-3">Delivery Details</legend>
+                        <label for="id_phone_number" hidden>Phone Number</label>
                         <div class="mt-2">{{ order_form.phone_number | as_crispy_field }}</div>
+                        <label for="id_address_line1" hidden>Address line 1</label>
                         <div class="mt-2">{{ order_form.address_line1 | as_crispy_field }}</div>
+                        <label for="id_address_line2" hidden>address line2</label>
                         <div class="mt-2">{{ order_form.address_line2 | as_crispy_field }}</div>
+                        <label for="id_town_or_city" hidden>town or city</label>
                         <div class="mt-2">{{ order_form.town_or_city | as_crispy_field }}</div>
+                        <label for="id_area" hidden>area</label>
                         <div class="mt-2">{{ order_form.area | as_crispy_field }}</div>
+                        <label for="id_postcode" hidden>postcode</label>
                         <div class="mt-2">{{ order_form.postcode | as_crispy_field }}</div>
                         <div class="mt-2">{{ order_form.country | as_crispy_field }}</div>
                         <div class="form-check mt-3">
@@ -73,7 +81,7 @@
                     {% for item in cart_items %}
                         <div class="row">
                             <div class="col-3 my-1">
-                                <img class="w-100" src="{{ item.product.image.url }}">
+                                <img class="w-100" src="{{ item.product.image.url }}" alt="{{item.product.name}}">
                             </div>
                             <div class="col-9">
                                 <p class="my-0"><strong>{{ item.product.name }}</strong></p>
@@ -102,6 +110,7 @@
     <div id="loading-overlay">
         <h1 class="loading-spinner">
             <i class="fas fa-3x fa-sync-alt fa-spin"></i>
+            Processing...
         </h1>
     </div>
 {% endblock %}
