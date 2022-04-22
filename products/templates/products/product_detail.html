@@ -29,7 +29,7 @@
                     </a>
                     {% if request.user.is_superuser %}
 <!-- Update current item in the Database -->
-                        <a href="{% url 'edit_product' product.id %}" class="nav-link d-inline-block">
+                        <a href="{% url 'edit_product' product.id %}" class="nav-link d-inline-block" aria-label="Update product link">
                             <i class="fa-solid fa-2x fa-square-pen"></i>
                         </a>
 <!-- Remove current item from the Database -->
@@ -41,7 +41,7 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="confirmation-modal">{{ product.name }}</h5>
+                                    <h2 class="modal-title fs-5" id="confirmation-modal">{{ product.name }}</h2>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -81,7 +81,7 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="reviewModalLabel">{{ product.name }}</h5>
+                                        <h3 class="modal-title fs-5" id="reviewModalLabel">{{ product.name }}</h3>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body mx-auto">
@@ -104,13 +104,13 @@
                             <div class="input-group">
                                 <span class="fs-4 pe-2">Quantity: </span>
                                 <div class="input-group-prepend">
-                                    <button class="decrement-qty btn btn-dark" data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                    <button class="decrement-qty btn btn-dark" data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}" aria-label="decrement quantity">
                                         <i class="fas fa-minus"></i>
                                     </button>
                                 </div>
-                                <input class="form-control qty_input" type="number" name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                                <input class="form-control qty_input" type="number" name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}" aria-label="quantity">
                                 <div class="input-group-append">
-                                    <button class="increment-qty btn btn-dark" data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+                                    <button class="increment-qty btn btn-dark" data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}" aria-label="increment quantity">
                                         <i class="fas fa-plus"></i>
                                     </button>
                                 </div>

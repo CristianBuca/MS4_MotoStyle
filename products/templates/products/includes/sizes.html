@@ -1,7 +1,7 @@
 <!-- Size selector and guide image for Helmets -->
 {% if product.category.name in 'full_face,flip_front,motocross_helmets' %}
 <div class="d-inline-block">
-    <select name="product_size" id="product_size" class="form-select">
+    <select name="product_size" id="product_size" class="form-select" aria-label="select size">
         <option value="XS">XS</option>
         <option value="S">S</option>
         <option value="M">M</option>
@@ -18,11 +18,11 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="size-modal-label">Modal title</h5>
+                <h4 class="modal-title" id="size-modal-label">Size Guide</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <img src="{{ MEDIA_URL }}size_guides/helmets.jpg" alt="Size guide image" class="img-fluid">
+                <img src="{{ MEDIA_URL }}size_guides/helmets.jpg" alt="helmets size guide" class="img-fluid">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -34,7 +34,7 @@
 <!-- Size selector and guide image for Jackets -->
 {% elif product.category.name in 'jackets' %}
 <div class="d-inline-block">
-    <select name="product_size" id="product_size" class="form-select">
+    <select name="product_size" id="product_size" class="form-select" aria-label="select size">
         <option value="38">38</option>
         <option value="40">40</option>
         <option value="42">42</option>
@@ -54,11 +54,11 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="size-modal-label">Modal title</h5>
+                <h4 class="modal-title" id="size-modal-label">Size Guide</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <img src="{{ MEDIA_URL }}size_guides/jackets.jpg" alt="Size guide image" class="img-fluid">
+                <img src="{{ MEDIA_URL }}size_guides/jackets.jpg" alt="jackets size guide" class="img-fluid">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -70,7 +70,7 @@
 <!-- Size selector and guide image for trousers -->
 {% elif product.category.name in 'trousers' %}
 <div class="d-inline-block">
-    <select name="product_size" id="product_size" class="form-select">
+    <select name="product_size" id="product_size" class="form-select" aria-label="select size">
         <option value="32">32</option>
         <option value="34">34</option>
         <option value="36">36</option>
@@ -88,11 +88,11 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="size-modal-label">Modal title</h5>
+                <h4 class="modal-title" id="size-modal-label">Size Guide</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <img src="{{ MEDIA_URL }}size_guides/trousers.jpg" alt="Size guide image" class="img-fluid">
+                <img src="{{ MEDIA_URL }}size_guides/trousers.jpg" alt="trousers size guide" class="img-fluid">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -104,7 +104,7 @@
 <!-- Size selector and guide image for trousers -->
 {% elif product.category.name in 'suits' %}
 <div class="d-inline-block">
-    <select name="product_size" id="product_size" class="form-select">
+    <select name="product_size" id="product_size" class="form-select" aria-label="select size">
         <option value="38">38</option>
         <option value="40">40</option>
         <option value="42">42</option>
@@ -123,11 +123,11 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="size-modal-label">Modal title</h5>
+                <h4 class="modal-title" id="size-modal-label">Size Guide</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <img src="{{ MEDIA_URL }}size_guides/suits.jpg" alt="Size guide image" class="img-fluid">
+                <img src="{{ MEDIA_URL }}size_guides/suits.jpg" alt="suites size guide" class="img-fluid">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -139,7 +139,7 @@
 <!-- Size selector and guide image for armour -->
 {% elif product.category.name in 'armour' %}
 <div class="d-inline-block">
-    <select name="product_size" id="product_size" class="form-select">
+    <select name="product_size" id="product_size" class="form-select" aria-label="select size">
         <option value="L">L</option>
         <option value="M">M</option>
         <option value="S">S</option>
@@ -149,7 +149,7 @@
 <!-- Size selector and guide image for trousers -->
 {% elif product.category.name in 'urban, touring, motocross_boots' %}
 <div class="d-inline-block">
-    <select name="product_size" id="product_size" class="form-select">
+    <select name="product_size" id="product_size" class="form-select" aria-label="select size">
         <option value="7">7</option>
         <option value="8">8</option>
         <option value="9">9</option>
@@ -167,11 +167,11 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="size-modal-label">Modal title</h5>
+                <h4 class="modal-title" id="size-modal-label">Size Guide</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <img src="{{ MEDIA_URL }}size_guides/boots.jpg" alt="Size guide image" class="img-fluid">
+                <img src="{{ MEDIA_URL }}size_guides/boots.jpg" alt="boots size guide" class="img-fluid">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -183,7 +183,7 @@
 <!-- Size selector and guide image for gloves -->
 {% elif product.category.name in 'summer, winter, motocross_gloves' %}
 <div class="d-inline-block">
-    <select name="product_size" id="product_size" class="form-select">
+    <select name="product_size" id="product_size" class="form-select" aria-label="select size">
         <option value="XS">XS</option>
         <option value="S">S</option>
         <option value="M">M</option>
@@ -200,11 +200,11 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="size-modal-label">Modal title</h5>
+                <h4 class="modal-title" id="size-modal-label">Size Guide</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <img src="{{ MEDIA_URL }}size_guides/gloves.jpg" alt="Size guide image" class="img-fluid">
+                <img src="{{ MEDIA_URL }}size_guides/gloves.jpg" alt="gloves size guide" class="img-fluid">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
