@@ -16,7 +16,7 @@
                             <div class="col-12 card col-md-4">
                                 <a href="{% url 'product_detail' item.item_id %}">
                                     {% if item.product.image %}
-                                        <img class="img-fluid" src="{{ item.product.image.url }}" alt="Image of {{ item.product.name }}">
+                                        <img class="img-fluid" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                                     {% else %}
                                         <img class="img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="No image present">
                                     {% endif %}
@@ -34,13 +34,13 @@
                                         <div class="form-group d-inline-flex">
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
-                                                    <button class="decrement-qty btn btn-dark btn-sm" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                                                    <button class="decrement-qty btn btn-dark btn-sm" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}" aria-label="decrement quantity>
                                                         <i class="fas fa-minus"></i>
                                                     </button>
                                                 </div>
-                                                <input class="form-control-xs qty_input " type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
+                                                <input class="form-control-xs qty_input " type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}" aria-label="quantity">
                                                 <div class="input-group-append">
-                                                    <button class="increment-qty btn btn-dark btn-sm" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                                                    <button class="increment-qty btn btn-dark btn-sm" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}" aria-label="increment quantity>
                                                         <i class="fas fa-plus"></i>
                                                     </button>
                                                 </div>
