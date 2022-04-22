@@ -35,7 +35,7 @@
                         <div class="accordion-body row">
                             {% if blog_post.image %}
                                 <div class="d-none d-md-block col-md-3">
-                                    <img class="img-fluid" src="{{ blog_post.image.url }}" alt="Image for {{ blog_post.title }}">
+                                    <img class="img-fluid" src="{{ blog_post.image.url }}" alt="Image for {{ blog_post.title | truncatewords:4 }}">
                                 </div>
                             {% endif %}
                             <div class="col-6 d-flex align-items-center">
@@ -61,7 +61,7 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="confirmation-modal">{{ blog_post.name }}</h5>
+                                                <h1 class="modal-title fs-5" id="confirmation-modal">{{ blog_post.title | truncatewords:4}}</h1>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
