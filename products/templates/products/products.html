@@ -5,7 +5,7 @@
 {% block page_header %}
 <!-- Showing category description when only one category of products is selected -->
     <section class="container">
-        <h1 hidden>{{ selected_categories.0.friendly_name }}</h1>
+        <h1 hidden>Selected Categories</h1>
         {% if selected_categories|length == 1 %}
             <div class="row prod-header mt-lg-5 px-3">
                 <div class="col-12">
