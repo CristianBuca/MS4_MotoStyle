@@ -482,6 +482,7 @@
 
 ## Python Code Tests were carried out with [Pep8](http://pep8online.com) on all python modules and results are structured by app:
 
+
 ### Blog App:
 
 <details>
@@ -577,7 +578,7 @@
 <details>
   <summary> (expand) admin.py Pep8 found 0 errors:</summary>
 
-![admin.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_blog_admin.png)
+![admin.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_checkout_admin.png)
 
 </details>
 
@@ -689,6 +690,7 @@
 
 </details>
 
+
 ### Moto Style:
 
 <details>
@@ -718,6 +720,81 @@
 ![wsgi.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_moto_style_wsgi.png)
 
 </details>
+
+
+### Products App:
+
+<details>
+  <summary> (expand) admin.py Pep8 found 0 errors:</summary>
+
+![admin.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_products_admin.png)
+
+</details>
+
+<details>
+  <summary> (expand) apps.py Pep8 found 0 errors:</summary>
+
+![apps.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_products_apps.png)
+
+</details>
+
+<details>
+  <summary> (expand) forms.py Pep8 found 0 errors:</summary>
+
+![forms.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_products_forms.png)
+
+</details>
+
+<details>
+  <summary> (expand) models.py Pep8 found 0 errors:</summary>
+
+![models.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_products_models.png)
+
+</details>
+
+<details>
+  <summary> (expand) test_forms.py Pep8 found 0 errors:</summary>
+
+![test_forms.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_products_test_forms.png)
+
+</details>
+
+<details>
+  <summary> (expand) test_models.py Pep8 found 0 errors:</summary>
+
+![test_models.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_products_test_models.png)
+
+</details>
+
+<details>
+  <summary> (expand) test_views.py Pep8 found 0 errors:</summary>
+
+![test_views.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_products_test_views.png)
+
+</details>
+
+<details>
+  <summary> (expand) urls.py Pep8 found 0 errors:</summary>
+
+![urls.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_products_urls.png)
+
+</details>
+
+<details>
+  <summary> (expand) views.py Pep8 found 0 errors:</summary>
+
+![views.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_products_views.png)
+
+</details>
+
+<details>
+  <summary> (expand) widgets.py Pep8 found 0 errors:</summary>
+
+![widgets.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_products_widgets.png)
+
+</details>
+
+
 
 
 # Physical Testing
