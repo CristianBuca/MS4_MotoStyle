@@ -5,6 +5,7 @@
 {% block page_header %}
 <!-- Showing category description when only one category of products is selected -->
     <section class="container">
+        <h1 hidden>{{ selected_categories.0.friendly_name }}</h1>
         {% if selected_categories|length == 1 %}
             <div class="row prod-header mt-lg-5 px-3">
                 <div class="col-12">
@@ -131,7 +132,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
-                            <a type="button" class="btn btn-danger" href="{% url 'delete_product' product.id %}">Remove</a>
+                            <a class="btn btn-danger" href="{% url 'delete_product' product.id %}">Remove</a>
                         </div>
                         </div>
                     </div>
