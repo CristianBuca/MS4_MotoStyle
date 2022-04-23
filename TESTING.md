@@ -691,7 +691,7 @@
 </details>
 
 
-### Moto Style:
+### Moto Style config modules:
 
 <details>
   <summary> (expand) asgi.py Pep8 found 0 errors:</summary>
@@ -854,7 +854,66 @@
 </details>
 
 
+### Wishlist App:
 
+<details>
+  <summary> (expand) admin.py Pep8 found 0 errors:</summary>
+
+![admin.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_wishlist_admin.png)
+
+</details>
+
+<details>
+  <summary> (expand) apps.py Pep8 found 0 errors:</summary>
+
+![apps.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_wishlist_apps.png)
+
+</details>
+
+<details>
+  <summary> (expand) models.py Pep8 found 0 errors:</summary>
+
+![models.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_wishlist_models.png)
+
+</details>
+
+<details>
+  <summary> (expand) test_views.py Pep8 found 0 errors:</summary>
+
+![test_views.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_wishlist_test_views.png)
+
+</details>
+
+<details>
+  <summary> (expand) urls.py Pep8 found 0 errors:</summary>
+
+![urls.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_wishlist_urls.png)
+
+</details>
+
+<details>
+  <summary> (expand) views.py Pep8 found 0 errors:</summary>
+
+![views.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_wishlist_views.png)
+
+</details>
+
+
+### Root modules:
+
+<details>
+  <summary> (expand) manage.py Pep8 found 0 errors:</summary>
+
+![manage.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_manage.png)
+
+</details>
+
+<details>
+  <summary> (expand) custom_storages.py Pep8 found 0 errors:</summary>
+
+![custom_storages.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_custom_storages.png)
+
+</details>
 
 # Physical Testing
 
