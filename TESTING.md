@@ -283,9 +283,8 @@
 
 </details>
 
-
-
 [Back to Top](#testing-documentation)
+
 
 # Lighthouse Tests
 
@@ -294,19 +293,120 @@
 <details>
   <summary> (expand) Landing Page Lighthouse Test:</summary>
 
-![Landing Page Lighthouse Test](/docs/test_img/lighthouse/lighthouse_landing.jpg)
-</details>
+![Landing Page Lighthouse Test](/docs/test_img/lighthouse_tests/lighthouse_landing.jpg)
 
-<details>
-  <summary> (expand) Login Page Lighthouse Test:</summary>
-
-![Login Page Lighthouse Test](/docs/test_img/lighthouse/lighthouse_login.jpg)
 </details>
 
 <details>
   <summary> (expand) Registration Page Lighthouse Test:</summary>
 
-![Registration Page Lighthouse Test](/docs/test_img/lighthouse/lighthouse_register.jpg)
+![Registration Page Lighthouse Test](/docs/test_img/lighthouse_tests/lighthouse_register.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Login Page Lighthouse Test:</summary>
+
+![Login Page Lighthouse Test](/docs/test_img/lighthouse_tests/lighthouse_login.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Products Page - 1 category Lighthouse Test with images loading from AWS:</summary>
+
+![Products - 1 category Page Lighthouse Test](/docs/test_img/lighthouse_tests/lighthouse_products_category.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Products Page - 96 products Lighthouse Test with images loading from AWS:</summary>
+
+![Products Page - 96 products Lighthouse Test](/docs/test_img/lighthouse_tests/lighthouse_products.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Product Detail Page Lighthouse Test:</summary>
+
+![Product Detail Page Lighthouse Test](/docs/test_img/lighthouse_tests/lighthouse_product_detail.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Add Product Page Lighthouse Test:</summary>
+
+![Add Product Page Lighthouse Test](/docs/test_img/lighthouse_tests/lighthouse_product_add.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Update Product Page Lighthouse Test:</summary>
+
+![Update Product Page Lighthouse Test](/docs/test_img/lighthouse_tests/lighthouse_product_edit.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Profile Page Lighthouse Test:</summary>
+
+![Profile Page Lighthouse Test](/docs/test_img/lighthouse_tests/lighthouse_profile.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Wishlist Page Lighthouse Test:</summary>
+
+![Wishlist Page Lighthouse Test](/docs/test_img/lighthouse_tests/lighthouse_wishlist.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Shopping Cart Page Lighthouse Test:</summary>
+
+![Shopping Cart Page Lighthouse Test](/docs/test_img/lighthouse_tests/lighthouse_cart.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Checkout Page Lighthouse Test:</summary>
+
+![Checkout Page Lighthouse Test](/docs/test_img/lighthouse_tests/lighthouse_checkout.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Checkout Success Page Lighthouse Test:</summary>
+
+![Checkout Success Page Lighthouse Test](/docs/test_img/lighthouse_tests/lighthouse_checkout_success.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Blog Page Lighthouse Test:</summary>
+
+![Blog Page Lighthouse Test](/docs/test_img/lighthouse_tests/lighthouse_blog.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Blog Post Page Lighthouse Test:</summary>
+
+![Blog Post Page Lighthouse Test](/docs/test_img/lighthouse_tests/lighthouse_blog_post.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Add Blog Post Page Lighthouse Test:</summary>
+
+![Add Blog Post Page Lighthouse Test](/docs/test_img/lighthouse_tests/lighthouse_blog_add.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Update Blog Post Page Lighthouse Test:</summary>
+
+![Update Blog Post Page Lighthouse Test](/docs/test_img/lighthouse_tests/lighthouse_blog_edit.jpg)
+
 </details>
 
 
