@@ -1057,6 +1057,51 @@ ValueError: Field 'id' expected a number but got '...'.
 ```
 
 
-#
+## Bug 3:
+
+**When trying to adjust quantity of item in cart with no size even though items with sizes worked as intended**
+
+```
+TypeError at /cart/adjust/85/
+'dict' object is not callable
+Request Method:	POST
+Request URL:	http://127.0.0.1:8000/cart/adjust/85/
+Django Version:	3.2
+Exception Type:	TypeError
+Exception Value:	'dict' object is not callable
+```
+
+### Fix:
+
+**Wrong brackets were used in attached operation message: ```cart(item_id)``` supposed to be ```cart[item_id]```**
+
+
+## Bug 4:
+
+**When trying to dump local database with command suggested in the course:**
+
+```
+$ py manage.py dumpdata --exclude auth.permission --exclude contenttypes > db.json
+```
+
+**Would result in:**
+
+```
+CommandError: Unable to serialize database: 'charmap' codec can't encode character '\u2008' in position 462: character maps to <undefined>
+Exception ignored in: <generator object cursor_iter at 0x00000135E28A2200>
+Traceback (most recent call last):
+  File "C:\Users\Mortis Vivis\Documents\GitHub\MS4_MotoStyle\virtualenv\lib\site-packages\django\db\models\sql\compiler.py", line 1625, in cursor_iter        
+    cursor.close()
+sqlite3.ProgrammingError: Cannot operate on a closed database.
+```
+
+### Solution:
+
+```
+py -Xutf8 manage.py dumpdata --exclude auth.permission --exclude contenttypes > data.json
+```
+
+Credit for solution to [StackOverflow](https://stackoverflow.com/a/67336562)
+
 
 [Back to Top](#testing-documentation)
