@@ -2,9 +2,8 @@
 
 ## **Fourth Milestone Project - Full Stack Frameworks With Django - Code Institute**
 
-![Moto Style](/docs/design/logos.png)
 
-![Responsive Design](/docs/responsive_design/responsive_design.jpg)
+![Responsive Design](/docs/design/responsive_design.jpg)
 
 # Table of Contents
 
@@ -50,8 +49,6 @@
   * [**Bugs**](#bugs)
   * [**Deployment**](#deployment)
   * [**Credits**](#credits)
-    + [**Third party plugins and extensions:**](#third-party-plugins-and-extensions)
-    + [**Code Institute colleagues who's work I followed for guidance:**](#code-institute-colleagues-who-s-work-i-followed-for-guidance)
   * [**Acknowledgements**](#acknowledgements)
   * [Disclaimer](#disclaimer)
 
