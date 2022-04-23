@@ -16,12 +16,25 @@
   * [Regular User Stories](#regular-user-stories)
   * [Superuser Stories](#superuser-stories)
   * [Site Owner Stories](#site-owner-stories)
-
 - **[Bugs](#bugs)**
 
 ## **[Return to Readme.md](/README.md)**
 
 ## **You can find the deployed website** [**HERE**](https://ms4-motostyle.herokuapp.com)
+
+
+# Unit Testing:
+
+## Automated tests were written and carried out for each app. The tests are separated into test_forms, test_models and test_views modules.
+
+**All tests pass with no Fails or Errors:**
+
+![Unit tests](/docs/test_img/unit_tests/unit_tests.jpg)
+
+**These tests cover 80% of the project's code excluding migrations and 3rd party apps.**
+
+![Coverage Report](/docs/test_img/unit_tests/coverage_report.jpg)
+
 
 # HTML Validation
 
@@ -139,6 +152,8 @@
 ![Update Blog Post Page HTML Validation](/docs/test_img/html_validator/html_valid_blog_edit.png)
 
 </details>
+
+[Back to Top](#testing-documentation)
 
 
 # CSS Validation
@@ -409,6 +424,8 @@
 
 </details>
 
+[Back to Top](#testing-documentation)
+
 
 # Javascript Validation
 
@@ -476,6 +493,8 @@
 ![Checkout App stripe.js Script JSHint Test](/docs/test_img/jshint_validator/jshint_valid_stripe.png)
 
 </details>
+
+[Back to Top](#testing-documentation)
 
 
 # Python Validation
@@ -571,6 +590,8 @@
 ![views.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_cart_views.png)
 
 </details>
+
+[Back to Top](#testing-documentation)
 
 
 ### Checkout App:
@@ -690,6 +711,8 @@
 
 </details>
 
+[Back to Top](#testing-documentation)
+
 
 ### Moto Style config modules:
 
@@ -793,6 +816,8 @@
 ![widgets.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_products_widgets.png)
 
 </details>
+
+[Back to Top](#testing-documentation)
 
 
 ### Profiles App:
