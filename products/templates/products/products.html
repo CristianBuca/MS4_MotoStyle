@@ -39,7 +39,7 @@
 {% endblock %}
 
 {% block content %}
-    <section class="container sorting-util">
+    <div class="container sorting-util">
         <div class="row">
             <div class="col-6 col-md-4 mx-auto">
                 <p class="text-muted mt-3 text-center text-md-left">
@@ -68,9 +68,10 @@
         <div>
             <hr>
         </div>
-    </section>
+    </div>
     <section class="container products-container">
         <div class="row">
+            <h2 hidden>Products in shop</h2>
             {% for product in products %}
 <!-- Bootstrap Card for each product -->
                 <div class="col-sm-12 col-md-6 col-lg-4 my-3">
@@ -104,11 +105,11 @@
                             </a>
                             {% if request.user.is_superuser %}
 <!-- Remove current item from the Database -->
-                                <button type="button" class="position-absolute start-0 bottom-0 nav-link p-5" data-bs-toggle="modal" data-bs-target="#remove-{{ product.id }}">
+                                <button type="button" class="position-absolute start-0 bottom-0 nav-link m-3" data-bs-toggle="modal" data-bs-target="#remove-{{ product.id }}">
                                     <i class="fa-solid fa-2x fa-trash"></i>
                                 </button>
 <!-- Update current item in the Database -->
-                                <a href="{% url 'edit_product' product.id %}" class="position-absolute end-0 bottom-0 nav-link p-5" aria-label="Update product link">
+                                <a href="{% url 'edit_product' product.id %}" class="position-absolute end-0 bottom-0 nav-link m-3" aria-label="Update product link">
                                     <i class="fa-solid fa-2x fa-square-pen"></i>
                                     
                                 </a>
@@ -130,7 +131,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-danger" href="{% url 'delete_product' product.id %}">Remove</button>
+                            <a type="button" class="btn btn-danger" href="{% url 'delete_product' product.id %}">Remove</a>
                         </div>
                         </div>
                     </div>
