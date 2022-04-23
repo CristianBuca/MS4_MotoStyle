@@ -33,6 +33,11 @@ footer i {
     height: 96px;
 }
 
+button {
+    border: none;
+    background-color: transparent;
+}
+
 #main-nav button:hover,
 #main-nav a:hover {
     color: #C62828 !important;
