@@ -415,11 +415,67 @@
 
 ## JavaScript Code Tests were carried out with [JShint](https://jshint.com).
 
+<details>
+  <summary> (expand) /static/js/form_validation.js Script JSHint Test no errors:</summary>
+
+![/static/js/form_validation Script JSHint Test](/docs/test_img/jshint_validator/jshint_valid_signup.png)
+
+</details>
 
 <details>
-  <summary> (expand) script.js JSHint found 0 errors:</summary>
+  <summary> (expand) Blog App image_notification.js Script JSHint Test no errors:</summary>
 
-![script.js JSHint Test](/docs/test_img/jshint_validator/jshint_valid_script.png)
+![Blog app image_notification Script JSHint Test](/docs/test_img/jshint_validator/jshint_valid_blog_image_notif.png)
+
+</details>
+
+<details>
+  <summary> (expand) Cart App cart.js Script JSHint Test no errors:</summary>
+
+![Cart App cart.js Script JSHint Test](/docs/test_img/jshint_validator/jshint_valid_cart.png)
+
+</details>
+
+<details>
+  <summary> (expand) Products App form_validation.js Script JSHint Test no errors:</summary>
+
+![Products App form_validation.js Script JSHint Test](/docs/test_img/jshint_validator/jshint_valid_products_form.png)
+
+</details>
+
+<details>
+  <summary> (expand) Products App image_notification.js Script JSHint Test no errors:</summary>
+
+![Products App image_notification.js Script JSHint Test](/docs/test_img/jshint_validator/jshint_valid_products_image_notif.png)
+
+</details>
+
+<details>
+  <summary> (expand) Products App products.js Script JSHint Test no errors:</summary>
+
+![Products App products.js Script JSHint Test](/docs/test_img/jshint_validator/jshint_valid_products.png)
+
+</details>
+
+<details>
+  <summary> (expand) Products App quantity_buttons.js Script JSHint Test no errors:</summary>
+
+![Products App quantity_buttons.js Script JSHint Test](/docs/test_img/jshint_validator/jshint_valid_products_quant_btns.png)
+
+</details>
+
+<details>
+  <summary> (expand) Home App slider.js Script JSHint Test no errors:</summary>
+
+![Home App slider.js Script JSHint Test](/docs/test_img/jshint_validator/jshint_valid_slider.png)
+
+</details>
+
+<details>
+  <summary> (expand) Checkout App stripe.js Script JSHint Test no errors:</summary>
+
+![Checkout App stripe.js Script JSHint Test](/docs/test_img/jshint_validator/jshint_valid_stripe.png)
+
 </details>
 
 
