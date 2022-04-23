@@ -167,32 +167,121 @@
 </details>
 
 
-# Accessibility Validation
+# WAVE Accessibility Validation
 
 ## Accessibility Evaluation was carried out with [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org).
 
 <details>
   <summary> (expand) Landing Page WAVE Validation found 0 errors:</summary>
 
-![Landing Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_landing.png)
+![Landing Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_landing.jpg)
 
 </details>
 
 <details>
   <summary> (expand) Registration Page WAVE Validation found 0 errors:</summary>
 
-![Registration Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_register.png)
+![Registration Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_register.jpg)
 
 </details>
 
 <details>
   <summary> (expand) Login Page WAVE Validation found 0 errors:</summary>
 
-![Login Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_login.png)
+![Login Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_login.jpg)
 
 </details>
 
+<details>
+  <summary> (expand) Products Page WAVE Validation found 0 errors:</summary>
 
+![Products Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_products.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Product Detail Page WAVE Validation found 2 errors, 1 alert due to 3rd party Rated Reviews App form labels:</summary>
+
+![Product Detail Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_product_detail.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Add Product Page WAVE Validation found 0 errors, 1 alert due to Django widget form labels:</summary>
+
+![Add Product Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_products_add.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Update Page WAVE Validation found 0 errors, 1 alert due to Django widget form labels:</summary>
+
+![Update Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_products_edit.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Profile Page WAVE Validation found 0 errors:</summary>
+
+![Profile Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_profile.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Wishlist Page WAVE Validation found 0 errors:</summary>
+
+![Wishlist Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_wishlist.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Shopping Cart Page WAVE Validation found 0 errors:</summary>
+
+![Shopping Cart Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_cart.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Checkout Page WAVE Validation found 0 errors:</summary>
+
+![Checkout Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_checkout.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Checkout Success Page WAVE Validation found 0 errors:</summary>
+
+![Checkout Success Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_checkout_success.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Blog Page WAVE Validation found 0 errors:</summary>
+
+![Blog Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_blog.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Blog Post Page WAVE Validation found 0 errors:</summary>
+
+![Blog Post Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_blog_post.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Add Blog Post Page WAVE Validation found 0 errors, 4 alerts due to Django widget form labels:</summary>
+
+![Add Blog Post Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_blog_add.jpg)
+
+</details>
+
+<details>
+  <summary> (expand) Update Blog Post Page WAVE Validation found 0 errors, 6 alerts due to Django widget form labels:</summary>
+
+![Update Blog Post Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_blog_edit.jpg)
+
+</details>
 
 
 
