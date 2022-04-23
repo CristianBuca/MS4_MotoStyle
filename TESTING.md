@@ -481,19 +481,60 @@
 
 # Python Validation
 
-## Python Code Tests were carried out with [Pep8](http://pep8online.com)
+## Python Code Tests were carried out with [Pep8](http://pep8online.com) on all python modules and results are structured by app:
+
+### Blog App:
 
 <details>
-  <summary> (expand) app.py Pep8 found 0 errors:</summary>
+  <summary> (expand) admin.py Pep8 found 0 errors:</summary>
 
-![app.py Pep8 Test](/docs/test_img/pep8_valid/pep8_valid_app.png)
+![admin.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_blog_admin.png)
+
+</details>
+
+<details>
+  <summary> (expand) apps.py Pep8 found 0 errors:</summary>
+
+![apps.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_blog_apps.png)
+
 </details>
 
 <details>
   <summary> (expand) forms.py Pep8 found 0 errors:</summary>
 
-![forms.py Pep8 Test](/docs/test_img/pep8_valid/pep8_valid_forms.png)
+![forms.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_blog_forms.png)
+
 </details>
+
+<details>
+  <summary> (expand) models.py Pep8 found 0 errors:</summary>
+
+![models.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_blog_models.png)
+
+</details>
+
+<details>
+  <summary> (expand) urls.py Pep8 found 0 errors:</summary>
+
+![urls.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_blog_urls.png)
+
+</details>
+
+<details>
+  <summary> (expand) views.py Pep8 found 0 errors:</summary>
+
+![views.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_blog_views.png)
+
+</details>
+
+<details>
+  <summary> (expand) widgets.py Pep8 found 0 errors:</summary>
+
+![widgets.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_blog_widgets.png)
+
+</details>
+
+
 
 # Physical Testing
 
