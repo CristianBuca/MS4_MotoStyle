@@ -35,6 +35,8 @@
 
 ![Coverage Report](/docs/test_img/unit_tests/coverage_report.jpg)
 
+[Back to Top](#testing-documentation)
+
 
 # HTML Validation
 
@@ -963,19 +965,94 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 ## New User Stories
 
-### 1. 
+### 1. As a new user, I want to be able to create and register an account.
 
-|Feature | Action | Expected Result | Actual Result |
+| Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
+| Registration Page | On landing page, expand the "Account" dropdown menu and click "Register". Fill in the form with your information and submit the form. | To receive a confirmation link in the email address I registered with. | Works as expected |
 
 <details>
   <summary> (Expand - User Story 1 testing video) </summary>
 
 
   [Local Link](/docs/test_user_stories/user_story_1.mp4)
+
 </details>
 
 
+### 2. As a new user, I want to be able to login and access my account.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Login Page | Expand the "Account" dropdown menu and click "Login". Fill in the form with your login information and submit the form. | Gain access to previously registered account. | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 2 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_2.mp4)
+
+</details>
+
+
+### 3. As a new user, I want to be able to logout.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Logout Page | Expand the "Account dropdown menu and click "Logout". On the Logout Page confirm your action. | To no longer be logged in on the site. | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 3 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_3.mp4)
+
+</details>
+
+
+### 4. As a new user, I want to browse the store's merchandise.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Products Page | Select "All Products" button in the main navigation. | To view all products in the store. | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 4 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_4.mp4)
+
+</details>
+
+
+### 
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+|  |  |  | Works as expected |
+
+<details>
+  <summary> (Expand - User Story  testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_.mp4)
+
+</details>
+
+
+### 
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+|  |  |  | Works as expected |
+
+<details>
+  <summary> (Expand - User Story  testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_.mp4)
+
+</details>
 
 [Back to Top](#testing-documentation)
 
