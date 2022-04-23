@@ -979,4 +979,84 @@ Add: ```data-token="{{ csrf_token }}"``` to the button
 Add: ```var csrfToken = $(this).data('token');``` to the script
 
 
+## Bug 2:
+
+**When using Bootstrap 5.1 toast boilerplate:**
+
+```html
+<div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-bs-autohide="false">
+  <div class="toast-header">
+    <img src="..." class="rounded me-2" alt="...">
+    <strong class="me-auto">Bootstrap</strong>
+    <small>11 mins ago</small>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    Hello, world! This is a toast message.
+  </div>
+</div>
+```
+
+**Would trigger:**
+
+```
+Triggers:
+Internal Server Error: /products/...
+Traceback (most recent call last):
+  File "C:\Users\Mortis Vivis\Documents\GitHub\MS4_MotoStyle\virtualenv\lib\site-packages\django\db\models\fields\__init__.py", line 1823, in get_prep_value  
+    return int(value)
+ValueError: invalid literal for int() with base 10: '...'
+
+```
+
+**Which was a result of:**
+
+```
+Traceback (most recent call last):
+  File "C:\Users\Mortis Vivis\Documents\GitHub\MS4_MotoStyle\virtualenv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Mortis Vivis\Documents\GitHub\MS4_MotoStyle\virtualenv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Mortis Vivis\Documents\GitHub\MS4_MotoStyle\products\views.py", line 73, in product_detail
+    product = get_object_or_404(Product, pk=product_id)
+  File "C:\Users\Mortis Vivis\Documents\GitHub\MS4_MotoStyle\virtualenv\lib\site-packages\django\shortcuts.py", line 76, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "C:\Users\Mortis Vivis\Documents\GitHub\MS4_MotoStyle\virtualenv\lib\site-packages\django\db\models\query.py", line 424, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\Mortis Vivis\Documents\GitHub\MS4_MotoStyle\virtualenv\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\Mortis Vivis\Documents\GitHub\MS4_MotoStyle\virtualenv\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Mortis Vivis\Documents\GitHub\MS4_MotoStyle\virtualenv\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace 
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Mortis Vivis\Documents\GitHub\MS4_MotoStyle\virtualenv\lib\site-packages\django\db\models\sql\query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\Mortis Vivis\Documents\GitHub\MS4_MotoStyle\virtualenv\lib\site-packages\django\db\models\sql\query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\Mortis Vivis\Documents\GitHub\MS4_MotoStyle\virtualenv\lib\site-packages\django\db\models\sql\query.py", line 1350, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\Mortis Vivis\Documents\GitHub\MS4_MotoStyle\virtualenv\lib\site-packages\django\db\models\sql\query.py", line 1196, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\Mortis Vivis\Documents\GitHub\MS4_MotoStyle\virtualenv\lib\site-packages\django\db\models\lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\Mortis Vivis\Documents\GitHub\MS4_MotoStyle\virtualenv\lib\site-packages\django\db\models\lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\Mortis Vivis\Documents\GitHub\MS4_MotoStyle\virtualenv\lib\site-packages\django\db\models\fields\__init__.py", line 1825, in get_prep_value  
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got '...'.
+[17/Mar/2022 01:20:31] ←[35;1m"GET /products/... HTTP/1.1" 500 142907←[0m
+```
+
+
+### Fix:
+
+**Remove the image field from the toast:**
+
+```html 
+<img src="..." class="rounded me-2" alt="...">
+```
+
+
+#
+
 [Back to Top](#testing-documentation)
