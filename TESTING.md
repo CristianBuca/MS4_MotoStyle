@@ -535,6 +535,43 @@
 </details>
 
 
+### Cart App:
+
+<details>
+  <summary> (expand) apps.py Pep8 found 0 errors:</summary>
+
+![apps.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_cart_apps.png)
+
+</details>
+
+<details>
+  <summary> (expand) contexts.py Pep8 found 0 errors:</summary>
+
+![contexts.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_cart_contexts.png)
+
+</details>
+
+<details>
+  <summary> (expand) test_views.py Pep8 found 0 errors:</summary>
+
+![test_views.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_cart_test_views.png)
+
+</details>
+
+<details>
+  <summary> (expand) urls.py Pep8 found 0 errors:</summary>
+
+![urls.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_cart_urls.png)
+
+</details>
+
+<details>
+  <summary> (expand) views.py Pep8 found 0 errors:</summary>
+
+![views.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_cart_views.png)
+
+</details>
+
 
 # Physical Testing
 
