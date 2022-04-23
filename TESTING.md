@@ -410,7 +410,6 @@
 </details>
 
 
-
 # Javascript Validation
 
 ## JavaScript Code Tests were carried out with [JShint](https://jshint.com).
@@ -660,6 +659,35 @@
 </details>
 
 
+### Home App:
+
+<details>
+  <summary> (expand) apps.py Pep8 found 0 errors:</summary>
+
+![apps.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_home_apps.png)
+
+</details>
+
+<details>
+  <summary> (expand) test_views.py Pep8 found 0 errors:</summary>
+
+![test_views.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_home_test_views.png)
+
+</details>
+
+<details>
+  <summary> (expand) urls.py Pep8 found 0 errors:</summary>
+
+![urls.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_home_urls.png)
+
+</details>
+
+<details>
+  <summary> (expand) views.py Pep8 found 0 errors:</summary>
+
+![views.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_home_views.png)
+
+</details>
 
 
 # Physical Testing
