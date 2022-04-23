@@ -1056,6 +1056,8 @@ ValueError: Field 'id' expected a number but got '...'.
 <img src="..." class="rounded me-2" alt="...">
 ```
 
+[Back to Top](#testing-documentation)
+
 
 ## Bug 3:
 
@@ -1104,4 +1106,79 @@ py -Xutf8 manage.py dumpdata --exclude auth.permission --exclude contenttypes > 
 Credit for solution to [StackOverflow](https://stackoverflow.com/a/67336562)
 
 
+## Bug 5:
+
+**Posting a review with an empty string would result in:**
+
+```
+NoReverseMatch at /reviews/post/
+Reverse for 'product_detail' with arguments '('',)' not found. 1 pattern(s) tried: ['products/(?P<product_id>[0-9]+)/$']
+Request Method:	POST
+Request URL:	http://127.0.0.1:8000/reviews/post/
+Django Version:	3.2
+Exception Type:	NoReverseMatch
+Exception Value:	Reverse for 'product_detail' with arguments '('',)' not found. 1 pattern(s) tried: ['products/(?P<product_id>[0-9]+)/$']
+Exception Location:	C:\Users\Mortis Vivis\Documents\GitHub\MS4_MotoStyle\virtualenv\lib\site-packages\django\urls\resolvers.py, line 694, in _reverse_with_prefix
+Python Executable:	C:\Users\Mortis Vivis\Documents\GitHub\MS4_MotoStyle\virtualenv\Scripts\python.exe
+Python Version:	3.9.6
+```
+
+### Fix:
+
+**Added front-end form validation that prevents submission with empty strings and displays warning to the user:**
+
+```
+// Calls the validate method on the review form
+$('#reviewModal').find('form').validate({
+    // Validation Rules
+    rules: {
+        comment: {
+            notEmptyString: true,
+        }
+    },
+    messages: {
+        comment: {
+            notEmptyString: 'No empty strings please.',
+        },
+    },
+})
+```
+
+
+## Bug 6:
+
+Floating action button with sticky position would trigger extra clicks on mobile and tablets when at the bottom of the page due to footer displacement.
+
+### Fix: 
+
+Changed position to fixed and added extra media queries so it wouldn’t overlap with footer:
+
+```css
+@media screen and (max-width: 992px) {
+
+    .floating-container {
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        bottom: 20%;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .floating-container {
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        bottom: 30%;
+        right: 0;
+    }
+}
+```
+
+
+
+
 [Back to Top](#testing-documentation)
+
+
