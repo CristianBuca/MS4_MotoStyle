@@ -59,7 +59,7 @@
 <details>
   <summary> (expand) Product Detail Page HTML Validation found 0 errors:</summary>
 
-![ Product Detail Page HTML Validation](/docs/test_img/html_validator/html_valid_product_detail.png)
+![Product Detail Page HTML Validation](/docs/test_img/html_validator/html_valid_product_detail.png)
 
 </details>
 
@@ -73,70 +73,70 @@
 <details>
   <summary> (expand) Update Product Page HTML Validation found 0 errors:</summary>
 
-![ Update Product Page HTML Validation](/docs/test_img/html_validator/html_valid_product_edit.png)
+![Update Product Page HTML Validation](/docs/test_img/html_validator/html_valid_product_edit.png)
 
 </details>
 
 <details>
   <summary> (expand) Profile Page HTML Validation found 0 errors:</summary>
 
-![ Profile Page HTML Validation](/docs/test_img/html_validator/html_valid_profile.png)
+![Profile Page HTML Validation](/docs/test_img/html_validator/html_valid_profile.png)
 
 </details>
 
 <details>
   <summary> (expand) Wishlist Page HTML Validation found 0 errors:</summary>
 
-![ Wishlist Page HTML Validation](/docs/test_img/html_validator/html_valid_wishlist.png)
+![Wishlist Page HTML Validation](/docs/test_img/html_validator/html_valid_wishlist.png)
 
 </details>
 
 <details>
   <summary> (expand) Shopping Cart Page HTML Validation found 0 errors:</summary>
 
-![ Shopping Cart Page HTML Validation](/docs/test_img/html_validator/html_valid_cart.png)
+![Shopping Cart Page HTML Validation](/docs/test_img/html_validator/html_valid_cart.png)
 
 </details>
 
 <details>
   <summary> (expand) Checkout Page HTML Validation found 0 errors:</summary>
 
-![ Checkout Page HTML Validation](/docs/test_img/html_validator/html_valid_checkout.png)
+![Checkout Page HTML Validation](/docs/test_img/html_validator/html_valid_checkout.png)
 
 </details>
 
 <details>
   <summary> (expand) Checkout Success Page HTML Validation found 0 errors:</summary>
 
-![ Checkout Success Page HTML Validation](/docs/test_img/html_validator/html_valid_checkout_success.png)
+![Checkout Success Page HTML Validation](/docs/test_img/html_validator/html_valid_checkout_success.png)
 
 </details>
 
 <details>
   <summary> (expand) Blog Page HTML Validation found 0 errors:</summary>
 
-![ Blog Page HTML Validation](/docs/test_img/html_validator/html_valid_blog.png)
+![Blog Page HTML Validation](/docs/test_img/html_validator/html_valid_blog.png)
 
 </details>
 
 <details>
   <summary> (expand) Blog Post Page HTML Validation found 0 errors:</summary>
 
-![ Blog Post Page HTML Validation](/docs/test_img/html_validator/html_valid_blog_post.png)
+![Blog Post Page HTML Validation](/docs/test_img/html_validator/html_valid_blog_post.png)
 
 </details>
 
 <details>
   <summary> (expand) Add Blog Post Page HTML Validation found 0 errors:</summary>
 
-![ Add Blog Post Page HTML Validation](/docs/test_img/html_validator/html_valid_blog_add.png)
+![Add Blog Post Page HTML Validation](/docs/test_img/html_validator/html_valid_blog_add.png)
 
 </details>
 
 <details>
   <summary> (expand) Update Blog Post Page HTML Validation found 0 errors:</summary>
 
-![ Update Blog Post Page HTML Validation](/docs/test_img/html_validator/html_valid_blog_edit.png)
+![Update Blog Post Page HTML Validation](/docs/test_img/html_validator/html_valid_blog_edit.png)
 
 </details>
 
@@ -146,10 +146,26 @@
 ## CSS validation was carried out with [W3 Jigsaw](https://jigsaw.w3.org/css-validator/).
 
 <details>
-  <summary> (expand) css.style Jigsaw Validation found 0 errors:</summary>
+  <summary> (expand) base.css Jigsaw Validation found 0 errors, 18 warnings due to vendor extensions:</summary>
 
-![CSS Validation](/docs/test_img/css_validator/css_valid.png)
+![base.css CSS Validation](/docs/test_img/css_validator/css_valid_base.png)
+
 </details>
+
+<details>
+  <summary> (expand) blog.css Jigsaw Validation found 0 errors:</summary>
+
+![blog.css Validation](/docs/test_img/css_validator/css_valid_blog.png)
+
+</details>
+
+<details>
+  <summary> (expand) checkout.css Jigsaw Validation found 0 errors, 1 warning due to vendor extension:</summary>
+
+![checkout.css Validation](/docs/test_img/css_validator/css_valid_checkout.png)
+
+</details>
+
 
 # Accessibility Validation
 
@@ -159,12 +175,6 @@
   <summary> (expand) Landing Page WAVE Validation found 0 errors:</summary>
 
 ![Landing Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_landing.png)
-</details>
-
-<details>
-  <summary> (expand) Login Page WAVE Validation found 0 errors:</summary>
-
-![Login Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_login.png)
 
 </details>
 
@@ -176,7 +186,13 @@
 </details>
 
 <details>
-  <summary> (expand) My Shelf Page WAVE Validation found 0 errors:</summary>
+  <summary> (expand) Login Page WAVE Validation found 0 errors:</summary>
+
+![Login Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_login.png)
+
+</details>
+
+
 
 
 
