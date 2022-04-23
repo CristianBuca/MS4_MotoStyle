@@ -1,8 +1,6 @@
 # Testing Documentation
 
-![Moto Style](/docs/design/logos.png)
-
-![Responsive Design](/docs/responsive_design/responsive_design.jpg)
+![Responsive Design](/docs/design/responsive_design.jpg)
 
 # Table of contents
 
@@ -23,7 +21,7 @@
 
 ## **[Return to Readme.md](/README.md)**
 
-## **You can find the deployed website** [**HERE**]()
+## **You can find the deployed website** [**HERE**](https://ms4-motostyle.herokuapp.com)
 
 # HTML Validation
 
@@ -34,23 +32,113 @@
   <summary> (expand) Landing Page HTML Validation found 0 errors:</summary>
 
 ![Landing Page HTML Validation](/docs/test_img/html_validator/html_valid_landing.png)
+
 </details>
 
 <details>
-  <summary> (expand) Login Page HTML Validation found </summary>
-
-![Login Page HTML Validation](/docs/test_img/html_validator/html_valid_login.png)
-</details>
-
-<details>
-  <summary> (expand) Registration Page HTML Validation found 1 false error due to wtForms handling the form's action on the backend:</summary>
+  <summary> (expand) Registration Page HTML Validation found 0 errors:</summary>
 
 ![Registration Page HTML Validation](/docs/test_img/html_validator/html_valid_register.png)
+
 </details>
 
 <details>
-  <summary> (expand) My Shelf Page HTML Validation found 0 errors:</summary>
+  <summary> (expand) Login Page HTML Validation found 0 errors:</summary>
 
+![Login Page HTML Validation](/docs/test_img/html_validator/html_valid_login.png)
+
+</details>
+
+<details>
+  <summary> (expand) Products Page HTML Validation found 0 errors:</summary>
+
+![Products Page HTML Validation](/docs/test_img/html_validator/html_valid_products.png)
+
+</details>
+
+<details>
+  <summary> (expand) Product Detail Page HTML Validation found 0 errors:</summary>
+
+![ Product Detail Page HTML Validation](/docs/test_img/html_validator/html_valid_product_detail.png)
+
+</details>
+
+<details>
+  <summary> (expand) Add Product Page HTML Validation found 0 errors:</summary>
+
+![Add Product Page HTML Validation](/docs/test_img/html_validator/html_valid_product_add.png)
+
+</details>
+
+<details>
+  <summary> (expand) Update Product Page HTML Validation found 0 errors:</summary>
+
+![ Update Product Page HTML Validation](/docs/test_img/html_validator/html_valid_product_edit.png)
+
+</details>
+
+<details>
+  <summary> (expand) Profile Page HTML Validation found 0 errors:</summary>
+
+![ Profile Page HTML Validation](/docs/test_img/html_validator/html_valid_profile.png)
+
+</details>
+
+<details>
+  <summary> (expand) Wishlist Page HTML Validation found 0 errors:</summary>
+
+![ Wishlist Page HTML Validation](/docs/test_img/html_validator/html_valid_wishlist.png)
+
+</details>
+
+<details>
+  <summary> (expand) Shopping Cart Page HTML Validation found 0 errors:</summary>
+
+![ Shopping Cart Page HTML Validation](/docs/test_img/html_validator/html_valid_cart.png)
+
+</details>
+
+<details>
+  <summary> (expand) Checkout Page HTML Validation found 0 errors:</summary>
+
+![ Checkout Page HTML Validation](/docs/test_img/html_validator/html_valid_checkout.png)
+
+</details>
+
+<details>
+  <summary> (expand) Checkout Success Page HTML Validation found 0 errors:</summary>
+
+![ Checkout Success Page HTML Validation](/docs/test_img/html_validator/html_valid_checkout_success.png)
+
+</details>
+
+<details>
+  <summary> (expand) Blog Page HTML Validation found 0 errors:</summary>
+
+![ Blog Page HTML Validation](/docs/test_img/html_validator/html_valid_blog.png)
+
+</details>
+
+<details>
+  <summary> (expand) Blog Post Page HTML Validation found 0 errors:</summary>
+
+![ Blog Post Page HTML Validation](/docs/test_img/html_validator/html_valid_blog_post.png)
+
+</details>
+
+<details>
+  <summary> (expand) Add Blog Post Page HTML Validation found 0 errors:</summary>
+
+![ Add Blog Post Page HTML Validation](/docs/test_img/html_validator/html_valid_blog_add.png)
+
+</details>
+
+<details>
+  <summary> (expand) Update Blog Post Page HTML Validation found 0 errors:</summary>
+
+![ Update Blog Post Page HTML Validation](/docs/test_img/html_validator/html_valid_blog_edit.png)
+
+</details>
 
 
 # CSS Validation
@@ -77,12 +165,14 @@
   <summary> (expand) Login Page WAVE Validation found 0 errors:</summary>
 
 ![Login Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_login.png)
+
 </details>
 
 <details>
   <summary> (expand) Registration Page WAVE Validation found 0 errors:</summary>
 
 ![Registration Page WAVE Validation](/docs/test_img/wave_validator/wave_valid_register.png)
+
 </details>
 
 <details>
