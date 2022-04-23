@@ -45,5 +45,5 @@ $('.decrement-qty').click(function(e) {
 // Back to top of page button
 
 $('.btn-top').click(function(e) {
-    window.scrollTo(0,0)
-})
+    window.scrollTo(0,0);
+});

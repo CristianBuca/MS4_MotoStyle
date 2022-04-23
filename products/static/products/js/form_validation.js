@@ -88,4 +88,4 @@ $('#reviewModal').find('form').validate({
             notEmptyString: 'No empty strings please.',
         },
     },
-})
+});

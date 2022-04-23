@@ -20,4 +20,4 @@ $('#sort-selector').on('change', function() {
 
         window.location.replace(currentUrl);
     }
-})
+});

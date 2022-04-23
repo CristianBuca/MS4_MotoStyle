@@ -48,7 +48,7 @@ $('.decrement-qty').click(function(e) {
 $('.update').click(function(e) {
     var form = $(this).prev('.update-form');
     form.submit();
-})
+});
 
 // Remove item and reload on click
 $('.remove').click(function(e) {
@@ -62,4 +62,4 @@ $('.remove').click(function(e) {
         .done(function() {
             location.reload();
         });
-})
+});
