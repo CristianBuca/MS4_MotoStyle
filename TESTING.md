@@ -689,6 +689,36 @@
 
 </details>
 
+### Moto Style:
+
+<details>
+  <summary> (expand) asgi.py Pep8 found 0 errors:</summary>
+
+![asgi.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_moto_style_asgi.png)
+
+</details>
+
+<details>
+  <summary> (expand) settings.py Pep8 found 0 errors:</summary>
+
+![settings.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_moto_style_settings.png)
+
+</details>
+
+<details>
+  <summary> (expand) urls.py Pep8 found 0 errors:</summary>
+
+![urls.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_moto_style_urls.png)
+
+</details>
+
+<details>
+  <summary> (expand) wsgi.py Pep8 found 0 errors:</summary>
+
+![wsgi.py Pep8 Tests](/docs/test_img/pep8_validator/pep8_valid_moto_style_wsgi.png)
+
+</details>
+
 
 # Physical Testing
 
