@@ -14,8 +14,8 @@
 
         <div class="row my-3">
             <div class="col-12 col-md-5">
-<!-------------------------- BootStrap 5.1 Carousel Start -------------------------->
-                <section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<!-- BootStrap 5.1 Carousel Start -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     {% if blog_post.image %}
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -70,11 +70,11 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-                </section>
-<!-------------------------- Carousel End -------------------------->
+                </div>
+<!-- Carousel End -->
                 <p class="my-2">Article posted by: {{ blog_post.owner }} on: {{ blog_post.created_at | date:"D d M Y" }}</p>
 
-<!-------------------------- Comment section start for medium displays and up -------------------------->
+<!-- Comment section start for medium displays and up -->
                 <section class="d-none d-md-block comments">
                     {% if request.user.is_authenticated %}
                         <button type="button" class="btn btn-dark w-100 my-3" data-bs-toggle="modal" data-bs-target="#commentModal">Post a comment</button>
@@ -94,14 +94,15 @@
                     <hr>
                     {% endfor %}
                 </section>
-<!-------------------------- Comment section end -------------------------->
+<!-- Comment section end -->
             </div>
 
             <section class="col-12 col-md-7 blog-content my-3 py-3">
+                <h2 hidden>Article body</h2>
                 {{ blog_post.content | linebreaks }}
             </section>
 
-<!-------------------------- Comment section start for small displays -------------------------->
+<!-- Comment section start for small displays -->
             <section class="d-block d-md-none comments">
                 {% if request.user.is_authenticated %}
                     <button type="button" class="btn btn-dark w-100 my-3" data-bs-toggle="modal" data-bs-target="#commentModal">Post a comment</button>
@@ -121,9 +122,9 @@
                     <hr>
                     {% endfor %}
             </section>
-<!-------------------------- Comment section end -------------------------->
+<!-- Comment section end -->
 
-<!-------------------------- Comment Modal Start -------------------------->
+<!-- Comment Modal Start -->
             <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="commentModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -148,7 +149,7 @@
                     </div>
                 </div>
             </div>
-<!-------------------------- Comment Modal End -------------------------->
+<!-- Comment Modal End -->
         </div>
     </div>
 {% endblock %}

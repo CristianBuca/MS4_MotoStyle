@@ -175,7 +175,7 @@
                 </div>
                 <div class="col-12 col-lg-4 order-1 order-lg-2 text-center fs-1">
                     <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="Find us on Youtube (link opens in a new tab)"><i class="fa-brands fa-youtube-square"></i></a>
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Follow us on Instagram(link opens in a new tab)"><i class="fa-brands fa-instagram-square"></i></i></a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Follow us on Instagram(link opens in a new tab)"><i class="fa-brands fa-instagram-square"></i></a>
                     <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us in Facebook (link opens in a new tab)"><i class="fa-brands fa-facebook-square"></i></a>
                     <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Follow us on Twitter (link opens in a new tab)"><i class="fa-brands fa-twitter-square"></i></a>
                 </div>
@@ -186,10 +186,10 @@
                     </p>
                     <p>
                         Accepting:
-                        <img src="{{ MEDIA_URL }}cards/visa.svg" alt="visa card" width="40px" height="40px">
-                        <img src="{{ MEDIA_URL }}cards/amex.svg" alt="amex card" width="40px" height="40px">
-                        <img src="{{ MEDIA_URL }}cards/mastercard.svg" alt="mastercard card" width="40px" height="40px">
-                        <img src="{{ MEDIA_URL }}cards/maestro.svg" alt="maestro card" width="40px" height="40px">
+                        <img src="{{ MEDIA_URL }}cards/visa.svg" alt="visa card" width="40" height="40">
+                        <img src="{{ MEDIA_URL }}cards/amex.svg" alt="amex card" width="40" height="40">
+                        <img src="{{ MEDIA_URL }}cards/mastercard.svg" alt="mastercard card" width="40" height="40">
+                        <img src="{{ MEDIA_URL }}cards/maestro.svg" alt="maestro card" width="40" height="40">
                     </p>
                 </div>
             </div>
@@ -198,7 +198,7 @@
 
 <!-- Javascript to be loaded after the DOM -->
     {% block postloadjs %}
-        <script type="text/javascript">
+        <script>
             var toastElList = [].slice.call(document.querySelectorAll('.toast'))
             var toastList = toastElList.map(function (toastEl) {
                 new bootstrap.Toast(toastEl).show()

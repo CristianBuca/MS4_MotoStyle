@@ -34,13 +34,13 @@
                                         <div class="form-group d-inline-flex">
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
-                                                    <button class="decrement-qty btn btn-dark btn-sm" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}" aria-label="decrement quantity>
+                                                    <button class="decrement-qty btn btn-dark btn-sm" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}" aria-label="decrement quantity">
                                                         <i class="fas fa-minus"></i>
                                                     </button>
                                                 </div>
                                                 <input class="form-control-xs qty_input " type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}" aria-label="quantity">
                                                 <div class="input-group-append">
-                                                    <button class="increment-qty btn btn-dark btn-sm" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}" aria-label="increment quantity>
+                                                    <button class="increment-qty btn btn-dark btn-sm" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}" aria-label="increment quantity">
                                                         <i class="fas fa-plus"></i>
                                                     </button>
                                                 </div>
@@ -98,5 +98,5 @@
 
 {% block postloadjs %}
     {{block.super}}
-    <script src="{% static 'cart/js/cart.js' %}" type="text/javascript"></script>
+    <script src="{% static 'cart/js/cart.js' %}"></script>
 {% endblock %}

@@ -46,17 +46,17 @@
                                 <div>Posted by: {{ blog_post.owner }}</div>
                                 <div>on: {{ blog_post.created_at |date:"D d M Y" }} </div>
                                 {% if request.user.is_superuser or request.user == blog_post.owner %}
-<!-------------------------- Remove current article from the Database -------------------------->
+<!-- Remove current article from the Database -->
                                     <a type="button" class=" btn btn-dark mx-auto my-1 float-start" data-bs-toggle="modal" data-bs-target="#remove-{{ blog_post.id }}">
                                         <span class="d-none d-m-block">Remove </span>
                                         <i class="fa-solid fa-trash"></i>
                                     </a>
-<!-------------------------- Edit current article -------------------------->
+<!-- Edit current article -->
                                     <a class=" btn btn-dark mx-auto my-1 float-end" href="{% url 'edit_blog_post' blog_post.id %}">
                                         <span class="d-none d-m-block">Edit </span>
                                         <i class="fa-solid fa-pen-to-square"></i>
                                     </a>
-<!-------------------------- Confirmation modal for removing item -------------------------->
+<!-- Confirmation modal for removing item -->
                                     <div class="modal fade" id="remove-{{ blog_post.id }}" tabindex="-1" aria-labelledby="confirmation-modal" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
@@ -74,7 +74,7 @@
                                             </div>
                                         </div>
                                     </div>
-<!-------------------------- Confirmation modal end -------------------------->
+<!-- Confirmation modal end -->
                                 {% endif %}
                             </div>
                         </div>
@@ -83,8 +83,4 @@
             {% endfor %}
         </div>
     </section>
-{% endblock %}
-
-{% block postloadjs %}
-    {{ block.super }}
 {% endblock %}
