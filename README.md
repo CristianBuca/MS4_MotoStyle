@@ -334,8 +334,6 @@ Defined in the profiles app.
 
     - id int pk
     - user OneToOneField FK >- User.id
-    - default_full_name  CharField(50)
-    - default_email EmailField(254)
     - default_phone_number CharField(20)
     - default_address_line1 CharField(80)
     - default_address_line2 CharField(80)
