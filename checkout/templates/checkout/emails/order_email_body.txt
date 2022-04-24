@@ -9,7 +9,7 @@ Order Total: ${{ order.order_total }}
 Delivery: ${{ order.delivery_cost }}
 Grand Total: ${{ order.grand_total }}
 
-Your order will be shipped to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.
+Your order will be shipped to {{ order.address_line1 }} in {{ order.town_or_city }}, {{ order.country }}.
 
 We've got your phone number on file as {{ order.phone_number }}.
 
