@@ -4,6 +4,21 @@
 
 # Table of contents
 
+- [Unit Testing:](#unit-testing)
+- [HTML Validation](#html-validation)
+- [CSS Validation](#css-validation)
+- [WAVE Accessibility Validation](#wave-accessibility-validation)
+- [Lighthouse Tests](#lighthouse-tests)
+- [Javascript Validation](#javascript-validation)
+- [Python Validation](#python-validation)
+- [Physical Testing](#physical-testing)
+- [Testing of User Stories](#testing-of-user-stories)
+  * [New User Stories](#new-user-stories)
+  * [Returning User Stories](#returning-user-stories)
+  * [Super Users Stories](#super-users-stories)
+  * [Site Owner Stories](#site-owner-stories)
+- [Bugs](#bugs)
+
 
 
 ## **[Return to Readme.md](/README.md)**
@@ -997,6 +1012,8 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 </details>
 
+[Back to Top](#testing-documentation)
+
 
 ### 4. As a new user, I want to browse the store's merchandise.
 
@@ -1072,6 +1089,8 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 </details>
 
+[Back to Top](#testing-documentation)
+
 
 ### 9. As a new user, I want to select the different quantities and sizes for a product.
 
@@ -1132,6 +1151,8 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 </details>
 
+[Back to Top](#testing-documentation)
+
 
 ### 13. As a new user, I want to access and view my shopping cart.
 
@@ -1191,6 +1212,8 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
   [Local Link](/docs/test_user_stories/user_story_16.mp4)
 
 </details>
+
+[Back to Top](#testing-documentation)
 
 
 ### 17. As a new user, I want to receive the order confirmation via e-mail also.
@@ -1253,6 +1276,8 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
   [Local Link](/docs/test_user_stories/user_story_20.mp4)
 
 </details>
+
+[Back to Top](#testing-documentation)
 
 
 ### 21. As a returning user, I want to review, rate and read other user's reviews for the products on the site.
@@ -1329,6 +1354,8 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 </details>
 
+[Back to Top](#testing-documentation)
+
 
 ## Super Users Stories
 
@@ -1390,6 +1417,8 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
   [Local Link](/docs/test_user_stories/user_story_29.mp4)
 
 </details>
+
+[Back to Top](#testing-documentation)
 
 
 ## Site Owner Stories
@@ -1622,6 +1651,8 @@ py -Xutf8 manage.py dumpdata --exclude auth.permission --exclude contenttypes > 
 
 Credit for solution to [StackOverflow](https://stackoverflow.com/a/67336562)
 
+[Back to Top](#testing-documentation)
+
 
 ## Bug 5:
 
@@ -1694,7 +1725,18 @@ Changed position to fixed and added extra media queries so it wouldn’t overlap
 ```
 
 
+## Bug 7:
 
+Stripe webhook would return status 500 and order confirmation email would not be sent:
+
+![Stripe CLI](/docs/test_img/bugs/stripe_cli_500.jpg)
+
+### Fix:
+
+I added extra fields in my profile model for full_name and email which were causing sync issues when the webhook was checking the orders associated with the profile in the database thus sending status 500 back to Stripe.
+After removing those extra fields the webhook response status is 200 and email order confirmations are being sent successfully:
+
+![Webhook fixed](/docs/test_img/bugs/webhook_fixed.png)
 
 [Back to Top](#testing-documentation)
 
