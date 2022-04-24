@@ -1398,7 +1398,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-| Landing Page and Navbar | Change the width of the browser. | For the site to adapt to the new sizes and main navbar to collapse. | Works as expected |
+| Landing Page and Navbar | Change the width of the browser. | For the site to adapt to the new sizes and main navbar to collapse. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 30 testing video) </summary>
@@ -1413,7 +1413,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-| Footer | Scroll down to the footer. Click on the social media links. | For the links to open in new tabs. | Works as expected |
+| Footer | Scroll down to the footer. Click on the social media links. | For the links to open in new tabs. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 31 testing video) </summary>
@@ -1428,7 +1428,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-|  |  |  | Works as expected |
+| Toast messages system and error pages. | Interact with the features on the site or try to access broken links. | To view the errors/confirmations as toast message or as custom error page. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 32 testing video) </summary>
@@ -1439,11 +1439,11 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 </details>
 
 
-### 33.
+### 33. As a site owner, I want forms to be validated on the front-end for better user experience.
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-|  |  |  | Works as expected |
+| Front-end validation on forms | Input erroneous information in a form. | View the validation feedback and being blocked from submitting form until errors are corrected. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 33 testing video) </summary>
@@ -1454,11 +1454,11 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 </details>
 
 
-### 34.
+### 34. As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-|  |  |  | Works as expected |
+| Back-end validation on forms | Submit login form with erroneous information. | Being prevented from logging in and seeing an error message. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 34 testing video) </summary>
