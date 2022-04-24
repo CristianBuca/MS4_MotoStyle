@@ -7,6 +7,7 @@
 
 # Table of Contents
 
+
 - [**Project Overview**](#project-overview)
 - [**User Experience**](#user-experience)
 - [**Strategy**](#strategy)
@@ -44,13 +45,18 @@
     + [**Footer**](#footer)
     + [**Custom Error Pages**](#custom-error-pages)
     + [**Administration portal**](#administration-portal)
-  * [**Technologies Used**](#technologies-used)
-  * [**Testing**](#testing)
-  * [**Bugs**](#bugs)
-  * [**Deployment**](#deployment)
-  * [**Credits**](#credits)
-  * [**Acknowledgements**](#acknowledgements)
-  * [Disclaimer](#disclaimer)
+- [**Technologies Used**](#technologies-used)
+- [**Testing**](#testing)
+- [**Bugs**](#bugs)
+- [**Deployment**](#deployment)
+  * [**Hosting Repository on Github:**](#hosting-repository-on-github-)
+  * [**Deployment to Heroku:**](#deployment-to-heroku-)
+  * [**Setting up AWS S3:**](#setting-up-aws-s3)
+  * [**Setting up AWS IAM:**](#setting-up-aws-iam)
+  * [**Setting up Stripe:**](#setting-up-stripe)
+- [**Credits**](#credits)
+- [**Acknowledgements**](#acknowledgements)
+- [Disclaimer](#disclaimer)
 
 
 ## **You can find the deployed website** [**HERE**](https://ms4-motostyle.herokuapp.com)
@@ -1195,7 +1201,7 @@ admin.site.register(Wishlist, WishlistAdmin)
 
 [Back to Top](#moto-style)
 
-## **Technologies Used**
+# **Technologies Used**
 
 * **[HTML5](https://html.spec.whatwg.org)**
 * **[CSS 3](https://www.w3.org/Style/CSS/Overview.en.html)**
@@ -1222,15 +1228,15 @@ admin.site.register(Wishlist, WishlistAdmin)
 * **[Markdown ToC](https://ecotrust-canada.github.io/markdown-toc/)** Used to generate the table of contents for Readme.md
 
 
-## **Testing**
+# **Testing**
 
 Documentation on all tests carried out is available in [TESTING.md](/TESTING.md)
 
-## **Bugs**
+# **Bugs**
 
 Documentation on all bugs and solutions is available in [TESTING.md](/TESTING.md)
 
-## **Deployment**
+# **Deployment**
 
 The website is hosted [Github](https://github.com) and deployed on [Heroku](https://www.heroku.com/home).It uses [PostgreSQL](https://www.postgresql.org) as it's database, [AWS S3](https://aws.amazon.com) as cloud storage for static and media files, and [Stripe](https://stripe.com/gb) for payment processing. 
 To be able to deploy this project accounts need to be created on all sites except PostgreSQL.
@@ -1238,7 +1244,7 @@ To be able to deploy this project accounts need to be created on all sites excep
 [Back to Top](#moto-style)
 
 
-**Hosting Repository on Github:** 
+## **Hosting Repository on Github:** 
 
 1. Login into Github account,
 2. Select the button marked "New" and create a new repository,
@@ -1255,7 +1261,7 @@ To be able to deploy this project accounts need to be created on all sites excep
 
 *Alternatively you can download the repository as ZIP or use [Github Desktop](https://desktop.github.com) to get the repository on you local machine*
 
-**Setting up environment variables required for the project to run in development**
+## **Setting up environment variables required for the project to run in development**
 
 1. Create a env.py file in the projects root directory.
 2. Add your personal variables from the accounts you created in the env.py file following this syntax:
@@ -1276,7 +1282,7 @@ os.environ.setdefault('EMAIL_HOST_USER', '<email host username>') # SMTP user
 os.environ.setdefault('EMAIL_HOST_PASS', '<email host password>') # SMTP password
 ```
 
-**Deployment to Heroku:**
+## **Deployment to Heroku:**
 
 1. Create a Procfile in the root directory with contents `web:python app.py`,
 2. Run `pip freeze > requirements.txt` in terminal,
@@ -1293,7 +1299,7 @@ os.environ.setdefault('EMAIL_HOST_PASS', '<email host password>') # SMTP passwor
 
 [Back to Top](#moto-style)
 
-**Setting up AWS S3:**
+## **Setting up AWS S3:**
 
 1. Login into your AWS account.
 2. Find S3 in services and select it.
@@ -1329,7 +1335,7 @@ os.environ.setdefault('EMAIL_HOST_PASS', '<email host password>') # SMTP passwor
 15. Select "Edit" under Access control list (ACL) and enable list access for Everyone(public access).
 
 
-**Setting up AWS IAM:**
+## **Setting up AWS IAM:**
 
 1. Login into your AWS account.
 2. Find IAM in services and select it.
@@ -1350,7 +1356,7 @@ os.environ.setdefault('EMAIL_HOST_PASS', '<email host password>') # SMTP passwor
 17. Copy those keys into our environment variables.
 
 
-**Setting up Stripe:**
+## **Setting up Stripe:**
 
 1. Login into your Stripe account.
 2. Click on "Developers" and select "API keys".
@@ -1364,7 +1370,7 @@ os.environ.setdefault('EMAIL_HOST_PASS', '<email host password>') # SMTP passwor
 [Back to Top](#moto-style)
 
 
-## **Credits**
+# **Credits**
 
 This Project was created based on the Code Institute - Hello Django and Boutique Ado Project Lessons by [Chris Z](https://github.com/ckz8780).
 There are inevitable similarities between this project and the ones in these lessons, more specifically:
@@ -1381,7 +1387,7 @@ There are inevitable similarities between this project and the ones in these les
 
 * Automated testing methods for forms, models and views.
 
-### **Third party plugins and extensions:**
+## **Third party plugins and extensions:**
 
 **JQuery form validation** was done using the [Jquery Validation Plugin](https://jqueryvalidation.org/documentation/).
 
@@ -1398,14 +1404,14 @@ There are inevitable similarities between this project and the ones in these les
 * Blog posts and images from [MCN](https://www.motorcyclenews.com). 
 
 
-### **Code Institute colleagues who's work I followed for guidance:**
+## **Code Institute colleagues who's work I followed for guidance:**
 
 [Carla Buongiorno](https://github.com/CarlaBuongiorno/la_fraschetta).
 
 [Paul Meeneghan](https://github.com/pmeeny/CI-MS4-LoveRugby).
 
 
-## **Acknowledgements**
+# **Acknowledgements**
 
 * Special thanks to my mentor Mo Shami for his suggestions and guidance.
 * Special thanks to my brother for his feedback and suggestions and always having my back.
@@ -1413,7 +1419,7 @@ There are inevitable similarities between this project and the ones in these les
 * The Code Institute tutors that helped me when I was hitting walls.
 * The Code Institute team for all the effort and energy they put into creating and curating the content for this programme.
 
-## Disclaimer
+# Disclaimer
 
 _This project is for educational use only and was created as a Milestone Project for the Code Institute Module of Full Stack Software Development with Django._
 
