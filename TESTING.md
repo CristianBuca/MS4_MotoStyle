@@ -1025,32 +1025,197 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 </details>
 
 
-### 
+### 5. As a new user, I want to be able to search for specific products.
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-|  |  |  | Works as expected |
+| Search bar on top header navigation | From any page, click the search bar and input search parameters | To see a selection of products that contain the search parameters in the name or description | Works as expected |
 
 <details>
-  <summary> (Expand - User Story  testing video) </summary>
+  <summary> (Expand - User Story 5 testing video) </summary>
 
 
-  [Local Link](/docs/test_user_stories/user_story_.mp4)
+  [Local Link](/docs/test_user_stories/user_story_5.mp4)
 
 </details>
 
 
-### 
+### 6. s a new user, I want to be able to browse by categories.
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-|  |  |  | Works as expected |
+| Main navigation menu | From any page, expand the category dropdowns and select a subcategory. | To see the products belonging to the selected category. | Works as expected |
 
 <details>
-  <summary> (Expand - User Story  testing video) </summary>
+  <summary> (Expand - User Story 6 testing video) </summary>
 
 
-  [Local Link](/docs/test_user_stories/user_story_.mp4)
+  [Local Link](/docs/test_user_stories/user_story_6.mp4)
+
+</details>
+
+
+### 7. As a new user, I want to be able to sort product lists by price, rating, category or name.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| "All products dropdown in main navigation and "sort by" element on products page | Expand the dropdown/select element and choose the sort criteria | For the products to be sorted by the chosen criteria | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 7 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_7.mp4)
+
+</details>
+
+
+### 8. As a new user, I want to view individual product details.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Product details page | Click on a product card | To view the selected product's details page | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 8 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_8.mp4)
+
+</details>
+
+
+### 9. As a new user, I want to select the different quantities and sizes for a product.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Product details page | Input different quantity in the "Quantity" input and choose a different size from from the "Size" selector before adding the product to the cart | For the selected quantity and size to be added to the cart | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 9 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_9.mp4)
+
+</details>
+
+
+### 10. As a new user, I want to be able to add products to my shopping cart.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Product details page | Click add to cart button | For the product to be added to my shopping cart | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 10 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_10.mp4)
+
+</details>
+
+
+### 11. As a new user, I want to be able to add products to a list of interests(wishlist).
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Product details page | Click the "Add to wishlist" link | For the product to be added to my wishlist and the "Add to wishlist" link to change to "Remove from wishlist" link | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 11 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_11.mp4)
+
+</details>
+
+
+### 12. As a new user, I want to be able to view the total cost of my shopping cart while I browse.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Shopping cart link in top header navigation and cart preview in toast success messages | Add products to the shopping cart | For the total cost update in to header navigation and cart preview toast message | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 12 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_12.mp4)
+
+</details>
+
+
+### 13. As a new user, I want to access and view my shopping cart.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Shopping cart page and cart preview in toast messages | Click the shopping cart link in to header navigation | To view my shopping cart | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 13 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_13.mp4)
+
+</details>
+
+
+### 14. As a new user, I want to adjust and manage the products in my shopping cart.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Shopping cart page | For each product select different quantity and click "Update" or remove the product by clicking "Remove" button | For the shopping cart to be updated with my new preferences | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 14 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_14.mp4)
+
+</details>
+
+
+### 15. As a new user, I want to be able to purchase the selected products by entering my payment information in a secure way.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Checkout page | From shopping cart page click "Secure Checkout" and enter payment information in the Stripe "Payment" element. | For my payment information to be handled directly by the payment provider | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 15 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_15.mp4)
+
+</details>
+
+
+### 16. As a new user, I want to view an order confirmation.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Checkout success page | Fill in the delivery details and payment information then click "Complete Order" | For an order confirmation to be displayed | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 16 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_16.mp4)
+
+</details>
+
+
+### 17. As a new user, I want to receive the order confirmation via e-mail also.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Checkout success page | Fill in the delivery details and payment information then click "Complete Order" | Check your email for the order confirmation | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 17 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_17.mp4)
 
 </details>
 

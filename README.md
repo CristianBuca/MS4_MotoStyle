@@ -103,7 +103,7 @@ The reviews system allows them to post a review and a rating for each product as
 4. As a new user, I want to browse the store's merchandise.
 5. As a new user, I want to be able to search for specific products.
 6. As a new user, I want to be able to browse by categories.
-7. As a new user, I want to be able to order product lists by price, rating, category or name.
+7. As a new user, I want to be able to sort product lists by price, rating, category or name.
 8. As a new user, I want to view individual product details.
 10. As a new user, I want to select the different quantities and sizes for a product.
 11. As a new user, I want to be able to add products to my shopping cart.
@@ -895,7 +895,7 @@ This feature provides the user with the ability to view all products, narrow dow
 
 * 4 - As a new user, I want to browse the store's merchandise.
 * 6 - As a new user, I want to be able to browse by categories.
-* 7 - As a new user, I want to be able to order product lists by price, rating, category or name.
+* 7 - As a new user, I want to be able to sort product lists by price, rating, category or name.
 * 8 - As a new user, I want to view individual product details.
 * 9 - As a new user, I want to select the different quantities and sizes for a product.
 * 10 - As a new user, I want to be able to add products to my shopping cart.
@@ -1051,7 +1051,7 @@ The wishlist feature allows the user to selected products of interest and save t
 The navigation bar is sectioned in 2 main components: the top header navigation and the main navigation.
 - The top header navigation houses the site's logo who's identity changes based on device width and links to the home page, the search bar and links to Account functionality and shopping cart.
 The Account dropdown will change it's link options based on the user's login status while the shopping cart will reflect the total cost of the products in it.
-- The main navigation is structured based on products categories and subcategories which will restructure the products page results based on the categories filtered. In addition the main nav offers a link to the blog section as well as options to order all products by price, rating or category.
+- The main navigation is structured based on products categories and subcategories which will restructure the products page results based on the categories filtered. In addition the main nav offers a link to the blog section as well as options to sort all products by price, rating or category.
 The main navigation collapses on medium devices and smaller and the main navigation is accessible from the burger menu on the left hand side.
 
 *User stories solved by this feature:*
@@ -1059,7 +1059,7 @@ The main navigation collapses on medium devices and smaller and the main navigat
 * 4 - As a new user, I want to browse the store's merchandise.
 * 5 - As a new user, I want to be able to search for specific products.
 * 6 - As a new user, I want to be able to browse by categories.
-* 7 - As a new user, I want to be able to order product lists by price, rating, category or name.
+* 7 - As a new user, I want to be able to sort product lists by price, rating, category or name.
 * 12 - As a new user, I want to be able to view the total cost of my shopping cart while I browse.
 * 31 - As a site owner, I want the site to be responsive.
 
