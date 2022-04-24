@@ -105,41 +105,41 @@ The reviews system allows them to post a review and a rating for each product as
 6. As a new user, I want to be able to browse by categories.
 7. As a new user, I want to be able to sort product lists by price, rating, category or name.
 8. As a new user, I want to view individual product details.
-10. As a new user, I want to select the different quantities and sizes for a product.
-11. As a new user, I want to be able to add products to my shopping cart.
-12. As a new user, I want to be able to add products to a list of interests(wishlist).
-13. As a new user, I want to be able to view the total cost of my shopping cart while I browse.
-14. As a new user, I want to access and view my shopping cart.
-15. As a new user, I want to adjust and manage the products in my shopping cart.
-16. As a new user, I want to be able to purchase the selected products by entering my payment information in a secure way.
-17. As a new user, I want to view an order confirmation.
-18. As a new user, I want to receive the order confirmation via e-mail also.
+9. As a new user, I want to select the different quantities and sizes for a product.
+10. As a new user, I want to be able to add products to my shopping cart.
+11. As a new user, I want to be able to add products to a list of interests(wishlist).
+12. As a new user, I want to be able to view the total cost of my shopping cart while I browse.
+13. As a new user, I want to access and view my shopping cart.
+14. As a new user, I want to adjust and manage the products in my shopping cart.
+15. As a new user, I want to be able to purchase the selected products by entering my payment information in a secure way.
+16. As a new user, I want to view an order confirmation.
+17. As a new user, I want to receive the order confirmation via e-mail also.
 
-**Regular Users:**
+**Returning Users:**
 
-19. As a regular user, I want to store my delivery information for easy future checkouts.
-20. As a regular user, I want to view a record of my past orders.
-21. As a regular user, I want to view and manage my wishlist.
-22. As a regular user, I want to review, rate and read other user's reviews for the products on the site.
-23. As a regular user, I want the ability to recover my password.
-24. As a regular user, I want to view articles related to the store products and the community it caters to.
-25. As a regular user I want to be able to post, edit or remove articles from the blog section.
-26. As a regular user, I want to be able to comment on articles.
+18. As a returning user, I want to store my delivery information for easy future checkouts.
+19. As a returning user, I want to view a record of my past orders.
+20. As a returning user, I want to view and manage my wishlist.
+21. As a returning user, I want to review, rate and read other user's reviews for the products on the site.
+22. As a returning user, I want the ability to recover my password.
+23. As a returning user, I want to view articles related to the store products and the community it caters to.
+24. As a returning user I want to be able to post, edit or remove articles from the blog section.
+25. As a returning user, I want to be able to comment on articles.
 
 **Super Users:**
 
-27. As a super user, I want to add content to the store.
-28. As a super user, I want to edit existing content.
-29. As a super user, I want to delete existing content.
-30. As a super user, I want to access the administration portal.
+26. As a super user, I want to add content to the store.
+27. As a super user, I want to edit existing content.
+28. As a super user, I want to delete existing content.
+29. As a super user, I want to access the administration portal.
 
 **Site Owner:**
 
-31. As a site owner, I want the site to be responsive.
-32. As a site owner, I want to showcase my social media.
-33. As a site owner, I want to provide feedback to the user based on their interactions with the site.
-34. As a site owner, I want forms to be validated on the front-end for better user experience.
-35. As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
+30. As a site owner, I want the site to be responsive.
+31. As a site owner, I want to showcase my social media.
+32. As a site owner, I want to provide feedback to the user based on their interactions with the site.
+33. As a site owner, I want forms to be validated on the front-end for better user experience.
+34. As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
 
 
 [Back to Top](#moto-style)
@@ -823,9 +823,9 @@ Registration page is comprised of the registration form which is used to CREATE 
 *User stories solved by this feature:*
 
 * 1 - As a new user, I want to be able to create and register an account.
-* 33 - As a site owner, I want to provide feedback to the user based on their interactions with the site.
-* 34 - As a site owner, I want forms to be validated on the front-end for better user experience.
-* 35 - As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
+* 32 - As a site owner, I want to provide feedback to the user based on their interactions with the site.
+* 33 - As a site owner, I want forms to be validated on the front-end for better user experience.
+* 34 - As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
 
 <details>
   <summary> (Expand) Registration Page on mobile, tablet and desktop view.</summary>
@@ -849,9 +849,9 @@ Login page is comprised of the login form which is used to READ an user entry fr
 
 * 2 - As a new user, I want to be able to login and access my account.
 * 3 - As a new user, I want to be able to logout.
-* 23 - As a regular user, I want the ability to recover my password.
-* 33 - As a site owner, I want to provide feedback to the user based on their interactions with the site.
-* 35 - As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
+* 22 - As a returning user, I want the ability to recover my password.
+* 32 - As a site owner, I want to provide feedback to the user based on their interactions with the site.
+* 34 - As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
 
 
 <details>
@@ -871,8 +871,8 @@ The Profile Page enables users to store and update their delivery information fo
 
 *User stories solved by this feature:*
 
-* 19 - As a regular user, I want to store my delivery information for easy future checkouts.
-* 20 - As a regular user, I want to view a record of my past orders.
+* 18 - As a returning user, I want to store my delivery information for easy future checkouts.
+* 19 - As a returning user, I want to view a record of my past orders.
 
 <details>
   <summary> (Expand) Profile Page on mobile, tablet and desktop view.</summary>
@@ -900,7 +900,7 @@ This feature provides the user with the ability to view all products, narrow dow
 * 9 - As a new user, I want to select the different quantities and sizes for a product.
 * 10 - As a new user, I want to be able to add products to my shopping cart.
 * 11 - As a new user, I want to be able to add products to a list of interests(wishlist).
-* 22 - As a regular user, I want to review, rate and read other user's reviews for the products on the site.
+* 21 - As a returning user, I want to review, rate and read other user's reviews for the products on the site.
 
 <details>
   <summary> (Expand) Products Feature on mobile, tablet and desktop view.</summary>
@@ -919,11 +919,11 @@ Product management is accessible only to superusers. Adding a product from the F
 
 *User stories solved by this feature:*
 
-* 27 - As a super user, I want to add content to the store.
-* 28 - As a super user, I want to edit existing content.
-* 29 - As a super user, I want to delete existing content.
-* 34 - As a site owner, I want forms to be validated on the front-end for better user experience.
-* 35 - As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
+* 26 - As a super user, I want to add content to the store.
+* 27 - As a super user, I want to edit existing content.
+* 28 - As a super user, I want to delete existing content.
+* 33 - As a site owner, I want forms to be validated on the front-end for better user experience.
+* 34 - As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
 
 <details>
   <summary> (Expand) Product Management on mobile, tablet and desktop view.</summary>
@@ -967,7 +967,7 @@ Checkout is accessed from the shopping cart page or from the cart preview in the
 * 15 - As a new user, I want to be able to purchase the selected products by entering my payment information in a secure way.
 * 16 - As a new user, I want to view an order confirmation.
 * 17 - As a new user, I want to receive the order confirmation via e-mail also.
-* 35 - As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
+* 34 - As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
 
 <details>
   <summary> (Expand) Checkout on mobile, tablet and desktop view.</summary>
@@ -989,8 +989,8 @@ The read more button will take the user to the article page where they can view 
 
 *User stories solved by this feature:*
 
-* 24 - As a regular user, I want to view articles related to the store products and the community it caters to.
-* 26 - As a regular user, I want to be able to comment on articles.
+* 23 - As a returning user, I want to view articles related to the store products and the community it caters to.
+* 25 - As a returning user, I want to be able to comment on articles.
 
 <details>
   <summary> (Expand) Blog on mobile, tablet and desktop view.</summary>
@@ -1008,11 +1008,11 @@ CREATING a post is currently open to all registered users and can be achieved by
 
 *User stories solved by this feature:*
 
-* 25 - As a regular user I want to be able to post, edit or remove articles from the blog section.
-* 27 - As a super user, I want to add content to the store.
-* 28 - As a super user, I want to edit existing content.
-* 29 - As a super user, I want to delete existing content.
-* 35 - As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
+* 24 - As a returning user I want to be able to post, edit or remove articles from the blog section.
+* 26 - As a super user, I want to add content to the store.
+* 27 - As a super user, I want to edit existing content.
+* 28 - As a super user, I want to delete existing content.
+* 34 - As a site owner, I want forms to be validated on the back-end in case front-end is bypassed or fails.
 
 <details>
   <summary> (Expand) Blog Management on mobile, tablet and desktop view.</summary>
@@ -1034,7 +1034,7 @@ The wishlist feature allows the user to selected products of interest and save t
 *User stories solved by this feature:*
 
 * 11 - As a new user, I want to be able to add products to a list of interests(wishlist).
-* 21 - As a regular user, I want to view and manage my wishlist.
+* 20 - As a returning user, I want to view and manage my wishlist.
 
 <details>
   <summary> (Expand) Wishlist on mobile, tablet and desktop view.</summary>
@@ -1061,7 +1061,7 @@ The main navigation collapses on medium devices and smaller and the main navigat
 * 6 - As a new user, I want to be able to browse by categories.
 * 7 - As a new user, I want to be able to sort product lists by price, rating, category or name.
 * 12 - As a new user, I want to be able to view the total cost of my shopping cart while I browse.
-* 31 - As a site owner, I want the site to be responsive.
+* 30 - As a site owner, I want the site to be responsive.
 
 <details>
   <summary> (Expand) Navbar on mobile, tablet and desktop view.</summary>
@@ -1079,13 +1079,13 @@ The main navigation collapses on medium devices and smaller and the main navigat
 ### **Floating Action Button**
 
 The floating action button at the bottom right hand side corner of the page changes based on the user's permissions. 
-- For regular users and anonymous guests the FAB improves their user interaction with the site by providing a easy way to go back to the top of the page which can be invaluable on mobile devices to prevent long scrolling.
+- For returning users and anonymous guests the FAB improves their user interaction with the site by providing a easy way to go back to the top of the page which can be invaluable on mobile devices to prevent long scrolling.
 - For superusers the FAB changes to an expandable menu which provides links to the form for adding products to the store, link the administration portal created by Django as well as a back to top functionality.
 
 *User stories solved by this feature:*
 
-* 27 - As a super user, I want to add products to the store.
-* 30 - As a super user, I want to access the administration portal.
+* 26 - As a super user, I want to add products to the store.
+* 29 - As a super user, I want to access the administration portal.
 
 <details>
   <summary> (Expand) Floating Action Button </summary>
@@ -1105,7 +1105,7 @@ The toast alerts provide the user a lightweight notification system and was buil
 
 * 12 - As a new user, I want to be able to view the total cost of my shopping cart while I browse.
 * 13 - As a new user, I want to access and view my shopping cart.
-* 33 - As a site owner, I want to provide feedback to the user based on their interactions with the site.
+* 32 - As a site owner, I want to provide feedback to the user based on their interactions with the site.
 
 <details>
   <summary> (Expand) Toast Notifications </summary>
@@ -1125,7 +1125,7 @@ In the footer, the user can find links to the owner's social media.
 
 *User stories solved by this feature:*
 
-* 32 - As a site owner, I want to showcase my social media.
+* 31 - As a site owner, I want to showcase my social media.
 
 <details>
   <summary> (Expand) Footer on mobile, tablet and desktop view. </summary>
@@ -1152,7 +1152,7 @@ The errors that have specific routes on backend are:
 
 *User stories solved by this feature:*
 
-* 33 - As a site owner, I want to provide feedback to the user based on their interactions with the site.
+* 32 - As a site owner, I want to provide feedback to the user based on their interactions with the site.
 
 <details>
   <summary> (expand) Error Page</summary>
