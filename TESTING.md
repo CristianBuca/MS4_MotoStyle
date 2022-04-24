@@ -1330,12 +1330,13 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 </details>
 
 
+## Super Users Stories
 
-### 26.
+### 26. As a super user, I want to add content to the store.
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-|  |  |  | Works as expected |
+| Floating Action Button (FAB) | While logged in as superuser, click the Floating Action button on the bottom right hand of the screen to expand. Click the "Add product" link with a "+" icon. Fill in the "add product" form and submit. | To see the product added to the store. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 26 testing video) </summary>
@@ -1346,11 +1347,11 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 </details>
 
 
-### 27.
+### 27. As a super user, I want to edit existing content.
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-|  |  |  | Works as expected |
+| Edit buttons on product cards, product detail page and blog accordion | While logged in as a superuser click the "Edit" button with a "pencil" icon on a product or blog article. Update the form and submit. | To view my updates on the product or article. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 27 testing video) </summary>
@@ -1361,11 +1362,11 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 </details>
 
 
-### 28.
+### 28. As a super user, I want to delete existing content.
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-|  |  |  | Works as expected |
+| Delete buttons on product cards, product detail page and blog accordion | While logged in as a superuser click the "Delete" button with a "bin" icon on a product or blog article. Confirm removal in the pop-up modal. | For the product or article to be removed from the site. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 28 testing video) </summary>
@@ -1376,11 +1377,11 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 </details>
 
 
-### 29.
+### 29. As a super user, I want to access the administration portal.
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-|  |  |  | Works as expected |
+| Floating Action Button (FAB) | While logged in as superuser, click the Floating Action button on the bottom right hand of the screen to expand. Click the "Admin Dashboard" link with a wrench and screwdriver icon. | To view the Django admin dashboard. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 29 testing video) </summary>
@@ -1391,19 +1392,82 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 </details>
 
 
-### 
+## Site Owner Stories
+
+### 30. As a site owner, I want the site to be responsive.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Landing Page and Navbar | Change the width of the browser. | For the site to adapt to the new sizes and main navbar to collapse. | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 30 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_30.mp4)
+
+</details>
+
+
+### 31. As a site owner, I want to showcase my social media.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Footer | Scroll down to the footer. Click on the social media links. | For the links to open in new tabs. | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 31 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_31.mp4)
+
+</details>
+
+
+### 32. As a site owner, I want to provide feedback to the user based on their interactions with the site.
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
 |  |  |  | Works as expected |
 
 <details>
-  <summary> (Expand - User Story  testing video) </summary>
+  <summary> (Expand - User Story 32 testing video) </summary>
 
 
-  [Local Link](/docs/test_user_stories/user_story_.mp4)
+  [Local Link](/docs/test_user_stories/user_story_32.mp4)
 
 </details>
+
+
+### 33.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+|  |  |  | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 33 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_33.mp4)
+
+</details>
+
+
+### 34.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+|  |  |  | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 34 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_34.mp4)
+
+</details>
+
 
 [Back to Top](#testing-documentation)
 
