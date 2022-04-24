@@ -4,19 +4,7 @@
 
 # Table of contents
 
-- **[HTML Validation](#html-validation)**
-- **[CSS Validation](#css-validation)**
-- **[Accessibility Validation](#accessibility-validation)**
-- **[Lighthouse Tests](#lighthouse-tests)**
-- **[Javascript Validation](#javascript-validation)**
-- **[Python Validation](#python-validation)**
-- **[Physical Testing](#physical-testing)**
-- **[Testing of User Stories](#testing-of-user-stories)**
-  * [New User Stories](#new-user-stories)
-  * [Regular User Stories](#regular-user-stories)
-  * [Superuser Stories](#superuser-stories)
-  * [Site Owner Stories](#site-owner-stories)
-- **[Bugs](#bugs)**
+
 
 ## **[Return to Readme.md](/README.md)**
 
@@ -969,7 +957,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-| Registration Page | On landing page, expand the "Account" dropdown menu and click "Register". Fill in the form with your information and submit the form. | To receive a confirmation link in the email address I registered with. | Works as expected |
+| Registration Page | On landing page, expand the "Account" dropdown menu and click "Register". Fill in the form with your information and submit the form. | To receive a confirmation link in the email address I registered with. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 1 testing video) </summary>
@@ -984,7 +972,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-| Login Page | Expand the "Account" dropdown menu and click "Login". Fill in the form with your login information and submit the form. | Gain access to previously registered account. | Works as expected |
+| Login Page | Expand the "Account" dropdown menu and click "Login". Fill in the form with your login information and submit the form. | Gain access to previously registered account. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 2 testing video) </summary>
@@ -999,7 +987,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-| Logout Page | Expand the "Account dropdown menu and click "Logout". On the Logout Page confirm your action. | To no longer be logged in on the site. | Works as expected |
+| Logout Page | Expand the "Account dropdown menu and click "Logout". On the Logout Page confirm your action. | To no longer be logged in on the site. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 3 testing video) </summary>
@@ -1014,7 +1002,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-| Products Page | Select "All Products" button in the main navigation. | To view all products in the store. | Works as expected |
+| Products Page | Select "All Products" button in the main navigation. | To view all products in the store. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 4 testing video) </summary>
@@ -1029,7 +1017,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-| Search bar on top header navigation | From any page, click the search bar and input search parameters | To see a selection of products that contain the search parameters in the name or description | Works as expected |
+| Search bar on top header navigation | From any page, click the search bar and input search parameters. | To see a selection of products that contain the search parameters in the name or description. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 5 testing video) </summary>
@@ -1040,11 +1028,11 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 </details>
 
 
-### 6. s a new user, I want to be able to browse by categories.
+### 6. As a new user, I want to be able to browse by categories.
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-| Main navigation menu | From any page, expand the category dropdowns and select a subcategory. | To see the products belonging to the selected category. | Works as expected |
+| Main navigation menu | From any page, expand the category dropdowns and select a subcategory. | To see the products belonging to the selected category. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 6 testing video) </summary>
@@ -1059,7 +1047,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-| "All products dropdown in main navigation and "sort by" element on products page | Expand the dropdown/select element and choose the sort criteria | For the products to be sorted by the chosen criteria | Works as expected |
+| "All products dropdown in main navigation and "sort by" element on products page | Expand the dropdown/select element and choose the sort criteria. | For the products to be sorted by the chosen criteria. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 7 testing video) </summary>
@@ -1074,7 +1062,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-| Product details page | Click on a product card | To view the selected product's details page | Works as expected |
+| Product details page | Click on a product card. | To view the selected product's details page. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 8 testing video) </summary>
@@ -1089,7 +1077,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-| Product details page | Input different quantity in the "Quantity" input and choose a different size from from the "Size" selector before adding the product to the cart | For the selected quantity and size to be added to the cart | Works as expected |
+| Product details page | Input different quantity in the "Quantity" input and choose a different size from from the "Size" selector before adding the product to the cart. | For the selected quantity and size to be added to the cart. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 9 testing video) </summary>
@@ -1104,7 +1092,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-| Product details page | Click add to cart button | For the product to be added to my shopping cart | Works as expected |
+| Product details page | Click add to cart button. | For the product to be added to my shopping cart. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 10 testing video) </summary>
@@ -1119,7 +1107,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-| Product details page | Click the "Add to wishlist" link | For the product to be added to my wishlist and the "Add to wishlist" link to change to "Remove from wishlist" link | Works as expected |
+| Product details page | Click the "Add to wishlist" link. | For the product to be added to my wishlist and the "Add to wishlist" link to change to "Remove from wishlist" link. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 11 testing video) </summary>
@@ -1134,7 +1122,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-| Shopping cart link in top header navigation and cart preview in toast success messages | Add products to the shopping cart | For the total cost update in to header navigation and cart preview toast message | Works as expected |
+| Shopping cart link in top header navigation and cart preview in toast success messages | Add products to the shopping cart. | For the total cost update in to header navigation and cart preview toast message. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 12 testing video) </summary>
@@ -1149,7 +1137,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-| Shopping cart page and cart preview in toast messages | Click the shopping cart link in to header navigation | To view my shopping cart | Works as expected |
+| Shopping cart page and cart preview in toast messages | Click the shopping cart link in to header navigation. | To view my shopping cart. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 13 testing video) </summary>
@@ -1164,7 +1152,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-| Shopping cart page | For each product select different quantity and click "Update" or remove the product by clicking "Remove" button | For the shopping cart to be updated with my new preferences | Works as expected |
+| Shopping cart page | For each product select different quantity and click "Update" or remove the product by clicking "Remove" button. | For the shopping cart to be updated with my new preferences. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 14 testing video) </summary>
@@ -1179,7 +1167,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-| Checkout page | From shopping cart page click "Secure Checkout" and enter payment information in the Stripe "Payment" element. | For my payment information to be handled directly by the payment provider | Works as expected |
+| Checkout page | From shopping cart page click "Secure Checkout" and enter payment information in the Stripe "Payment" element. | For my payment information to be handled directly by the payment provider. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 15 testing video) </summary>
@@ -1194,7 +1182,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-| Checkout success page | Fill in the delivery details and payment information then click "Complete Order" | For an order confirmation to be displayed | Works as expected |
+| Checkout success page | Fill in the delivery details and payment information then click "Complete Order". | For an order confirmation to be displayed. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 16 testing video) </summary>
@@ -1209,13 +1197,211 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 | Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-| Checkout success page | Fill in the delivery details and payment information then click "Complete Order" | Check your email for the order confirmation | Works as expected |
+| Checkout success page | Fill in the delivery details and payment information then click "Complete Order". | Check your email for the order confirmation. | Works as expected. |
 
 <details>
   <summary> (Expand - User Story 17 testing video) </summary>
 
 
   [Local Link](/docs/test_user_stories/user_story_17.mp4)
+
+</details>
+
+
+## Returning User Stories
+
+### 18. As a returning user, I want to store my delivery information for easy future checkouts.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Profile Page | While logged in, expand the "Account" dropdown menu from top header navigation and click the "Profile" link. Fill in the form with your delivery details | To view the checkout page form already filled with my delivery information. | Works as expected. |
+
+<details>
+  <summary> (Expand - User Story 18 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_18.mp4)
+
+</details>
+
+
+### 19. As a returning user, I want to view a record of my past orders.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Profile Page | While logged in, expand the "Account" dropdown menu from top header navigation and click the "Profile" link. | To see my order history. | Works as expected. |
+
+<details>
+  <summary> (Expand - User Story 19 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_19.mp4)
+
+</details>
+
+
+### 20. As a returning user, I want to view and manage my wishlist.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Wishlist Page | While logged in, expand the "Account" dropdown menu from top header navigation and click the "Wishlist" link. | To view a collection of the products I added to my wishlist. | Works as expected. |
+
+<details>
+  <summary> (Expand - User Story 20 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_20.mp4)
+
+</details>
+
+
+### 21. As a returning user, I want to review, rate and read other user's reviews for the products on the site.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Product Details Page | Click the "Leave a review" link. Select a rating and add a review for the product. | For the product's rating to update and my review to show up in the "Reviews" section. | Works as expected. |
+
+<details>
+  <summary> (Expand - User Story 21 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_21.mp4)
+
+</details>
+
+
+### 22. As a returning user, I want the ability to recover my password.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Login Page | While logged out, access the login page and click "forgot password". Enter your email address and click "Reset my Password" | To receive a reset link in my email. | Works as expected. |
+
+<details>
+  <summary> (Expand - User Story 22 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_22.mp4)
+
+</details>
+
+
+### 23. As a returning user, I want to view articles related to the store products and the community it caters to.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Th Blog Page | On the main navigation click the "Blog" link. | To view the articles posted on the site. | Works as expected. |
+
+<details>
+  <summary> (Expand - User Story 23 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_23.mp4)
+
+</details>
+
+
+### 24. As a returning user I want to be able to post, edit or remove articles from the blog section.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| The Blog Page | On the blog page click "Post Article" over the articles accordion. Fill in the form and submit. | To view the article in the accordion with options to "Remove" and "Edit". | Works as expected. |
+
+<details>
+  <summary> (Expand - User Story 24 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_24.mp4)
+
+</details>
+
+
+### 25. As a returning user, I want to be able to comment on articles.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Blog Post Page | While logged in, click "Read More" on any of the articles. Click "Post a comment", fill in the form and submit. | To view my comment in the post's comment section. | Works as expected. |
+
+<details>
+  <summary> (Expand - User Story 25 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_25.mp4)
+
+</details>
+
+
+
+### 26.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+|  |  |  | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 26 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_26.mp4)
+
+</details>
+
+
+### 27.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+|  |  |  | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 27 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_27.mp4)
+
+</details>
+
+
+### 28.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+|  |  |  | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 28 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_28.mp4)
+
+</details>
+
+
+### 29.
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+|  |  |  | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 29 testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_29.mp4)
+
+</details>
+
+
+### 
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+|  |  |  | Works as expected |
+
+<details>
+  <summary> (Expand - User Story  testing video) </summary>
+
+
+  [Local Link](/docs/test_user_stories/user_story_.mp4)
 
 </details>
 
