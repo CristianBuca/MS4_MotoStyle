@@ -4,7 +4,7 @@
 
 // Uses Regex to define email format
 $.validator.methods.email = function( value, element ) {
-    return this.optional( element ) || /[a-z]+@[a-z]+\.[a-z]+/.test( value );
+    return this.optional( element ) || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test( value );
 };
 
 // Uses regex to exclude empty strings
