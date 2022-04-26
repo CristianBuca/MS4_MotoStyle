@@ -1394,6 +1394,7 @@ https://user-images.githubusercontent.com/79543676/165310702-641ed673-d90a-47aa-
 <details>
   <summary> (Expand - User Story 26 testing video) </summary>
 
+https://user-images.githubusercontent.com/79543676/165311651-2ce9e4c2-7f68-40e7-853f-559198054a1c.mp4
 
   [Local Link](/docs/test_user_stories/user_story_26.mp4)
 
@@ -1409,6 +1410,7 @@ https://user-images.githubusercontent.com/79543676/165310702-641ed673-d90a-47aa-
 <details>
   <summary> (Expand - User Story 27 testing video) </summary>
 
+https://user-images.githubusercontent.com/79543676/165311692-cac0a886-02c2-4271-8d4f-087b460f28de.mp4
 
   [Local Link](/docs/test_user_stories/user_story_27.mp4)
 
@@ -1424,6 +1426,7 @@ https://user-images.githubusercontent.com/79543676/165310702-641ed673-d90a-47aa-
 <details>
   <summary> (Expand - User Story 28 testing video) </summary>
 
+https://user-images.githubusercontent.com/79543676/165311711-ed770c23-3219-4b44-928b-744ae39bd578.mp4
 
   [Local Link](/docs/test_user_stories/user_story_28.mp4)
 
@@ -1439,6 +1442,7 @@ https://user-images.githubusercontent.com/79543676/165310702-641ed673-d90a-47aa-
 <details>
   <summary> (Expand - User Story 29 testing video) </summary>
 
+https://user-images.githubusercontent.com/79543676/165311755-671bb294-e2ef-4920-9444-a6110d522727.mp4
 
   [Local Link](/docs/test_user_stories/user_story_29.mp4)
 
