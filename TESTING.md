@@ -978,6 +978,8 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
   <summary> (Expand - User Story 1 testing video) </summary>
 
 
+https://user-images.githubusercontent.com/79543676/165307613-ffcf3070-a4ac-4df9-a6d4-96e17838b638.mp4
+
   [Local Link](/docs/test_user_stories/user_story_1.mp4)
 
 </details>
@@ -992,6 +994,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 <details>
   <summary> (Expand - User Story 2 testing video) </summary>
 
+https://user-images.githubusercontent.com/79543676/165307816-ea68407b-76ca-4952-8e4d-d7f32634a756.mp4
 
   [Local Link](/docs/test_user_stories/user_story_2.mp4)
 
@@ -1007,6 +1010,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 <details>
   <summary> (Expand - User Story 3 testing video) </summary>
 
+https://user-images.githubusercontent.com/79543676/165307918-c7b3be3f-7b40-46d5-b8cb-8d350fd49559.mp4
 
   [Local Link](/docs/test_user_stories/user_story_3.mp4)
 
@@ -1024,6 +1028,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 <details>
   <summary> (Expand - User Story 4 testing video) </summary>
 
+https://user-images.githubusercontent.com/79543676/165308094-65d95f38-5252-4908-bc12-6deb830b1da5.mp4
 
   [Local Link](/docs/test_user_stories/user_story_4.mp4)
 
@@ -1039,6 +1044,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 <details>
   <summary> (Expand - User Story 5 testing video) </summary>
 
+https://user-images.githubusercontent.com/79543676/165308133-615c174c-6f88-4217-b7e9-a223e7f36bde.mp4
 
   [Local Link](/docs/test_user_stories/user_story_5.mp4)
 
@@ -1054,6 +1060,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 <details>
   <summary> (Expand - User Story 6 testing video) </summary>
 
+https://user-images.githubusercontent.com/79543676/165308191-78bfe153-2df2-4364-9f93-a456786eec95.mp4
 
   [Local Link](/docs/test_user_stories/user_story_6.mp4)
 
@@ -1069,6 +1076,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 <details>
   <summary> (Expand - User Story 7 testing video) </summary>
 
+https://user-images.githubusercontent.com/79543676/165308399-4353d913-55cf-4bd2-ae32-fc799e2451e9.mp4
 
   [Local Link](/docs/test_user_stories/user_story_7.mp4)
 
@@ -1084,6 +1092,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 <details>
   <summary> (Expand - User Story 8 testing video) </summary>
 
+https://user-images.githubusercontent.com/79543676/165308431-5e18942d-b540-42c4-b13b-d2894d9aa0f6.mp4
 
   [Local Link](/docs/test_user_stories/user_story_8.mp4)
 
@@ -1101,6 +1110,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 <details>
   <summary> (Expand - User Story 9 testing video) </summary>
 
+https://user-images.githubusercontent.com/79543676/165308490-ca249bd8-b069-41fe-8481-8175bb128be8.mp4
 
   [Local Link](/docs/test_user_stories/user_story_9.mp4)
 
