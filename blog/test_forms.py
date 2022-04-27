@@ -39,3 +39,14 @@ class TestBlogPostForm(TestCase):
         self.assertEqual(
             form.errors['content'][0], 'This field is required.'
         )
+
+    def test_blog_post_form_is_valid(self):
+        """
+        Test if form validates correctly when required fields are filled in
+        """
+        form = BlogPostForm({
+            'title': 'Test Blog Post',
+            'content': 'Test Blog Post Content'
+        })
+        self.assertTrue(form.is_valid())
+
