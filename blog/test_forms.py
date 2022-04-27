@@ -65,3 +65,11 @@ class TestBlogPostForm(TestCase):
             form.errors['comment_body'][0], 'This field is required.'
         )
 
+    def test_comment_form_is_valid(self):
+        """
+        Test if form validates correctly when required fields are filled in
+        """
+        form = CommentForm({
+            'comment_body': 'Test Comment'
+        })
+        self.assertTrue(form.is_valid())
