@@ -69,7 +69,7 @@ The store owner has access to full CRUD functionality over the database and user
 
 
 **Registration on the website is open so feel free to take advantage of it. Regardless, for testing purposes I have set up the following account:**
-* _Standard user:_ **testuser**  _password:_ **Password1**
+* _Standard user:_ **testuser**  _password:_ **passtest1**
 
 # **User Experience**
 

@@ -34,7 +34,7 @@
 
 ![Unit tests](/docs/test_img/unit_tests/unit_tests.jpg)
 
-**These tests cover 80% of the project's code excluding migrations and 3rd party apps.**
+**These tests cover 84% of the project's code excluding migrations and 3rd party apps.**
 
 ![Coverage Report](/docs/test_img/unit_tests/coverage_report.jpg)
 
