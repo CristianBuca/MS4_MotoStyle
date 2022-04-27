@@ -50,3 +50,18 @@ class TestBlogPostForm(TestCase):
         })
         self.assertTrue(form.is_valid())
 
+    def test_comment_form_no_comment_body(self):
+        """
+        Tests if correct error is displayed to the user when
+        trying to submit form with empty comment_body field
+        Tests if form fails validation
+        """
+        form = CommentForm({
+            'comment_body': ''
+        })
+        self.assertFalse(form.is_valid())
+        self.assertIn('comment_body', form.errors.keys())
+        self.assertEqual(
+            form.errors['comment_body'][0], 'This field is required.'
+        )
+
