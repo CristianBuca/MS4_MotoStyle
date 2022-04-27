@@ -91,4 +91,27 @@ class TestBlogViews(TestCase):
         )
         self.assertRedirects(response, '/blog/1/')
 
-    
+    def test_user_delete_blog_post(self):
+        """
+        Tests if user can delete their own blog post
+        Tests if user is redirected to the blog page
+        Tests if toast displays correct message
+        """
+        user = User.objects.create_user(
+            username='unit_test_user', password='unit_test_pass'
+        )
+        blog_post = BlogPost.objects.create(
+            title='Test Blog Post',
+            content='Test Blog Post content',
+            owner=user,
+        )
+        self.client.login(
+            username='unit_test_user', password='unit_test_pass'
+        )
+        response = self.client.get('/blog/delete/1/')
+        messages = list(get_messages(response.wsgi_request))
+        self.assertEqual(response.status_code, 302)
+        self.assertRedirects(response, '/blog/')
+        self.assertEqual(str(
+            messages[0]), 'Article removed successfully'
+        )
