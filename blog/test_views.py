@@ -2,6 +2,7 @@
 # 3rd party:
 from django.test import TestCase
 from django.contrib.auth.models import User
+from django.contrib.messages import get_messages
 # Internal
 from .models import BlogPost, Comment
 # -----------------------------------------------------------------------------
@@ -39,3 +40,26 @@ class TestBlogViews(TestCase):
         response = self.client.get(f'/blog/{blog_post.id}/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'blog/blog_post.html')
+
+    def test_user_post_add_blog_post(self):
+        """
+        Tests if user can add blog post
+        Tests if user is redirected to the blog page
+        Tests if toast displays correct message
+        """
+        user = User.objects.create_user(
+            username='unit_test_user', password='unit_test_pass'
+        )
+        self.client.login(
+            username='unit_test_user', password='unit_test_pass'
+        )
+        response = self.client.post('/blog/add/', {
+            'title': 'Test Add Blog Post',
+            'content': 'Test Add Blog Post content',
+            'owner': user,
+        })
+        messages = list(get_messages(response.wsgi_request))
+        self.assertEqual(str(
+            messages[0]), 'Your article has been posted.'
+        )
+        self.assertRedirects(response, '/blog/')
