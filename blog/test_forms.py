@@ -2,7 +2,7 @@
 # 3rd party:
 from django.test import TestCase
 # Internal
-from .forms import BlogPostForm
+from .forms import BlogPostForm, CommentForm
 # -----------------------------------------------------------------------------
 
 
@@ -22,4 +22,20 @@ class TestBlogPostForm(TestCase):
         self.assertIn('title', form.errors.keys())
         self.assertEqual(
             form.errors['title'][0], 'This field is required.'
+        )
+
+    def test_blog_post_form_no_content(self):
+        """
+        Tests if correct error is displayed to the user when
+        trying to submit form with empty content field
+        Tests if form fails validation
+        """
+        form = BlogPostForm({
+            'title': 'Test Blog Post',
+            'content': ''
+        })
+        self.assertFalse(form.is_valid())
+        self.assertIn('content', form.errors.keys())
+        self.assertEqual(
+            form.errors['content'][0], 'This field is required.'
         )
