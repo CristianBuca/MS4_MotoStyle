@@ -5,3 +5,4 @@ virtualenv/
 *sqlite3
 *.pyc
 ignored/
+Procfile
